@@ -1,0 +1,224 @@
+$main-background: #181a1b !default;
+$main-color: #cacaca !default;
+$main-border: #757575 !default;
+
+$alert-important: #4f0000 !default;
+$alert-warning: #af8e0a !default;
+$alert-info: #3498db !default;
+
+$text: #fefefe !default;
+$text-secondary: #cacaca !default;
+$text-tertiary: #acacac !default;
+$text-highlight: #ffffff !default;
+
+$side-color: #1b1b1b !default;
+$input-border: #434343 !default;
+$shadow-color: rgba(0, 0, 0, 0.2) !default;
+
+$code-inline-color: #18191c !default;
+$code-color: #989898 !default;
+$code-border: #505050 !default;
+$code-background: #18191c !default;
+
+$logo-resource: "../images/logo.png" !default;
+
+html,
+body,
+.navbar,
+.container,
+.footer {
+  background-color: $main-background;
+  color: $main-color;
+  border-color: $main-border;
+}
+
+img {
+  border-radius: 4px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 3px 3px 2px 2px $shadow-color;
+  box-shadow: 3px 3px 2px 2px $shadow-color;
+}
+
+.alert {
+  background-color: $alert-important;
+  padding: 25px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border: none;
+
+  &.compressed {
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  h5 {
+    color: $text-highlight !important;
+  }
+
+  p {
+    color: $text !important;
+  }
+
+  &.alert-warning {
+    background-color: $alert-warning;
+  }
+
+  &.alert-info {
+    background-color: $alert-info;
+  }
+}
+
+.body-content {
+  padding-left: 3%;
+  padding-right: 3%;
+
+  h1 {
+    font-size: 2.2em;
+    color: $text;
+    border-bottom: 1px solid #454545;
+    padding-bottom: 7px;
+    margin-top: 28px;
+  }
+
+  h2 {
+    color: $text-secondary;
+    font-size: 1.3em;
+    margin-top: 28px;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: $text-tertiary;
+  }
+
+  p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+}
+
+.footer span {
+  color: $text;
+}
+
+.sidenav,
+.sidetoc,
+#toc,
+.sidefilter {
+  background-color: $side-color;
+  border: none;
+}
+
+.side-toc {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.toc-filter {
+  background: $main-background;
+  color: $main-color;
+  border: 1px solid $input-border;
+  width: 100%;
+  margin: 0;
+
+  input {
+    background: $main-background;
+    color: $main-color;
+  }
+}
+
+#toc li span.expand-stub::before {
+  -webkit-transform: translateY(-2px) rotateZ(45deg);
+  transform: translateY(-2px) rotateZ(45deg);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  content: "";
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border: 1px solid $main-color;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+#toc li.in span.expand-stub::before {
+  border-left-color: transparent;
+  border-bottom-color: $main-color;
+  border-top-color: transparent;
+  -webkit-transform: translateY(-4px) rotateZ(45deg);
+  transform: translateY(-4px) rotateZ(45deg);
+}
+
+#toc {
+  padding-bottom: 10px;
+
+  a:hover {
+    // Table Of Content Link color
+    color: $main-color;
+  }
+}
+
+code {
+  // Background Color for inline code
+  background: $code-inline-color;
+}
+
+pre {
+  // Code Block Background and border
+  background: $code-background;
+  border: 1px solid $code-border;
+
+  code,
+  code.hljs,
+  .hljs-params {
+    // Un-highlighted syntax color
+    color: $code-color;
+  }
+}
+
+table.table-bordered {
+  margin-top: 10px;
+
+  & > tbody > tr:nth-of-type(odd) {
+    background: black;
+  }
+}
+
+.table-bordered,
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  padding: 10px;
+  border: 1px solid #252525;
+}
+
+.navbar-brand {
+  display: block;
+  width: 50px;
+  background-image: url($logo-resource);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  // Hide fallback image
+  img {
+    display: none;
+  }
+}

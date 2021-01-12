@@ -1,0 +1,1900 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CommandService
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CommandService
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Commands.CommandService">
+  
+  
+  <h1 id="Strade_Commands_CommandService" data-uid="Strade.Commands.CommandService" class="text-break">Class CommandService
+  </h1>
+  <div class="markdown level0 summary"><p>A service that handles / dispatches commands.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CommandService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Commands.html">Strade.Commands</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Commands.dll</h6>
+  <h5 id="Strade_Commands_CommandService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CommandService : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService__ctor_Strade_DiscordClient_Strade_Commands_CommandServiceOptions_Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.%23ctor(Strade.DiscordClient%2CStrade.Commands.CommandServiceOptions%2CStrade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L51">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService__ctor_" data-uid="Strade.Commands.CommandService.#ctor*"></a>
+  <h4 id="Strade_Commands_CommandService__ctor_Strade_DiscordClient_Strade_Commands_CommandServiceOptions_Strade_Logging_ILogger_" data-uid="Strade.Commands.CommandService.#ctor(Strade.DiscordClient,Strade.Commands.CommandServiceOptions,Strade.Logging.ILogger)">CommandService(DiscordClient, CommandServiceOptions, ILogger)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Commands.CommandService.html">CommandService</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandService(DiscordClient client, CommandServiceOptions options = null, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordClient.html">DiscordClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>the client bound to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandServiceOptions.html">CommandServiceOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>the options for the command service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>the logger used for logging; or <span class="xref">null</span> to disable logging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">client</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService__ctor_Strade_IDiscordRestClient_Strade_Commands_CommandServiceOptions_Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.%23ctor(Strade.IDiscordRestClient%2CStrade.Commands.CommandServiceOptions%2CStrade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L67">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService__ctor_" data-uid="Strade.Commands.CommandService.#ctor*"></a>
+  <h4 id="Strade_Commands_CommandService__ctor_Strade_IDiscordRestClient_Strade_Commands_CommandServiceOptions_Strade_Logging_ILogger_" data-uid="Strade.Commands.CommandService.#ctor(Strade.IDiscordRestClient,Strade.Commands.CommandServiceOptions,Strade.Logging.ILogger)">CommandService(IDiscordRestClient, CommandServiceOptions, ILogger)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Commands.CommandService.html">CommandService</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandService(IDiscordRestClient client, CommandServiceOptions options = null, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.IDiscordRestClient.html">IDiscordRestClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>the client bound to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandServiceOptions.html">CommandServiceOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>the options for the command service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>the logger used for logging; or <span class="xref">null</span> to disable logging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">client</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Client.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L134">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Client_" data-uid="Strade.Commands.CommandService.Client*"></a>
+  <h4 id="Strade_Commands_CommandService_Client" data-uid="Strade.Commands.CommandService.Client">Client</h4>
+  <div class="markdown level1 summary"><p>Gets the discord client bound to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDiscordRestClient Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.IDiscordRestClient.html">IDiscordRestClient</a></td>
+        <td><p>the discord client bound to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Commands.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Commands%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L136">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Commands_" data-uid="Strade.Commands.CommandService.Commands*"></a>
+  <h4 id="Strade_Commands_CommandService_Commands" data-uid="Strade.Commands.CommandService.Commands">Commands</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandTree Commands { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Tree.CommandTree.html">CommandTree</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Converters.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Converters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L138">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Converters_" data-uid="Strade.Commands.CommandService.Converters*"></a>
+  <h4 id="Strade_Commands_CommandService_Converters" data-uid="Strade.Commands.CommandService.Converters">Converters</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IImmutableSet&lt;IArgumentConverter&gt; Converters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutableset-1">IImmutableSet</a>&lt;<a class="xref" href="Strade.Commands.Converters.IArgumentConverter.html">IArgumentConverter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_DefaultConverters.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.DefaultConverters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L114">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_DefaultConverters_" data-uid="Strade.Commands.CommandService.DefaultConverters*"></a>
+  <h4 id="Strade_Commands_CommandService_DefaultConverters" data-uid="Strade.Commands.CommandService.DefaultConverters">DefaultConverters</h4>
+  <div class="markdown level1 summary"><p>Gets the default converters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IArgumentConverter&gt; DefaultConverters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Commands.Converters.IArgumentConverter.html">IArgumentConverter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Handler.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Handler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L140">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Handler_" data-uid="Strade.Commands.CommandService.Handler*"></a>
+  <h4 id="Strade_Commands_CommandService_Handler" data-uid="Strade.Commands.CommandService.Handler">Handler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandHandler Handler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandHandler.html">CommandHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Interfaces.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Interfaces%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L142">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Interfaces_" data-uid="Strade.Commands.CommandService.Interfaces*"></a>
+  <h4 id="Strade_Commands_CommandService_Interfaces" data-uid="Strade.Commands.CommandService.Interfaces">Interfaces</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IImmutableSet&lt;CommandInterface&gt; Interfaces { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutableset-1">IImmutableSet</a>&lt;<a class="xref" href="Strade.Commands.CommandInterface.html">CommandInterface</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Logger.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L144">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Logger_" data-uid="Strade.Commands.CommandService.Logger*"></a>
+  <h4 id="Strade_Commands_CommandService_Logger" data-uid="Strade.Commands.CommandService.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Modules.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Modules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L153">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Modules_" data-uid="Strade.Commands.CommandService.Modules*"></a>
+  <h4 id="Strade_Commands_CommandService_Modules" data-uid="Strade.Commands.CommandService.Modules">Modules</h4>
+  <div class="markdown level1 summary"><p>Gets all registered modules (all providers that inherit from the <a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a> interface).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IModule&gt; Modules { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a>&gt;</td>
+        <td><p>all registered modules (all providers that inherit from the <a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a> interface).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Options.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L159">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Options_" data-uid="Strade.Commands.CommandService.Options*"></a>
+  <h4 id="Strade_Commands_CommandService_Options" data-uid="Strade.Commands.CommandService.Options">Options</h4>
+  <div class="markdown level1 summary"><p>Gets the options used to configure the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandServiceOptions Options { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandServiceOptions.html">CommandServiceOptions</a></td>
+        <td><p>the options used to configure the service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_AddInterface_Strade_Commands_CommandInterface_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.AddInterface(Strade.Commands.CommandInterface)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L161">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_AddInterface_" data-uid="Strade.Commands.CommandService.AddInterface*"></a>
+  <h4 id="Strade_Commands_CommandService_AddInterface_Strade_Commands_CommandInterface_" data-uid="Strade.Commands.CommandService.AddInterface(Strade.Commands.CommandInterface)">AddInterface(CommandInterface)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddInterface(CommandInterface commandInterface)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandInterface.html">CommandInterface</a></td>
+        <td><span class="parametername">commandInterface</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_CreateContextAsync_Strade_Commands_CommandInterface_Strade_Entities_IMessage_Strade_Cache_ICacheable_Strade_Entities_Snowflake_Strade_Entities_IMessageChannel__System_Globalization_CultureInfo_Strade_Cache_ICacheable_Strade_Entities_Snowflake_Strade_Entities_IGuild__Strade_Entities_Member_Strade_Commands_ICommandExecutionInformation_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.CreateContextAsync(Strade.Commands.CommandInterface%2CStrade.Entities.IMessage%2CStrade.Cache.ICacheable%7BStrade.Entities.Snowflake%2CStrade.Entities.IMessageChannel%7D%2CSystem.Globalization.CultureInfo%2CStrade.Cache.ICacheable%7BStrade.Entities.Snowflake%2CStrade.Entities.IGuild%7D%2CStrade.Entities.Member%2CStrade.Commands.ICommandExecutionInformation%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L177">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_CreateContextAsync_" data-uid="Strade.Commands.CommandService.CreateContextAsync*"></a>
+  <h4 id="Strade_Commands_CommandService_CreateContextAsync_Strade_Commands_CommandInterface_Strade_Entities_IMessage_Strade_Cache_ICacheable_Strade_Entities_Snowflake_Strade_Entities_IMessageChannel__System_Globalization_CultureInfo_Strade_Cache_ICacheable_Strade_Entities_Snowflake_Strade_Entities_IGuild__Strade_Entities_Member_Strade_Commands_ICommandExecutionInformation_System_Threading_CancellationToken_" data-uid="Strade.Commands.CommandService.CreateContextAsync(Strade.Commands.CommandInterface,Strade.Entities.IMessage,Strade.Cache.ICacheable{Strade.Entities.Snowflake,Strade.Entities.IMessageChannel},System.Globalization.CultureInfo,Strade.Cache.ICacheable{Strade.Entities.Snowflake,Strade.Entities.IGuild},Strade.Entities.Member,Strade.Commands.ICommandExecutionInformation,System.Threading.CancellationToken)">CreateContextAsync(CommandInterface, IMessage, ICacheable&lt;Snowflake, IMessageChannel&gt;, CultureInfo, ICacheable&lt;Snowflake, IGuild&gt;, Member, ICommandExecutionInformation, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ValueTask&lt;CommandContext&gt; CreateContextAsync(CommandInterface commandInterface, IMessage message, ICacheable&lt;Snowflake, IMessageChannel&gt; channelCacheable, CultureInfo cultureInfo, ICacheable&lt;Snowflake, IGuild&gt; guildCacheable, Member member, ICommandExecutionInformation executionInformation = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandInterface.html">CommandInterface</a></td>
+        <td><span class="parametername">commandInterface</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IMessage.html">IMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.ICacheable-2.html">ICacheable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Entities.IMessageChannel.html">IMessageChannel</a>&gt;</td>
+        <td><span class="parametername">channelCacheable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
+        <td><span class="parametername">cultureInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.ICacheable-2.html">ICacheable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Entities.IGuild.html">IGuild</a>&gt;</td>
+        <td><span class="parametername">guildCacheable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Member.html">Member</a></td>
+        <td><span class="parametername">member</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.ICommandExecutionInformation.html">ICommandExecutionInformation</a></td>
+        <td><span class="parametername">executionInformation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Commands.CommandContext.html">CommandContext</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_DispatchAsync_Strade_Commands_Results_MatchResult_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.DispatchAsync(Strade.Commands.Results.MatchResult%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L192">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_DispatchAsync_" data-uid="Strade.Commands.CommandService.DispatchAsync*"></a>
+  <h4 id="Strade_Commands_CommandService_DispatchAsync_Strade_Commands_Results_MatchResult_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.Commands.CommandService.DispatchAsync(Strade.Commands.Results.MatchResult,System.Boolean,System.Threading.CancellationToken)">DispatchAsync(MatchResult, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IResult&gt; DispatchAsync(MatchResult matchResult, bool enforceSync = false, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Results.MatchResult.html">MatchResult</a></td>
+        <td><span class="parametername">matchResult</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enforceSync</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Commands.Results.IResult.html">IResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Dispose.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L226">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Dispose_" data-uid="Strade.Commands.CommandService.Dispose*"></a>
+  <h4 id="Strade_Commands_CommandService_Dispose" data-uid="Strade.Commands.CommandService.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L541">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_Dispose_" data-uid="Strade.Commands.CommandService.Dispose*"></a>
+  <h4 id="Strade_Commands_CommandService_Dispose_System_Boolean_" data-uid="Strade.Commands.CommandService.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting
+unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>a value indicating whether to release managed resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_GetConverter_System_Type_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.GetConverter(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L241">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_GetConverter_" data-uid="Strade.Commands.CommandService.GetConverter*"></a>
+  <h4 id="Strade_Commands_CommandService_GetConverter_System_Type_" data-uid="Strade.Commands.CommandService.GetConverter(System.Type)">GetConverter(Type)</h4>
+  <div class="markdown level1 summary"><p>Finds the <a class="xref" href="Strade.Commands.Converters.IArgumentConverter.html">IArgumentConverter</a> for the specified <code data-dev-comment-type="paramref" class="paramref">targetType</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IArgumentConverter GetConverter(Type targetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">targetType</span></td>
+        <td><p>the type to convert to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Converters.IArgumentConverter.html">IArgumentConverter</a></td>
+        <td><p>the <a class="xref" href="Strade.Commands.Converters.IArgumentConverter.html">IArgumentConverter</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if no converter was found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">targetType</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_GetExecutableCommandsAsync_Strade_Commands_CommandContext_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.GetExecutableCommandsAsync(Strade.Commands.CommandContext%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L278">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_GetExecutableCommandsAsync_" data-uid="Strade.Commands.CommandService.GetExecutableCommandsAsync*"></a>
+  <h4 id="Strade_Commands_CommandService_GetExecutableCommandsAsync_Strade_Commands_CommandContext_System_Threading_CancellationToken_" data-uid="Strade.Commands.CommandService.GetExecutableCommandsAsync(Strade.Commands.CommandContext,System.Threading.CancellationToken)">GetExecutableCommandsAsync(CommandContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets all commands that are executable for the specified <code data-dev-comment-type="paramref" class="paramref">commandContext</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;ICommand&gt; GetExecutableCommandsAsync(CommandContext commandContext, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandContext.html">CommandContext</a></td>
+        <td><span class="parametername">commandContext</span></td>
+        <td><p>the command context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="Strade.Commands.ICommand.html">ICommand</a>&gt;</td>
+        <td><p>an enumerable that enumerates through all commands that are executable for the
+specified <code data-dev-comment-type="paramref" class="paramref">commandContext</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_OnCommandExecutedAsync_Strade_Commands_Events_CommandExecutedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.OnCommandExecutedAsync(Strade.Commands.Events.CommandExecutedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L567">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_OnCommandExecutedAsync_" data-uid="Strade.Commands.CommandService.OnCommandExecutedAsync*"></a>
+  <h4 id="Strade_Commands_CommandService_OnCommandExecutedAsync_Strade_Commands_Events_CommandExecutedEventArgs_" data-uid="Strade.Commands.CommandService.OnCommandExecutedAsync(Strade.Commands.Events.CommandExecutedEventArgs)">OnCommandExecutedAsync(CommandExecutedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.Commands.CommandService.html#Strade_Commands_CommandService_CommandExecuted">CommandExecuted</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnCommandExecutedAsync(CommandExecutedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Events.CommandExecutedEventArgs.html">CommandExecutedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_OnCommandExecutingAsync_Strade_Commands_Events_CommandExecutingEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.OnCommandExecutingAsync(Strade.Commands.Events.CommandExecutingEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L575">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_OnCommandExecutingAsync_" data-uid="Strade.Commands.CommandService.OnCommandExecutingAsync*"></a>
+  <h4 id="Strade_Commands_CommandService_OnCommandExecutingAsync_Strade_Commands_Events_CommandExecutingEventArgs_" data-uid="Strade.Commands.CommandService.OnCommandExecutingAsync(Strade.Commands.Events.CommandExecutingEventArgs)">OnCommandExecutingAsync(CommandExecutingEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.Commands.CommandService.html#Strade_Commands_CommandService_CommandExecuting">CommandExecuting</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnCommandExecutingAsync(CommandExecutingEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Events.CommandExecutingEventArgs.html">CommandExecutingEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_OnCommandFailedAsync_Strade_Commands_Events_CommandFailedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.OnCommandFailedAsync(Strade.Commands.Events.CommandFailedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L583">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_OnCommandFailedAsync_" data-uid="Strade.Commands.CommandService.OnCommandFailedAsync*"></a>
+  <h4 id="Strade_Commands_CommandService_OnCommandFailedAsync_Strade_Commands_Events_CommandFailedEventArgs_" data-uid="Strade.Commands.CommandService.OnCommandFailedAsync(Strade.Commands.Events.CommandFailedEventArgs)">OnCommandFailedAsync(CommandFailedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.Commands.CommandService.html#Strade_Commands_CommandService_CommandFailed">CommandFailed</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnCommandFailedAsync(CommandFailedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Events.CommandFailedEventArgs.html">CommandFailedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_OnUnknownCommandAsync_Strade_Commands_Events_UnknownCommandEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.OnUnknownCommandAsync(Strade.Commands.Events.UnknownCommandEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L591">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_OnUnknownCommandAsync_" data-uid="Strade.Commands.CommandService.OnUnknownCommandAsync*"></a>
+  <h4 id="Strade_Commands_CommandService_OnUnknownCommandAsync_Strade_Commands_Events_UnknownCommandEventArgs_" data-uid="Strade.Commands.CommandService.OnUnknownCommandAsync(Strade.Commands.Events.UnknownCommandEventArgs)">OnUnknownCommandAsync(UnknownCommandEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.Commands.CommandService.html#Strade_Commands_CommandService_UnknownCommand">UnknownCommand</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnUnknownCommandAsync(UnknownCommandEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Events.UnknownCommandEventArgs.html">UnknownCommandEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RegisterAll_System_IServiceProvider_Strade_Commands_Localization_IResourceManager_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RegisterAll(System.IServiceProvider%2CStrade.Commands.Localization.IResourceManager%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L307">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RegisterAll_" data-uid="Strade.Commands.CommandService.RegisterAll*"></a>
+  <h4 id="Strade_Commands_CommandService_RegisterAll_System_IServiceProvider_Strade_Commands_Localization_IResourceManager_System_Boolean_" data-uid="Strade.Commands.CommandService.RegisterAll(System.IServiceProvider,Strade.Commands.Localization.IResourceManager,System.Boolean)">RegisterAll(IServiceProvider, IResourceManager, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers all modules from the calling assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IModule&gt; RegisterAll(IServiceProvider serviceProvider = null, IResourceManager resourceManager = null, bool exportedOnly = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td><p>the service provider used for modules; or <span class="xref">null</span> to use an empty
+service provider.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Localization.IResourceManager.html">IResourceManager</a></td>
+        <td><span class="parametername">resourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">exportedOnly</span></td>
+        <td><p>a value indicating whether only exported types (types that are visible outside of
+the assembly [e.g. non-internal]) should be included in the search; otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a>&gt;</td>
+        <td><p>an enumerable that enumerates through the modules registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RegisterAll_System_Reflection_Assembly_System_IServiceProvider_Strade_Commands_Localization_IResourceManager_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RegisterAll(System.Reflection.Assembly%2CSystem.IServiceProvider%2CStrade.Commands.Localization.IResourceManager%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L326">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RegisterAll_" data-uid="Strade.Commands.CommandService.RegisterAll*"></a>
+  <h4 id="Strade_Commands_CommandService_RegisterAll_System_Reflection_Assembly_System_IServiceProvider_Strade_Commands_Localization_IResourceManager_System_Boolean_" data-uid="Strade.Commands.CommandService.RegisterAll(System.Reflection.Assembly,System.IServiceProvider,Strade.Commands.Localization.IResourceManager,System.Boolean)">RegisterAll(Assembly, IServiceProvider, IResourceManager, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers all modules from the specified <code data-dev-comment-type="paramref" class="paramref">assembly</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IModule&gt; RegisterAll(Assembly assembly, IServiceProvider serviceProvider = null, IResourceManager resourceManager = null, bool exportedOnly = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>the assembly containing the modules.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td><p>the service provider used for modules; or <span class="xref">null</span> to use an empty
+service provider.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Localization.IResourceManager.html">IResourceManager</a></td>
+        <td><span class="parametername">resourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">exportedOnly</span></td>
+        <td><p>a value indicating whether only exported types (types that are visible outside of
+the assembly [e.g. non-internal]) should be included in the search; otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a>&gt;</td>
+        <td><p>an enumerable that enumerates through the modules registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">assembly</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RegisterCommand_Strade_Commands_ICommand_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RegisterCommand(Strade.Commands.ICommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L357">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RegisterCommand_" data-uid="Strade.Commands.CommandService.RegisterCommand*"></a>
+  <h4 id="Strade_Commands_CommandService_RegisterCommand_Strade_Commands_ICommand_" data-uid="Strade.Commands.CommandService.RegisterCommand(Strade.Commands.ICommand)">RegisterCommand(ICommand)</h4>
+  <div class="markdown level1 summary"><p>Registers the specified <code data-dev-comment-type="paramref" class="paramref">command</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandRegistrationInformation RegisterCommand(ICommand command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.ICommand.html">ICommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>the command to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Tree.CommandRegistrationInformation.html">CommandRegistrationInformation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified command is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RegisterConverter_Strade_Commands_Converters_IArgumentConverter_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RegisterConverter(Strade.Commands.Converters.IArgumentConverter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L372">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RegisterConverter_" data-uid="Strade.Commands.CommandService.RegisterConverter*"></a>
+  <h4 id="Strade_Commands_CommandService_RegisterConverter_Strade_Commands_Converters_IArgumentConverter_" data-uid="Strade.Commands.CommandService.RegisterConverter(Strade.Commands.Converters.IArgumentConverter)">RegisterConverter(IArgumentConverter)</h4>
+  <div class="markdown level1 summary"><p>Registers the specified <code data-dev-comment-type="paramref" class="paramref">converter</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterConverter(IArgumentConverter converter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Converters.IArgumentConverter.html">IArgumentConverter</a></td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>the command converter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RegisterDefaultConverters.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RegisterDefaultConverters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L385">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RegisterDefaultConverters_" data-uid="Strade.Commands.CommandService.RegisterDefaultConverters*"></a>
+  <h4 id="Strade_Commands_CommandService_RegisterDefaultConverters" data-uid="Strade.Commands.CommandService.RegisterDefaultConverters">RegisterDefaultConverters()</h4>
+  <div class="markdown level1 summary"><p>Registers the default converters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterDefaultConverters()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RegisterModule_Strade_Commands_Modules_IModule_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RegisterModule(Strade.Commands.Modules.IModule)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L415">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RegisterModule_" data-uid="Strade.Commands.CommandService.RegisterModule*"></a>
+  <h4 id="Strade_Commands_CommandService_RegisterModule_Strade_Commands_Modules_IModule_" data-uid="Strade.Commands.CommandService.RegisterModule(Strade.Commands.Modules.IModule)">RegisterModule(IModule)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterModule(IModule module)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RegisterModule_System_Type_System_IServiceProvider_Strade_Commands_Localization_IResourceManager_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RegisterModule(System.Type%2CSystem.IServiceProvider%2CStrade.Commands.Localization.IResourceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L432">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RegisterModule_" data-uid="Strade.Commands.CommandService.RegisterModule*"></a>
+  <h4 id="Strade_Commands_CommandService_RegisterModule_System_Type_System_IServiceProvider_Strade_Commands_Localization_IResourceManager_" data-uid="Strade.Commands.CommandService.RegisterModule(System.Type,System.IServiceProvider,Strade.Commands.Localization.IResourceManager)">RegisterModule(Type, IServiceProvider, IResourceManager)</h4>
+  <div class="markdown level1 summary"><p>Registers a module of the specified <code data-dev-comment-type="paramref" class="paramref">moduleType</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IModule RegisterModule(Type moduleType, IServiceProvider serviceProvider = null, IResourceManager resourceManager = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">moduleType</span></td>
+        <td><p>the module type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td><p>the service provider used for modules; or <span class="xref">null</span> to use an empty
+service provider.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Localization.IResourceManager.html">IResourceManager</a></td>
+        <td><span class="parametername">resourceManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a></td>
+        <td><p>the module.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">moduleType</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RegisterModule__1_System_IServiceProvider_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RegisterModule%60%601(System.IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L411">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RegisterModule_" data-uid="Strade.Commands.CommandService.RegisterModule*"></a>
+  <h4 id="Strade_Commands_CommandService_RegisterModule__1_System_IServiceProvider_" data-uid="Strade.Commands.CommandService.RegisterModule``1(System.IServiceProvider)">RegisterModule&lt;TModule&gt;(IServiceProvider)</h4>
+  <div class="markdown level1 summary"><p>Registers a module of the specified <code data-dev-comment-type="typeparamref" class="typeparamref">TModule</code> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IModule RegisterModule&lt;TModule&gt;(IServiceProvider serviceProvider = null)
+
+    where TModule : IModuleBase</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td><p>the service provider used for modules; or <span class="xref">null</span> to use an empty
+service provider.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a></td>
+        <td><p>the module.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModule</span></td>
+        <td><p>the type of the module.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_RemoveInterface_Strade_Commands_CommandInterface_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.RemoveInterface(Strade.Commands.CommandInterface)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L448">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_RemoveInterface_" data-uid="Strade.Commands.CommandService.RemoveInterface*"></a>
+  <h4 id="Strade_Commands_CommandService_RemoveInterface_Strade_Commands_CommandInterface_" data-uid="Strade.Commands.CommandService.RemoveInterface(Strade.Commands.CommandInterface)">RemoveInterface(CommandInterface)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveInterface(CommandInterface commandInterface)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandInterface.html">CommandInterface</a></td>
+        <td><span class="parametername">commandInterface</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_UnregisterAll_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.UnregisterAll(System.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L472">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_UnregisterAll_" data-uid="Strade.Commands.CommandService.UnregisterAll*"></a>
+  <h4 id="Strade_Commands_CommandService_UnregisterAll_System_Reflection_Assembly_" data-uid="Strade.Commands.CommandService.UnregisterAll(System.Reflection.Assembly)">UnregisterAll(Assembly)</h4>
+  <div class="markdown level1 summary"><p>Unregisters all modules from the specified <code data-dev-comment-type="paramref" class="paramref">assembly</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UnregisterAll(Assembly assembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>the assembly containing the modules.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of modules unregistered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">assembly</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_UnregisterConverter_Strade_Commands_Converters_IArgumentConverter_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.UnregisterConverter(Strade.Commands.Converters.IArgumentConverter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L497">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_UnregisterConverter_" data-uid="Strade.Commands.CommandService.UnregisterConverter*"></a>
+  <h4 id="Strade_Commands_CommandService_UnregisterConverter_Strade_Commands_Converters_IArgumentConverter_" data-uid="Strade.Commands.CommandService.UnregisterConverter(Strade.Commands.Converters.IArgumentConverter)">UnregisterConverter(IArgumentConverter)</h4>
+  <div class="markdown level1 summary"><p>Unregisters the specified <code data-dev-comment-type="paramref" class="paramref">converter</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnregisterConverter(IArgumentConverter converter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Converters.IArgumentConverter.html">IArgumentConverter</a></td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>the command converter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_UnregisterModule_Strade_Commands_Modules_IModule_.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.UnregisterModule(Strade.Commands.Modules.IModule)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L520">View Source</a>
+  </span>
+  <a id="Strade_Commands_CommandService_UnregisterModule_" data-uid="Strade.Commands.CommandService.UnregisterModule*"></a>
+  <h4 id="Strade_Commands_CommandService_UnregisterModule_Strade_Commands_Modules_IModule_" data-uid="Strade.Commands.CommandService.UnregisterModule(Strade.Commands.Modules.IModule)">UnregisterModule(IModule)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnregisterModule(IModule module)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Modules.IModule.html">IModule</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_CommandExecuted.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.CommandExecuted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L94">View Source</a>
+  </span>
+  <h4 id="Strade_Commands_CommandService_CommandExecuted" data-uid="Strade.Commands.CommandService.CommandExecuted">CommandExecuted</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a command was executed successfully.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;CommandExecutedEventArgs&gt; CommandExecuted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Commands.Events.CommandExecutedEventArgs.html">CommandExecutedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_CommandExecuting.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.CommandExecuting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L99">View Source</a>
+  </span>
+  <h4 id="Strade_Commands_CommandService_CommandExecuting" data-uid="Strade.Commands.CommandService.CommandExecuting">CommandExecuting</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a command is before being executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;CommandExecutingEventArgs&gt; CommandExecuting</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Commands.Events.CommandExecutingEventArgs.html">CommandExecutingEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_CommandFailed.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.CommandFailed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L104">View Source</a>
+  </span>
+  <h4 id="Strade_Commands_CommandService_CommandFailed" data-uid="Strade.Commands.CommandService.CommandFailed">CommandFailed</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a command failed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;CommandFailedEventArgs&gt; CommandFailed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Commands.Events.CommandFailedEventArgs.html">CommandFailedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService_UnknownCommand.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService.UnknownCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L109">View Source</a>
+  </span>
+  <h4 id="Strade_Commands_CommandService_UnknownCommand" data-uid="Strade.Commands.CommandService.UnknownCommand">UnknownCommand</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when an unknown command was executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;UnknownCommandEventArgs&gt; UnknownCommand</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Commands.Events.UnknownCommandEventArgs.html">UnknownCommandEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Strade.Commands.CommandServiceExtensions.html#Strade_Commands_CommandServiceExtensions_AddInteractions_Strade_Commands_CommandService_Strade_Commands_Interactions_InteractionsCommandOptions_">CommandServiceExtensions.AddInteractions(CommandService, InteractionsCommandOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Commands.CommandServiceExtensions.html#Strade_Commands_CommandServiceExtensions_AddInteractions_Strade_Commands_CommandService_System_Action_Strade_Commands_Interactions_InteractionsCommandOptions__">CommandServiceExtensions.AddInteractions(CommandService, Action&lt;InteractionsCommandOptions&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Commands.CommandServiceExtensions.html#Strade_Commands_CommandServiceExtensions_AddInteractions_Strade_Commands_CommandService_">CommandServiceExtensions.AddInteractions(CommandService)</a>
+  </div>
+  <div>
+      <span class="xref">Strade.Commands.CommandServiceExtensions.AddLegacy(Strade.Commands.CommandService, Strade.Commands.Legacy.LegacyCommandInterfaceOptions)</span>
+  </div>
+  <div>
+      <span class="xref">Strade.Commands.CommandServiceExtensions.AddLegacy(Strade.Commands.CommandService, System.Action&lt;Strade.Commands.Legacy.LegacyCommandInterfaceOptions&gt;)</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_CommandService.md&amp;value=---%0Auid%3A%20Strade.Commands.CommandService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/CommandService.cs/#L30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

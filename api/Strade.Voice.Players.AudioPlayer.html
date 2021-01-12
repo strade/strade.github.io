@@ -1,0 +1,1618 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AudioPlayer
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AudioPlayer
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Voice.Players.AudioPlayer">
+  
+  
+  <h1 id="Strade_Voice_Players_AudioPlayer" data-uid="Strade.Voice.Players.AudioPlayer" class="text-break">Class AudioPlayer
+  </h1>
+  <div class="markdown level0 summary"><p>A basic implementation for an audio player.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AudioPlayer</span></div>
+      <div class="level2"><a class="xref" href="Strade.Voice.Players.BaseQueuedAudioPlayer.html">BaseQueuedAudioPlayer</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Voice.Players.html">Strade.Voice.Players</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Voice.Abstractions.dll</h6>
+  <h5 id="Strade_Voice_Players_AudioPlayer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AudioPlayer : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer__ctor_Strade_Voice_IAudioPlayerContext_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.%23ctor(Strade.Voice.IAudioPlayerContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L27">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer__ctor_" data-uid="Strade.Voice.Players.AudioPlayer.#ctor*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer__ctor_Strade_Voice_IAudioPlayerContext_" data-uid="Strade.Voice.Players.AudioPlayer.#ctor(Strade.Voice.IAudioPlayerContext)">AudioPlayer(IAudioPlayerContext)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioPlayer(IAudioPlayerContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.IAudioPlayerContext.html">IAudioPlayerContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>the underlying player context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">context</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_AudioService.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.AudioService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L43">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_AudioService_" data-uid="Strade.Voice.Players.AudioPlayer.AudioService*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_AudioService" data-uid="Strade.Voice.Players.AudioPlayer.AudioService">AudioService</h4>
+  <div class="markdown level1 summary"><p>Gets the audio service the context is bound to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAudioService AudioService { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.IAudioService.html">IAudioService</a></td>
+        <td><p>the audio service the context is bound to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_CanSeek.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.CanSeek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L237">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_CanSeek_" data-uid="Strade.Voice.Players.AudioPlayer.CanSeek*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_CanSeek" data-uid="Strade.Voice.Players.AudioPlayer.CanSeek">CanSeek</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the current playing track can be seeked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSeek { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the current playing track can be seeked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Players_AudioPlayer_CanSeek_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the player is not playing a track ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_NotPlaying">NotPlaying</a> or <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>) then the value is <span class="xref">false</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_Context.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.Context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L59">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_Context_" data-uid="Strade.Voice.Players.AudioPlayer.Context*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_Context" data-uid="Strade.Voice.Players.AudioPlayer.Context">Context</h4>
+  <div class="markdown level1 summary"><p>Gets the underlying player context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAudioPlayerContext Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.IAudioPlayerContext.html">IAudioPlayerContext</a></td>
+        <td><p>the underlying player context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_CurrentTrack.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.CurrentTrack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L76">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_CurrentTrack_" data-uid="Strade.Voice.Players.AudioPlayer.CurrentTrack*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_CurrentTrack" data-uid="Strade.Voice.Players.AudioPlayer.CurrentTrack">CurrentTrack</h4>
+  <div class="markdown level1 summary"><p>Gets the current track that is playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAudioTrack CurrentTrack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Tracks.IAudioTrack.html">IAudioTrack</a></td>
+        <td><p>the current track that is playing; or null if the player is not playing ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_NotPlaying">NotPlaying</a> or <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> ==
+<a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_Duration.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.Duration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L103">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_Duration_" data-uid="Strade.Voice.Players.AudioPlayer.Duration*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_Duration" data-uid="Strade.Voice.Players.AudioPlayer.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>Gets the duration of the track that is playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan Duration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><p>the duration of the track that is playing; or <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan.zero">Zero</a> if the
+player is not playing ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_NotPlaying">NotPlaying</a>
+or <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_Factory.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.Factory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L34">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_Factory_" data-uid="Strade.Voice.Players.AudioPlayer.Factory*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_Factory" data-uid="Strade.Voice.Players.AudioPlayer.Factory">Factory</h4>
+  <div class="markdown level1 summary"><p>Gets the player factory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioPlayerFactory&lt;AudioPlayer&gt; Factory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Players.AudioPlayerFactory-1.html">AudioPlayerFactory</a>&lt;<a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a>&gt;</td>
+        <td><p>the player factory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_Filters.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.Filters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L122">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_Filters_" data-uid="Strade.Voice.Players.AudioPlayer.Filters*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_Filters" data-uid="Strade.Voice.Players.AudioPlayer.Filters">Filters</h4>
+  <div class="markdown level1 summary"><p>Gets the filter collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFilterCollection Filters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.IFilterCollection.html">IFilterCollection</a></td>
+        <td><p>the filter collection for the player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_GuildId.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.GuildId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L138">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_GuildId_" data-uid="Strade.Voice.Players.AudioPlayer.GuildId*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_GuildId" data-uid="Strade.Voice.Players.AudioPlayer.GuildId">GuildId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the guild the player is for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake GuildId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the snowflake identifier of the guild the player is for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_Position.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L161">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_Position_" data-uid="Strade.Voice.Players.AudioPlayer.Position*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_Position" data-uid="Strade.Voice.Players.AudioPlayer.Position">Position</h4>
+  <div class="markdown level1 summary"><p>Gets the position of the track that is playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan Position { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><p>the position of the track that is playing; or <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan.zero">Zero</a> if the
+player is not playing ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_NotPlaying">NotPlaying</a>
+or <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_State.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L194">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_State_" data-uid="Strade.Voice.Players.AudioPlayer.State*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_State" data-uid="Strade.Voice.Players.AudioPlayer.State">State</h4>
+  <div class="markdown level1 summary"><p>Gets the current player state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.PlayerState.html">PlayerState</a></td>
+        <td><p>the current player state.</p>
+<ul><li><a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_NotPlaying">NotPlaying</a>Denotes that the player is not playing a track.</li><li><a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Playing">Playing</a>Denotes that the player is playing a track.</li><li><a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Paused">Paused</a>Denotes that the player is paused.</li><li><a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>Denotes that the player is destroyed.</li></ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_Volume.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.Volume%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L219">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_Volume_" data-uid="Strade.Voice.Players.AudioPlayer.Volume*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_Volume" data-uid="Strade.Voice.Players.AudioPlayer.Volume">Volume</h4>
+  <div class="markdown level1 summary"><p>Gets the player volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Volume { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>the player volume.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Players_AudioPlayer_Volume_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value for the volume is <code>1F</code>, values equal or below <code>0F</code>
+indicate that the output is muted.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Players_AudioPlayer_Volume_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_SetVolumeAsync_System_Single_System_Threading_CancellationToken_">SetVolumeAsync(Single, CancellationToken)</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_Dispose.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L240">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_Dispose_" data-uid="Strade.Voice.Players.AudioPlayer.Dispose*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_Dispose" data-uid="Strade.Voice.Players.AudioPlayer.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L441">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_Dispose_" data-uid="Strade.Voice.Players.AudioPlayer.Dispose*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_Dispose_System_Boolean_" data-uid="Strade.Voice.Players.AudioPlayer.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases the unmanaged resources used by the <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> and
+optionally releases the managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p><span class="xref">true</span> to release both managed and unmanaged resources; <span class="xref">false</span> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Players_AudioPlayer_Dispose_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> is already disposed no action is done.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_EnsureNotDestroyed.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.EnsureNotDestroyed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L460">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_EnsureNotDestroyed_" data-uid="Strade.Voice.Players.AudioPlayer.EnsureNotDestroyed*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_EnsureNotDestroyed" data-uid="Strade.Voice.Players.AudioPlayer.EnsureNotDestroyed">EnsureNotDestroyed()</h4>
+  <div class="markdown level1 summary"><p>Ensures that the player is not destroyed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnsureNotDestroyed()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player was destroyed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_EnsureNotDisposed.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.EnsureNotDisposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L472">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_EnsureNotDisposed_" data-uid="Strade.Voice.Players.AudioPlayer.EnsureNotDisposed*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_EnsureNotDisposed" data-uid="Strade.Voice.Players.AudioPlayer.EnsureNotDisposed">EnsureNotDisposed()</h4>
+  <div class="markdown level1 summary"><p>Ensures that the player is not disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnsureNotDisposed()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the player was disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_OnPausedAsync_Strade_Voice_Events_PlayerPausedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.OnPausedAsync(Strade.Voice.Events.PlayerPausedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L395">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_OnPausedAsync_" data-uid="Strade.Voice.Players.AudioPlayer.OnPausedAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_OnPausedAsync_Strade_Voice_Events_PlayerPausedEventArgs_" data-uid="Strade.Voice.Players.AudioPlayer.OnPausedAsync(Strade.Voice.Events.PlayerPausedEventArgs)">OnPausedAsync(PlayerPausedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="Strade.Voice.Events.PlayerPausedEventArgs.html">PlayerPausedEventArgs</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnPausedAsync(PlayerPausedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.PlayerPausedEventArgs.html">PlayerPausedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_OnResumedAsync_Strade_Voice_Events_PlayerResumedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.OnResumedAsync(Strade.Voice.Events.PlayerResumedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L402">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_OnResumedAsync_" data-uid="Strade.Voice.Players.AudioPlayer.OnResumedAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_OnResumedAsync_Strade_Voice_Events_PlayerResumedEventArgs_" data-uid="Strade.Voice.Players.AudioPlayer.OnResumedAsync(Strade.Voice.Events.PlayerResumedEventArgs)">OnResumedAsync(PlayerResumedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="Strade.Voice.Events.PlayerResumedEventArgs.html">PlayerResumedEventArgs</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnResumedAsync(PlayerResumedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.PlayerResumedEventArgs.html">PlayerResumedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_OnTrackEndedAsync_Strade_Voice_Events_PlayerTrackEndedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.OnTrackEndedAsync(Strade.Voice.Events.PlayerTrackEndedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L409">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_OnTrackEndedAsync_" data-uid="Strade.Voice.Players.AudioPlayer.OnTrackEndedAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_OnTrackEndedAsync_Strade_Voice_Events_PlayerTrackEndedEventArgs_" data-uid="Strade.Voice.Players.AudioPlayer.OnTrackEndedAsync(Strade.Voice.Events.PlayerTrackEndedEventArgs)">OnTrackEndedAsync(PlayerTrackEndedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="Strade.Voice.Events.PlayerTrackEndedEventArgs.html">PlayerTrackEndedEventArgs</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnTrackEndedAsync(PlayerTrackEndedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.PlayerTrackEndedEventArgs.html">PlayerTrackEndedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_OnTrackSeekAsync_Strade_Voice_Events_PlayerTrackSeekEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.OnTrackSeekAsync(Strade.Voice.Events.PlayerTrackSeekEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L416">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_OnTrackSeekAsync_" data-uid="Strade.Voice.Players.AudioPlayer.OnTrackSeekAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_OnTrackSeekAsync_Strade_Voice_Events_PlayerTrackSeekEventArgs_" data-uid="Strade.Voice.Players.AudioPlayer.OnTrackSeekAsync(Strade.Voice.Events.PlayerTrackSeekEventArgs)">OnTrackSeekAsync(PlayerTrackSeekEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="Strade.Voice.Events.PlayerTrackSeekEventArgs.html">PlayerTrackSeekEventArgs</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnTrackSeekAsync(PlayerTrackSeekEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.PlayerTrackSeekEventArgs.html">PlayerTrackSeekEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_OnTrackStartedAsync_Strade_Voice_Events_PlayerTrackStartedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.OnTrackStartedAsync(Strade.Voice.Events.PlayerTrackStartedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L423">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_OnTrackStartedAsync_" data-uid="Strade.Voice.Players.AudioPlayer.OnTrackStartedAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_OnTrackStartedAsync_Strade_Voice_Events_PlayerTrackStartedEventArgs_" data-uid="Strade.Voice.Players.AudioPlayer.OnTrackStartedAsync(Strade.Voice.Events.PlayerTrackStartedEventArgs)">OnTrackStartedAsync(PlayerTrackStartedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="Strade.Voice.Events.PlayerTrackStartedEventArgs.html">PlayerTrackStartedEventArgs</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnTrackStartedAsync(PlayerTrackStartedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.PlayerTrackStartedEventArgs.html">PlayerTrackStartedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_OnVolumeChangedAsync_Strade_Voice_Events_PlayerVolumeChangedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.OnVolumeChangedAsync(Strade.Voice.Events.PlayerVolumeChangedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L430">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_OnVolumeChangedAsync_" data-uid="Strade.Voice.Players.AudioPlayer.OnVolumeChangedAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_OnVolumeChangedAsync_Strade_Voice_Events_PlayerVolumeChangedEventArgs_" data-uid="Strade.Voice.Players.AudioPlayer.OnVolumeChangedAsync(Strade.Voice.Events.PlayerVolumeChangedEventArgs)">OnVolumeChangedAsync(PlayerVolumeChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="Strade.Voice.Events.PlayerVolumeChangedEventArgs.html">PlayerVolumeChangedEventArgs</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnVolumeChangedAsync(PlayerVolumeChangedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.PlayerVolumeChangedEventArgs.html">PlayerVolumeChangedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_PauseAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.PauseAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L261">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_PauseAsync_" data-uid="Strade.Voice.Players.AudioPlayer.PauseAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_PauseAsync_System_Threading_CancellationToken_" data-uid="Strade.Voice.Players.AudioPlayer.PauseAsync(System.Threading.CancellationToken)">PauseAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Pauses the player asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task PauseAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Players_AudioPlayer_PauseAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the player is already paused, nothing will happen.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is not playing a track.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_PlayAsync_Strade_Voice_Tracks_IAudioTrack_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.PlayAsync(Strade.Voice.Tracks.IAudioTrack%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L285">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_PlayAsync_" data-uid="Strade.Voice.Players.AudioPlayer.PlayAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_PlayAsync_Strade_Voice_Tracks_IAudioTrack_System_Threading_CancellationToken_" data-uid="Strade.Voice.Players.AudioPlayer.PlayAsync(Strade.Voice.Tracks.IAudioTrack,System.Threading.CancellationToken)">PlayAsync(IAudioTrack, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Plays the specified <code data-dev-comment-type="paramref" class="paramref">track</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task PlayAsync(IAudioTrack track, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Tracks.IAudioTrack.html">IAudioTrack</a></td>
+        <td><span class="parametername">track</span></td>
+        <td><p>the track to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">track</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_ResumeAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.ResumeAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L309">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_ResumeAsync_" data-uid="Strade.Voice.Players.AudioPlayer.ResumeAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_ResumeAsync_System_Threading_CancellationToken_" data-uid="Strade.Voice.Players.AudioPlayer.ResumeAsync(System.Threading.CancellationToken)">ResumeAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resumes the playback asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task ResumeAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Players_AudioPlayer_ResumeAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the player is not paused, nothing will happen.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is not playing a track.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_SeekAsync_System_TimeSpan_System_IO_SeekOrigin_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.SeekAsync(System.TimeSpan%2CSystem.IO.SeekOrigin%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L338">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_SeekAsync_" data-uid="Strade.Voice.Players.AudioPlayer.SeekAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_SeekAsync_System_TimeSpan_System_IO_SeekOrigin_System_Threading_CancellationToken_" data-uid="Strade.Voice.Players.AudioPlayer.SeekAsync(System.TimeSpan,System.IO.SeekOrigin,System.Threading.CancellationToken)">SeekAsync(TimeSpan, SeekOrigin, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Seeks a specific position in the track asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TimeSpan&gt; SeekAsync(TimeSpan offset, SeekOrigin origin = SeekOrigin.Begin, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>the relative seek offset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.seekorigin">SeekOrigin</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>the seek origin specifying the origin of the specified <code data-dev-comment-type="paramref" class="paramref">offset</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the new track position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is not playing a track.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_SetVolumeAsync_System_Single_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.SetVolumeAsync(System.Single%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L360">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_SetVolumeAsync_" data-uid="Strade.Voice.Players.AudioPlayer.SetVolumeAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_SetVolumeAsync_System_Single_System_Threading_CancellationToken_" data-uid="Strade.Voice.Players.AudioPlayer.SetVolumeAsync(System.Single,System.Threading.CancellationToken)">SetVolumeAsync(Single, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sets the volume ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_Volume">Volume</a>) asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetVolumeAsync(float volume, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">volume</span></td>
+        <td><p>the new volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Players_AudioPlayer_SetVolumeAsync_System_Single_System_Threading_CancellationToken__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_Volume">Volume</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer_StopAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer.StopAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L381">View Source</a>
+  </span>
+  <a id="Strade_Voice_Players_AudioPlayer_StopAsync_" data-uid="Strade.Voice.Players.AudioPlayer.StopAsync*"></a>
+  <h4 id="Strade_Voice_Players_AudioPlayer_StopAsync_System_Threading_CancellationToken_" data-uid="Strade.Voice.Players.AudioPlayer.StopAsync(System.Threading.CancellationToken)">StopAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Stops the playback asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task StopAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Players_AudioPlayer_StopAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the player is not playing, nothing will happen.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if the player is destroyed ( <a class="xref" href="Strade.Voice.Players.AudioPlayer.html#Strade_Voice_Players_AudioPlayer_State">State</a> == <a class="xref" href="Strade.Voice.PlayerState.html#Strade_Voice_PlayerState_Destroyed">Destroyed</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the current <a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a> instance is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Players_AudioPlayer.md&amp;value=---%0Auid%3A%20Strade.Voice.Players.AudioPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Players/AudioPlayer.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

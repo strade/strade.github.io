@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAudioService
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAudioService
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Voice.IAudioService">
+  
+  
+  <h1 id="Strade_Voice_IAudioService" data-uid="Strade.Voice.IAudioService" class="text-break">Interface IAudioService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Strade.Voice.Tracks.IAudioTrackManager.html#Strade_Voice_Tracks_IAudioTrackManager_Providers">IAudioTrackManager.Providers</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Tracks.IAudioTrackManager.html#Strade_Voice_Tracks_IAudioTrackManager_FindProviders_System_String_">IAudioTrackManager.FindProviders(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Tracks.IAudioTrackManager.html#Strade_Voice_Tracks_IAudioTrackManager_LoadTrackAsync_System_String_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_">IAudioTrackManager.LoadTrackAsync(String, AudioTrackProviderOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Tracks.IAudioTrackManager.html#Strade_Voice_Tracks_IAudioTrackManager_LoadTrackAsync_System_String_System_String_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_">IAudioTrackManager.LoadTrackAsync(String, String, AudioTrackProviderOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Tracks.IAudioTrackManager.html#Strade_Voice_Tracks_IAudioTrackManager_LoadTracksAsync_System_String_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Int32_System_Threading_CancellationToken_">IAudioTrackManager.LoadTracksAsync(String, AudioTrackProviderOptions, Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Tracks.IAudioTrackManager.html#Strade_Voice_Tracks_IAudioTrackManager_LoadTracksAsync_System_String_System_String_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Int32_System_Threading_CancellationToken_">IAudioTrackManager.LoadTracksAsync(String, String, AudioTrackProviderOptions, Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Voice.html">Strade.Voice</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Voice.Abstractions.dll</h6>
+  <h5 id="Strade_Voice_IAudioService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAudioService : IAudioTrackManager, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_TrackManager.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.TrackManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L48">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_TrackManager_" data-uid="Strade.Voice.IAudioService.TrackManager*"></a>
+  <h4 id="Strade_Voice_IAudioService_TrackManager" data-uid="Strade.Voice.IAudioService.TrackManager">TrackManager</h4>
+  <div class="markdown level1 summary"><p>Gets the underlying track manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAudioTrackManager TrackManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Tracks.IAudioTrackManager.html">IAudioTrackManager</a></td>
+        <td><p>the underlying track manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_GetPlayer_Strade_Entities_IGuild_.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.GetPlayer(Strade.Entities.IGuild)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L55">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_GetPlayer_" data-uid="Strade.Voice.IAudioService.GetPlayer*"></a>
+  <h4 id="Strade_Voice_IAudioService_GetPlayer_Strade_Entities_IGuild_" data-uid="Strade.Voice.IAudioService.GetPlayer(Strade.Entities.IGuild)">GetPlayer(IGuild)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AudioPlayer GetPlayer(IGuild guild)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IGuild.html">IGuild</a></td>
+        <td><span class="parametername">guild</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_GetPlayer_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.GetPlayer(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L50">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_GetPlayer_" data-uid="Strade.Voice.IAudioService.GetPlayer*"></a>
+  <h4 id="Strade_Voice_IAudioService_GetPlayer_Strade_Entities_Snowflake_" data-uid="Strade.Voice.IAudioService.GetPlayer(Strade.Entities.Snowflake)">GetPlayer(Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AudioPlayer GetPlayer(Snowflake guildId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_GetPlayer__1_Strade_Entities_IGuild_.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.GetPlayer%60%601(Strade.Entities.IGuild)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L57">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_GetPlayer_" data-uid="Strade.Voice.IAudioService.GetPlayer*"></a>
+  <h4 id="Strade_Voice_IAudioService_GetPlayer__1_Strade_Entities_IGuild_" data-uid="Strade.Voice.IAudioService.GetPlayer``1(Strade.Entities.IGuild)">GetPlayer&lt;TPlayer&gt;(IGuild)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TPlayer GetPlayer&lt;TPlayer&gt;(IGuild guild)
+
+    where TPlayer : AudioPlayer</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IGuild.html">IGuild</a></td>
+        <td><span class="parametername">guild</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_GetPlayer__1_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.GetPlayer%60%601(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L52">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_GetPlayer_" data-uid="Strade.Voice.IAudioService.GetPlayer*"></a>
+  <h4 id="Strade_Voice_IAudioService_GetPlayer__1_Strade_Entities_Snowflake_" data-uid="Strade.Voice.IAudioService.GetPlayer``1(Strade.Entities.Snowflake)">GetPlayer&lt;TPlayer&gt;(Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TPlayer GetPlayer&lt;TPlayer&gt;(Snowflake guildId)
+
+    where TPlayer : AudioPlayer</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_JoinAsync_Strade_Entities_IVoiceChannel_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.JoinAsync(Strade.Entities.IVoiceChannel%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L65">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_JoinAsync_" data-uid="Strade.Voice.IAudioService.JoinAsync*"></a>
+  <h4 id="Strade_Voice_IAudioService_JoinAsync_Strade_Entities_IVoiceChannel_System_Threading_CancellationToken_" data-uid="Strade.Voice.IAudioService.JoinAsync(Strade.Entities.IVoiceChannel,System.Threading.CancellationToken)">JoinAsync(IVoiceChannel, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;AudioPlayer&gt; JoinAsync(IVoiceChannel voiceChannel, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IVoiceChannel.html">IVoiceChannel</a></td>
+        <td><span class="parametername">voiceChannel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_JoinAsync_Strade_Entities_Snowflake_Strade_Entities_Snowflake_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.JoinAsync(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L60">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_JoinAsync_" data-uid="Strade.Voice.IAudioService.JoinAsync*"></a>
+  <h4 id="Strade_Voice_IAudioService_JoinAsync_Strade_Entities_Snowflake_Strade_Entities_Snowflake_System_Threading_CancellationToken_" data-uid="Strade.Voice.IAudioService.JoinAsync(Strade.Entities.Snowflake,Strade.Entities.Snowflake,System.Threading.CancellationToken)">JoinAsync(Snowflake, Snowflake, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;AudioPlayer&gt; JoinAsync(Snowflake guildId, Snowflake voiceChannelId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">voiceChannelId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Voice.Players.AudioPlayer.html">AudioPlayer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_JoinAsync__1_Strade_Entities_IVoiceChannel_Strade_Voice_Players_AudioPlayerFactory___0__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.JoinAsync%60%601(Strade.Entities.IVoiceChannel%2CStrade.Voice.Players.AudioPlayerFactory%7B%60%600%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L67">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_JoinAsync_" data-uid="Strade.Voice.IAudioService.JoinAsync*"></a>
+  <h4 id="Strade_Voice_IAudioService_JoinAsync__1_Strade_Entities_IVoiceChannel_Strade_Voice_Players_AudioPlayerFactory___0__System_Threading_CancellationToken_" data-uid="Strade.Voice.IAudioService.JoinAsync``1(Strade.Entities.IVoiceChannel,Strade.Voice.Players.AudioPlayerFactory{``0},System.Threading.CancellationToken)">JoinAsync&lt;TPlayer&gt;(IVoiceChannel, AudioPlayerFactory&lt;TPlayer&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;TPlayer&gt; JoinAsync&lt;TPlayer&gt;(IVoiceChannel voiceChannel, AudioPlayerFactory&lt;TPlayer&gt; playerFactory, CancellationToken cancellationToken = default(CancellationToken))
+
+    where TPlayer : AudioPlayer</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IVoiceChannel.html">IVoiceChannel</a></td>
+        <td><span class="parametername">voiceChannel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Players.AudioPlayerFactory-1.html">AudioPlayerFactory</a>&lt;TPlayer&gt;</td>
+        <td><span class="parametername">playerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;TPlayer&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_JoinAsync__1_Strade_Entities_Snowflake_Strade_Entities_Snowflake_Strade_Voice_Players_AudioPlayerFactory___0__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.JoinAsync%60%601(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake%2CStrade.Voice.Players.AudioPlayerFactory%7B%60%600%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L62">View Source</a>
+  </span>
+  <a id="Strade_Voice_IAudioService_JoinAsync_" data-uid="Strade.Voice.IAudioService.JoinAsync*"></a>
+  <h4 id="Strade_Voice_IAudioService_JoinAsync__1_Strade_Entities_Snowflake_Strade_Entities_Snowflake_Strade_Voice_Players_AudioPlayerFactory___0__System_Threading_CancellationToken_" data-uid="Strade.Voice.IAudioService.JoinAsync``1(Strade.Entities.Snowflake,Strade.Entities.Snowflake,Strade.Voice.Players.AudioPlayerFactory{``0},System.Threading.CancellationToken)">JoinAsync&lt;TPlayer&gt;(Snowflake, Snowflake, AudioPlayerFactory&lt;TPlayer&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;TPlayer&gt; JoinAsync&lt;TPlayer&gt;(Snowflake guildId, Snowflake voiceChannelId, AudioPlayerFactory&lt;TPlayer&gt; playerFactory, CancellationToken cancellationToken = default(CancellationToken))
+
+    where TPlayer : AudioPlayer</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">voiceChannelId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Players.AudioPlayerFactory-1.html">AudioPlayerFactory</a>&lt;TPlayer&gt;</td>
+        <td><span class="parametername">playerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;TPlayer&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_PlayerPaused.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.PlayerPaused%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_IAudioService_PlayerPaused" data-uid="Strade.Voice.IAudioService.PlayerPaused">PlayerPaused</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a player was paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event AsyncEventHandler&lt;PlayerPausedEventArgs&gt; PlayerPaused</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.PlayerPausedEventArgs.html">PlayerPausedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_PlayerResumed.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.PlayerResumed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_IAudioService_PlayerResumed" data-uid="Strade.Voice.IAudioService.PlayerResumed">PlayerResumed</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a player was paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event AsyncEventHandler&lt;PlayerResumedEventArgs&gt; PlayerResumed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.PlayerResumedEventArgs.html">PlayerResumedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_PlayerVolumeChanged.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.PlayerVolumeChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L27">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_IAudioService_PlayerVolumeChanged" data-uid="Strade.Voice.IAudioService.PlayerVolumeChanged">PlayerVolumeChanged</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a player's volume has been changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event AsyncEventHandler&lt;PlayerVolumeChangedEventArgs&gt; PlayerVolumeChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.PlayerVolumeChangedEventArgs.html">PlayerVolumeChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_TrackEnded.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.TrackEnded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L32">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_IAudioService_TrackEnded" data-uid="Strade.Voice.IAudioService.TrackEnded">TrackEnded</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a track ended.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event AsyncEventHandler&lt;PlayerTrackEndedEventArgs&gt; TrackEnded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.PlayerTrackEndedEventArgs.html">PlayerTrackEndedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_TrackSeek.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.TrackSeek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L37">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_IAudioService_TrackSeek" data-uid="Strade.Voice.IAudioService.TrackSeek">TrackSeek</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a position in a track was seeked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event AsyncEventHandler&lt;PlayerTrackSeekEventArgs&gt; TrackSeek</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.PlayerTrackSeekEventArgs.html">PlayerTrackSeekEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService_TrackStarted.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService.TrackStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L42">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_IAudioService_TrackStarted" data-uid="Strade.Voice.IAudioService.TrackStarted">TrackStarted</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a track started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event AsyncEventHandler&lt;PlayerTrackStartedEventArgs&gt; TrackStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.PlayerTrackStartedEventArgs.html">PlayerTrackStartedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_IAudioService.md&amp;value=---%0Auid%3A%20Strade.Voice.IAudioService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/IAudioService.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

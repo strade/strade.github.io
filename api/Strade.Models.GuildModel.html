@@ -1,0 +1,1719 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GuildModel
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GuildModel
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Models.GuildModel">
+  
+  
+  <h1 id="Strade_Models_GuildModel" data-uid="Strade.Models.GuildModel" class="text-break">Class GuildModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">GuildModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Cache.IIdentifiable-1.html">IIdentifiable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Models.html">Strade.Models</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Models_GuildModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class GuildModel : IIdentifiable&lt;Snowflake&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_AfkChannelId.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.AfkChannelId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L25">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_AfkChannelId_" data-uid="Strade.Models.GuildModel.AfkChannelId*"></a>
+  <h4 id="Strade_Models_GuildModel_AfkChannelId" data-uid="Strade.Models.GuildModel.AfkChannelId">AfkChannelId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the guild's AFK channel; or <span class="xref">null</span> if the guild has no assigned AFK channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;afk_channel_id&quot;)]
+public Snowflake? AfkChannelId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the guild's AFK channel; or <span class="xref">null</span> if
+the guild has no assigned AFK channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_AfkChannelId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_AfkTimeout.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.AfkTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L40">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_AfkTimeout_" data-uid="Strade.Models.GuildModel.AfkTimeout*"></a>
+  <h4 id="Strade_Models_GuildModel_AfkTimeout" data-uid="Strade.Models.GuildModel.AfkTimeout">AfkTimeout</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the guild's AFK timeout when members are moved into the channel
+specified by <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_AfkChannelId">AfkChannelId</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;afk_timeout&quot;)]
+public int AfkTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the guild's AFK timeout when members are moved into the channel specified by <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_AfkChannelId">AfkChannelId</a> in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_AfkTimeout_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_ApplicationId.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.ApplicationId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L55">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_ApplicationId_" data-uid="Strade.Models.GuildModel.ApplicationId*"></a>
+  <h4 id="Strade_Models_GuildModel_ApplicationId" data-uid="Strade.Models.GuildModel.ApplicationId">ApplicationId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the application that has created the guild;
+or <span class="xref">null</span> if the guild was not created by an application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;application_id&quot;)]
+public Snowflake? ApplicationId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the guild's AFK channel; or <span class="xref">null</span> if
+the guild has no assigned AFK channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_ApplicationId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_ApproximateMemberCount.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.ApproximateMemberCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L58">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_ApproximateMemberCount_" data-uid="Strade.Models.GuildModel.ApproximateMemberCount*"></a>
+  <h4 id="Strade_Models_GuildModel_ApproximateMemberCount" data-uid="Strade.Models.GuildModel.ApproximateMemberCount">ApproximateMemberCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;approximate_member_count&quot;)]
+public int? ApproximateMemberCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_ApproximatePresenceCount.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.ApproximatePresenceCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L61">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_ApproximatePresenceCount_" data-uid="Strade.Models.GuildModel.ApproximatePresenceCount*"></a>
+  <h4 id="Strade_Models_GuildModel_ApproximatePresenceCount" data-uid="Strade.Models.GuildModel.ApproximatePresenceCount">ApproximatePresenceCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;approximate_presence_count&quot;)]
+public int? ApproximatePresenceCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Banner.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Banner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L76">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Banner_" data-uid="Strade.Models.GuildModel.Banner*"></a>
+  <h4 id="Strade_Models_GuildModel_Banner" data-uid="Strade.Models.GuildModel.Banner">Banner</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that contains the hash of the banner image of
+the guild; or <span class="xref">null</span> if the guild has no banner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;banner&quot;)]
+public string Banner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that contains the hash of the banner image of the guild; or
+<span class="xref">null</span> if the guild has no banner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_Banner_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_BoostCount.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.BoostCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L87">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_BoostCount_" data-uid="Strade.Models.GuildModel.BoostCount*"></a>
+  <h4 id="Strade_Models_GuildModel_BoostCount" data-uid="Strade.Models.GuildModel.BoostCount">BoostCount</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the number of Nitro boosts made on this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;premium_subscription_count&quot;)]
+public int BoostCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of Nitro boosts made on this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_BoostCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <code>0</code>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_BoostTier.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.BoostTier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L98">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_BoostTier_" data-uid="Strade.Models.GuildModel.BoostTier*"></a>
+  <h4 id="Strade_Models_GuildModel_BoostTier" data-uid="Strade.Models.GuildModel.BoostTier">BoostTier</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the guild's boost tier indicating what premium features this guild has.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;premium_tier&quot;)]
+public GuildBoostTier BoostTier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.GuildBoostTier.html">GuildBoostTier</a></td>
+        <td><p>the guild's boost tier indicating what premium features this guild has.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_BoostTier_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <a class="xref" href="Strade.Entities.GuildBoostTier.html#Strade_Entities_GuildBoostTier_None">None</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Channels.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Channels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L101">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Channels_" data-uid="Strade.Models.GuildModel.Channels*"></a>
+  <h4 id="Strade_Models_GuildModel_Channels" data-uid="Strade.Models.GuildModel.Channels">Channels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;channels&quot;)]
+public IReadOnlyList&lt;ChannelModel&gt; Channels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_DefaultMessageNotificationLevel.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.DefaultMessageNotificationLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L112">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_DefaultMessageNotificationLevel_" data-uid="Strade.Models.GuildModel.DefaultMessageNotificationLevel*"></a>
+  <h4 id="Strade_Models_GuildModel_DefaultMessageNotificationLevel" data-uid="Strade.Models.GuildModel.DefaultMessageNotificationLevel">DefaultMessageNotificationLevel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the default message notification level for this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;default_message_notifications&quot;)]
+public MessageNotificationLevel DefaultMessageNotificationLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageNotificationLevel.html">MessageNotificationLevel</a></td>
+        <td><p>the default message notification level for this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_DefaultMessageNotificationLevel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <a class="xref" href="Strade.Entities.MessageNotificationLevel.html#Strade_Entities_MessageNotificationLevel_AllMessages">AllMessages</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Description.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L123">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Description_" data-uid="Strade.Models.GuildModel.Description*"></a>
+  <h4 id="Strade_Models_GuildModel_Description" data-uid="Strade.Models.GuildModel.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the guild's description; or <span class="xref">null</span> if the guild has no description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;description&quot;)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the guild's description; or <span class="xref">null</span> if the guild has no description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_Description_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_DiscoverySplash.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.DiscoverySplash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L138">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_DiscoverySplash_" data-uid="Strade.Models.GuildModel.DiscoverySplash*"></a>
+  <h4 id="Strade_Models_GuildModel_DiscoverySplash" data-uid="Strade.Models.GuildModel.DiscoverySplash">DiscoverySplash</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that contains the hash of the discovery splash
+image of the guild; or <span class="xref">null</span> if the guild has no discovery splash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;discovery_splash&quot;)]
+public string DiscoverySplash { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that contains the hash of the discovery splash image of the
+guild; or <span class="xref">null</span> if the guild has discovery splash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_DiscoverySplash_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Emotes.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Emotes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L149">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Emotes_" data-uid="Strade.Models.GuildModel.Emotes*"></a>
+  <h4 id="Strade_Models_GuildModel_Emotes" data-uid="Strade.Models.GuildModel.Emotes">Emotes</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a read-only list of emotes the guild has.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;emojis&quot;)]
+public IReadOnlyList&lt;EmoteModel&gt; Emotes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.EmoteModel.html">EmoteModel</a>&gt;</td>
+        <td><p>a read-only list of emotes the guild has.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_Emotes_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span> or <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.array.empty#System_Array_Empty__1">Empty&lt;T&gt;()</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_ExplicitContentFilterLevel.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.ExplicitContentFilterLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L160">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_ExplicitContentFilterLevel_" data-uid="Strade.Models.GuildModel.ExplicitContentFilterLevel*"></a>
+  <h4 id="Strade_Models_GuildModel_ExplicitContentFilterLevel" data-uid="Strade.Models.GuildModel.ExplicitContentFilterLevel">ExplicitContentFilterLevel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the explicit content filter level enabled in the guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;explicit_content_filter&quot;)]
+public ExplicitContentFilterLevel ExplicitContentFilterLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ExplicitContentFilterLevel.html">ExplicitContentFilterLevel</a></td>
+        <td><p>the explicit content filter level enabled in the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_ExplicitContentFilterLevel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <a class="xref" href="Strade.Entities.ExplicitContentFilterLevel.html#Strade_Entities_ExplicitContentFilterLevel_Disabled">Disabled</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Features.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Features%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L171">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Features_" data-uid="Strade.Models.GuildModel.Features*"></a>
+  <h4 id="Strade_Models_GuildModel_Features" data-uid="Strade.Models.GuildModel.Features">Features</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a read-only list that contains the enabled features of this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;features&quot;)]
+public IReadOnlyList&lt;string&gt; Features { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>a read-only list that contains the enabled features of this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_Features_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <a class="xref" href="Strade.Entities.ExplicitContentFilterLevel.html#Strade_Entities_ExplicitContentFilterLevel_Disabled">Disabled</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Icon.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Icon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L174">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Icon_" data-uid="Strade.Models.GuildModel.Icon*"></a>
+  <h4 id="Strade_Models_GuildModel_Icon" data-uid="Strade.Models.GuildModel.Icon">Icon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;icon&quot;)]
+public string Icon { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Id.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L177">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Id_" data-uid="Strade.Models.GuildModel.Id*"></a>
+  <h4 id="Strade_Models_GuildModel_Id" data-uid="Strade.Models.GuildModel.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;id&quot;)]
+public Snowflake Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_IsLarge.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.IsLarge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L180">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_IsLarge_" data-uid="Strade.Models.GuildModel.IsLarge*"></a>
+  <h4 id="Strade_Models_GuildModel_IsLarge" data-uid="Strade.Models.GuildModel.IsLarge">IsLarge</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;large&quot;)]
+public bool? IsLarge { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_IsOwner.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.IsOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L191">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_IsOwner_" data-uid="Strade.Models.GuildModel.IsOwner*"></a>
+  <h4 id="Strade_Models_GuildModel_IsOwner" data-uid="Strade.Models.GuildModel.IsOwner">IsOwner</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the current client user is the owner of the guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;owner&quot;)]
+public bool? IsOwner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>a value indicating whether the current client user is the owner of the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_IsOwner_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_IsUnavailable.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.IsUnavailable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L201">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_IsUnavailable_" data-uid="Strade.Models.GuildModel.IsUnavailable*"></a>
+  <h4 id="Strade_Models_GuildModel_IsUnavailable" data-uid="Strade.Models.GuildModel.IsUnavailable">IsUnavailable</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the guild is unavailable (e.g. due server
+outage, etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;unavailable&quot;)]
+public bool? IsUnavailable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>a value indicating whether the guild is unavailable (e.g. due server outage, etc.).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_IsWidgetEnabled.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.IsWidgetEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L212">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_IsWidgetEnabled_" data-uid="Strade.Models.GuildModel.IsWidgetEnabled*"></a>
+  <h4 id="Strade_Models_GuildModel_IsWidgetEnabled" data-uid="Strade.Models.GuildModel.IsWidgetEnabled">IsWidgetEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the widget is enabled in this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;widget_enabled&quot;)]
+public bool? IsWidgetEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>a value indicating whether the widget is enabled in this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_IsWidgetEnabled_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_JoinedAt.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.JoinedAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L215">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_JoinedAt_" data-uid="Strade.Models.GuildModel.JoinedAt*"></a>
+  <h4 id="Strade_Models_GuildModel_JoinedAt" data-uid="Strade.Models.GuildModel.JoinedAt">JoinedAt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;joined_at&quot;)]
+public DateTimeOffset? JoinedAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_MaximumMembers.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.MaximumMembers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L226">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_MaximumMembers_" data-uid="Strade.Models.GuildModel.MaximumMembers*"></a>
+  <h4 id="Strade_Models_GuildModel_MaximumMembers" data-uid="Strade.Models.GuildModel.MaximumMembers">MaximumMembers</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum allowed member count for this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;max_members&quot;)]
+public int? MaximumMembers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>the maximum allowed member count for this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_MaximumMembers_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_MaximumPresences.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.MaximumPresences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L238">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_MaximumPresences_" data-uid="Strade.Models.GuildModel.MaximumPresences*"></a>
+  <h4 id="Strade_Models_GuildModel_MaximumPresences" data-uid="Strade.Models.GuildModel.MaximumPresences">MaximumPresences</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of presences returned for the guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;max_presences&quot;)]
+public int? MaximumPresences { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>the maximum number of presences returned for the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_MaximumPresences_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_MaximumVideoChannelUsers.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.MaximumVideoChannelUsers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L252">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_MaximumVideoChannelUsers_" data-uid="Strade.Models.GuildModel.MaximumVideoChannelUsers*"></a>
+  <h4 id="Strade_Models_GuildModel_MaximumVideoChannelUsers" data-uid="Strade.Models.GuildModel.MaximumVideoChannelUsers">MaximumVideoChannelUsers</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of concurrent video channel users in a voice channel
+for this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;max_video_channel_users&quot;)]
+public int? MaximumVideoChannelUsers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>the maximum number of concurrent video channel users in a voice channel for this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_MaximumVideoChannelUsers_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_MemberCount.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.MemberCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L255">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_MemberCount_" data-uid="Strade.Models.GuildModel.MemberCount*"></a>
+  <h4 id="Strade_Models_GuildModel_MemberCount" data-uid="Strade.Models.GuildModel.MemberCount">MemberCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;member_count&quot;)]
+public int? MemberCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Members.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Members%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L258">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Members_" data-uid="Strade.Models.GuildModel.Members*"></a>
+  <h4 id="Strade_Models_GuildModel_Members" data-uid="Strade.Models.GuildModel.Members">Members</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;members&quot;)]
+public IReadOnlyList&lt;MemberModel&gt; Members { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.MemberModel.html">MemberModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_MultiFactorAuthenticationLevel.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.MultiFactorAuthenticationLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L281">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_MultiFactorAuthenticationLevel_" data-uid="Strade.Models.GuildModel.MultiFactorAuthenticationLevel*"></a>
+  <h4 id="Strade_Models_GuildModel_MultiFactorAuthenticationLevel" data-uid="Strade.Models.GuildModel.MultiFactorAuthenticationLevel">MultiFactorAuthenticationLevel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the multi-factor authentication level required for administrative
+operations for this guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;mfa_level&quot;)]
+public MultiFactorAuthenticationLevel MultiFactorAuthenticationLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MultiFactorAuthenticationLevel.html">MultiFactorAuthenticationLevel</a></td>
+        <td><p>the multi-factor authentication level required for administrative operations for
+this guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_MultiFactorAuthenticationLevel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    If <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_MultiFactorAuthenticationLevel">MultiFactorAuthenticationLevel</a> is <a class="xref" href="Strade.Entities.MultiFactorAuthenticationLevel.html#Strade_Entities_MultiFactorAuthenticationLevel_Elevated">Elevated</a> then administrators on the
+    server require 2-factor authentication on their account to execute
+    administrative operations.
+</p>
+<p>
+    If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property
+    should be always <a class="xref" href="Strade.Entities.MultiFactorAuthenticationLevel.html#Strade_Entities_MultiFactorAuthenticationLevel_None">None</a>.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Name.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L292">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Name_" data-uid="Strade.Models.GuildModel.Name*"></a>
+  <h4 id="Strade_Models_GuildModel_Name" data-uid="Strade.Models.GuildModel.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;name&quot;)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the name of the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_OwnerId.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.OwnerId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L304">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_OwnerId_" data-uid="Strade.Models.GuildModel.OwnerId*"></a>
+  <h4 id="Strade_Models_GuildModel_OwnerId" data-uid="Strade.Models.GuildModel.OwnerId">OwnerId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the guild owner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;owner_id&quot;)]
+public Snowflake OwnerId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the snowflake identifier of the guild owner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_OwnerId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <h5 id="Strade_Models_GuildModel_OwnerId_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_ApplicationId">ApplicationId</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Permissions.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Permissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L307">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Permissions_" data-uid="Strade.Models.GuildModel.Permissions*"></a>
+  <h4 id="Strade_Models_GuildModel_Permissions" data-uid="Strade.Models.GuildModel.Permissions">Permissions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;permissions&quot;)]
+public PermissionSet? Permissions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.PermissionSet.html">PermissionSet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_PreferredCulture.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.PreferredCulture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L322">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_PreferredCulture_" data-uid="Strade.Models.GuildModel.PreferredCulture*"></a>
+  <h4 id="Strade_Models_GuildModel_PreferredCulture" data-uid="Strade.Models.GuildModel.PreferredCulture">PreferredCulture</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the preferred culture/locale for this guild; or <span class="xref">null</span>
+if no preferred culture is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;preferred_locale&quot;)]
+public string PreferredCulture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the preferred culture/locale for this guild; or <span class="xref">null</span> if no
+preferred culture is set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_PreferredCulture_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_PublicUpdatesChannelId.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.PublicUpdatesChannelId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L337">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_PublicUpdatesChannelId_" data-uid="Strade.Models.GuildModel.PublicUpdatesChannelId*"></a>
+  <h4 id="Strade_Models_GuildModel_PublicUpdatesChannelId" data-uid="Strade.Models.GuildModel.PublicUpdatesChannelId">PublicUpdatesChannelId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the assigned public updates channel of the
+guild; or <span class="xref">null</span> if no public updates channel is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;public_updates_channel_id&quot;)]
+public Snowflake? PublicUpdatesChannelId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the assigned public updates channel of the guild; or
+<span class="xref">null</span> if no public updates channel is set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_PublicUpdatesChannelId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Region.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Region%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L348">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Region_" data-uid="Strade.Models.GuildModel.Region*"></a>
+  <h4 id="Strade_Models_GuildModel_Region" data-uid="Strade.Models.GuildModel.Region">Region</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the voice region identifier set for the guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;region&quot;)]
+public string Region { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the voice region identifier set for the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_Region_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Roles.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Roles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L351">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Roles_" data-uid="Strade.Models.GuildModel.Roles*"></a>
+  <h4 id="Strade_Models_GuildModel_Roles" data-uid="Strade.Models.GuildModel.Roles">Roles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;roles&quot;)]
+public IReadOnlyList&lt;RoleModel&gt; Roles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.RoleModel.html">RoleModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_RulesChannelId.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.RulesChannelId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L366">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_RulesChannelId_" data-uid="Strade.Models.GuildModel.RulesChannelId*"></a>
+  <h4 id="Strade_Models_GuildModel_RulesChannelId" data-uid="Strade.Models.GuildModel.RulesChannelId">RulesChannelId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the assigned rules channel of the guild; or
+<span class="xref">null</span> if no rules channel is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;rules_channel_id&quot;)]
+public Snowflake? RulesChannelId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the assigned rules channel of the guild; or <span class="xref">null</span> if no rules channel is set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_RulesChannelId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_Splash.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.Splash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L377">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_Splash_" data-uid="Strade.Models.GuildModel.Splash*"></a>
+  <h4 id="Strade_Models_GuildModel_Splash" data-uid="Strade.Models.GuildModel.Splash">Splash</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the hash of the splash (if <span class="xref">null</span>, the entity has no splash).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;splash&quot;)]
+public string Splash { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the hash of the splash (if <span class="xref">null</span>, the entity has no splash).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_Splash_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_SystemChannelFlags.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.SystemChannelFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L388">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_SystemChannelFlags_" data-uid="Strade.Models.GuildModel.SystemChannelFlags*"></a>
+  <h4 id="Strade_Models_GuildModel_SystemChannelFlags" data-uid="Strade.Models.GuildModel.SystemChannelFlags">SystemChannelFlags</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a set of flags for the guild's system channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;system_channel_flags&quot;)]
+public SystemChannelFlags SystemChannelFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.SystemChannelFlags.html">SystemChannelFlags</a></td>
+        <td><p>a set of flags for the guild's system channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_SystemChannelFlags_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <a class="xref" href="Strade.Entities.SystemChannelFlags.html#Strade_Entities_SystemChannelFlags_None">None</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_SystemChannelId.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.SystemChannelId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L403">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_SystemChannelId_" data-uid="Strade.Models.GuildModel.SystemChannelId*"></a>
+  <h4 id="Strade_Models_GuildModel_SystemChannelId" data-uid="Strade.Models.GuildModel.SystemChannelId">SystemChannelId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the assigned system channel of the guild;
+or <span class="xref">null</span> if no system channel is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;system_channel_id&quot;)]
+public Snowflake? SystemChannelId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the assigned system channel of the guild; or <span class="xref">null</span> if no system channel is set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_SystemChannelId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_VanityCode.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.VanityCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L418">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_VanityCode_" data-uid="Strade.Models.GuildModel.VanityCode*"></a>
+  <h4 id="Strade_Models_GuildModel_VanityCode" data-uid="Strade.Models.GuildModel.VanityCode">VanityCode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the guild's vanity invite code; or <span class="xref">null</span> if no vanity
+invite enabled is set for the guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;vanity_url_code&quot;)]
+public string VanityCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the guild's vanity invite code; or <span class="xref">null</span> if no vanity invite
+enabled is set for the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_VanityCode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_VerificationLevel.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.VerificationLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L429">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_VerificationLevel_" data-uid="Strade.Models.GuildModel.VerificationLevel*"></a>
+  <h4 id="Strade_Models_GuildModel_VerificationLevel" data-uid="Strade.Models.GuildModel.VerificationLevel">VerificationLevel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the verification level required for new members for the guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;verification_level&quot;)]
+public VerificationLevel VerificationLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.VerificationLevel.html">VerificationLevel</a></td>
+        <td><p>the verification level required for new members for the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_VerificationLevel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <a class="xref" href="Strade.Entities.VerificationLevel.html#Strade_Entities_VerificationLevel_None">None</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_VoiceStates.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.VoiceStates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L432">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_VoiceStates_" data-uid="Strade.Models.GuildModel.VoiceStates*"></a>
+  <h4 id="Strade_Models_GuildModel_VoiceStates" data-uid="Strade.Models.GuildModel.VoiceStates">VoiceStates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;voice_states&quot;)]
+public IReadOnlyList&lt;VoiceStateModel&gt; VoiceStates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.VoiceStateModel.html">VoiceStateModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel_WidgetChannelId.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel.WidgetChannelId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L447">View Source</a>
+  </span>
+  <a id="Strade_Models_GuildModel_WidgetChannelId_" data-uid="Strade.Models.GuildModel.WidgetChannelId*"></a>
+  <h4 id="Strade_Models_GuildModel_WidgetChannelId" data-uid="Strade.Models.GuildModel.WidgetChannelId">WidgetChannelId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the assigned widget channel of the guild;
+or <span class="xref">null</span> if no widget channel is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;widget_channel_id&quot;)]
+public Snowflake? WidgetChannelId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the assigned widget channel of the guild; or <span class="xref">null</span> if no widget channel is set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Models_GuildModel_WidgetChannelId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the guild is unavailable ( <a class="xref" href="Strade.Models.GuildModel.html#Strade_Models_GuildModel_IsUnavailable">IsUnavailable</a>) then this property should
+be always <span class="xref">null</span>.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Cache.IIdentifiable-1.html">IIdentifiable&lt;TIdentifier&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_GuildModel.md&amp;value=---%0Auid%3A%20Strade.Models.GuildModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/GuildModel.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

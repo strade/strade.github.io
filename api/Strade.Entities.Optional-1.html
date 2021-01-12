@@ -1,0 +1,705 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Optional&lt;T&gt;
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Optional&lt;T&gt;
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.Optional`1">
+  
+  
+  <h1 id="Strade_Entities_Optional_1" data-uid="Strade.Entities.Optional`1" class="text-break">Struct Optional&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a structure that holds an optional object.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Strade.Entities.Optional-1.html">Optional</a>&lt;T&gt;&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_Optional_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(OptionalJsonConverterFactory))]
+public struct Optional&lt;T&gt; : IEquatable&lt;Optional&lt;T&gt;&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>the type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1__ctor__0_.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.%23ctor(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L19">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1__ctor_" data-uid="Strade.Entities.Optional`1.#ctor*"></a>
+  <h4 id="Strade_Entities_Optional_1__ctor__0_" data-uid="Strade.Entities.Optional`1.#ctor(`0)">Optional(T)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_IsPresent.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.IsPresent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L29">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_IsPresent_" data-uid="Strade.Entities.Optional`1.IsPresent*"></a>
+  <h4 id="Strade_Entities_Optional_1_IsPresent" data-uid="Strade.Entities.Optional`1.IsPresent">IsPresent</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the optional value is present.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPresent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the optional value is present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_Value.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L35">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_Value_" data-uid="Strade.Entities.Optional`1.Value*"></a>
+  <h4 id="Strade_Entities_Optional_1_Value" data-uid="Strade.Entities.Optional`1.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets the inner value of the optional.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>the inner value of the optional.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_Equals_Strade_Entities_Optional__0__.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.Equals(Strade.Entities.Optional%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L95">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_Equals_" data-uid="Strade.Entities.Optional`1.Equals*"></a>
+  <h4 id="Strade_Entities_Optional_1_Equals_Strade_Entities_Optional__0__" data-uid="Strade.Entities.Optional`1.Equals(Strade.Entities.Optional{`0})">Equals(Optional&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks the equality between the current and the specified <code data-dev-comment-type="paramref" class="paramref">other</code> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Optional&lt;T&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Optional-1.html">Optional</a>&lt;T&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td><p>the other optional.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the current and the specified <code data-dev-comment-type="paramref" class="paramref">other</code>
+instance are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L77">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_Equals_" data-uid="Strade.Entities.Optional`1.Equals*"></a>
+  <h4 id="Strade_Entities_Optional_1_Equals_System_Object_" data-uid="Strade.Entities.Optional`1.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Checks the equality between the current instance and the specified <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>the other object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the current instance and the specified <code data-dev-comment-type="paramref" class="paramref">obj</code> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_GetHashCode.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L102">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_GetHashCode_" data-uid="Strade.Entities.Optional`1.GetHashCode*"></a>
+  <h4 id="Strade_Entities_Optional_1_GetHashCode" data-uid="Strade.Entities.Optional`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets the hash code of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the hash code of the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_GetOr__0_.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.GetOr(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L118">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_GetOr_" data-uid="Strade.Entities.Optional`1.GetOr*"></a>
+  <h4 id="Strade_Entities_Optional_1_GetOr__0_" data-uid="Strade.Entities.Optional`1.GetOr(`0)">GetOr(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetOr(T fallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">fallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_GetOrDefault.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.GetOrDefault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L120">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_GetOrDefault_" data-uid="Strade.Entities.Optional`1.GetOrDefault*"></a>
+  <h4 id="Strade_Entities_Optional_1_GetOrDefault" data-uid="Strade.Entities.Optional`1.GetOrDefault">GetOrDefault()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetOrDefault()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_ToOptional__0_.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.ToOptional(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L127">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_ToOptional_" data-uid="Strade.Entities.Optional`1.ToOptional*"></a>
+  <h4 id="Strade_Entities_Optional_1_ToOptional__0_" data-uid="Strade.Entities.Optional`1.ToOptional(`0)">ToOptional(T)</h4>
+  <div class="markdown level1 summary"><p>Creates an optional for the specified <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional&lt;T&gt; ToOptional(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Optional-1.html">Optional</a>&lt;T&gt;</td>
+        <td><p>an optional for the specified <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_op_Equality_Strade_Entities_Optional__0__Strade_Entities_Optional__0__.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.op_Equality(Strade.Entities.Optional%7B%600%7D%2CStrade.Entities.Optional%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L67">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_op_Equality_" data-uid="Strade.Entities.Optional`1.op_Equality*"></a>
+  <h4 id="Strade_Entities_Optional_1_op_Equality_Strade_Entities_Optional__0__Strade_Entities_Optional__0__" data-uid="Strade.Entities.Optional`1.op_Equality(Strade.Entities.Optional{`0},Strade.Entities.Optional{`0})">Equality(Optional&lt;T&gt;, Optional&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks the equality between the specified <code data-dev-comment-type="paramref" class="paramref">left</code><a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> and the specified <code data-dev-comment-type="paramref" class="paramref">right</code><a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Optional&lt;T&gt; left, Optional&lt;T&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Optional-1.html">Optional</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>the left-hand <a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Optional-1.html">Optional</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>the right-hand <a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the specified <code data-dev-comment-type="paramref" class="paramref">left</code><a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> and the specified <code data-dev-comment-type="paramref" class="paramref">right</code><a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_op_Implicit__0__Strade_Entities_Optional__0_.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.op_Implicit(%600)~Strade.Entities.Optional%7B%600%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L41">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_op_Implicit_" data-uid="Strade.Entities.Optional`1.op_Implicit*"></a>
+  <h4 id="Strade_Entities_Optional_1_op_Implicit__0__Strade_Entities_Optional__0_" data-uid="Strade.Entities.Optional`1.op_Implicit(`0)~Strade.Entities.Optional{`0}">Implicit(T to Optional&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Implicit operator for converting a <code data-dev-comment-type="paramref" class="paramref">value</code> to an <a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Optional&lt;T&gt;(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Optional-1.html">Optional</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1_op_Inequality_Strade_Entities_Optional__0__Strade_Entities_Optional__0__.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601.op_Inequality(Strade.Entities.Optional%7B%600%7D%2CStrade.Entities.Optional%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L54">View Source</a>
+  </span>
+  <a id="Strade_Entities_Optional_1_op_Inequality_" data-uid="Strade.Entities.Optional`1.op_Inequality*"></a>
+  <h4 id="Strade_Entities_Optional_1_op_Inequality_Strade_Entities_Optional__0__Strade_Entities_Optional__0__" data-uid="Strade.Entities.Optional`1.op_Inequality(Strade.Entities.Optional{`0},Strade.Entities.Optional{`0})">Inequality(Optional&lt;T&gt;, Optional&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks the equality between the specified <code data-dev-comment-type="paramref" class="paramref">left</code><a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> and the specified <code data-dev-comment-type="paramref" class="paramref">right</code><a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Optional&lt;T&gt; left, Optional&lt;T&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Optional-1.html">Optional</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>the left-hand <a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Optional-1.html">Optional</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>the right-hand <a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the specified <code data-dev-comment-type="paramref" class="paramref">left</code><a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> and the specified <code data-dev-comment-type="paramref" class="paramref">right</code><a class="xref" href="Strade.Entities.Optional-1.html">Optional&lt;T&gt;</a> are NOT equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Optional_1.md&amp;value=---%0Auid%3A%20Strade.Entities.Optional%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Optional.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

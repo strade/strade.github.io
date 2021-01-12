@@ -1,0 +1,2009 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GatewayConnection
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GatewayConnection
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.GatewayConnection">
+  
+  
+  <h1 id="Strade_GatewayConnection" data-uid="Strade.GatewayConnection" class="text-break">Class GatewayConnection
+  </h1>
+  <div class="markdown level0 summary"><p>A minimal implementation of a WebSocket connection that is able to maintain an active
+connection to the discord gateway which handles control payloads, for example Hello (
+<a class="xref" href="Strade.Payloads.OpCode.html#Strade_Payloads_OpCode_Hello">Hello</a>) and other payloads and events required to keep connected to
+the discord gateway.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">GatewayConnection</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.html">Strade</a></h6>
+  <h6><strong>Assembly</strong>: Strade.dll</h6>
+  <h5 id="Strade_GatewayConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GatewayConnection : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection__ctor_Strade_PayloadHandler_Strade_WebSockets_IWebSocket_System_String_Strade_DiscordClientConfiguration_System_Text_Json_JsonSerializerOptions_System_Nullable_Strade_Entities_ShardingInformation__Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.%23ctor(Strade.PayloadHandler%2CStrade.WebSockets.IWebSocket%2CSystem.String%2CStrade.DiscordClientConfiguration%2CSystem.Text.Json.JsonSerializerOptions%2CSystem.Nullable%7BStrade.Entities.ShardingInformation%7D%2CStrade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L50">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection__ctor_" data-uid="Strade.GatewayConnection.#ctor*"></a>
+  <h4 id="Strade_GatewayConnection__ctor_Strade_PayloadHandler_Strade_WebSockets_IWebSocket_System_String_Strade_DiscordClientConfiguration_System_Text_Json_JsonSerializerOptions_System_Nullable_Strade_Entities_ShardingInformation__Strade_Logging_ILogger_" data-uid="Strade.GatewayConnection.#ctor(Strade.PayloadHandler,Strade.WebSockets.IWebSocket,System.String,Strade.DiscordClientConfiguration,System.Text.Json.JsonSerializerOptions,System.Nullable{Strade.Entities.ShardingInformation},Strade.Logging.ILogger)">GatewayConnection(PayloadHandler, IWebSocket, String, DiscordClientConfiguration, JsonSerializerOptions, Nullable&lt;ShardingInformation&gt;, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GatewayConnection(PayloadHandler handler, IWebSocket webSocket, string label, DiscordClientConfiguration configuration, JsonSerializerOptions serializerOptions, ShardingInformation? shardingInformation = default(ShardingInformation? ), ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.PayloadHandler.html">PayloadHandler</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.WebSockets.IWebSocket.html">IWebSocket</a></td>
+        <td><span class="parametername">webSocket</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordClientConfiguration.html">DiscordClientConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></td>
+        <td><span class="parametername">serializerOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.ShardingInformation.html">ShardingInformation</a>&gt;</td>
+        <td><span class="parametername">shardingInformation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_GatewayVersion.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.GatewayVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L33">View Source</a>
+  </span>
+  <h4 id="Strade_GatewayConnection_GatewayVersion" data-uid="Strade.GatewayConnection.GatewayVersion">GatewayVersion</h4>
+  <div class="markdown level1 summary"><p>The supported gateway version number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int GatewayVersion = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_IsOpen.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.IsOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L95">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_IsOpen_" data-uid="Strade.GatewayConnection.IsOpen*"></a>
+  <h4 id="Strade_GatewayConnection_IsOpen" data-uid="Strade.GatewayConnection.IsOpen">IsOpen</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the WebSocket connection is open.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the WebSocket connection is open.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_Label.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L97">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_Label_" data-uid="Strade.GatewayConnection.Label*"></a>
+  <h4 id="Strade_GatewayConnection_Label" data-uid="Strade.GatewayConnection.Label">Label</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Label { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_Latency.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.Latency%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L99">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_Latency_" data-uid="Strade.GatewayConnection.Latency*"></a>
+  <h4 id="Strade_GatewayConnection_Latency" data-uid="Strade.GatewayConnection.Latency">Latency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan? Latency { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_Logger.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L101">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_Logger_" data-uid="Strade.GatewayConnection.Logger*"></a>
+  <h4 id="Strade_GatewayConnection_Logger" data-uid="Strade.GatewayConnection.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_RateLimiter.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.RateLimiter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L110">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_RateLimiter_" data-uid="Strade.GatewayConnection.RateLimiter*"></a>
+  <h4 id="Strade_GatewayConnection_RateLimiter" data-uid="Strade.GatewayConnection.RateLimiter">RateLimiter</h4>
+  <div class="markdown level1 summary"><p>Gets the rate limiter used to reduce the rate of gateway payloads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GatewayRateLimiter RateLimiter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Util.GatewayRateLimiter.html">GatewayRateLimiter</a></td>
+        <td><p>the rate limiter used to reduce the rate of gateway payloads.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_GatewayConnection_RateLimiter_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See also <a href="https://discord.com/developers/docs/topics/gateway#rate-limiting">https://discord.com/developers/docs/topics/gateway#rate-limiting</a> for more details.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_SessionId.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.SessionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L112">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_SessionId_" data-uid="Strade.GatewayConnection.SessionId*"></a>
+  <h4 id="Strade_GatewayConnection_SessionId" data-uid="Strade.GatewayConnection.SessionId">SessionId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SessionId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_ShardingInformation.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.ShardingInformation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L114">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_ShardingInformation_" data-uid="Strade.GatewayConnection.ShardingInformation*"></a>
+  <h4 id="Strade_GatewayConnection_ShardingInformation" data-uid="Strade.GatewayConnection.ShardingInformation">ShardingInformation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShardingInformation ShardingInformation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ShardingInformation.html">ShardingInformation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_WebSocket.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.WebSocket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L120">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_WebSocket_" data-uid="Strade.GatewayConnection.WebSocket*"></a>
+  <h4 id="Strade_GatewayConnection_WebSocket" data-uid="Strade.GatewayConnection.WebSocket">WebSocket</h4>
+  <div class="markdown level1 summary"><p>Gets the underlying WebSocket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWebSocket WebSocket { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.WebSockets.IWebSocket.html">IWebSocket</a></td>
+        <td><p>the underlying WebSocket.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_CloseAsync_Strade_Util_GatewayCloseCode_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.CloseAsync(Strade.Util.GatewayCloseCode%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L135">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_CloseAsync_" data-uid="Strade.GatewayConnection.CloseAsync*"></a>
+  <h4 id="Strade_GatewayConnection_CloseAsync_Strade_Util_GatewayCloseCode_System_String_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.CloseAsync(Strade.Util.GatewayCloseCode,System.String,System.Threading.CancellationToken)">CloseAsync(GatewayCloseCode, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Closes the connection to the gateway asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CloseAsync(GatewayCloseCode closeCode, string reason = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Util.GatewayCloseCode.html">GatewayCloseCode</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td><p>the close code indicating why the connection should be closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>the reason indicating why the connection should be closed; or <span class="xref">null</span>
+to supply no reason.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_GatewayConnection_CloseAsync_Strade_Util_GatewayCloseCode_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If not connected this will do a no-op.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_CloseAsync_Strade_WebSockets_WebSocketCloseCode_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.CloseAsync(Strade.WebSockets.WebSocketCloseCode%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L151">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_CloseAsync_" data-uid="Strade.GatewayConnection.CloseAsync*"></a>
+  <h4 id="Strade_GatewayConnection_CloseAsync_Strade_WebSockets_WebSocketCloseCode_System_String_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.CloseAsync(Strade.WebSockets.WebSocketCloseCode,System.String,System.Threading.CancellationToken)">CloseAsync(WebSocketCloseCode, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Closes the connection to the gateway asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CloseAsync(WebSocketCloseCode closeCode, string reason = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.WebSockets.WebSocketCloseCode.html">WebSocketCloseCode</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td><p>the close code indicating why the connection should be closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>the reason indicating why the connection should be closed; or <span class="xref">null</span>
+to supply no reason.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_GatewayConnection_CloseAsync_Strade_WebSockets_WebSocketCloseCode_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If not connected this will do a no-op.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_CloseAsync_System_UInt16_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.CloseAsync(System.UInt16%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L167">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_CloseAsync_" data-uid="Strade.GatewayConnection.CloseAsync*"></a>
+  <h4 id="Strade_GatewayConnection_CloseAsync_System_UInt16_System_String_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.CloseAsync(System.UInt16,System.String,System.Threading.CancellationToken)">CloseAsync(UInt16, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Closes the connection to the gateway asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CloseAsync(ushort closeCode, string reason = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td><p>the close code indicating why the connection should be closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>the reason indicating why the connection should be closed; or <span class="xref">null</span>
+to supply no reason.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_GatewayConnection_CloseAsync_System_UInt16_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If not connected this will do a no-op.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_ConnectAsync_System_Uri_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.ConnectAsync(System.Uri%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L179">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_ConnectAsync_" data-uid="Strade.GatewayConnection.ConnectAsync*"></a>
+  <h4 id="Strade_GatewayConnection_ConnectAsync_System_Uri_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.ConnectAsync(System.Uri,System.Threading.CancellationToken)">ConnectAsync(Uri, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ConnectAsync(Uri uri, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_ConvertCloseCode_System_Nullable_Strade_WebSockets_WebSocketCloseCode__.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.ConvertCloseCode(System.Nullable%7BStrade.WebSockets.WebSocketCloseCode%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L417">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_ConvertCloseCode_" data-uid="Strade.GatewayConnection.ConvertCloseCode*"></a>
+  <h4 id="Strade_GatewayConnection_ConvertCloseCode_System_Nullable_Strade_WebSockets_WebSocketCloseCode__" data-uid="Strade.GatewayConnection.ConvertCloseCode(System.Nullable{Strade.WebSockets.WebSocketCloseCode})">ConvertCloseCode(Nullable&lt;WebSocketCloseCode&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static GatewayCloseCode ConvertCloseCode(WebSocketCloseCode? closeCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.WebSockets.WebSocketCloseCode.html">WebSocketCloseCode</a>&gt;</td>
+        <td><span class="parametername">closeCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Util.GatewayCloseCode.html">GatewayCloseCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_Dispose.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L208">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_Dispose_" data-uid="Strade.GatewayConnection.Dispose*"></a>
+  <h4 id="Strade_GatewayConnection_Dispose" data-uid="Strade.GatewayConnection.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L420">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_Dispose_" data-uid="Strade.GatewayConnection.Dispose*"></a>
+  <h4 id="Strade_GatewayConnection_Dispose_System_Boolean_" data-uid="Strade.GatewayConnection.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_GetReconnectBehavior_Strade_Util_GatewayCloseCode_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.GetReconnectBehavior(Strade.Util.GatewayCloseCode%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L439">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_GetReconnectBehavior_" data-uid="Strade.GatewayConnection.GetReconnectBehavior*"></a>
+  <h4 id="Strade_GatewayConnection_GetReconnectBehavior_Strade_Util_GatewayCloseCode_System_Boolean_" data-uid="Strade.GatewayConnection.GetReconnectBehavior(Strade.Util.GatewayCloseCode,System.Boolean)">GetReconnectBehavior(GatewayCloseCode, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual GatewayReconnectBehavior GetReconnectBehavior(GatewayCloseCode closeCode, bool byRemote = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Util.GatewayCloseCode.html">GatewayCloseCode</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">byRemote</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Util.GatewayReconnectBehavior.html">GatewayReconnectBehavior</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_HandleConnectionClosedAsync_Strade_Util_GatewayCloseCode_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.HandleConnectionClosedAsync(Strade.Util.GatewayCloseCode%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L465">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_HandleConnectionClosedAsync_" data-uid="Strade.GatewayConnection.HandleConnectionClosedAsync*"></a>
+  <h4 id="Strade_GatewayConnection_HandleConnectionClosedAsync_Strade_Util_GatewayCloseCode_System_String_System_Boolean_" data-uid="Strade.GatewayConnection.HandleConnectionClosedAsync(Strade.Util.GatewayCloseCode,System.String,System.Boolean)">HandleConnectionClosedAsync(GatewayCloseCode, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleConnectionClosedAsync(GatewayCloseCode closeCode, string statusDescription, bool byRemote = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Util.GatewayCloseCode.html">GatewayCloseCode</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">statusDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">byRemote</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_HandleEventAsync_System_Text_Json_Utf8JsonReader__Strade_Util_PayloadSerializationContext__.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.HandleEventAsync(System.Text.Json.Utf8JsonReader%40%2CStrade.Util.PayloadSerializationContext%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L528">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_HandleEventAsync_" data-uid="Strade.GatewayConnection.HandleEventAsync*"></a>
+  <h4 id="Strade_GatewayConnection_HandleEventAsync_System_Text_Json_Utf8JsonReader__Strade_Util_PayloadSerializationContext__" data-uid="Strade.GatewayConnection.HandleEventAsync(System.Text.Json.Utf8JsonReader@,Strade.Util.PayloadSerializationContext@)">HandleEventAsync(ref Utf8JsonReader, ref PayloadSerializationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ValueTask HandleEventAsync(ref Utf8JsonReader jsonReader, ref PayloadSerializationContext serializationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.json.utf8jsonreader">Utf8JsonReader</a></td>
+        <td><span class="parametername">jsonReader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Util.PayloadSerializationContext.html">PayloadSerializationContext</a></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_HandleHeartbeatAsync_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.HandleHeartbeatAsync(System.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L564">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_HandleHeartbeatAsync_" data-uid="Strade.GatewayConnection.HandleHeartbeatAsync*"></a>
+  <h4 id="Strade_GatewayConnection_HandleHeartbeatAsync_System_DateTimeOffset_" data-uid="Strade.GatewayConnection.HandleHeartbeatAsync(System.DateTimeOffset)">HandleHeartbeatAsync(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleHeartbeatAsync(DateTimeOffset timeReceived)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">timeReceived</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_HandleHelloAsync_Strade_Payloads_HelloPayload_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.HandleHelloAsync(Strade.Payloads.HelloPayload)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L588">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_HandleHelloAsync_" data-uid="Strade.GatewayConnection.HandleHelloAsync*"></a>
+  <h4 id="Strade_GatewayConnection_HandleHelloAsync_Strade_Payloads_HelloPayload_" data-uid="Strade.GatewayConnection.HandleHelloAsync(Strade.Payloads.HelloPayload)">HandleHelloAsync(HelloPayload)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleHelloAsync(HelloPayload payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Payloads.HelloPayload.html">HelloPayload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_HandleInvalidSessionAsync_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.HandleInvalidSessionAsync(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L610">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_HandleInvalidSessionAsync_" data-uid="Strade.GatewayConnection.HandleInvalidSessionAsync*"></a>
+  <h4 id="Strade_GatewayConnection_HandleInvalidSessionAsync_System_Boolean_" data-uid="Strade.GatewayConnection.HandleInvalidSessionAsync(System.Boolean)">HandleInvalidSessionAsync(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleInvalidSessionAsync(bool mayResume = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">mayResume</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_HandleReconnectAsync.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.HandleReconnectAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L615">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_HandleReconnectAsync_" data-uid="Strade.GatewayConnection.HandleReconnectAsync*"></a>
+  <h4 id="Strade_GatewayConnection_HandleReconnectAsync" data-uid="Strade.GatewayConnection.HandleReconnectAsync">HandleReconnectAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleReconnectAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_InitializeHeartbeat_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.InitializeHeartbeat(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L620">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_InitializeHeartbeat_" data-uid="Strade.GatewayConnection.InitializeHeartbeat*"></a>
+  <h4 id="Strade_GatewayConnection_InitializeHeartbeat_System_TimeSpan_" data-uid="Strade.GatewayConnection.InitializeHeartbeat(System.TimeSpan)">InitializeHeartbeat(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeHeartbeat(TimeSpan interval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_OnConnectionClosedAsync_Strade_Events_ConnectionClosedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.OnConnectionClosedAsync(Strade.Events.ConnectionClosedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L655">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_OnConnectionClosedAsync_" data-uid="Strade.GatewayConnection.OnConnectionClosedAsync*"></a>
+  <h4 id="Strade_GatewayConnection_OnConnectionClosedAsync_Strade_Events_ConnectionClosedEventArgs_" data-uid="Strade.GatewayConnection.OnConnectionClosedAsync(Strade.Events.ConnectionClosedEventArgs)">OnConnectionClosedAsync(ConnectionClosedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.GatewayConnection.html#Strade_GatewayConnection_ConnectionClosed">ConnectionClosed</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnConnectionClosedAsync(ConnectionClosedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.ConnectionClosedEventArgs.html">ConnectionClosedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_OnLatencyUpdatedAsync_Strade_Events_LatencyUpdatedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.OnLatencyUpdatedAsync(Strade.Events.LatencyUpdatedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L663">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_OnLatencyUpdatedAsync_" data-uid="Strade.GatewayConnection.OnLatencyUpdatedAsync*"></a>
+  <h4 id="Strade_GatewayConnection_OnLatencyUpdatedAsync_Strade_Events_LatencyUpdatedEventArgs_" data-uid="Strade.GatewayConnection.OnLatencyUpdatedAsync(Strade.Events.LatencyUpdatedEventArgs)">OnLatencyUpdatedAsync(LatencyUpdatedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.GatewayConnection.html#Strade_GatewayConnection_LatencyUpdated">LatencyUpdated</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnLatencyUpdatedAsync(LatencyUpdatedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.LatencyUpdatedEventArgs.html">LatencyUpdatedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_OnReadyAsync_Strade_Events_ConnectionReadyEventArgs_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.OnReadyAsync(Strade.Events.ConnectionReadyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L671">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_OnReadyAsync_" data-uid="Strade.GatewayConnection.OnReadyAsync*"></a>
+  <h4 id="Strade_GatewayConnection_OnReadyAsync_Strade_Events_ConnectionReadyEventArgs_" data-uid="Strade.GatewayConnection.OnReadyAsync(Strade.Events.ConnectionReadyEventArgs)">OnReadyAsync(ConnectionReadyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.GatewayConnection.html#Strade_GatewayConnection_Ready">Ready</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnReadyAsync(ConnectionReadyEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.ConnectionReadyEventArgs.html">ConnectionReadyEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_ReconnectAsync_Strade_Util_GatewayCloseCode_System_String_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.ReconnectAsync(Strade.Util.GatewayCloseCode%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L293">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_ReconnectAsync_" data-uid="Strade.GatewayConnection.ReconnectAsync*"></a>
+  <h4 id="Strade_GatewayConnection_ReconnectAsync_Strade_Util_GatewayCloseCode_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.ReconnectAsync(Strade.Util.GatewayCloseCode,System.String,System.Boolean,System.Threading.CancellationToken)">ReconnectAsync(GatewayCloseCode, String, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Reconnects to the gateway asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ReconnectAsync(GatewayCloseCode closeCode, string reason = null, bool allowResume = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Util.GatewayCloseCode.html">GatewayCloseCode</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td><p>the close code indicating why the connection should be closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>the reason indicating why the connection should be closed; or <span class="xref">null</span>
+to supply no reason.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allowResume</span></td>
+        <td><p>a value indicating whether it is allowed to resume the old session if there is any.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_GatewayConnection_ReconnectAsync_Strade_Util_GatewayCloseCode_System_String_System_Boolean_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The close code 4006 is used when reconnecting to avoid session invalidation by the
+discord gateway.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_ReconnectAsync_Strade_WebSockets_WebSocketCloseCode_System_String_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.ReconnectAsync(Strade.WebSockets.WebSocketCloseCode%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L315">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_ReconnectAsync_" data-uid="Strade.GatewayConnection.ReconnectAsync*"></a>
+  <h4 id="Strade_GatewayConnection_ReconnectAsync_Strade_WebSockets_WebSocketCloseCode_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.ReconnectAsync(Strade.WebSockets.WebSocketCloseCode,System.String,System.Boolean,System.Threading.CancellationToken)">ReconnectAsync(WebSocketCloseCode, String, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Reconnects to the gateway asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ReconnectAsync(WebSocketCloseCode closeCode, string reason = null, bool allowResume = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.WebSockets.WebSocketCloseCode.html">WebSocketCloseCode</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td><p>the close code indicating why the connection should be closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>the reason indicating why the connection should be closed; or <span class="xref">null</span>
+to supply no reason.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allowResume</span></td>
+        <td><p>a value indicating whether it is allowed to resume the old session if there is any.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_GatewayConnection_ReconnectAsync_Strade_WebSockets_WebSocketCloseCode_System_String_System_Boolean_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The close code 4006 is used when reconnecting to avoid session invalidation by the
+discord gateway.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_ReconnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.ReconnectAsync(System.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L230">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_ReconnectAsync_" data-uid="Strade.GatewayConnection.ReconnectAsync*"></a>
+  <h4 id="Strade_GatewayConnection_ReconnectAsync_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.ReconnectAsync(System.String,System.Boolean,System.Threading.CancellationToken)">ReconnectAsync(String, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Reconnects to the gateway asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ReconnectAsync(string reason = null, bool allowResume = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>the reason indicating why the connection should be closed; or <span class="xref">null</span>
+to supply no reason.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allowResume</span></td>
+        <td><p>a value indicating whether it is allowed to resume the old session if there is any.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_GatewayConnection_ReconnectAsync_System_String_System_Boolean_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The close code 4006 is used when reconnecting to avoid session invalidation by the
+discord gateway.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_ReconnectAsync_System_UInt16_System_String_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.ReconnectAsync(System.UInt16%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L257">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_ReconnectAsync_" data-uid="Strade.GatewayConnection.ReconnectAsync*"></a>
+  <h4 id="Strade_GatewayConnection_ReconnectAsync_System_UInt16_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.ReconnectAsync(System.UInt16,System.String,System.Boolean,System.Threading.CancellationToken)">ReconnectAsync(UInt16, String, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Reconnects to the gateway asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ReconnectAsync(ushort closeCode, string reason = null, bool allowResume = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td><p>the close code indicating why the connection should be closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>the reason indicating why the connection should be closed; or <span class="xref">null</span>
+to supply no reason.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allowResume</span></td>
+        <td><p>a value indicating whether it is allowed to resume the old session if there is any.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_GatewayConnection_ReconnectAsync_System_UInt16_System_String_System_Boolean_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The close code 4006 is used when reconnecting to avoid session invalidation by the
+discord gateway.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_SendAsync_Strade_Payloads_OpCode_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.SendAsync(Strade.Payloads.OpCode%2CSystem.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L318">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_SendAsync_" data-uid="Strade.GatewayConnection.SendAsync*"></a>
+  <h4 id="Strade_GatewayConnection_SendAsync_Strade_Payloads_OpCode_System_Object_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.SendAsync(Strade.Payloads.OpCode,System.Object,System.Threading.CancellationToken)">SendAsync(OpCode, Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendAsync(OpCode opCode, object data, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Payloads.OpCode.html">OpCode</a></td>
+        <td><span class="parametername">opCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_SendHeartbeatAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.SendHeartbeatAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L389">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_SendHeartbeatAsync_" data-uid="Strade.GatewayConnection.SendHeartbeatAsync*"></a>
+  <h4 id="Strade_GatewayConnection_SendHeartbeatAsync_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.SendHeartbeatAsync(System.Threading.CancellationToken)">SendHeartbeatAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SendHeartbeatAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_SendIdentifyAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.SendIdentifyAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L687">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_SendIdentifyAsync_" data-uid="Strade.GatewayConnection.SendIdentifyAsync*"></a>
+  <h4 id="Strade_GatewayConnection_SendIdentifyAsync_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.SendIdentifyAsync(System.Threading.CancellationToken)">SendIdentifyAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the identify payload asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SendIdentifyAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_SendResumeAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.SendResumeAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L712">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_SendResumeAsync_" data-uid="Strade.GatewayConnection.SendResumeAsync*"></a>
+  <h4 id="Strade_GatewayConnection_SendResumeAsync_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.SendResumeAsync(System.Threading.CancellationToken)">SendResumeAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a resume payload to the gateway asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SendResumeAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_UpdatePresenceAsync_Strade_Entities_Presence_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.UpdatePresenceAsync(Strade.Entities.Presence%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L371">View Source</a>
+  </span>
+  <a id="Strade_GatewayConnection_UpdatePresenceAsync_" data-uid="Strade.GatewayConnection.UpdatePresenceAsync*"></a>
+  <h4 id="Strade_GatewayConnection_UpdatePresenceAsync_Strade_Entities_Presence_System_Threading_CancellationToken_" data-uid="Strade.GatewayConnection.UpdatePresenceAsync(Strade.Entities.Presence,System.Threading.CancellationToken)">UpdatePresenceAsync(Presence, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the client's presence asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdatePresenceAsync(Presence presence, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Presence.html">Presence</a></td>
+        <td><span class="parametername">presence</span></td>
+        <td><p>the client presence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_ConnectionClosed.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.ConnectionClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L79">View Source</a>
+  </span>
+  <h4 id="Strade_GatewayConnection_ConnectionClosed" data-uid="Strade.GatewayConnection.ConnectionClosed">ConnectionClosed</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when the connection to the gateway was closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ConnectionClosedEventArgs&gt; ConnectionClosed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Events.ConnectionClosedEventArgs.html">ConnectionClosedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_LatencyUpdated.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.LatencyUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L84">View Source</a>
+  </span>
+  <h4 id="Strade_GatewayConnection_LatencyUpdated" data-uid="Strade.GatewayConnection.LatencyUpdated">LatencyUpdated</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when the connection's latency was updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;LatencyUpdatedEventArgs&gt; LatencyUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Events.LatencyUpdatedEventArgs.html">LatencyUpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection_Ready.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection.Ready%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L89">View Source</a>
+  </span>
+  <h4 id="Strade_GatewayConnection_Ready" data-uid="Strade.GatewayConnection.Ready">Ready</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when the connection is ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ConnectionReadyEventArgs&gt; Ready</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Events.ConnectionReadyEventArgs.html">ConnectionReadyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_GatewayConnection.md&amp;value=---%0Auid%3A%20Strade.GatewayConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade/GatewayConnection.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>WebSocket Implementations | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="WebSocket Implementations | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+                <h1 id="websocket-implementations">WebSocket Implementations</h1>
+
+<p>The default WebSocket implementation <code>Strade.WebSockets.Default</code> is supported on .NET Standard &gt;= 2.0.</p>
+<p>You may want to change the WebSocket implementation due to platform or runtime limitations.</p>
+<h2 id="available-implementations">Available implementations</h2>
+<p>Strade provides 3 providers out-of-the-box:</p>
+<ul>
+<li><a href="https://github.com/angelobreuer/Strade/tree/master/src/Strade.WebSockets.Default"><code>Strade.WebSockets.Default</code></a> The default implementation which uses the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.websockets.clientwebsocket">ClientWebSocket class</a> (which is available since .NET Standard &gt;= 2.0).</li>
+<li><a href="https://github.com/angelobreuer/Strade/tree/master/src/Strade.WebSockets.WebSocket4Net"><code>Strade.WebSockets.WebSocket4Net</code></a> A WebSocket implementation using the <a href="https://github.com/kerryjiang/WebSocket4Net">WebSocket4Net Library</a>.</li>
+<li><a href="https://github.com/angelobreuer/Strade/tree/master/src/Strade.WebSockets.WebSocketSharp"><code>Strade.WebSockets.WebSocketSharp</code></a> A WebSocket implementation using the <a href="https://github.com/sta/websocket-sharp">websocket-sharp Library</a></li>
+</ul>
+<h2 id="using-a-different-provider">Using a different provider</h2>
+<p>By default Strade uses the <code>Strade.WebSockets.Default</code> provider for all projects targeting .NET Standard &gt;= 2.0.</p>
+<p>You can specify the WebSocket provider in the corresponding constructors that depend on WebSockets:</p>
+<pre><code class="lang-csharp" name="Main">///     an own API client.
+</code></pre><h2 id="implementing-your-own-provider">Implementing your own provider</h2>
+<p>If there is no implementation for your needs then you can implement your own by implementing the <a href="https://github.com/angelobreuer/Strade/blob/master/src/Strade.WebSockets/IWebSocketProvider.cs"><code>IWebSocketProvider</code> Interface</a> and the <a href="https://github.com/angelobreuer/Strade/blob/master/src/Strade.WebSockets/IWebSocket.cs"><code>IWebSocket</code> Interface</a>.</p>
+<p>For reference you can also see already existing implementations:</p>
+<ul>
+<li><a href="https://github.com/angelobreuer/Strade/tree/master/src/Strade.WebSockets.Default">Strade.WebSockets.Default</a></li>
+<li><a href="https://github.com/angelobreuer/Strade/tree/master/src/Strade.WebSockets.WebSocket4Net">Strade.WebSockets.WebSocket4Net</a></li>
+<li><a href="https://github.com/angelobreuer/Strade/tree/master/src/Strade.WebSockets.WebSocketSharp">Strade.WebSockets.WebSocketSharp</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/docs/articles/getting-started/WebSocket Implementations.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

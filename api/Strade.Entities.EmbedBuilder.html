@@ -1,0 +1,2986 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EmbedBuilder
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EmbedBuilder
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.EmbedBuilder">
+  
+  
+  <h1 id="Strade_Entities_EmbedBuilder" data-uid="Strade.Entities.EmbedBuilder" class="text-break">Class EmbedBuilder
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">EmbedBuilder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Entities.IBuilder-1.html">IBuilder</a>&lt;<a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>&gt;</div>
+    <div><a class="xref" href="Strade.Util.ICloneable-1.html">ICloneable</a>&lt;<a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_EmbedBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EmbedBuilder : IBuilder&lt;EmbedMessage&gt;, ICloneable&lt;EmbedBuilder&gt;, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder__ctor.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L17">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder__ctor_" data-uid="Strade.Entities.EmbedBuilder.#ctor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder__ctor" data-uid="Strade.Entities.EmbedBuilder.#ctor">EmbedBuilder()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder__ctor_Strade_Entities_EmbedBuilder_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.%23ctor(Strade.Entities.EmbedBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L54">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder__ctor_" data-uid="Strade.Entities.EmbedBuilder.#ctor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder__ctor_Strade_Entities_EmbedBuilder_" data-uid="Strade.Entities.EmbedBuilder.#ctor(Strade.Entities.EmbedBuilder)">EmbedBuilder(EmbedBuilder)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder(EmbedBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>the builder to clone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">builder</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder__ctor_Strade_Entities_EmbedMessage_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.%23ctor(Strade.Entities.EmbedMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L28">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder__ctor_" data-uid="Strade.Entities.EmbedBuilder.#ctor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder__ctor_Strade_Entities_EmbedMessage_" data-uid="Strade.Entities.EmbedBuilder.#ctor(Strade.Entities.EmbedMessage)">EmbedBuilder(EmbedMessage)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder(EmbedMessage embed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a></td>
+        <td><span class="parametername">embed</span></td>
+        <td><p>the embed to clone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">embed</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Author.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Author%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L77">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Author_" data-uid="Strade.Entities.EmbedBuilder.Author*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Author" data-uid="Strade.Entities.EmbedBuilder.Author">Author</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the embed author.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedAuthor? Author { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedAuthor.html">EmbedAuthor</a>&gt;</td>
+        <td><p>the embed author.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Color.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L83">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Color_" data-uid="Strade.Entities.EmbedBuilder.Color*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Color" data-uid="Strade.Entities.EmbedBuilder.Color">Color</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the embed color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color? Color { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Color.html">Color</a>&gt;</td>
+        <td><p>the embed color; or <span class="xref">null</span> if the default color is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Description.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L89">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Description_" data-uid="Strade.Entities.EmbedBuilder.Description*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Description" data-uid="Strade.Entities.EmbedBuilder.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the description / content of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the description / content of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Fields.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Fields%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L95">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Fields_" data-uid="Strade.Entities.EmbedBuilder.Fields*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Fields" data-uid="Strade.Entities.EmbedBuilder.Fields">Fields</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a read-only list containing the embed fields.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;EmbedField&gt; Fields { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedField.html">EmbedField</a>&gt;</td>
+        <td><p>a read-only list containing the embed fields.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Footer.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Footer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L117">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Footer_" data-uid="Strade.Entities.EmbedBuilder.Footer*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Footer" data-uid="Strade.Entities.EmbedBuilder.Footer">Footer</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the embed footer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedFooter? Footer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedFooter.html">EmbedFooter</a>&gt;</td>
+        <td><p>the embed footer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_ImageUrl.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.ImageUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L125">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_ImageUrl_" data-uid="Strade.Entities.EmbedBuilder.ImageUrl*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_ImageUrl" data-uid="Strade.Entities.EmbedBuilder.ImageUrl">ImageUrl</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the image URL of the embed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri ImageUrl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the image URL of the embed; if <span class="xref">null</span> no image is shown in the embed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_IsEmpty.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L131">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_IsEmpty_" data-uid="Strade.Entities.EmbedBuilder.IsEmpty*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_IsEmpty" data-uid="Strade.Entities.EmbedBuilder.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the embed is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the embed is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_ThumbnailUrl.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.ThumbnailUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L164">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_ThumbnailUrl_" data-uid="Strade.Entities.EmbedBuilder.ThumbnailUrl*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_ThumbnailUrl" data-uid="Strade.Entities.EmbedBuilder.ThumbnailUrl">ThumbnailUrl</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the thumbnail URL of the embed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri ThumbnailUrl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the thumbnail URL of the embed; if <span class="xref">null</span> no thumbnail is shown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Timestamp.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L170">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Timestamp_" data-uid="Strade.Entities.EmbedBuilder.Timestamp*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Timestamp" data-uid="Strade.Entities.EmbedBuilder.Timestamp">Timestamp</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? Timestamp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><p>the timestamp; or <span class="xref">null</span> if no timestamp is provided.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Title.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L176">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Title_" data-uid="Strade.Entities.EmbedBuilder.Title*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Title" data-uid="Strade.Entities.EmbedBuilder.Title">Title</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the title.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the title; or <span class="xref">null</span> if no title is set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_TotalLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.TotalLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L218">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_TotalLength_" data-uid="Strade.Entities.EmbedBuilder.TotalLength*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_TotalLength" data-uid="Strade.Entities.EmbedBuilder.TotalLength">TotalLength</h4>
+  <div class="markdown level1 summary"><p>Gets the total length of all fields together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the total length of all fields together.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedBuilder_TotalLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The length includes the lengths of.
+<ul><li>Embed Title ( <a class="xref" href="Strade.Entities.EmbedBuilder.html#Strade_Entities_EmbedBuilder_Title">Title</a>)</li><li>Embed Description ( <a class="xref" href="Strade.Entities.EmbedBuilder.html#Strade_Entities_EmbedBuilder_Description">Description</a>)</li><li>
+            All field names ( <a class="xref" href="Strade.Entities.EmbedFieldBuilder.html#Strade_Entities_EmbedFieldBuilder_Name">Name</a> / <a class="xref" href="Strade.Entities.EmbedField.html#Strade_Entities_EmbedField_Name">Name</a>)
+</li><li>
+    All field names ( <a class="xref" href="Strade.Entities.EmbedFieldBuilder.html#Strade_Entities_EmbedFieldBuilder_Value">Value</a> / <a class="xref" href="Strade.Entities.EmbedField.html#Strade_Entities_EmbedField_Value">Value</a>)
+</li><li>
+    Footer Text ( <a class="xref" href="Strade.Entities.EmbedFooterBuilder.html#Strade_Entities_EmbedFooterBuilder_Text">Text</a> / <a class="xref" href="Strade.Entities.EmbedFooter.html#Strade_Entities_EmbedFooter_Text">Text</a>)
+</li><li>
+    Author Name ( <a class="xref" href="Strade.Entities.EmbedAuthorBuilder.html#Strade_Entities_EmbedAuthorBuilder_Name">Name</a> / <a class="xref" href="Strade.Entities.EmbedAuthor.html#Strade_Entities_EmbedAuthor_Name">Name</a>)
+</li></ul>
+</p>
+<p>
+    The total length of all fields should be less than <a class="xref" href="Strade.Entities.EmbedMessage.html#Strade_Entities_EmbedMessage_MaximumTotalLength">MaximumTotalLength</a> characters.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Url.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Url%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L261">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Url_" data-uid="Strade.Entities.EmbedBuilder.Url*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Url" data-uid="Strade.Entities.EmbedBuilder.Url">Url</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the embed URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Url { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the embed URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Build.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Build%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L276">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Build_" data-uid="Strade.Entities.EmbedBuilder.Build*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Build" data-uid="Strade.Entities.EmbedBuilder.Build">Build()</h4>
+  <div class="markdown level1 summary"><p>Builds the <a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedMessage Build()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Clone.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L824">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Clone_" data-uid="Strade.Entities.EmbedBuilder.Clone*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Clone" data-uid="Strade.Entities.EmbedBuilder.Clone">Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_Reset.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L318">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_Reset_" data-uid="Strade.Entities.EmbedBuilder.Reset*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_Reset" data-uid="Strade.Entities.EmbedBuilder.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithAuthor_Strade_Entities_EmbedAuthorBuilder_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithAuthor(Strade.Entities.EmbedAuthorBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L404">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithAuthor_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithAuthor_Strade_Entities_EmbedAuthorBuilder_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor(Strade.Entities.EmbedAuthorBuilder)">WithAuthor(EmbedAuthorBuilder)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed author to an instance build by the specified <code data-dev-comment-type="paramref" class="paramref">authorBuilder</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithAuthor(EmbedAuthorBuilder authorBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedAuthorBuilder.html">EmbedAuthorBuilder</a></td>
+        <td><span class="parametername">authorBuilder</span></td>
+        <td><p>the author builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">authorBuilder</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithAuthor_Strade_Entities_Member_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithAuthor(Strade.Entities.Member)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L440">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithAuthor_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithAuthor_Strade_Entities_Member_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor(Strade.Entities.Member)">WithAuthor(Member)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed author using the specified <code data-dev-comment-type="paramref" class="paramref">member</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithAuthor(Member member)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Member.html">Member</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>the member to show in the footer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">member</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithAuthor_Strade_Entities_User_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithAuthor(Strade.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L422">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithAuthor_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithAuthor_Strade_Entities_User_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor(Strade.Entities.User)">WithAuthor(User)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed author using the specified <code data-dev-comment-type="paramref" class="paramref">user</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithAuthor(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>the user to show in the footer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">user</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithAuthor_System_Action_Strade_Entities_EmbedAuthorBuilder__.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithAuthor(System.Action%7BStrade.Entities.EmbedAuthorBuilder%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L351">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithAuthor_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithAuthor_System_Action_Strade_Entities_EmbedAuthorBuilder__" data-uid="Strade.Entities.EmbedBuilder.WithAuthor(System.Action{Strade.Entities.EmbedAuthorBuilder})">WithAuthor(Action&lt;EmbedAuthorBuilder&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed author using the specified builder <code data-dev-comment-type="paramref" class="paramref">action</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithAuthor(Action&lt;EmbedAuthorBuilder&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.Entities.EmbedAuthorBuilder.html">EmbedAuthorBuilder</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>the builder callback.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">action</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithAuthor_System_Nullable_Strade_Entities_EmbedAuthor__.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithAuthor(System.Nullable%7BStrade.Entities.EmbedAuthor%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L337">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithAuthor_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithAuthor_System_Nullable_Strade_Entities_EmbedAuthor__" data-uid="Strade.Entities.EmbedBuilder.WithAuthor(System.Nullable{Strade.Entities.EmbedAuthor})">WithAuthor(Nullable&lt;EmbedAuthor&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed author to the specified <code data-dev-comment-type="paramref" class="paramref">author</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithAuthor(EmbedAuthor? author)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedAuthor.html">EmbedAuthor</a>&gt;</td>
+        <td><span class="parametername">author</span></td>
+        <td><p>the author.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithAuthor_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithAuthor(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L393">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithAuthor_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithAuthor_System_String_System_String_System_String_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor(System.String,System.String,System.String)">WithAuthor(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed author with the specified <code data-dev-comment-type="paramref" class="paramref">name</code>, <code data-dev-comment-type="paramref" class="paramref">url</code> and <code data-dev-comment-type="paramref" class="paramref">iconUrl</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithAuthor(string name, string url = null, string iconUrl = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>the author name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>the author URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">iconUrl</span></td>
+        <td><p>the author icon URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithAuthor_System_String_System_Uri_Strade_Entities_IAttachment_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithAuthor(System.String%2CSystem.Uri%2CStrade.Entities.IAttachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L382">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithAuthor_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithAuthor_System_String_System_Uri_Strade_Entities_IAttachment_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor(System.String,System.Uri,Strade.Entities.IAttachment)">WithAuthor(String, Uri, IAttachment)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed author with the specified <code data-dev-comment-type="paramref" class="paramref">name</code>, <code data-dev-comment-type="paramref" class="paramref">url</code> and <code data-dev-comment-type="paramref" class="paramref">icon</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithAuthor(string name, Uri url, IAttachment icon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>the author name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>the author URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IAttachment.html">IAttachment</a></td>
+        <td><span class="parametername">icon</span></td>
+        <td><p>the author icon attachment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithAuthor_System_String_System_Uri_System_Uri_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithAuthor(System.String%2CSystem.Uri%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L371">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithAuthor_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithAuthor_System_String_System_Uri_System_Uri_" data-uid="Strade.Entities.EmbedBuilder.WithAuthor(System.String,System.Uri,System.Uri)">WithAuthor(String, Uri, Uri)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed author with the specified <code data-dev-comment-type="paramref" class="paramref">name</code>, <code data-dev-comment-type="paramref" class="paramref">url</code> and <code data-dev-comment-type="paramref" class="paramref">iconUrl</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithAuthor(string name, Uri url, Uri iconUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>the author name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>the author URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">iconUrl</span></td>
+        <td><p>the author icon URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithColor_Strade_Entities_KnownColor_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithColor(Strade.Entities.KnownColor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L466">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithColor_" data-uid="Strade.Entities.EmbedBuilder.WithColor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithColor_Strade_Entities_KnownColor_" data-uid="Strade.Entities.EmbedBuilder.WithColor(Strade.Entities.KnownColor)">WithColor(KnownColor)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed color to the specified <code data-dev-comment-type="paramref" class="paramref">knownColor</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithColor(KnownColor knownColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.KnownColor.html">KnownColor</a></td>
+        <td><span class="parametername">knownColor</span></td>
+        <td><p>the known color to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithColor_System_Nullable_Strade_Entities_Color__.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithColor(System.Nullable%7BStrade.Entities.Color%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L455">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithColor_" data-uid="Strade.Entities.EmbedBuilder.WithColor*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithColor_System_Nullable_Strade_Entities_Color__" data-uid="Strade.Entities.EmbedBuilder.WithColor(System.Nullable{Strade.Entities.Color})">WithColor(Nullable&lt;Color&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed color to the specified <code data-dev-comment-type="paramref" class="paramref">color</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithColor(Color? color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Color.html">Color</a>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td><p>the color (if <span class="xref">null</span> the default color is used).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithCurrentTimestamp.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithCurrentTimestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L473">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithCurrentTimestamp_" data-uid="Strade.Entities.EmbedBuilder.WithCurrentTimestamp*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithCurrentTimestamp" data-uid="Strade.Entities.EmbedBuilder.WithCurrentTimestamp">WithCurrentTimestamp()</h4>
+  <div class="markdown level1 summary"><p>Sets the embed timestamp to the current UTC time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithCurrentTimestamp()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithDescription_System_String_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithDescription(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L481">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithDescription_" data-uid="Strade.Entities.EmbedBuilder.WithDescription*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithDescription_System_String_" data-uid="Strade.Entities.EmbedBuilder.WithDescription(System.String)">WithDescription(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed description to the specified <code data-dev-comment-type="paramref" class="paramref">description</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithDescription(string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>the description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithField_Strade_Entities_EmbedField_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithField(Strade.Entities.EmbedField%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L497">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithField_" data-uid="Strade.Entities.EmbedBuilder.WithField*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithField_Strade_Entities_EmbedField_System_Boolean_" data-uid="Strade.Entities.EmbedBuilder.WithField(Strade.Entities.EmbedField,System.Boolean)">WithField(EmbedField, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds an embed field to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithField(EmbedField field, bool append = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedField.html">EmbedField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>the field to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">append</span></td>
+        <td><p>a value indicating whether the field should be appended to the other fields (if
+there any; <span class="xref">true</span>), or a new list with the field should be created (
+<span class="xref">false</span>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithField_Strade_Entities_EmbedFieldBuilder_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithField(Strade.Entities.EmbedFieldBuilder%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L521">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithField_" data-uid="Strade.Entities.EmbedBuilder.WithField*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithField_Strade_Entities_EmbedFieldBuilder_System_Boolean_" data-uid="Strade.Entities.EmbedBuilder.WithField(Strade.Entities.EmbedFieldBuilder,System.Boolean)">WithField(EmbedFieldBuilder, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds an embed field to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithField(EmbedFieldBuilder fieldBuilder, bool append = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedFieldBuilder.html">EmbedFieldBuilder</a></td>
+        <td><span class="parametername">fieldBuilder</span></td>
+        <td><p>the field builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">append</span></td>
+        <td><p>a value indicating whether the field should be appended to the other fields (if
+there any; <span class="xref">true</span>), or a new list with the field should be created (
+<span class="xref">false</span>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">fieldBuilder</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithField_System_Action_Strade_Entities_EmbedFieldBuilder__System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithField(System.Action%7BStrade.Entities.EmbedFieldBuilder%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L559">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithField_" data-uid="Strade.Entities.EmbedBuilder.WithField*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithField_System_Action_Strade_Entities_EmbedFieldBuilder__System_Boolean_" data-uid="Strade.Entities.EmbedBuilder.WithField(System.Action{Strade.Entities.EmbedFieldBuilder},System.Boolean)">WithField(Action&lt;EmbedFieldBuilder&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds an embed field to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithField(Action&lt;EmbedFieldBuilder&gt; action, bool append = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.Entities.EmbedFieldBuilder.html">EmbedFieldBuilder</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>the builder action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">append</span></td>
+        <td><p>a value indicating whether the field should be appended to the other fields (if
+there any; <span class="xref">true</span>), or a new list with the field should be created (
+<span class="xref">false</span>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">action</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithField_System_String_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithField(System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L543">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithField_" data-uid="Strade.Entities.EmbedBuilder.WithField*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithField_System_String_System_String_System_Boolean_System_Boolean_" data-uid="Strade.Entities.EmbedBuilder.WithField(System.String,System.String,System.Boolean,System.Boolean)">WithField(String, String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds an embed field to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithField(string name, string value, bool inline = false, bool append = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>the field name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the field value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">inline</span></td>
+        <td><p>a value indicating whether the field is inline.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">append</span></td>
+        <td><p>a value indicating whether the field should be appended to the other fields (if
+there any; <span class="xref">true</span>), or a new list with the field should be created (
+<span class="xref">false</span>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFields_Strade_Entities_EmbedField___.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFields(Strade.Entities.EmbedField%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L610">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFields_" data-uid="Strade.Entities.EmbedBuilder.WithFields*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFields_Strade_Entities_EmbedField___" data-uid="Strade.Entities.EmbedBuilder.WithFields(Strade.Entities.EmbedField[])">WithFields(EmbedField[])</h4>
+  <div class="markdown level1 summary"><p>Adds the specified <code data-dev-comment-type="paramref" class="paramref">fields</code> to the builder (append).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFields(params EmbedField[] fields)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedField.html">EmbedField</a>[]</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>the fields to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFields_Strade_Entities_EmbedField___System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFields(Strade.Entities.EmbedField%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L602">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFields_" data-uid="Strade.Entities.EmbedBuilder.WithFields*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFields_Strade_Entities_EmbedField___System_Boolean_" data-uid="Strade.Entities.EmbedBuilder.WithFields(Strade.Entities.EmbedField[],System.Boolean)">WithFields(EmbedField[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified <code data-dev-comment-type="paramref" class="paramref">fields</code> to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFields(EmbedField[] fields, bool append = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedField.html">EmbedField</a>[]</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>the fields to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">append</span></td>
+        <td><p>a value indicating whether the fields should be appended to the other fields (if
+there any; <span class="xref">true</span>), or a new list with the fields should be created
+( <span class="xref">false</span>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFields_System_Collections_Generic_IEnumerable_Strade_Entities_EmbedField__System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFields(System.Collections.Generic.IEnumerable%7BStrade.Entities.EmbedField%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L581">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFields_" data-uid="Strade.Entities.EmbedBuilder.WithFields*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFields_System_Collections_Generic_IEnumerable_Strade_Entities_EmbedField__System_Boolean_" data-uid="Strade.Entities.EmbedBuilder.WithFields(System.Collections.Generic.IEnumerable{Strade.Entities.EmbedField},System.Boolean)">WithFields(IEnumerable&lt;EmbedField&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified <code data-dev-comment-type="paramref" class="paramref">fields</code> to the builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFields(IEnumerable&lt;EmbedField&gt; fields, bool append = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.EmbedField.html">EmbedField</a>&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>the fields to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">append</span></td>
+        <td><p>a value indicating whether the fields should be appended to the other fields (if
+there any; <span class="xref">true</span>), or a new list with the fields should be created
+( <span class="xref">false</span>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFooter_Strade_Entities_EmbedFooterBuilder_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFooter(Strade.Entities.EmbedFooterBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L715">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFooter_" data-uid="Strade.Entities.EmbedBuilder.WithFooter*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFooter_Strade_Entities_EmbedFooterBuilder_" data-uid="Strade.Entities.EmbedBuilder.WithFooter(Strade.Entities.EmbedFooterBuilder)">WithFooter(EmbedFooterBuilder)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed footer to an instance build by the specified <code data-dev-comment-type="paramref" class="paramref">footerBuilder</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFooter(EmbedFooterBuilder footerBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedFooterBuilder.html">EmbedFooterBuilder</a></td>
+        <td><span class="parametername">footerBuilder</span></td>
+        <td><p>the footer builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">footerBuilder</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFooter_Strade_Entities_Member_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFooter(Strade.Entities.Member)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L670">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFooter_" data-uid="Strade.Entities.EmbedBuilder.WithFooter*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFooter_Strade_Entities_Member_" data-uid="Strade.Entities.EmbedBuilder.WithFooter(Strade.Entities.Member)">WithFooter(Member)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed footer using the specified <code data-dev-comment-type="paramref" class="paramref">member</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFooter(Member member)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Member.html">Member</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>the member to show in the footer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">member</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFooter_Strade_Entities_User_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFooter(Strade.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L652">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFooter_" data-uid="Strade.Entities.EmbedBuilder.WithFooter*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFooter_Strade_Entities_User_" data-uid="Strade.Entities.EmbedBuilder.WithFooter(Strade.Entities.User)">WithFooter(User)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed footer using the specified <code data-dev-comment-type="paramref" class="paramref">user</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFooter(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>the user to show in the footer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">user</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFooter_System_Action_Strade_Entities_EmbedFooterBuilder__.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFooter(System.Action%7BStrade.Entities.EmbedFooterBuilder%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L632">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFooter_" data-uid="Strade.Entities.EmbedBuilder.WithFooter*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFooter_System_Action_Strade_Entities_EmbedFooterBuilder__" data-uid="Strade.Entities.EmbedBuilder.WithFooter(System.Action{Strade.Entities.EmbedFooterBuilder})">WithFooter(Action&lt;EmbedFooterBuilder&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed footer using the specified builder <code data-dev-comment-type="paramref" class="paramref">action</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFooter(Action&lt;EmbedFooterBuilder&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.Entities.EmbedFooterBuilder.html">EmbedFooterBuilder</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>the builder callback.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">action</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFooter_System_Nullable_Strade_Entities_EmbedFooter__.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFooter(System.Nullable%7BStrade.Entities.EmbedFooter%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L618">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFooter_" data-uid="Strade.Entities.EmbedBuilder.WithFooter*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFooter_System_Nullable_Strade_Entities_EmbedFooter__" data-uid="Strade.Entities.EmbedBuilder.WithFooter(System.Nullable{Strade.Entities.EmbedFooter})">WithFooter(Nullable&lt;EmbedFooter&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed footer to the specified <code data-dev-comment-type="paramref" class="paramref">footer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFooter(EmbedFooter? footer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedFooter.html">EmbedFooter</a>&gt;</td>
+        <td><span class="parametername">footer</span></td>
+        <td><p>the footer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFooter_System_String_Strade_Entities_IAttachment_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFooter(System.String%2CStrade.Entities.IAttachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L704">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFooter_" data-uid="Strade.Entities.EmbedBuilder.WithFooter*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFooter_System_String_Strade_Entities_IAttachment_" data-uid="Strade.Entities.EmbedBuilder.WithFooter(System.String,Strade.Entities.IAttachment)">WithFooter(String, IAttachment)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed footer with the specified <code data-dev-comment-type="paramref" class="paramref">text</code> and <code data-dev-comment-type="paramref" class="paramref">icon</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFooter(string text, IAttachment icon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>the footer text.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IAttachment.html">IAttachment</a></td>
+        <td><span class="parametername">icon</span></td>
+        <td><p>the footer icon attachment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFooter_System_String_System_String_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFooter(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L695">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFooter_" data-uid="Strade.Entities.EmbedBuilder.WithFooter*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFooter_System_String_System_String_" data-uid="Strade.Entities.EmbedBuilder.WithFooter(System.String,System.String)">WithFooter(String, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed footer with the specified <code data-dev-comment-type="paramref" class="paramref">text</code> and <code data-dev-comment-type="paramref" class="paramref">iconUrl</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFooter(string text, string iconUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>the footer text.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">iconUrl</span></td>
+        <td><p>the footer icon URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithFooter_System_String_System_Uri_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithFooter(System.String%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L686">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithFooter_" data-uid="Strade.Entities.EmbedBuilder.WithFooter*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithFooter_System_String_System_Uri_" data-uid="Strade.Entities.EmbedBuilder.WithFooter(System.String,System.Uri)">WithFooter(String, Uri)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed footer with the specified <code data-dev-comment-type="paramref" class="paramref">text</code> and <code data-dev-comment-type="paramref" class="paramref">iconUrl</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithFooter(string text, Uri iconUrl = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>the footer text.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">iconUrl</span></td>
+        <td><p>the footer icon URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithImage_Strade_Entities_IAttachment_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithImage(Strade.Entities.IAttachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L738">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithImage_" data-uid="Strade.Entities.EmbedBuilder.WithImage*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithImage_Strade_Entities_IAttachment_" data-uid="Strade.Entities.EmbedBuilder.WithImage(Strade.Entities.IAttachment)">WithImage(IAttachment)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed image to the specified <code data-dev-comment-type="paramref" class="paramref">attachment</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithImage(IAttachment attachment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IAttachment.html">IAttachment</a></td>
+        <td><span class="parametername">attachment</span></td>
+        <td><p>the image attachment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithImage_System_String_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithImage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L730">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithImage_" data-uid="Strade.Entities.EmbedBuilder.WithImage*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithImage_System_String_" data-uid="Strade.Entities.EmbedBuilder.WithImage(System.String)">WithImage(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed image to the specified <code data-dev-comment-type="paramref" class="paramref">imageUrl</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithImage(string imageUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td><p>the image URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithImage_System_Uri_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithImage(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L746">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithImage_" data-uid="Strade.Entities.EmbedBuilder.WithImage*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithImage_System_Uri_" data-uid="Strade.Entities.EmbedBuilder.WithImage(System.Uri)">WithImage(Uri)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed image to the specified <code data-dev-comment-type="paramref" class="paramref">imageUrl</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithImage(Uri imageUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td><p>the image URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithThumbnail_Strade_Entities_IAttachment_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithThumbnail(Strade.Entities.IAttachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L765">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithThumbnail_" data-uid="Strade.Entities.EmbedBuilder.WithThumbnail*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithThumbnail_Strade_Entities_IAttachment_" data-uid="Strade.Entities.EmbedBuilder.WithThumbnail(Strade.Entities.IAttachment)">WithThumbnail(IAttachment)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed thumbnail to the specified <code data-dev-comment-type="paramref" class="paramref">attachment</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithThumbnail(IAttachment attachment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IAttachment.html">IAttachment</a></td>
+        <td><span class="parametername">attachment</span></td>
+        <td><p>the thumbnail image attachment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithThumbnail_System_String_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithThumbnail(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L757">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithThumbnail_" data-uid="Strade.Entities.EmbedBuilder.WithThumbnail*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithThumbnail_System_String_" data-uid="Strade.Entities.EmbedBuilder.WithThumbnail(System.String)">WithThumbnail(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed thumbnail to the specified <code data-dev-comment-type="paramref" class="paramref">thumbnailUrl</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithThumbnail(string thumbnailUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">thumbnailUrl</span></td>
+        <td><p>the thumbnail image URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithThumbnail_System_Uri_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithThumbnail(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L773">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithThumbnail_" data-uid="Strade.Entities.EmbedBuilder.WithThumbnail*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithThumbnail_System_Uri_" data-uid="Strade.Entities.EmbedBuilder.WithThumbnail(System.Uri)">WithThumbnail(Uri)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed thumbnail to the specified <code data-dev-comment-type="paramref" class="paramref">thumbnailUrl</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithThumbnail(Uri thumbnailUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">thumbnailUrl</span></td>
+        <td><p>the thumbnail image URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithTimestamp_System_Nullable_System_DateTimeOffset__.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithTimestamp(System.Nullable%7BSystem.DateTimeOffset%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L784">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithTimestamp_" data-uid="Strade.Entities.EmbedBuilder.WithTimestamp*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithTimestamp_System_Nullable_System_DateTimeOffset__" data-uid="Strade.Entities.EmbedBuilder.WithTimestamp(System.Nullable{System.DateTimeOffset})">WithTimestamp(Nullable&lt;DateTimeOffset&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed timestamp to the specified <code data-dev-comment-type="paramref" class="paramref">timestamp</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithTimestamp(DateTimeOffset? timestamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>the timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithTitle_System_String_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithTitle(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L798">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithTitle_" data-uid="Strade.Entities.EmbedBuilder.WithTitle*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithTitle_System_String_" data-uid="Strade.Entities.EmbedBuilder.WithTitle(System.String)">WithTitle(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed title to the specified <code data-dev-comment-type="paramref" class="paramref">title</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithTitle(string title)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>the message title.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>thrown if the specified value exceeds the maximum character limit ( <a class="xref" href="Strade.Entities.EmbedMessage.html#Strade_Entities_EmbedMessage_MaximumTitleLength">MaximumTitleLength</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithUrl_System_String_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithUrl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L809">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithUrl_" data-uid="Strade.Entities.EmbedBuilder.WithUrl*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithUrl_System_String_" data-uid="Strade.Entities.EmbedBuilder.WithUrl(System.String)">WithUrl(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed URL to the specified <code data-dev-comment-type="paramref" class="paramref">url</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithUrl(string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>the embed URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_WithUrl_System_Uri_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.WithUrl(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L817">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_WithUrl_" data-uid="Strade.Entities.EmbedBuilder.WithUrl*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_WithUrl_System_Uri_" data-uid="Strade.Entities.EmbedBuilder.WithUrl(System.Uri)">WithUrl(Uri)</h4>
+  <div class="markdown level1 summary"><p>Sets the embed URL to the specified <code data-dev-comment-type="paramref" class="paramref">url</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedBuilder WithUrl(Uri url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>the embed URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_op_Implicit_Strade_Entities_EmbedBuilder__Strade_Entities_EmbedMessage.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.op_Implicit(Strade.Entities.EmbedBuilder)~Strade.Entities.EmbedMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L268">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_op_Implicit_" data-uid="Strade.Entities.EmbedBuilder.op_Implicit*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_op_Implicit_Strade_Entities_EmbedBuilder__Strade_Entities_EmbedMessage" data-uid="Strade.Entities.EmbedBuilder.op_Implicit(Strade.Entities.EmbedBuilder)~Strade.Entities.EmbedMessage">Implicit(EmbedBuilder to EmbedMessage)</h4>
+  <div class="markdown level1 summary"><p>Gets the embed message from the specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator EmbedMessage(EmbedBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedBuilder.html">EmbedBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>the embedded message builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedBuilder_op_Implicit_Strade_Entities_EmbedBuilder__Strade_Entities_EmbedMessage_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Strade.Entities.EmbedBuilder.html#Strade_Entities_EmbedBuilder_Build">Build()</a></div>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L827">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedBuilder_System_ICloneable_Clone_" data-uid="Strade.Entities.EmbedBuilder.System#ICloneable#Clone*"></a>
+  <h4 id="Strade_Entities_EmbedBuilder_System_ICloneable_Clone" data-uid="Strade.Entities.EmbedBuilder.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Entities.IBuilder-1.html">IBuilder&lt;TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Util.ICloneable-1.html">ICloneable&lt;TSelf&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedBuilder.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Builder/EmbedBuilder.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

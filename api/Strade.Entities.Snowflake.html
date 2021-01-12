@@ -1,0 +1,1719 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Snowflake
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Snowflake
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.Snowflake">
+  
+  
+  <h1 id="Strade_Entities_Snowflake" data-uid="Strade.Entities.Snowflake" class="text-break">Struct Snowflake
+  </h1>
+  <div class="markdown level0 summary"><p>A structure representing a discord snowflake.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icomparable">IComparable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_Snowflake_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(SnowflakeJsonConverter))]
+public struct Snowflake : IEquatable&lt;Snowflake&gt;, IComparable&lt;Snowflake&gt;, IComparable</code></pre>
+  </div>
+  <h5 id="Strade_Entities_Snowflake_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>More details can be found on <a href="https://discord.com/developers/docs/reference#snowflakes">https://discord.com/developers/docs/reference#snowflakes</a>
+[external, Discord Developer Documentation].</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake__ctor_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.%23ctor(System.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L70">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake__ctor_" data-uid="Strade.Entities.Snowflake.#ctor*"></a>
+  <h4 id="Strade_Entities_Snowflake__ctor_System_DateTimeOffset_" data-uid="Strade.Entities.Snowflake.#ctor(System.DateTimeOffset)">Snowflake(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake(DateTimeOffset timestamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>the timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake__ctor_System_DateTimeOffset_System_Byte_System_Byte_System_UInt16_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.%23ctor(System.DateTimeOffset%2CSystem.Byte%2CSystem.Byte%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L103">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake__ctor_" data-uid="Strade.Entities.Snowflake.#ctor*"></a>
+  <h4 id="Strade_Entities_Snowflake__ctor_System_DateTimeOffset_System_Byte_System_Byte_System_UInt16_" data-uid="Strade.Entities.Snowflake.#ctor(System.DateTimeOffset,System.Byte,System.Byte,System.UInt16)">Snowflake(DateTimeOffset, Byte, Byte, UInt16)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake(DateTimeOffset timestamp, byte internalWorkerId, byte internalProcessId, ushort incrementValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>the timestamp.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">internalWorkerId</span></td>
+        <td><p>the internal worker identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">internalProcessId</span></td>
+        <td><p>the internal process identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">incrementValue</span></td>
+        <td><p>the incrementation value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake__ctor_System_UInt64_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.%23ctor(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L64">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake__ctor_" data-uid="Strade.Entities.Snowflake.#ctor*"></a>
+  <h4 id="Strade_Entities_Snowflake__ctor_System_UInt64_" data-uid="Strade.Entities.Snowflake.#ctor(System.UInt64)">Snowflake(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake(ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the snowflake value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_MaxIncrementValue.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.MaxIncrementValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L23">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_Snowflake_MaxIncrementValue" data-uid="Strade.Entities.Snowflake.MaxIncrementValue">MaxIncrementValue</h4>
+  <div class="markdown level1 summary"><p>The maximum value for <a class="xref" href="Strade.Entities.Snowflake.html#Strade_Entities_Snowflake_IncrementValue">IncrementValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const ushort MaxIncrementValue = 4095</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_MaxInternalProcessId.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.MaxInternalProcessId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L28">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_Snowflake_MaxInternalProcessId" data-uid="Strade.Entities.Snowflake.MaxInternalProcessId">MaxInternalProcessId</h4>
+  <div class="markdown level1 summary"><p>The maximum value for <a class="xref" href="Strade.Entities.Snowflake.html#Strade_Entities_Snowflake_InternalProcessId">InternalProcessId</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte MaxInternalProcessId = 31</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_MaxInternalWorkerId.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.MaxInternalWorkerId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L33">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_Snowflake_MaxInternalWorkerId" data-uid="Strade.Entities.Snowflake.MaxInternalWorkerId">MaxInternalWorkerId</h4>
+  <div class="markdown level1 summary"><p>The maximum value for <a class="xref" href="Strade.Entities.Snowflake.html#Strade_Entities_Snowflake_InternalWorkerId">InternalWorkerId</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte MaxInternalWorkerId = 31</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_MaxTimestampValue.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.MaxTimestampValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L38">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_Snowflake_MaxTimestampValue" data-uid="Strade.Entities.Snowflake.MaxTimestampValue">MaxTimestampValue</h4>
+  <div class="markdown level1 summary"><p>The maximum value for <a class="xref" href="Strade.Entities.Snowflake.html#Strade_Entities_Snowflake_TimestampValue">TimestampValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MaxTimestampValue = 4398046511103L</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_MinIncrementValue.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.MinIncrementValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L43">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_Snowflake_MinIncrementValue" data-uid="Strade.Entities.Snowflake.MinIncrementValue">MinIncrementValue</h4>
+  <div class="markdown level1 summary"><p>The minimum value for <a class="xref" href="Strade.Entities.Snowflake.html#Strade_Entities_Snowflake_IncrementValue">IncrementValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const ushort MinIncrementValue = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_MinInternalProcessId.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.MinInternalProcessId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_Snowflake_MinInternalProcessId" data-uid="Strade.Entities.Snowflake.MinInternalProcessId">MinInternalProcessId</h4>
+  <div class="markdown level1 summary"><p>The minimum value for <a class="xref" href="Strade.Entities.Snowflake.html#Strade_Entities_Snowflake_InternalProcessId">InternalProcessId</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte MinInternalProcessId = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_MinInternalWorkerId.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.MinInternalWorkerId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L53">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_Snowflake_MinInternalWorkerId" data-uid="Strade.Entities.Snowflake.MinInternalWorkerId">MinInternalWorkerId</h4>
+  <div class="markdown level1 summary"><p>The minimum value for <a class="xref" href="Strade.Entities.Snowflake.html#Strade_Entities_Snowflake_InternalWorkerId">InternalWorkerId</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte MinInternalWorkerId = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_MinTimestampValue.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.MinTimestampValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_Snowflake_MinTimestampValue" data-uid="Strade.Entities.Snowflake.MinTimestampValue">MinTimestampValue</h4>
+  <div class="markdown level1 summary"><p>The minimum value for <a class="xref" href="Strade.Entities.Snowflake.html#Strade_Entities_Snowflake_TimestampValue">TimestampValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MinTimestampValue = 0L</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_DiscordEpoch.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.DiscordEpoch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L138">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_DiscordEpoch_" data-uid="Strade.Entities.Snowflake.DiscordEpoch*"></a>
+  <h4 id="Strade_Entities_Snowflake_DiscordEpoch" data-uid="Strade.Entities.Snowflake.DiscordEpoch">DiscordEpoch</h4>
+  <div class="markdown level1 summary"><p>Gets the date time offset of the Discord Epoch ( <code>01.01.2015 00:00:00 +00:00</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTimeOffset DiscordEpoch { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_IncrementValue.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.IncrementValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L144">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_IncrementValue_" data-uid="Strade.Entities.Snowflake.IncrementValue*"></a>
+  <h4 id="Strade_Entities_Snowflake_IncrementValue" data-uid="Strade.Entities.Snowflake.IncrementValue">IncrementValue</h4>
+  <div class="markdown level1 summary"><p>Gets an incrementation value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort IncrementValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_InternalProcessId.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.InternalProcessId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L149">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_InternalProcessId_" data-uid="Strade.Entities.Snowflake.InternalProcessId*"></a>
+  <h4 id="Strade_Entities_Snowflake_InternalProcessId" data-uid="Strade.Entities.Snowflake.InternalProcessId">InternalProcessId</h4>
+  <div class="markdown level1 summary"><p>Gets the internal process identifier that is passed with the snowflake.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte InternalProcessId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_InternalWorkerId.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.InternalWorkerId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L154">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_InternalWorkerId_" data-uid="Strade.Entities.Snowflake.InternalWorkerId*"></a>
+  <h4 id="Strade_Entities_Snowflake_InternalWorkerId" data-uid="Strade.Entities.Snowflake.InternalWorkerId">InternalWorkerId</h4>
+  <div class="markdown level1 summary"><p>Gets the internal worker identifier that is passed with the snowflake.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte InternalWorkerId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_SnowflakeId.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.SnowflakeId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L159">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_SnowflakeId_" data-uid="Strade.Entities.Snowflake.SnowflakeId*"></a>
+  <h4 id="Strade_Entities_Snowflake_SnowflakeId" data-uid="Strade.Entities.Snowflake.SnowflakeId">SnowflakeId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier (used for pagination).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SnowflakeId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_Timestamp.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L164">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_Timestamp_" data-uid="Strade.Entities.Snowflake.Timestamp*"></a>
+  <h4 id="Strade_Entities_Snowflake_Timestamp" data-uid="Strade.Entities.Snowflake.Timestamp">Timestamp</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> when the snowflake was generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset Timestamp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_TimestampValue.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.TimestampValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L169">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_TimestampValue_" data-uid="Strade.Entities.Snowflake.TimestampValue*"></a>
+  <h4 id="Strade_Entities_Snowflake_TimestampValue" data-uid="Strade.Entities.Snowflake.TimestampValue">TimestampValue</h4>
+  <div class="markdown level1 summary"><p>Gets the timestamp value (milliseconds since the UNIX epoch).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long TimestampValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_Value.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L174">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_Value_" data-uid="Strade.Entities.Snowflake.Value*"></a>
+  <h4 id="Strade_Entities_Snowflake_Value" data-uid="Strade.Entities.Snowflake.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_CompareTo_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.CompareTo(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L271">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_CompareTo_" data-uid="Strade.Entities.Snowflake.CompareTo*"></a>
+  <h4 id="Strade_Entities_Snowflake_CompareTo_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.CompareTo(Strade.Entities.Snowflake)">CompareTo(Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Snowflake other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_CompareTo_System_Object_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.CompareTo(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L274">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_CompareTo_" data-uid="Strade.Entities.Snowflake.CompareTo*"></a>
+  <h4 id="Strade_Entities_Snowflake_CompareTo_System_Object_" data-uid="Strade.Entities.Snowflake.CompareTo(System.Object)">CompareTo(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_Equals_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.Equals(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L294">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_Equals_" data-uid="Strade.Entities.Snowflake.Equals*"></a>
+  <h4 id="Strade_Entities_Snowflake_Equals_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.Equals(Strade.Entities.Snowflake)">Equals(Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Checks the equality between the current snowflake and the specified <code data-dev-comment-type="paramref" class="paramref">other</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Snowflake other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>the <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> to check the equality between.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the current snowflake and the specified <code data-dev-comment-type="paramref" class="paramref">other</code> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L284">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_Equals_" data-uid="Strade.Entities.Snowflake.Equals*"></a>
+  <h4 id="Strade_Entities_Snowflake_Equals_System_Object_" data-uid="Strade.Entities.Snowflake.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Checks the equality between the current snowflake and the specified <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>the object to check the equality between.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the current snowflake and the specified <code data-dev-comment-type="paramref" class="paramref">obj</code> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_GetHashCode.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L300">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_GetHashCode_" data-uid="Strade.Entities.Snowflake.GetHashCode*"></a>
+  <h4 id="Strade_Entities_Snowflake_GetHashCode" data-uid="Strade.Entities.Snowflake.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets the hash code of the <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the hash code of the <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_IsValidTimestamp_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.IsValidTimestamp(System.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L195">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_IsValidTimestamp_" data-uid="Strade.Entities.Snowflake.IsValidTimestamp*"></a>
+  <h4 id="Strade_Entities_Snowflake_IsValidTimestamp_System_DateTimeOffset_" data-uid="Strade.Entities.Snowflake.IsValidTimestamp(System.DateTimeOffset)">IsValidTimestamp(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Checks whether the specified <code data-dev-comment-type="paramref" class="paramref">timestamp</code> is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidTimestamp(DateTimeOffset timestamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>the timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the specified <code data-dev-comment-type="paramref" class="paramref">timestamp</code> is valid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_Parse_System_String_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L240">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_Parse_" data-uid="Strade.Entities.Snowflake.Parse*"></a>
+  <h4 id="Strade_Entities_Snowflake_Parse_System_String_" data-uid="Strade.Entities.Snowflake.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Parses a snowflake from the specified <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Snowflake Parse(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the snowflake string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the parsed snowflake.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_ToSnowflake_System_UInt64_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.ToSnowflake(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L245">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_ToSnowflake_" data-uid="Strade.Entities.Snowflake.ToSnowflake*"></a>
+  <h4 id="Strade_Entities_Snowflake_ToSnowflake_System_UInt64_" data-uid="Strade.Entities.Snowflake.ToSnowflake(System.UInt64)">ToSnowflake(UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Snowflake ToSnowflake(ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_ToString.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L306">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_ToString_" data-uid="Strade.Entities.Snowflake.ToString*"></a>
+  <h4 id="Strade_Entities_Snowflake_ToString" data-uid="Strade.Entities.Snowflake.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> representation of the snowflake.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> representation of the snowflake.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_ToUInt64_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.ToUInt64(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L247">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_ToUInt64_" data-uid="Strade.Entities.Snowflake.ToUInt64*"></a>
+  <h4 id="Strade_Entities_Snowflake_ToUInt64_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.ToUInt64(Strade.Entities.Snowflake)">ToUInt64(Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong ToUInt64(Snowflake snowflake)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">snowflake</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_TryParse_System_String_Strade_Entities_Snowflake__.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.TryParse(System.String%2CStrade.Entities.Snowflake%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L255">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_TryParse_" data-uid="Strade.Entities.Snowflake.TryParse*"></a>
+  <h4 id="Strade_Entities_Snowflake_TryParse_System_String_Strade_Entities_Snowflake__" data-uid="Strade.Entities.Snowflake.TryParse(System.String,Strade.Entities.Snowflake@)">TryParse(String, out Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse a snowflake from the specified <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string value, out Snowflake snowflake)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the snowflake string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">snowflake</span></td>
+        <td><p>the snowflake parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the snowflake could be parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_op_Equality_Strade_Entities_Snowflake_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.op_Equality(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L229">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_op_Equality_" data-uid="Strade.Entities.Snowflake.op_Equality*"></a>
+  <h4 id="Strade_Entities_Snowflake_op_Equality_Strade_Entities_Snowflake_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.op_Equality(Strade.Entities.Snowflake,Strade.Entities.Snowflake)">Equality(Snowflake, Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Checks the equality between the specified <code data-dev-comment-type="paramref" class="paramref">left</code><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> and the specified <code data-dev-comment-type="paramref" class="paramref">right</code><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Snowflake left, Snowflake right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>the left-hand <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>the right-hand <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the specified <code data-dev-comment-type="paramref" class="paramref">left</code><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> and the specified <code data-dev-comment-type="paramref" class="paramref">right</code><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>
+are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_op_GreaterThan_Strade_Entities_Snowflake_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.op_GreaterThan(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L231">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_op_GreaterThan_" data-uid="Strade.Entities.Snowflake.op_GreaterThan*"></a>
+  <h4 id="Strade_Entities_Snowflake_op_GreaterThan_Strade_Entities_Snowflake_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.op_GreaterThan(Strade.Entities.Snowflake,Strade.Entities.Snowflake)">GreaterThan(Snowflake, Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator&gt;(Snowflake left, Snowflake right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_op_GreaterThanOrEqual_Strade_Entities_Snowflake_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.op_GreaterThanOrEqual(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L233">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_op_GreaterThanOrEqual_" data-uid="Strade.Entities.Snowflake.op_GreaterThanOrEqual*"></a>
+  <h4 id="Strade_Entities_Snowflake_op_GreaterThanOrEqual_Strade_Entities_Snowflake_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.op_GreaterThanOrEqual(Strade.Entities.Snowflake,Strade.Entities.Snowflake)">GreaterThanOrEqual(Snowflake, Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Snowflake left, Snowflake right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_op_Implicit_Strade_Entities_Snowflake__System_UInt64.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.op_Implicit(Strade.Entities.Snowflake)~System.UInt64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L186">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_op_Implicit_" data-uid="Strade.Entities.Snowflake.op_Implicit*"></a>
+  <h4 id="Strade_Entities_Snowflake_op_Implicit_Strade_Entities_Snowflake__System_UInt64" data-uid="Strade.Entities.Snowflake.op_Implicit(Strade.Entities.Snowflake)~System.UInt64">Implicit(Snowflake to UInt64)</h4>
+  <div class="markdown level1 summary"><p>Implicit operator for converting a <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> value to an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ulong (Snowflake snowflake)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">snowflake</span></td>
+        <td><p>the value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_op_Implicit_System_UInt64__Strade_Entities_Snowflake.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.op_Implicit(System.UInt64)~Strade.Entities.Snowflake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L180">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_op_Implicit_" data-uid="Strade.Entities.Snowflake.op_Implicit*"></a>
+  <h4 id="Strade_Entities_Snowflake_op_Implicit_System_UInt64__Strade_Entities_Snowflake" data-uid="Strade.Entities.Snowflake.op_Implicit(System.UInt64)~Strade.Entities.Snowflake">Implicit(UInt64 to Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Implicit operator for converting an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a> value to a <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Snowflake(ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_op_Inequality_Strade_Entities_Snowflake_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.op_Inequality(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L212">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_op_Inequality_" data-uid="Strade.Entities.Snowflake.op_Inequality*"></a>
+  <h4 id="Strade_Entities_Snowflake_op_Inequality_Strade_Entities_Snowflake_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.op_Inequality(Strade.Entities.Snowflake,Strade.Entities.Snowflake)">Inequality(Snowflake, Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Checks the equality between the specified <code data-dev-comment-type="paramref" class="paramref">left</code><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> and the specified <code data-dev-comment-type="paramref" class="paramref">right</code><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Snowflake left, Snowflake right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>the left-hand <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>the right-hand <a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the specified <code data-dev-comment-type="paramref" class="paramref">left</code><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a> and the specified <code data-dev-comment-type="paramref" class="paramref">right</code><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>
+are NOT equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_op_LessThan_Strade_Entities_Snowflake_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.op_LessThan(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L214">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_op_LessThan_" data-uid="Strade.Entities.Snowflake.op_LessThan*"></a>
+  <h4 id="Strade_Entities_Snowflake_op_LessThan_Strade_Entities_Snowflake_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.op_LessThan(Strade.Entities.Snowflake,Strade.Entities.Snowflake)">LessThan(Snowflake, Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Snowflake left, Snowflake right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake_op_LessThanOrEqual_Strade_Entities_Snowflake_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake.op_LessThanOrEqual(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L216">View Source</a>
+  </span>
+  <a id="Strade_Entities_Snowflake_op_LessThanOrEqual_" data-uid="Strade.Entities.Snowflake.op_LessThanOrEqual*"></a>
+  <h4 id="Strade_Entities_Snowflake_op_LessThanOrEqual_Strade_Entities_Snowflake_Strade_Entities_Snowflake_" data-uid="Strade.Entities.Snowflake.op_LessThanOrEqual(Strade.Entities.Snowflake,Strade.Entities.Snowflake)">LessThanOrEqual(Snowflake, Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Snowflake left, Snowflake right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icomparable-1">System.IComparable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icomparable">System.IComparable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_Snowflake.md&amp;value=---%0Auid%3A%20Strade.Entities.Snowflake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Snowflake.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

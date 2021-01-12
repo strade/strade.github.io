@@ -1,0 +1,1230 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RpcPayloadHandler
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RpcPayloadHandler
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Rpc.RpcPayloadHandler">
+  
+  
+  <h1 id="Strade_Rpc_RpcPayloadHandler" data-uid="Strade.Rpc.RpcPayloadHandler" class="text-break">Class RpcPayloadHandler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">RpcPayloadHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Rpc.html">Strade.Rpc</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rpc.dll</h6>
+  <h5 id="Strade_Rpc_RpcPayloadHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class RpcPayloadHandler</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleActivityJoinEventAsync_Strade_Rpc_Payloads_Events_ActivityJoinEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleActivityJoinEventAsync(Strade.Rpc.Payloads.Events.ActivityJoinEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L16">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleActivityJoinEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleActivityJoinEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleActivityJoinEventAsync_Strade_Rpc_Payloads_Events_ActivityJoinEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleActivityJoinEventAsync(Strade.Rpc.Payloads.Events.ActivityJoinEvent)">HandleActivityJoinEventAsync(ActivityJoinEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the activity join event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleActivityJoinEventAsync(ActivityJoinEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.ActivityJoinEvent.html">ActivityJoinEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleActivityJoinRequestEventAsync_Strade_Rpc_Payloads_Events_ActivityJoinRequestEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleActivityJoinRequestEventAsync(Strade.Rpc.Payloads.Events.ActivityJoinRequestEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L23">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleActivityJoinRequestEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleActivityJoinRequestEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleActivityJoinRequestEventAsync_Strade_Rpc_Payloads_Events_ActivityJoinRequestEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleActivityJoinRequestEventAsync(Strade.Rpc.Payloads.Events.ActivityJoinRequestEvent)">HandleActivityJoinRequestEventAsync(ActivityJoinRequestEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the voice state delete event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleActivityJoinRequestEventAsync(ActivityJoinRequestEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.ActivityJoinRequestEvent.html">ActivityJoinRequestEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleActivitySpectateEventAsync_Strade_Rpc_Payloads_Events_ActivitySpectateEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleActivitySpectateEventAsync(Strade.Rpc.Payloads.Events.ActivitySpectateEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L30">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleActivitySpectateEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleActivitySpectateEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleActivitySpectateEventAsync_Strade_Rpc_Payloads_Events_ActivitySpectateEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleActivitySpectateEventAsync(Strade.Rpc.Payloads.Events.ActivitySpectateEvent)">HandleActivitySpectateEventAsync(ActivitySpectateEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the activity spectate event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleActivitySpectateEventAsync(ActivitySpectateEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.ActivitySpectateEvent.html">ActivitySpectateEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleCaptureShortcutChangeEventAsync_Strade_Rpc_Payloads_Events_CaptureShortcutChangeEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleCaptureShortcutChangeEventAsync(Strade.Rpc.Payloads.Events.CaptureShortcutChangeEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L37">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleCaptureShortcutChangeEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleCaptureShortcutChangeEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleCaptureShortcutChangeEventAsync_Strade_Rpc_Payloads_Events_CaptureShortcutChangeEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleCaptureShortcutChangeEventAsync(Strade.Rpc.Payloads.Events.CaptureShortcutChangeEvent)">HandleCaptureShortcutChangeEventAsync(CaptureShortcutChangeEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the capture shortcut change event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleCaptureShortcutChangeEventAsync(CaptureShortcutChangeEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.CaptureShortcutChangeEvent.html">CaptureShortcutChangeEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleChannelCreateEventAsync_Strade_Rpc_Payloads_Events_ChannelCreateEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleChannelCreateEventAsync(Strade.Rpc.Payloads.Events.ChannelCreateEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L44">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleChannelCreateEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleChannelCreateEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleChannelCreateEventAsync_Strade_Rpc_Payloads_Events_ChannelCreateEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleChannelCreateEventAsync(Strade.Rpc.Payloads.Events.ChannelCreateEvent)">HandleChannelCreateEventAsync(ChannelCreateEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the channel create event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleChannelCreateEventAsync(ChannelCreateEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.ChannelCreateEvent.html">ChannelCreateEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleErrorAsync_Strade_Rpc_Payloads_RpcCommand_Strade_Rpc_Payloads_RpcErrorCode_System_String_System_Guid_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleErrorAsync(Strade.Rpc.Payloads.RpcCommand%2CStrade.Rpc.Payloads.RpcErrorCode%2CSystem.String%2CSystem.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L46">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleErrorAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleErrorAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleErrorAsync_Strade_Rpc_Payloads_RpcCommand_Strade_Rpc_Payloads_RpcErrorCode_System_String_System_Guid_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleErrorAsync(Strade.Rpc.Payloads.RpcCommand,Strade.Rpc.Payloads.RpcErrorCode,System.String,System.Guid)">HandleErrorAsync(RpcCommand, RpcErrorCode, String, Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleErrorAsync(RpcCommand command, RpcErrorCode errorCode, string errorMessage, Guid nonce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.RpcCommand.html">RpcCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.RpcErrorCode.html">RpcErrorCode</a></td>
+        <td><span class="parametername">errorCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">nonce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleGuildCreateEventAsync_Strade_Rpc_Payloads_Events_GuildCreateEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleGuildCreateEventAsync(Strade.Rpc.Payloads.Events.GuildCreateEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L53">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleGuildCreateEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleGuildCreateEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleGuildCreateEventAsync_Strade_Rpc_Payloads_Events_GuildCreateEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleGuildCreateEventAsync(Strade.Rpc.Payloads.Events.GuildCreateEvent)">HandleGuildCreateEventAsync(GuildCreateEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the guild create event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleGuildCreateEventAsync(GuildCreateEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.GuildCreateEvent.html">GuildCreateEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleGuildStatusEventAsync_Strade_Rpc_Payloads_Events_GuildStatusEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleGuildStatusEventAsync(Strade.Rpc.Payloads.Events.GuildStatusEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L60">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleGuildStatusEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleGuildStatusEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleGuildStatusEventAsync_Strade_Rpc_Payloads_Events_GuildStatusEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleGuildStatusEventAsync(Strade.Rpc.Payloads.Events.GuildStatusEvent)">HandleGuildStatusEventAsync(GuildStatusEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the guild status event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleGuildStatusEventAsync(GuildStatusEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.GuildStatusEvent.html">GuildStatusEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleMessageCreateEventAsync_Strade_Rpc_Payloads_Events_MessageCreateEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleMessageCreateEventAsync(Strade.Rpc.Payloads.Events.MessageCreateEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L67">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleMessageCreateEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleMessageCreateEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleMessageCreateEventAsync_Strade_Rpc_Payloads_Events_MessageCreateEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleMessageCreateEventAsync(Strade.Rpc.Payloads.Events.MessageCreateEvent)">HandleMessageCreateEventAsync(MessageCreateEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles a message create update event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleMessageCreateEventAsync(MessageCreateEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.MessageCreateEvent.html">MessageCreateEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleMessageDeleteEventAsync_Strade_Rpc_Payloads_Events_MessageDeleteEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleMessageDeleteEventAsync(Strade.Rpc.Payloads.Events.MessageDeleteEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L74">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleMessageDeleteEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleMessageDeleteEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleMessageDeleteEventAsync_Strade_Rpc_Payloads_Events_MessageDeleteEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleMessageDeleteEventAsync(Strade.Rpc.Payloads.Events.MessageDeleteEvent)">HandleMessageDeleteEventAsync(MessageDeleteEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles a message delete update event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleMessageDeleteEventAsync(MessageDeleteEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.MessageDeleteEvent.html">MessageDeleteEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleMessageUpdateEventAsync_Strade_Rpc_Payloads_Events_MessageUpdateEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleMessageUpdateEventAsync(Strade.Rpc.Payloads.Events.MessageUpdateEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L81">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleMessageUpdateEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleMessageUpdateEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleMessageUpdateEventAsync_Strade_Rpc_Payloads_Events_MessageUpdateEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleMessageUpdateEventAsync(Strade.Rpc.Payloads.Events.MessageUpdateEvent)">HandleMessageUpdateEventAsync(MessageUpdateEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles a message update update event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleMessageUpdateEventAsync(MessageUpdateEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.MessageUpdateEvent.html">MessageUpdateEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleReadyEventAsync_Strade_Rpc_Payloads_Events_ReadyEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleReadyEventAsync(Strade.Rpc.Payloads.Events.ReadyEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L83">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleReadyEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleReadyEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleReadyEventAsync_Strade_Rpc_Payloads_Events_ReadyEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleReadyEventAsync(Strade.Rpc.Payloads.Events.ReadyEvent)">HandleReadyEventAsync(ReadyEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleReadyEventAsync(ReadyEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.ReadyEvent.html">ReadyEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleResponseAsync_Strade_Rpc_Payloads_RpcCommand_System_Object_System_Guid_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleResponseAsync(Strade.Rpc.Payloads.RpcCommand%2CSystem.Object%2CSystem.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L85">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleResponseAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleResponseAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleResponseAsync_Strade_Rpc_Payloads_RpcCommand_System_Object_System_Guid_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleResponseAsync(Strade.Rpc.Payloads.RpcCommand,System.Object,System.Guid)">HandleResponseAsync(RpcCommand, Object, Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleResponseAsync(RpcCommand command, object responsePayload, Guid nonce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.RpcCommand.html">RpcCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">responsePayload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">nonce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleSpeakingStartEventAsync_Strade_Rpc_Payloads_Events_SpeakingEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleSpeakingStartEventAsync(Strade.Rpc.Payloads.Events.SpeakingEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L92">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleSpeakingStartEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleSpeakingStartEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleSpeakingStartEventAsync_Strade_Rpc_Payloads_Events_SpeakingEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleSpeakingStartEventAsync(Strade.Rpc.Payloads.Events.SpeakingEvent)">HandleSpeakingStartEventAsync(SpeakingEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the speaking start event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleSpeakingStartEventAsync(SpeakingEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.SpeakingEvent.html">SpeakingEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleSpeakingStopEventAsync_Strade_Rpc_Payloads_Events_SpeakingEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleSpeakingStopEventAsync(Strade.Rpc.Payloads.Events.SpeakingEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L99">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleSpeakingStopEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleSpeakingStopEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleSpeakingStopEventAsync_Strade_Rpc_Payloads_Events_SpeakingEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleSpeakingStopEventAsync(Strade.Rpc.Payloads.Events.SpeakingEvent)">HandleSpeakingStopEventAsync(SpeakingEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the speaking stop event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleSpeakingStopEventAsync(SpeakingEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.SpeakingEvent.html">SpeakingEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleVoiceChannelSelectEventAsync_Strade_Rpc_Payloads_Events_VoiceChannelSelectEvent_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleVoiceChannelSelectEventAsync(Strade.Rpc.Payloads.Events.VoiceChannelSelectEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L106">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleVoiceChannelSelectEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceChannelSelectEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleVoiceChannelSelectEventAsync_Strade_Rpc_Payloads_Events_VoiceChannelSelectEvent_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceChannelSelectEventAsync(Strade.Rpc.Payloads.Events.VoiceChannelSelectEvent)">HandleVoiceChannelSelectEventAsync(VoiceChannelSelectEvent)</h4>
+  <div class="markdown level1 summary"><p>Handles the voice channel select event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleVoiceChannelSelectEventAsync(VoiceChannelSelectEvent data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Payloads.Events.VoiceChannelSelectEvent.html">VoiceChannelSelectEvent</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleVoiceConnectionStatusEventAsync_Strade_Rpc_Models_VoiceConnectionInformationModel_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleVoiceConnectionStatusEventAsync(Strade.Rpc.Models.VoiceConnectionInformationModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L113">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleVoiceConnectionStatusEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceConnectionStatusEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleVoiceConnectionStatusEventAsync_Strade_Rpc_Models_VoiceConnectionInformationModel_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceConnectionStatusEventAsync(Strade.Rpc.Models.VoiceConnectionInformationModel)">HandleVoiceConnectionStatusEventAsync(VoiceConnectionInformationModel)</h4>
+  <div class="markdown level1 summary"><p>Handles the voice connection status (updated) event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleVoiceConnectionStatusEventAsync(VoiceConnectionInformationModel data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Models.VoiceConnectionInformationModel.html">VoiceConnectionInformationModel</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleVoiceSettingsUpdateEventAsync_Strade_Rpc_Models_RpcVoiceSettingsModel_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleVoiceSettingsUpdateEventAsync(Strade.Rpc.Models.RpcVoiceSettingsModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L120">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleVoiceSettingsUpdateEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceSettingsUpdateEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleVoiceSettingsUpdateEventAsync_Strade_Rpc_Models_RpcVoiceSettingsModel_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceSettingsUpdateEventAsync(Strade.Rpc.Models.RpcVoiceSettingsModel)">HandleVoiceSettingsUpdateEventAsync(RpcVoiceSettingsModel)</h4>
+  <div class="markdown level1 summary"><p>Handles the voice settings updated event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleVoiceSettingsUpdateEventAsync(RpcVoiceSettingsModel data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Models.RpcVoiceSettingsModel.html">RpcVoiceSettingsModel</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleVoiceStateCreateEventAsync_Strade_Rpc_Models_RpcVoiceUserModel_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleVoiceStateCreateEventAsync(Strade.Rpc.Models.RpcVoiceUserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L127">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleVoiceStateCreateEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceStateCreateEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleVoiceStateCreateEventAsync_Strade_Rpc_Models_RpcVoiceUserModel_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceStateCreateEventAsync(Strade.Rpc.Models.RpcVoiceUserModel)">HandleVoiceStateCreateEventAsync(RpcVoiceUserModel)</h4>
+  <div class="markdown level1 summary"><p>Handles the voice state create event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleVoiceStateCreateEventAsync(RpcVoiceUserModel data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Models.RpcVoiceUserModel.html">RpcVoiceUserModel</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleVoiceStateDeleteEventAsync_Strade_Rpc_Models_RpcVoiceUserModel_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleVoiceStateDeleteEventAsync(Strade.Rpc.Models.RpcVoiceUserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L134">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleVoiceStateDeleteEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceStateDeleteEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleVoiceStateDeleteEventAsync_Strade_Rpc_Models_RpcVoiceUserModel_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceStateDeleteEventAsync(Strade.Rpc.Models.RpcVoiceUserModel)">HandleVoiceStateDeleteEventAsync(RpcVoiceUserModel)</h4>
+  <div class="markdown level1 summary"><p>Handles the voice state delete event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleVoiceStateDeleteEventAsync(RpcVoiceUserModel data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Models.RpcVoiceUserModel.html">RpcVoiceUserModel</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler_HandleVoiceStateUpdateEventAsync_Strade_Rpc_Models_RpcVoiceUserModel_.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler.HandleVoiceStateUpdateEventAsync(Strade.Rpc.Models.RpcVoiceUserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L141">View Source</a>
+  </span>
+  <a id="Strade_Rpc_RpcPayloadHandler_HandleVoiceStateUpdateEventAsync_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceStateUpdateEventAsync*"></a>
+  <h4 id="Strade_Rpc_RpcPayloadHandler_HandleVoiceStateUpdateEventAsync_Strade_Rpc_Models_RpcVoiceUserModel_" data-uid="Strade.Rpc.RpcPayloadHandler.HandleVoiceStateUpdateEventAsync(Strade.Rpc.Models.RpcVoiceUserModel)">HandleVoiceStateUpdateEventAsync(RpcVoiceUserModel)</h4>
+  <div class="markdown level1 summary"><p>Handles the voice state update event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleVoiceStateUpdateEventAsync(RpcVoiceUserModel data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Rpc.Models.RpcVoiceUserModel.html">RpcVoiceUserModel</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Rpc_RpcPayloadHandler.md&amp;value=---%0Auid%3A%20Strade.Rpc.RpcPayloadHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rpc/RpcPayloadHandler.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

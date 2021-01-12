@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SandboxChannel
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SandboxChannel
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Sandbox.Entities.SandboxChannel">
+  
+  
+  <h1 id="Strade_Sandbox_Entities_SandboxChannel" data-uid="Strade.Sandbox.Entities.SandboxChannel" class="text-break">Class SandboxChannel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html">SandboxEntity</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a>&gt;</div>
+    <div class="level2"><span class="xref">SandboxChannel</span></div>
+      <div class="level3"><a class="xref" href="Strade.Sandbox.Entities.SandboxGuildChannel.html">SandboxGuildChannel</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Entities.IUpdateable-1.html">IUpdateable</a>&lt;<a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Exists">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Model">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Sandbox">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Sandbox</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Id">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Delete">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Delete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Strade_Entities_IUpdateable_TModel__Update__1_">SandboxEntity&lt;Snowflake, ChannelModel&gt;.IUpdateable&lt;ChannelModel&gt;.Update(ChannelModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_EmitUpdate">SandboxEntity&lt;Snowflake, ChannelModel&gt;.EmitUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_TryDelete">SandboxEntity&lt;Snowflake, ChannelModel&gt;.TryDelete()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Sandbox.Entities.html">Strade.Sandbox.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Sandbox.dll</h6>
+  <h5 id="Strade_Sandbox_Entities_SandboxChannel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SandboxChannel : SandboxEntity&lt;Snowflake, ChannelModel&gt;, IUpdateable&lt;ChannelModel&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel__ctor_Strade_Sandbox_SandboxEnvironment_Strade_Models_ChannelModel_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.%23ctor(Strade.Sandbox.SandboxEnvironment%2CStrade.Models.ChannelModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L12">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel__ctor_" data-uid="Strade.Sandbox.Entities.SandboxChannel.#ctor*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel__ctor_Strade_Sandbox_SandboxEnvironment_Strade_Models_ChannelModel_" data-uid="Strade.Sandbox.Entities.SandboxChannel.#ctor(Strade.Sandbox.SandboxEnvironment,Strade.Models.ChannelModel)">SandboxChannel(SandboxEnvironment, ChannelModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SandboxChannel(SandboxEnvironment sandbox, ChannelModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.SandboxEnvironment.html">SandboxEnvironment</a></td>
+        <td><span class="parametername">sandbox</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel_FollowedChannels.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.FollowedChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L24">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel_FollowedChannels_" data-uid="Strade.Sandbox.Entities.SandboxChannel.FollowedChannels*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel_FollowedChannels" data-uid="Strade.Sandbox.Entities.SandboxChannel.FollowedChannels">FollowedChannels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;SandboxChannel, SandboxWebhook&gt; FollowedChannels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html">SandboxChannel</a>, <a class="xref" href="Strade.Sandbox.Entities.SandboxWebhook.html">SandboxWebhook</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel_Messages.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.Messages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L26">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel_Messages_" data-uid="Strade.Sandbox.Entities.SandboxChannel.Messages*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel_Messages" data-uid="Strade.Sandbox.Entities.SandboxChannel.Messages">Messages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrudDictionary&lt;Snowflake, MessageModel, SandboxMessage&gt; Messages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.CrudDictionary-3.html">CrudDictionary</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Models.MessageModel.html">MessageModel</a>, <a class="xref" href="Strade.Sandbox.Entities.SandboxMessage.html">SandboxMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel_Name.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L32">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel_Name_" data-uid="Strade.Sandbox.Entities.SandboxChannel.Name*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel_Name" data-uid="Strade.Sandbox.Entities.SandboxChannel.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the channel name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the channel name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel_Type.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L38">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel_Type_" data-uid="Strade.Sandbox.Entities.SandboxChannel.Type*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel_Type" data-uid="Strade.Sandbox.Entities.SandboxChannel.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ChannelType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ChannelType.html">ChannelType</a></td>
+        <td><p>the type of the channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel_Create_Strade_Sandbox_SandboxEnvironment_Strade_Models_ChannelModel_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.Create(Strade.Sandbox.SandboxEnvironment%2CStrade.Models.ChannelModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L40">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel_Create_" data-uid="Strade.Sandbox.Entities.SandboxChannel.Create*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel_Create_Strade_Sandbox_SandboxEnvironment_Strade_Models_ChannelModel_" data-uid="Strade.Sandbox.Entities.SandboxChannel.Create(Strade.Sandbox.SandboxEnvironment,Strade.Models.ChannelModel)">Create(SandboxEnvironment, ChannelModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SandboxChannel Create(SandboxEnvironment sandbox, ChannelModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.SandboxEnvironment.html">SandboxEnvironment</a></td>
+        <td><span class="parametername">sandbox</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html">SandboxChannel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel_SendMessage_Strade_Models_UserModel_Strade_Entities_MessageCreationProperties_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.SendMessage(Strade.Models.UserModel%2CStrade.Entities.MessageCreationProperties)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L50">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel_SendMessage_" data-uid="Strade.Sandbox.Entities.SandboxChannel.SendMessage*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel_SendMessage_Strade_Models_UserModel_Strade_Entities_MessageCreationProperties_" data-uid="Strade.Sandbox.Entities.SandboxChannel.SendMessage(Strade.Models.UserModel,Strade.Entities.MessageCreationProperties)">SendMessage(UserModel, MessageCreationProperties)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SandboxMessage SendMessage(UserModel author, MessageCreationProperties properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">author</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageCreationProperties.html">MessageCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxMessage.html">SandboxMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel_SendMessage_Strade_Sandbox_Entities_SandboxUser_Strade_Entities_MessageCreationProperties_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.SendMessage(Strade.Sandbox.Entities.SandboxUser%2CStrade.Entities.MessageCreationProperties)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L47">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel_SendMessage_" data-uid="Strade.Sandbox.Entities.SandboxChannel.SendMessage*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel_SendMessage_Strade_Sandbox_Entities_SandboxUser_Strade_Entities_MessageCreationProperties_" data-uid="Strade.Sandbox.Entities.SandboxChannel.SendMessage(Strade.Sandbox.Entities.SandboxUser,Strade.Entities.MessageCreationProperties)">SendMessage(SandboxUser, MessageCreationProperties)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SandboxMessage SendMessage(SandboxUser author, MessageCreationProperties properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxUser.html">SandboxUser</a></td>
+        <td><span class="parametername">author</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageCreationProperties.html">MessageCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxMessage.html">SandboxMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel_TryDelete.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel.TryDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L89">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxChannel_TryDelete_" data-uid="Strade.Sandbox.Entities.SandboxChannel.TryDelete*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxChannel_TryDelete" data-uid="Strade.Sandbox.Entities.SandboxChannel.TryDelete">TryDelete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool TryDelete()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Strade.Sandbox.Entities.SandboxEntity&lt;Strade.Entities.Snowflake, Strade.Models.ChannelModel&gt;.TryDelete()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Entities.IUpdateable-1.html">IUpdateable&lt;TModel&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxChannel.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxChannel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxChannel.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

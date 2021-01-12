@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MessageModel
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MessageModel
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Models.MessageModel">
+  
+  
+  <h1 id="Strade_Models_MessageModel" data-uid="Strade.Models.MessageModel" class="text-break">Class MessageModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">MessageModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Cache.IIdentifiable-1.html">IIdentifiable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Models.html">Strade.Models</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Models_MessageModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class MessageModel : IIdentifiable&lt;Snowflake&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Activity.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Activity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L17">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Activity_" data-uid="Strade.Models.MessageModel.Activity*"></a>
+  <h4 id="Strade_Models_MessageModel_Activity" data-uid="Strade.Models.MessageModel.Activity">Activity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the activity (used for rich presence-related chat embeds).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;activity&quot;)]
+public MessageActivityModel Activity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.MessageActivityModel.html">MessageActivityModel</a></td>
+        <td><p>the activity (used for rich presence-related chat embeds).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Application.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Application%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L24">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Application_" data-uid="Strade.Models.MessageModel.Application*"></a>
+  <h4 id="Strade_Models_MessageModel_Application" data-uid="Strade.Models.MessageModel.Application">Application</h4>
+  <div class="markdown level1 summary"><p>Gets or sets information about the rich presence-application that send the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;application&quot;)]
+public MessageApplicationModel Application { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.MessageApplicationModel.html">MessageApplicationModel</a></td>
+        <td><p>information about the rich presence-application that send the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Attachments.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Attachments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L31">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Attachments_" data-uid="Strade.Models.MessageModel.Attachments*"></a>
+  <h4 id="Strade_Models_MessageModel_Attachments" data-uid="Strade.Models.MessageModel.Attachments">Attachments</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the attached files within the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;attachments&quot;)]
+public IReadOnlyList&lt;MessageAttachmentModel&gt; Attachments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.MessageAttachmentModel.html">MessageAttachmentModel</a>&gt;</td>
+        <td><p>the attached files within the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Author.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Author%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L42">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Author_" data-uid="Strade.Models.MessageModel.Author*"></a>
+  <h4 id="Strade_Models_MessageModel_Author" data-uid="Strade.Models.MessageModel.Author">Author</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the message author. Note that the author may be a webhook or
+application user if the message was send by an application / webhook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;author&quot;)]
+public UserModel Author { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.UserModel.html">UserModel</a></td>
+        <td><p>the message author. Note that the author may be a webhook or application user if the
+message was send by an application / webhook.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_CallInformation.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.CallInformation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L49">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_CallInformation_" data-uid="Strade.Models.MessageModel.CallInformation*"></a>
+  <h4 id="Strade_Models_MessageModel_CallInformation" data-uid="Strade.Models.MessageModel.CallInformation">CallInformation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the call information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;call&quot;)]
+public CallInformationModel CallInformation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.CallInformationModel.html">CallInformationModel</a></td>
+        <td><p>the call information; or <span class="xref">null</span> if not present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_ChannelId.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.ChannelId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L56">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_ChannelId_" data-uid="Strade.Models.MessageModel.ChannelId*"></a>
+  <h4 id="Strade_Models_MessageModel_ChannelId" data-uid="Strade.Models.MessageModel.ChannelId">ChannelId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the channel the message was sent in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;channel_id&quot;)]
+public Snowflake ChannelId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the snowflake identifier of the channel the message was sent in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Content.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Content%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L63">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Content_" data-uid="Strade.Models.MessageModel.Content*"></a>
+  <h4 id="Strade_Models_MessageModel_Content" data-uid="Strade.Models.MessageModel.Content">Content</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the raw message content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;content&quot;)]
+public string Content { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the raw message content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_CreatedAt.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.CreatedAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L70">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_CreatedAt_" data-uid="Strade.Models.MessageModel.CreatedAt*"></a>
+  <h4 id="Strade_Models_MessageModel_CreatedAt" data-uid="Strade.Models.MessageModel.CreatedAt">CreatedAt</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the UTC time offset when the message was sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;timestamp&quot;)]
+public DateTimeOffset CreatedAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><p>the UTC time offset when the message was sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Embeds.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Embeds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L77">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Embeds_" data-uid="Strade.Models.MessageModel.Embeds*"></a>
+  <h4 id="Strade_Models_MessageModel_Embeds" data-uid="Strade.Models.MessageModel.Embeds">Embeds</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the embedded messages within the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;embeds&quot;)]
+public IReadOnlyList&lt;EmbedMessageModel&gt; Embeds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.EmbedMessageModel.html">EmbedMessageModel</a>&gt;</td>
+        <td><p>the embedded messages within the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Flags.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L84">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Flags_" data-uid="Strade.Models.MessageModel.Flags*"></a>
+  <h4 id="Strade_Models_MessageModel_Flags" data-uid="Strade.Models.MessageModel.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the message flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;flags&quot;)]
+public MessageFlags? Flags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.MessageFlags.html">MessageFlags</a>&gt;</td>
+        <td><p>the message flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_GuildId.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.GuildId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L94">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_GuildId_" data-uid="Strade.Models.MessageModel.GuildId*"></a>
+  <h4 id="Strade_Models_MessageModel_GuildId" data-uid="Strade.Models.MessageModel.GuildId">GuildId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the option guild snowflake identifier of the guild the message was sent in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;guild_id&quot;)]
+public Snowflake? GuildId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the option guild snowflake identifier of the guild the message was sent in; or <span class="xref">null</span> if the message was not sent in a guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Id.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L101">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Id_" data-uid="Strade.Models.MessageModel.Id*"></a>
+  <h4 id="Strade_Models_MessageModel_Id" data-uid="Strade.Models.MessageModel.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the message was edited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;id&quot;)]
+public Snowflake Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>a value indicating whether the message was edited.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_IsMentioningEveryone.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.IsMentioningEveryone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L108">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_IsMentioningEveryone_" data-uid="Strade.Models.MessageModel.IsMentioningEveryone*"></a>
+  <h4 id="Strade_Models_MessageModel_IsMentioningEveryone" data-uid="Strade.Models.MessageModel.IsMentioningEveryone">IsMentioningEveryone</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the message mentions everyone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;mention_everyone&quot;)]
+public bool IsMentioningEveryone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the message mentions everyone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_IsPinned.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.IsPinned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L115">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_IsPinned_" data-uid="Strade.Models.MessageModel.IsPinned*"></a>
+  <h4 id="Strade_Models_MessageModel_IsPinned" data-uid="Strade.Models.MessageModel.IsPinned">IsPinned</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the message is pinned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;pinned&quot;)]
+public bool IsPinned { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the message is pinned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_IsTextToSpeech.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.IsTextToSpeech%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L122">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_IsTextToSpeech_" data-uid="Strade.Models.MessageModel.IsTextToSpeech*"></a>
+  <h4 id="Strade_Models_MessageModel_IsTextToSpeech" data-uid="Strade.Models.MessageModel.IsTextToSpeech">IsTextToSpeech</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the message is a text-to-speech message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;tts&quot;)]
+public bool IsTextToSpeech { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the message is a text-to-speech message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_LastEditedAt.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.LastEditedAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L132">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_LastEditedAt_" data-uid="Strade.Models.MessageModel.LastEditedAt*"></a>
+  <h4 id="Strade_Models_MessageModel_LastEditedAt" data-uid="Strade.Models.MessageModel.LastEditedAt">LastEditedAt</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the UTC time offset when the message was edited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;edited_timestamp&quot;)]
+public DateTimeOffset? LastEditedAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><p>the UTC time offset when the message was edited; or <span class="xref">null</span> if the
+message was not edited.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Member.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Member%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L135">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Member_" data-uid="Strade.Models.MessageModel.Member*"></a>
+  <h4 id="Strade_Models_MessageModel_Member" data-uid="Strade.Models.MessageModel.Member">Member</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;member&quot;)]
+public MemberModel Member { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.MemberModel.html">MemberModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_MentionedChannels.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.MentionedChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L138">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_MentionedChannels_" data-uid="Strade.Models.MessageModel.MentionedChannels*"></a>
+  <h4 id="Strade_Models_MessageModel_MentionedChannels" data-uid="Strade.Models.MessageModel.MentionedChannels">MentionedChannels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;mention_channels&quot;)]
+public IReadOnlyList&lt;ChannelMentionModel&gt; MentionedChannels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.ChannelMentionModel.html">ChannelMentionModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_MentionedRoles.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.MentionedRoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L141">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_MentionedRoles_" data-uid="Strade.Models.MessageModel.MentionedRoles*"></a>
+  <h4 id="Strade_Models_MessageModel_MentionedRoles" data-uid="Strade.Models.MessageModel.MentionedRoles">MentionedRoles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;mention_roles&quot;)]
+public IReadOnlyList&lt;Snowflake&gt; MentionedRoles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Mentions.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Mentions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L144">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Mentions_" data-uid="Strade.Models.MessageModel.Mentions*"></a>
+  <h4 id="Strade_Models_MessageModel_Mentions" data-uid="Strade.Models.MessageModel.Mentions">Mentions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;mentions&quot;)]
+public IReadOnlyList&lt;MentionModel&gt; Mentions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.MentionModel.html">MentionModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_MessageReference.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.MessageReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L156">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_MessageReference_" data-uid="Strade.Models.MessageModel.MessageReference*"></a>
+  <h4 id="Strade_Models_MessageModel_MessageReference" data-uid="Strade.Models.MessageModel.MessageReference">MessageReference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a reference to the origin message from which the actual message was
+cross-posted from. Available if the <a class="xref" href="Strade.Entities.MessageFlags.html#Strade_Entities_MessageFlags_IsCrosspost">IsCrosspost</a> is set in
+<a class="xref" href="Strade.Models.MessageModel.html#Strade_Models_MessageModel_Flags">Flags</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;message_reference&quot;)]
+public MessageReferenceModel MessageReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.MessageReferenceModel.html">MessageReferenceModel</a></td>
+        <td><p>a reference to the origin message from which the actual message was cross-posted
+from. Available if the <a class="xref" href="Strade.Entities.MessageFlags.html#Strade_Entities_MessageFlags_IsCrosspost">IsCrosspost</a> is set in <a class="xref" href="Strade.Models.MessageModel.html#Strade_Models_MessageModel_Flags">Flags</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Nonce.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Nonce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L166">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Nonce_" data-uid="Strade.Models.MessageModel.Nonce*"></a>
+  <h4 id="Strade_Models_MessageModel_Nonce" data-uid="Strade.Models.MessageModel.Nonce">Nonce</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the message nonce used for validation whether a message was send.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;nonce&quot;)]
+public string Nonce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the message nonce used for validation whether a message was send; or <span class="xref">null</span> if no nonce is provided.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Reactions.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Reactions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L173">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Reactions_" data-uid="Strade.Models.MessageModel.Reactions*"></a>
+  <h4 id="Strade_Models_MessageModel_Reactions" data-uid="Strade.Models.MessageModel.Reactions">Reactions</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of the reactions made to the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;reactions&quot;)]
+public IReadOnlyList&lt;MessageReactionModel&gt; Reactions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.MessageReactionModel.html">MessageReactionModel</a>&gt;</td>
+        <td><p>a list of the reactions made to the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Stickers.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Stickers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L180">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Stickers_" data-uid="Strade.Models.MessageModel.Stickers*"></a>
+  <h4 id="Strade_Models_MessageModel_Stickers" data-uid="Strade.Models.MessageModel.Stickers">Stickers</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a read-only list containing the stickers attached with the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;stickers&quot;)]
+public IReadOnlyList&lt;MessageStickerModel&gt; Stickers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Models.MessageStickerModel.html">MessageStickerModel</a>&gt;</td>
+        <td><p>a read-only list containing the stickers attached with the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_Type.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L187">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_Type_" data-uid="Strade.Models.MessageModel.Type*"></a>
+  <h4 id="Strade_Models_MessageModel_Type" data-uid="Strade.Models.MessageModel.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;type&quot;)]
+public MessageType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageType.html">MessageType</a></td>
+        <td><p>the type of the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel_WebhookId.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel.WebhookId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L198">View Source</a>
+  </span>
+  <a id="Strade_Models_MessageModel_WebhookId_" data-uid="Strade.Models.MessageModel.WebhookId*"></a>
+  <h4 id="Strade_Models_MessageModel_WebhookId" data-uid="Strade.Models.MessageModel.WebhookId">WebhookId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the snowflake identifier of the webhook that send the message. If <span class="xref">null</span>, then the message was not send by a webhook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;webhook_id&quot;)]
+public Snowflake? WebhookId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the webhook that send the message. If <span class="xref">null</span>, then the message was not send by a webhook.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Cache.IIdentifiable-1.html">IIdentifiable&lt;TIdentifier&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Models_MessageModel.md&amp;value=---%0Auid%3A%20Strade.Models.MessageModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Models/MessageModel.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

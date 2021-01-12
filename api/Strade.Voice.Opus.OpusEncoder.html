@@ -1,0 +1,1338 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OpusEncoder
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OpusEncoder
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Voice.Opus.OpusEncoder">
+  
+  
+  <h1 id="Strade_Voice_Opus_OpusEncoder" data-uid="Strade.Voice.Opus.OpusEncoder" class="text-break">Class OpusEncoder
+  </h1>
+  <div class="markdown level0 summary"><p>Implementation of an OPUS encoder wrapper (with native backend).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Strade.Voice.Opus.OpusConverter.html">OpusConverter</a></div>
+    <div class="level2"><span class="xref">OpusEncoder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_DefaultChannels">OpusConverter.DefaultChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_DefaultSampleRate">OpusConverter.DefaultSampleRate</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_Channels">OpusConverter.Channels</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_SampleRate">OpusConverter.SampleRate</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_UsePhaseInversion">OpusConverter.UsePhaseInversion</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_IsHandleCreated">OpusConverter.IsHandleCreated</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_Dispose">OpusConverter.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_Reset">OpusConverter.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_CheckError_System_Int32_">OpusConverter.CheckError(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_Dispose_System_Boolean_">OpusConverter.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_RequestHandle">OpusConverter.RequestHandle()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Voice.Opus.html">Strade.Voice.Opus</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Voice.Connection.dll</h6>
+  <h5 id="Strade_Voice_Opus_OpusEncoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class OpusEncoder : OpusConverter, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder__ctor_System_Int32_System_Int32_Strade_Voice_Opus_OpusApplication_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.%23ctor(System.Int32%2CSystem.Int32%2CStrade.Voice.Opus.OpusApplication)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L43">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder__ctor_" data-uid="Strade.Voice.Opus.OpusEncoder.#ctor*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder__ctor_System_Int32_System_Int32_Strade_Voice_Opus_OpusApplication_" data-uid="Strade.Voice.Opus.OpusEncoder.#ctor(System.Int32,System.Int32,Strade.Voice.Opus.OpusApplication)">OpusEncoder(Int32, Int32, OpusApplication)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Voice.Opus.OpusEncoder.html">OpusEncoder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpusEncoder(int sampleRate = 48000, int channels = 2, OpusApplication application = OpusApplication.Audio)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleRate</span></td>
+        <td><p>the sample rate for the encoder (supported values are: 8 KHz ( <code>8000</code>), 12 KHz
+( <code>12000</code>), 16 KHz ( <code>16000</code>), 24 KHz ( <code>24000</code>) and 48 KHz ( <code>48000</code>)).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">channels</span></td>
+        <td><p>the number of output channels (supported values are Mono ( <code>1</code>) and Stereo ( <code>2</code>)).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Opus.OpusApplication.html">OpusApplication</a></td>
+        <td><span class="parametername">application</span></td>
+        <td><p>the opus-specific application to optimize the encoded data for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified sampleRate is not <code>8000</code>, <code>12000</code>, <code>16000</code>,
+<code>24000</code> or <code>48000</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">channels</code> parameter is not <code>1</code> or <code>2</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified OPUS <code data-dev-comment-type="paramref" class="paramref">application</code> is not defined in the
+<a class="xref" href="Strade.Voice.Opus.OpusApplication.html">OpusApplication</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.sehexception">SEHException</a></td>
+        <td><p>thrown if the OPUS encoder initialization failed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_DefaultApplication.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.DefaultApplication%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L14">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_DefaultApplication" data-uid="Strade.Voice.Opus.OpusEncoder.DefaultApplication">DefaultApplication</h4>
+  <div class="markdown level1 summary"><p>The default OPUS application type used in the constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const OpusApplication DefaultApplication = OpusApplication.Audio</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Opus.OpusApplication.html">OpusApplication</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Application.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Application%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L59">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Application_" data-uid="Strade.Voice.Opus.OpusEncoder.Application*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Application" data-uid="Strade.Voice.Opus.OpusEncoder.Application">Application</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the OPUS application for the encoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpusApplication Application { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Opus.OpusApplication.html">OpusApplication</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Bandwidth.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Bandwidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L84">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Bandwidth_" data-uid="Strade.Voice.Opus.OpusEncoder.Bandwidth*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Bandwidth" data-uid="Strade.Voice.Opus.OpusEncoder.Bandwidth">Bandwidth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the encoder's bandpass value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpusBandwidth Bandwidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Opus.OpusBandwidth.html">OpusBandwidth</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified value is not defined in the <a class="xref" href="Strade.Voice.Opus.OpusBandwidth.html">OpusBandwidth</a> enumeration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Bitrate.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Bitrate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L103">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Bitrate_" data-uid="Strade.Voice.Opus.OpusEncoder.Bitrate*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Bitrate" data-uid="Strade.Voice.Opus.OpusEncoder.Bitrate">Bitrate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the encoder bitrate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Bitrate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Complexity.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Complexity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L131">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Complexity_" data-uid="Strade.Voice.Opus.OpusEncoder.Complexity*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Complexity" data-uid="Strade.Voice.Opus.OpusEncoder.Complexity">Complexity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the encoder's computational complexity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Complexity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified value is not in range of <code>0</code> - <code>10</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_DiscontinuousTransmission.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.DiscontinuousTransmission%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L150">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_DiscontinuousTransmission_" data-uid="Strade.Voice.Opus.OpusEncoder.DiscontinuousTransmission*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_DiscontinuousTransmission" data-uid="Strade.Voice.Opus.OpusEncoder.DiscontinuousTransmission">DiscontinuousTransmission</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether DTX (discontinuous transmission) is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DiscontinuousTransmission { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_ExpertFrameDuration.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.ExpertFrameDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L159">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_ExpertFrameDuration_" data-uid="Strade.Voice.Opus.OpusEncoder.ExpertFrameDuration*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_ExpertFrameDuration" data-uid="Strade.Voice.Opus.OpusEncoder.ExpertFrameDuration">ExpertFrameDuration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the encoder's use of variable duration frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? ExpertFrameDuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_ForceChannels.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.ForceChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L168">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_ForceChannels_" data-uid="Strade.Voice.Opus.OpusEncoder.ForceChannels*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_ForceChannels" data-uid="Strade.Voice.Opus.OpusEncoder.ForceChannels">ForceChannels</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the forced channel count of the encoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ForceChannels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_IsConstrainedVBREnabled.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.IsConstrainedVBREnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L197">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_IsConstrainedVBREnabled_" data-uid="Strade.Voice.Opus.OpusEncoder.IsConstrainedVBREnabled*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_IsConstrainedVBREnabled" data-uid="Strade.Voice.Opus.OpusEncoder.IsConstrainedVBREnabled">IsConstrainedVBREnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether Variable Bitrate is enabled on the encoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConstrainedVBREnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_IsVariableBitrateSupported.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.IsVariableBitrateSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L206">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_IsVariableBitrateSupported_" data-uid="Strade.Voice.Opus.OpusEncoder.IsVariableBitrateSupported*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_IsVariableBitrateSupported" data-uid="Strade.Voice.Opus.OpusEncoder.IsVariableBitrateSupported">IsVariableBitrateSupported</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether VBR (variable bitrate) is supported by the encoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVariableBitrateSupported { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_LookaheadSamples.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.LookaheadSamples%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L212">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_LookaheadSamples_" data-uid="Strade.Voice.Opus.OpusEncoder.LookaheadSamples*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_LookaheadSamples" data-uid="Strade.Voice.Opus.OpusEncoder.LookaheadSamples">LookaheadSamples</h4>
+  <div class="markdown level1 summary"><p>Gets the number of samples of delay added by the encoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LookaheadSamples { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_PacketLossPercentage.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.PacketLossPercentage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L221">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_PacketLossPercentage_" data-uid="Strade.Voice.Opus.OpusEncoder.PacketLossPercentage*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_PacketLossPercentage" data-uid="Strade.Voice.Opus.OpusEncoder.PacketLossPercentage">PacketLossPercentage</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the expected packet loss percentage (0-100).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PacketLossPercentage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified value is not in range of <code>0</code>- <code>100</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Signal.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Signal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L243">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Signal_" data-uid="Strade.Voice.Opus.OpusEncoder.Signal*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Signal" data-uid="Strade.Voice.Opus.OpusEncoder.Signal">Signal</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the input signal type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpusSignal Signal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Opus.OpusSignal.html">OpusSignal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified value is not defined in the <a class="xref" href="Strade.Voice.Opus.OpusSignal.html">OpusSignal</a> enumeration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_SignalDepth.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.SignalDepth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L265">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_SignalDepth_" data-uid="Strade.Voice.Opus.OpusEncoder.SignalDepth*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_SignalDepth" data-uid="Strade.Voice.Opus.OpusEncoder.SignalDepth">SignalDepth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the LSB signal depth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SignalDepth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified value is not in range of <code>8</code>- <code>24</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_UseInbandForwardErrorCorrection.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.UseInbandForwardErrorCorrection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L284">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_UseInbandForwardErrorCorrection_" data-uid="Strade.Voice.Opus.OpusEncoder.UseInbandForwardErrorCorrection*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_UseInbandForwardErrorCorrection" data-uid="Strade.Voice.Opus.OpusEncoder.UseInbandForwardErrorCorrection">UseInbandForwardErrorCorrection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether FEC (in-band forward error correction) is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseInbandForwardErrorCorrection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_UsePrediction.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.UsePrediction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L294">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_UsePrediction_" data-uid="Strade.Voice.Opus.OpusEncoder.UsePrediction*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_UsePrediction" data-uid="Strade.Voice.Opus.OpusEncoder.UsePrediction">UsePrediction</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether prediction is enabled (default: enabled,
+turning off reduces quality).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsePrediction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_CreateHandle_Strade_Voice_Opus_OpusError__.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.CreateHandle(Strade.Voice.Opus.OpusError%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L372">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_CreateHandle_" data-uid="Strade.Voice.Opus.OpusEncoder.CreateHandle*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_CreateHandle_Strade_Voice_Opus_OpusError__" data-uid="Strade.Voice.Opus.OpusEncoder.CreateHandle(Strade.Voice.Opus.OpusError@)">CreateHandle(out OpusError)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IntPtr CreateHandle(out OpusError error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Opus.OpusError.html">OpusError</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_CreateHandle_Strade_Voice_Opus_OpusError__">OpusConverter.CreateHandle(out OpusError)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Destroy_System_IntPtr_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Destroy(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L376">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Destroy_" data-uid="Strade.Voice.Opus.OpusEncoder.Destroy*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Destroy_System_IntPtr_" data-uid="Strade.Voice.Opus.OpusEncoder.Destroy(System.IntPtr)">Destroy(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Destroy(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_Destroy_System_IntPtr_">OpusConverter.Destroy(IntPtr)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Encode_System_Int16__System_Byte__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Encode(System.Int16*%2CSystem.Byte*%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L329">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Encode_" data-uid="Strade.Voice.Opus.OpusEncoder.Encode*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Encode_System_Int16__System_Byte__System_Int32_System_Int32_" data-uid="Strade.Voice.Opus.OpusEncoder.Encode(System.Int16*,System.Byte*,System.Int32,System.Int32)">Encode(Int16*, Byte*, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Encodes the specified <code data-dev-comment-type="paramref" class="paramref">source</code> buffer to the specified output
+<code data-dev-comment-type="paramref" class="paramref">buffer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Encode(short *source, byte *buffer, int bufferSize, int frameSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>the source buffer pointer containing the raw PCM data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>*</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>the output buffer pointer for the encoded OPUS data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bufferSize</span></td>
+        <td><p>the total buffer size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">frameSize</span></td>
+        <td><p>the frame size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of bytes encoded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Encode_System_ReadOnlySpan_System_Int16__System_Span_System_Byte__System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Encode(System.ReadOnlySpan%7BSystem.Int16%7D%2CSystem.Span%7BSystem.Byte%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L309">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Encode_" data-uid="Strade.Voice.Opus.OpusEncoder.Encode*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Encode_System_ReadOnlySpan_System_Int16__System_Span_System_Byte__System_Int32_" data-uid="Strade.Voice.Opus.OpusEncoder.Encode(System.ReadOnlySpan{System.Int16},System.Span{System.Byte},System.Int32)">Encode(ReadOnlySpan&lt;Int16&gt;, Span&lt;Byte&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Encodes the specified <code data-dev-comment-type="paramref" class="paramref">source</code> buffer to the specified output
+<code data-dev-comment-type="paramref" class="paramref">buffer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Encode(ReadOnlySpan&lt;short&gt; source, Span&lt;byte&gt; buffer, int frameSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>the source buffer containing the raw PCM data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>the output buffer for the encoded OPUS data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">frameSize</span></td>
+        <td><p>the frame size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of bytes encoded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Encode_System_ReadOnlySpan_System_Single__System_Span_System_Byte__System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Encode(System.ReadOnlySpan%7BSystem.Single%7D%2CSystem.Span%7BSystem.Byte%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L344">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Encode_" data-uid="Strade.Voice.Opus.OpusEncoder.Encode*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Encode_System_ReadOnlySpan_System_Single__System_Span_System_Byte__System_Int32_" data-uid="Strade.Voice.Opus.OpusEncoder.Encode(System.ReadOnlySpan{System.Single},System.Span{System.Byte},System.Int32)">Encode(ReadOnlySpan&lt;Single&gt;, Span&lt;Byte&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Encodes the specified <code data-dev-comment-type="paramref" class="paramref">source</code> buffer to the specified output
+<code data-dev-comment-type="paramref" class="paramref">buffer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Encode(ReadOnlySpan&lt;float&gt; source, Span&lt;byte&gt; buffer, int frameSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>the source buffer containing the raw PCM data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>the output buffer for the encoded OPUS data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">frameSize</span></td>
+        <td><p>the frame size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of bytes encoded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_Encode_System_Single__System_Byte__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.Encode(System.Single*%2CSystem.Byte*%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L364">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_Encode_" data-uid="Strade.Voice.Opus.OpusEncoder.Encode*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_Encode_System_Single__System_Byte__System_Int32_System_Int32_" data-uid="Strade.Voice.Opus.OpusEncoder.Encode(System.Single*,System.Byte*,System.Int32,System.Int32)">Encode(Single*, Byte*, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Encodes the specified <code data-dev-comment-type="paramref" class="paramref">source</code> buffer to the specified output
+<code data-dev-comment-type="paramref" class="paramref">buffer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Encode(float *source, byte *buffer, int bufferSize, int frameSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>the source buffer pointer containing the raw PCM data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>*</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>the output buffer pointer for the encoded OPUS data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bufferSize</span></td>
+        <td><p>the total buffer size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">frameSize</span></td>
+        <td><p>the frame size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of bytes encoded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_GetCtlRequest_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.GetCtlRequest(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L380">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_GetCtlRequest_" data-uid="Strade.Voice.Opus.OpusEncoder.GetCtlRequest*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_GetCtlRequest_System_Int32_" data-uid="Strade.Voice.Opus.OpusEncoder.GetCtlRequest(System.Int32)">GetCtlRequest(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int GetCtlRequest(int request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_GetCtlRequest_System_Int32_">OpusConverter.GetCtlRequest(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_ResetState_System_IntPtr_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.ResetState(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L387">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_ResetState_" data-uid="Strade.Voice.Opus.OpusEncoder.ResetState*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_ResetState_System_IntPtr_" data-uid="Strade.Voice.Opus.OpusEncoder.ResetState(System.IntPtr)">ResetState(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ResetState(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_ResetState_System_IntPtr_">OpusConverter.ResetState(IntPtr)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder_SetCtlRequest_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder.SetCtlRequest(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L391">View Source</a>
+  </span>
+  <a id="Strade_Voice_Opus_OpusEncoder_SetCtlRequest_" data-uid="Strade.Voice.Opus.OpusEncoder.SetCtlRequest*"></a>
+  <h4 id="Strade_Voice_Opus_OpusEncoder_SetCtlRequest_System_Int32_System_Int32_" data-uid="Strade.Voice.Opus.OpusEncoder.SetCtlRequest(System.Int32,System.Int32)">SetCtlRequest(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetCtlRequest(int request, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Opus.OpusConverter.html#Strade_Voice_Opus_OpusConverter_SetCtlRequest_System_Int32_System_Int32_">OpusConverter.SetCtlRequest(Int32, Int32)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Opus_OpusEncoder.md&amp;value=---%0Auid%3A%20Strade.Voice.Opus.OpusEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Opus/OpusEncoder.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

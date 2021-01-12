@@ -1,0 +1,1182 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CacheBucket&lt;TEntity, TModel&gt;
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CacheBucket&lt;TEntity, TModel&gt;
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Cache.CacheBucket`2">
+  
+  
+  <h1 id="Strade_Cache_CacheBucket_2" data-uid="Strade.Cache.CacheBucket`2" class="text-break">Class CacheBucket&lt;TEntity, TModel&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a bucket that contains the cache for a specific entity type.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CacheBucket&lt;TEntity, TModel&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Cache.ICacheBucket-2.html">ICacheBucket</a>&lt;TEntity, TModel&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Cache.html">Strade.Cache</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Cache_CacheBucket_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CacheBucket&lt;TEntity, TModel&gt; : ICacheBucket&lt;TEntity, TModel&gt;, _ICacheBucket where TEntity : IUpdateable&lt;TModel&gt;, IIdentifiable&lt;Snowflake&gt; where TModel : class, IIdentifiable&lt;Snowflake&gt;, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>the type of the entity stored in the cache.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>the type of the entity model used to update the entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2__ctor_Strade_Cache_EntityType_Strade_Cache_Policy_ICachePolicy_.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.%23ctor(Strade.Cache.EntityType%2CStrade.Cache.Policy.ICachePolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L34">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2__ctor_" data-uid="Strade.Cache.CacheBucket`2.#ctor*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2__ctor_Strade_Cache_EntityType_Strade_Cache_Policy_ICachePolicy_" data-uid="Strade.Cache.CacheBucket`2.#ctor(Strade.Cache.EntityType,Strade.Cache.Policy.ICachePolicy)">CacheBucket(EntityType, ICachePolicy)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Cache.CacheBucket-2.html">CacheBucket&lt;TEntity, TModel&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CacheBucket(EntityType entityType, ICachePolicy policy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.EntityType.html">EntityType</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>the type of the entity the bucket caches.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.Policy.ICachePolicy.html">ICachePolicy</a></td>
+        <td><span class="parametername">policy</span></td>
+        <td><p>the cache policy for the entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">policy</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_EntityType.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.EntityType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L49">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_EntityType_" data-uid="Strade.Cache.CacheBucket`2.EntityType*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_EntityType" data-uid="Strade.Cache.CacheBucket`2.EntityType">EntityType</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the entity the bucket caches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityType EntityType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.EntityType.html">EntityType</a></td>
+        <td><p>the type of the entity the bucket caches.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_Entries.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.Entries%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L55">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_Entries_" data-uid="Strade.Cache.CacheBucket`2.Entries*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_Entries" data-uid="Strade.Cache.CacheBucket`2.Entries">Entries</h4>
+  <div class="markdown level1 summary"><p>Gets the dictionary that contains the entries cached within the bucket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;ScopedSnowflake, CacheEntry&gt; Entries { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Strade.Cache.ScopedSnowflake.html">ScopedSnowflake</a>, <a class="xref" href="Strade.Cache.CacheEntry.html">CacheEntry</a>&gt;</td>
+        <td><p>the dictionary that contains the entries cached within the bucket.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_EntryCount.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.EntryCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L58">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_EntryCount_" data-uid="Strade.Cache.CacheBucket`2.EntryCount*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_EntryCount" data-uid="Strade.Cache.CacheBucket`2.EntryCount">EntryCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EntryCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_Lock.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.Lock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L83">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_Lock_" data-uid="Strade.Cache.CacheBucket`2.Lock*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_Lock" data-uid="Strade.Cache.CacheBucket`2.Lock">Lock</h4>
+  <div class="markdown level1 summary"><p>Gets a reader-writer lock that synchronizes write and read requests to the <a class="xref" href="Strade.Cache.CacheBucket-2.html#Strade_Cache_CacheBucket_2_Entries">Entries</a> contained within the bucket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReaderWriterLockSlim Lock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.readerwriterlockslim">ReaderWriterLockSlim</a></td>
+        <td><p>a reader-writer lock that synchronizes write and read requests to the <a class="xref" href="Strade.Cache.CacheBucket-2.html#Strade_Cache_CacheBucket_2_Entries">Entries</a> contained within the bucket.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_Policy.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.Policy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L89">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_Policy_" data-uid="Strade.Cache.CacheBucket`2.Policy*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_Policy" data-uid="Strade.Cache.CacheBucket`2.Policy">Policy</h4>
+  <div class="markdown level1 summary"><p>Gets the cache policy for the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICachePolicy Policy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.Policy.ICachePolicy.html">ICachePolicy</a></td>
+        <td><p>the cache policy for the entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_Add_Strade_Entities_Snowflake__0_.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.Add(Strade.Entities.Snowflake%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L92">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_Add_" data-uid="Strade.Cache.CacheBucket`2.Add*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_Add_Strade_Entities_Snowflake__0_" data-uid="Strade.Cache.CacheBucket`2.Add(Strade.Entities.Snowflake,`0)">Add(Snowflake, TEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(Snowflake scope, TEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_AddOrUpdate_Strade_Entities_Snowflake__1_Strade_Cache_EntityFactory__1__0__.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.AddOrUpdate(Strade.Entities.Snowflake%2C%601%2CStrade.Cache.EntityFactory%7B%601%2C%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L123">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_AddOrUpdate_" data-uid="Strade.Cache.CacheBucket`2.AddOrUpdate*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_AddOrUpdate_Strade_Entities_Snowflake__1_Strade_Cache_EntityFactory__1__0__" data-uid="Strade.Cache.CacheBucket`2.AddOrUpdate(Strade.Entities.Snowflake,`1,Strade.Cache.EntityFactory{`1,`0})">AddOrUpdate(Snowflake, TModel, EntityFactory&lt;TModel, TEntity&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TEntity AddOrUpdate(Snowflake scope, TModel model, EntityFactory&lt;TModel, TEntity&gt; factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.EntityFactory-2.html">EntityFactory</a>&lt;TModel, TEntity&gt;</td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_AddOrUpdateAll_Strade_Entities_Snowflake_System_Collections_Generic_IEnumerable__1__Strade_Cache_EntityFactory__1__0__.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.AddOrUpdateAll(Strade.Entities.Snowflake%2CSystem.Collections.Generic.IEnumerable%7B%601%7D%2CStrade.Cache.EntityFactory%7B%601%2C%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L187">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_AddOrUpdateAll_" data-uid="Strade.Cache.CacheBucket`2.AddOrUpdateAll*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_AddOrUpdateAll_Strade_Entities_Snowflake_System_Collections_Generic_IEnumerable__1__Strade_Cache_EntityFactory__1__0__" data-uid="Strade.Cache.CacheBucket`2.AddOrUpdateAll(Strade.Entities.Snowflake,System.Collections.Generic.IEnumerable{`1},Strade.Cache.EntityFactory{`1,`0})">AddOrUpdateAll(Snowflake, IEnumerable&lt;TModel&gt;, EntityFactory&lt;TModel, TEntity&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TEntity&gt; AddOrUpdateAll(Snowflake scope, IEnumerable&lt;TModel&gt; models, EntityFactory&lt;TModel, TEntity&gt; factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">models</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.EntityFactory-2.html">EntityFactory</a>&lt;TModel, TEntity&gt;</td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_AddOrUpdateIndexed_Strade_Entities_Snowflake_System_Collections_Generic_IReadOnlyCollection__1__Strade_Cache_EntityFactory__1__0__.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.AddOrUpdateIndexed(Strade.Entities.Snowflake%2CSystem.Collections.Generic.IReadOnlyCollection%7B%601%7D%2CStrade.Cache.EntityFactory%7B%601%2C%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L193">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_AddOrUpdateIndexed_" data-uid="Strade.Cache.CacheBucket`2.AddOrUpdateIndexed*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_AddOrUpdateIndexed_Strade_Entities_Snowflake_System_Collections_Generic_IReadOnlyCollection__1__Strade_Cache_EntityFactory__1__0__" data-uid="Strade.Cache.CacheBucket`2.AddOrUpdateIndexed(Strade.Entities.Snowflake,System.Collections.Generic.IReadOnlyCollection{`1},Strade.Cache.EntityFactory{`1,`0})">AddOrUpdateIndexed(Snowflake, IReadOnlyCollection&lt;TModel&gt;, EntityFactory&lt;TModel, TEntity&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;Snowflake, TEntity&gt; AddOrUpdateIndexed(Snowflake scope, IReadOnlyCollection&lt;TModel&gt; models, EntityFactory&lt;TModel, TEntity&gt; factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">models</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.EntityFactory-2.html">EntityFactory</a>&lt;TModel, TEntity&gt;</td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_AddOrUpdateIndexed__1_Strade_Entities_Snowflake_System_Collections_Generic_IReadOnlyCollection__1__Strade_Cache_EntityFactory__1__0__System_Func__0___0__.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.AddOrUpdateIndexed%60%601(Strade.Entities.Snowflake%2CSystem.Collections.Generic.IReadOnlyCollection%7B%601%7D%2CStrade.Cache.EntityFactory%7B%601%2C%600%7D%2CSystem.Func%7B%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L207">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_AddOrUpdateIndexed_" data-uid="Strade.Cache.CacheBucket`2.AddOrUpdateIndexed*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_AddOrUpdateIndexed__1_Strade_Entities_Snowflake_System_Collections_Generic_IReadOnlyCollection__1__Strade_Cache_EntityFactory__1__0__System_Func__0___0__" data-uid="Strade.Cache.CacheBucket`2.AddOrUpdateIndexed``1(Strade.Entities.Snowflake,System.Collections.Generic.IReadOnlyCollection{`1},Strade.Cache.EntityFactory{`1,`0},System.Func{`0,``0})">AddOrUpdateIndexed&lt;TKey&gt;(Snowflake, IReadOnlyCollection&lt;TModel&gt;, EntityFactory&lt;TModel, TEntity&gt;, Func&lt;TEntity, TKey&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;TKey, TEntity&gt; AddOrUpdateIndexed&lt;TKey&gt;(Snowflake scope, IReadOnlyCollection&lt;TModel&gt; models, EntityFactory&lt;TModel, TEntity&gt; factory, Func&lt;TEntity, TKey&gt; keySelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">models</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.EntityFactory-2.html">EntityFactory</a>&lt;TModel, TEntity&gt;</td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, TKey&gt;</td>
+        <td><span class="parametername">keySelector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_CacheAsync_Strade_Entities_Snowflake_Strade_Entities_Snowflake_System_Func_Strade_Entities_Snowflake_System_Threading_CancellationToken_System_Threading_Tasks_Task__1___Strade_Cache_EntityFactory__1__0__Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.CacheAsync(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake%2CSystem.Func%7BStrade.Entities.Snowflake%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.Task%7B%601%7D%7D%2CStrade.Cache.EntityFactory%7B%601%2C%600%7D%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L226">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_CacheAsync_" data-uid="Strade.Cache.CacheBucket`2.CacheAsync*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_CacheAsync_Strade_Entities_Snowflake_Strade_Entities_Snowflake_System_Func_Strade_Entities_Snowflake_System_Threading_CancellationToken_System_Threading_Tasks_Task__1___Strade_Cache_EntityFactory__1__0__Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Cache.CacheBucket`2.CacheAsync(Strade.Entities.Snowflake,Strade.Entities.Snowflake,System.Func{Strade.Entities.Snowflake,System.Threading.CancellationToken,System.Threading.Tasks.Task{`1}},Strade.Cache.EntityFactory{`1,`0},Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">CacheAsync(Snowflake, Snowflake, Func&lt;Snowflake, CancellationToken, Task&lt;TModel&gt;&gt;, EntityFactory&lt;TModel, TEntity&gt;, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask&lt;TEntity&gt; CacheAsync(Snowflake scope, Snowflake id, Func&lt;Snowflake, CancellationToken, Task&lt;TModel&gt;&gt; downloadFunction, EntityFactory&lt;TModel, TEntity&gt; factory, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">downloadFunction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.EntityFactory-2.html">EntityFactory</a>&lt;TModel, TEntity&gt;</td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_CreateEntry_System_Object_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.CreateEntry(System.Object%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L288">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_CreateEntry_" data-uid="Strade.Cache.CacheBucket`2.CreateEntry*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_CreateEntry_System_Object_System_Boolean_" data-uid="Strade.Cache.CacheBucket`2.CreateEntry(System.Object,System.Boolean)">CreateEntry(Object, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates an entry for the specified <code data-dev-comment-type="paramref" class="paramref">target</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CacheEntry CreateEntry(object target, bool skipPolicyValidation = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>the target entity to cache.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">skipPolicyValidation</span></td>
+        <td><p>a value indicating whether the specified <code data-dev-comment-type="paramref" class="paramref">target</code> should be
+validated against the bucket's <a class="xref" href="Strade.Cache.CacheBucket-2.html#Strade_Cache_CacheBucket_2_Policy">Policy</a>, if enabled the method will
+throw an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> if the entity should not be cached.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheEntry.html">CacheEntry</a></td>
+        <td><p>the cache entry for the specified <code data-dev-comment-type="paramref" class="paramref">target</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">target</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if bucket's <a class="xref" href="Strade.Cache.CacheBucket-2.html#Strade_Cache_CacheBucket_2_Policy">Policy</a> determines that the specified <code data-dev-comment-type="paramref" class="paramref">target</code> should not be cached and if <code data-dev-comment-type="paramref" class="paramref">skipPolicyValidation</code>
+is <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_GetEntity_Strade_Entities_Snowflake_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.GetEntity(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L307">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_GetEntity_" data-uid="Strade.Cache.CacheBucket`2.GetEntity*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_GetEntity_Strade_Entities_Snowflake_Strade_Entities_Snowflake_" data-uid="Strade.Cache.CacheBucket`2.GetEntity(Strade.Entities.Snowflake,Strade.Entities.Snowflake)">GetEntity(Snowflake, Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TEntity GetEntity(Snowflake scope, Snowflake id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_Remove_Strade_Entities_Snowflake_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.Remove(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L338">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_Remove_" data-uid="Strade.Cache.CacheBucket`2.Remove*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_Remove_Strade_Entities_Snowflake_Strade_Entities_Snowflake_" data-uid="Strade.Cache.CacheBucket`2.Remove(Strade.Entities.Snowflake,Strade.Entities.Snowflake)">Remove(Snowflake, Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(Snowflake scope, Snowflake id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_Remove_Strade_Entities_Snowflake_Strade_Entities_Snowflake__0__.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.Remove(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake%2C%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L381">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_Remove_" data-uid="Strade.Cache.CacheBucket`2.Remove*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_Remove_Strade_Entities_Snowflake_Strade_Entities_Snowflake__0__" data-uid="Strade.Cache.CacheBucket`2.Remove(Strade.Entities.Snowflake,Strade.Entities.Snowflake,`0@)">Remove(Snowflake, Snowflake, out TEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(Snowflake scope, Snowflake id, out TEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_RemoveWhere_Strade_Entities_Snowflake_System_Func__0_System_Boolean__.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.RemoveWhere(Strade.Entities.Snowflake%2CSystem.Func%7B%600%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L432">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_RemoveWhere_" data-uid="Strade.Cache.CacheBucket`2.RemoveWhere*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_RemoveWhere_Strade_Entities_Snowflake_System_Func__0_System_Boolean__" data-uid="Strade.Cache.CacheBucket`2.RemoveWhere(Strade.Entities.Snowflake,System.Func{`0,System.Boolean})">RemoveWhere(Snowflake, Func&lt;TEntity, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveWhere(Snowflake scope, Func&lt;TEntity, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TEntity, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_ToEnumerable_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.ToEnumerable(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L497">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_ToEnumerable_" data-uid="Strade.Cache.CacheBucket`2.ToEnumerable*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_ToEnumerable_Strade_Entities_Snowflake_" data-uid="Strade.Cache.CacheBucket`2.ToEnumerable(Strade.Entities.Snowflake)">ToEnumerable(Snowflake)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TEntity&gt; ToEnumerable(Snowflake scope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_Trim.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.Trim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L538">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_Trim_" data-uid="Strade.Cache.CacheBucket`2.Trim*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_Trim" data-uid="Strade.Cache.CacheBucket`2.Trim">Trim()</h4>
+  <div class="markdown level1 summary"><p>Trims the cache bucket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Trim()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2_TryGetEntity_Strade_Entities_Snowflake_Strade_Entities_Snowflake__0__.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602.TryGetEntity(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake%2C%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L568">View Source</a>
+  </span>
+  <a id="Strade_Cache_CacheBucket_2_TryGetEntity_" data-uid="Strade.Cache.CacheBucket`2.TryGetEntity*"></a>
+  <h4 id="Strade_Cache_CacheBucket_2_TryGetEntity_Strade_Entities_Snowflake_Strade_Entities_Snowflake__0__" data-uid="Strade.Cache.CacheBucket`2.TryGetEntity(Strade.Entities.Snowflake,Strade.Entities.Snowflake,`0@)">TryGetEntity(Snowflake, Snowflake, out TEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetEntity(Snowflake scope, Snowflake id, out TEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Cache.ICacheBucket-2.html">ICacheBucket&lt;TEntity, TModel&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Cache_CacheBucket_2.md&amp;value=---%0Auid%3A%20Strade.Cache.CacheBucket%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Cache/Default/CacheBucket.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

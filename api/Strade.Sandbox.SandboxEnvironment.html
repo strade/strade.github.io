@@ -1,0 +1,1039 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SandboxEnvironment
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SandboxEnvironment
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Sandbox.SandboxEnvironment">
+  
+  
+  <h1 id="Strade_Sandbox_SandboxEnvironment" data-uid="Strade.Sandbox.SandboxEnvironment" class="text-break">Class SandboxEnvironment
+  </h1>
+  <div class="markdown level0 summary"><p>A class used to hold the state of a testing environment used to test Strade components
+or Discord applications build with the Strade framework. An environment holds data in
+the form of models representing the data for the entities they belong to. The
+environment providers basic operations that include create, read, update and delete (CRUD).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SandboxEnvironment</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Sandbox.html">Strade.Sandbox</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Sandbox.dll</h6>
+  <h5 id="Strade_Sandbox_SandboxEnvironment_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SandboxEnvironment : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment__ctor_Strade_Models_UserModel_Strade_Sandbox_Util_ISnowflakeGenerator_System_Text_Json_JsonSerializerOptions_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.%23ctor(Strade.Models.UserModel%2CStrade.Sandbox.Util.ISnowflakeGenerator%2CSystem.Text.Json.JsonSerializerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L46">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment__ctor_" data-uid="Strade.Sandbox.SandboxEnvironment.#ctor*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment__ctor_Strade_Models_UserModel_Strade_Sandbox_Util_ISnowflakeGenerator_System_Text_Json_JsonSerializerOptions_" data-uid="Strade.Sandbox.SandboxEnvironment.#ctor(Strade.Models.UserModel,Strade.Sandbox.Util.ISnowflakeGenerator,System.Text.Json.JsonSerializerOptions)">SandboxEnvironment(UserModel, ISnowflakeGenerator, JsonSerializerOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Sandbox.SandboxEnvironment.html">SandboxEnvironment</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SandboxEnvironment(UserModel currentUserModel = null, ISnowflakeGenerator snowflakeGenerator = null, JsonSerializerOptions jsonSerializerOptions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">currentUserModel</span></td>
+        <td><p>the model used to represent the current user; or <span class="xref">null</span> to create a
+new model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Util.ISnowflakeGenerator.html">ISnowflakeGenerator</a></td>
+        <td><span class="parametername">snowflakeGenerator</span></td>
+        <td><p>a generator used to generate random snowflakes for mock entities; or <span class="xref">null</span> to use the default <a class="xref" href="Strade.Sandbox.Util.ISnowflakeGenerator.html">ISnowflakeGenerator</a> implementation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></td>
+        <td><span class="parametername">jsonSerializerOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_Assets.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.Assets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L71">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_Assets_" data-uid="Strade.Sandbox.SandboxEnvironment.Assets*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_Assets" data-uid="Strade.Sandbox.SandboxEnvironment.Assets">Assets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetManager Assets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Assets.AssetManager.html">AssetManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_Channels.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.Channels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L81">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_Channels_" data-uid="Strade.Sandbox.SandboxEnvironment.Channels*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_Channels" data-uid="Strade.Sandbox.SandboxEnvironment.Channels">Channels</h4>
+  <div class="markdown level1 summary"><p>Gets a dictionary that supports create, read, update and delete (CRUD) operations
+for channels contained in the sandbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrudDictionary&lt;Snowflake, ChannelModel, SandboxChannel&gt; Channels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.CrudDictionary-3.html">CrudDictionary</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a>, <a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html">SandboxChannel</a>&gt;</td>
+        <td><p>a dictionary that supports create, read, update and delete (CRUD) operations for
+channels contained in the sandbox.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CurrentUser.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CurrentUser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L87">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CurrentUser_" data-uid="Strade.Sandbox.SandboxEnvironment.CurrentUser*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CurrentUser" data-uid="Strade.Sandbox.SandboxEnvironment.CurrentUser">CurrentUser</h4>
+  <div class="markdown level1 summary"><p>Gets the current user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SandboxUser CurrentUser { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxUser.html">SandboxUser</a></td>
+        <td><p>the current user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_DefaultJsonSerializerOptions.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.DefaultJsonSerializerOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L68">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_DefaultJsonSerializerOptions_" data-uid="Strade.Sandbox.SandboxEnvironment.DefaultJsonSerializerOptions*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_DefaultJsonSerializerOptions" data-uid="Strade.Sandbox.SandboxEnvironment.DefaultJsonSerializerOptions">DefaultJsonSerializerOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonSerializerOptions DefaultJsonSerializerOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_Endpoints.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.Endpoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L89">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_Endpoints_" data-uid="Strade.Sandbox.SandboxEnvironment.Endpoints*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_Endpoints" data-uid="Strade.Sandbox.SandboxEnvironment.Endpoints">Endpoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndpointCollection Endpoints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Rest.EndpointCollection.html">EndpointCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_Guilds.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.Guilds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L99">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_Guilds_" data-uid="Strade.Sandbox.SandboxEnvironment.Guilds*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_Guilds" data-uid="Strade.Sandbox.SandboxEnvironment.Guilds">Guilds</h4>
+  <div class="markdown level1 summary"><p>Gets a dictionary that supports create, read, update and delete (CRUD) operations
+for guilds contained in the sandbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrudDictionary&lt;Snowflake, GuildModel, SandboxGuild&gt; Guilds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.CrudDictionary-3.html">CrudDictionary</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Models.GuildModel.html">GuildModel</a>, <a class="xref" href="Strade.Sandbox.Entities.SandboxGuild.html">SandboxGuild</a>&gt;</td>
+        <td><p>a dictionary that supports create, read, update and delete (CRUD) operations for
+guilds contained in the sandbox.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_SerializerOptions.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.SerializerOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L127">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_SerializerOptions_" data-uid="Strade.Sandbox.SandboxEnvironment.SerializerOptions*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_SerializerOptions" data-uid="Strade.Sandbox.SandboxEnvironment.SerializerOptions">SerializerOptions</h4>
+  <div class="markdown level1 summary"><p>Gets the JSON serializer options used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JsonSerializerOptions SerializerOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></td>
+        <td><p>the JSON serializer options used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_SnowflakeGenerator.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.SnowflakeGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L101">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_SnowflakeGenerator_" data-uid="Strade.Sandbox.SandboxEnvironment.SnowflakeGenerator*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_SnowflakeGenerator" data-uid="Strade.Sandbox.SandboxEnvironment.SnowflakeGenerator">SnowflakeGenerator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISnowflakeGenerator SnowflakeGenerator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Util.ISnowflakeGenerator.html">ISnowflakeGenerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_Users.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.Users%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L111">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_Users_" data-uid="Strade.Sandbox.SandboxEnvironment.Users*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_Users" data-uid="Strade.Sandbox.SandboxEnvironment.Users">Users</h4>
+  <div class="markdown level1 summary"><p>Gets a dictionary that supports create, read, update and delete (CRUD) operations
+for users contained in the sandbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrudDictionary&lt;Snowflake, UserModel, SandboxUser&gt; Users { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.CrudDictionary-3.html">CrudDictionary</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Models.UserModel.html">UserModel</a>, <a class="xref" href="Strade.Sandbox.Entities.SandboxUser.html">SandboxUser</a>&gt;</td>
+        <td><p>a dictionary that supports create, read, update and delete (CRUD) operations for
+users contained in the sandbox.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_Webhooks.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.Webhooks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L121">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_Webhooks_" data-uid="Strade.Sandbox.SandboxEnvironment.Webhooks*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_Webhooks" data-uid="Strade.Sandbox.SandboxEnvironment.Webhooks">Webhooks</h4>
+  <div class="markdown level1 summary"><p>Gets a dictionary that supports create, read, update and delete (CRUD) operations
+for webhooks contained in the sandbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrudDictionary&lt;Snowflake, WebhookModel, SandboxWebhook&gt; Webhooks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.CrudDictionary-3.html">CrudDictionary</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Models.WebhookModel.html">WebhookModel</a>, <a class="xref" href="Strade.Sandbox.Entities.SandboxWebhook.html">SandboxWebhook</a>&gt;</td>
+        <td><p>a dictionary that supports create, read, update and delete (CRUD) operations for
+webhooks contained in the sandbox.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateChannel_Strade_Models_ChannelModel_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateChannel(Strade.Models.ChannelModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L129">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateChannel_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateChannel*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateChannel_Strade_Models_ChannelModel_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateChannel(Strade.Models.ChannelModel)">CreateChannel(ChannelModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SandboxChannel CreateChannel(ChannelModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html">SandboxChannel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateClient_Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateClient(Strade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L156">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateClient_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateClient*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateClient_Strade_Logging_ILogger_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateClient(Strade.Logging.ILogger)">CreateClient(ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordClient CreateClient(ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordClient.html">DiscordClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateClient_System_Action_Strade_DiscordClientConfiguration__Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateClient(System.Action%7BStrade.DiscordClientConfiguration%7D%2CStrade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L136">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateClient_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateClient*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateClient_System_Action_Strade_DiscordClientConfiguration__Strade_Logging_ILogger_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateClient(System.Action{Strade.DiscordClientConfiguration},Strade.Logging.ILogger)">CreateClient(Action&lt;DiscordClientConfiguration&gt;, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordClient CreateClient(Action&lt;DiscordClientConfiguration&gt; configure, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.DiscordClientConfiguration.html">DiscordClientConfiguration</a>&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordClient.html">DiscordClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateGuild_Strade_Models_GuildModel_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateGuild(Strade.Models.GuildModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L158">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateGuild_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateGuild*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateGuild_Strade_Models_GuildModel_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateGuild(Strade.Models.GuildModel)">CreateGuild(GuildModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SandboxGuild CreateGuild(GuildModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.GuildModel.html">GuildModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxGuild.html">SandboxGuild</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateRestClient_Strade_AuthenticationTokenType_Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateRestClient(Strade.AuthenticationTokenType%2CStrade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L165">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateRestClient_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateRestClient*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateRestClient_Strade_AuthenticationTokenType_Strade_Logging_ILogger_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateRestClient(Strade.AuthenticationTokenType,Strade.Logging.ILogger)">CreateRestClient(AuthenticationTokenType, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordRestClient CreateRestClient(AuthenticationTokenType authenticationMode = AuthenticationTokenType.Bot, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.AuthenticationTokenType.html">AuthenticationTokenType</a></td>
+        <td><span class="parametername">authenticationMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordRestClient.html">DiscordRestClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateUser_Strade_Models_UserModel_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateUser(Strade.Models.UserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L185">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateUser_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateUser*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateUser_Strade_Models_UserModel_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateUser(Strade.Models.UserModel)">CreateUser(UserModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateUser(UserModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateWebhook_Strade_Models_WebhookModel_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateWebhook(Strade.Models.WebhookModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L187">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateWebhook_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateWebhook*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateWebhook_Strade_Models_WebhookModel_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateWebhook(Strade.Models.WebhookModel)">CreateWebhook(WebhookModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateWebhook(WebhookModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.WebhookModel.html">WebhookModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateWebSocket.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateWebSocket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L189">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateWebSocket_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateWebSocket*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateWebSocket" data-uid="Strade.Sandbox.SandboxEnvironment.CreateWebSocket">CreateWebSocket()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWebSocket CreateWebSocket()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.WebSockets.IWebSocket.html">IWebSocket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_CreateWebSocketProcessor.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.CreateWebSocketProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L191">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_CreateWebSocketProcessor_" data-uid="Strade.Sandbox.SandboxEnvironment.CreateWebSocketProcessor*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_CreateWebSocketProcessor" data-uid="Strade.Sandbox.SandboxEnvironment.CreateWebSocketProcessor">CreateWebSocketProcessor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWebSocketProcessor CreateWebSocketProcessor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.WebSockets.IWebSocketProcessor.html">IWebSocketProcessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_Dispose.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L194">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_Dispose_" data-uid="Strade.Sandbox.SandboxEnvironment.Dispose*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_Dispose" data-uid="Strade.Sandbox.SandboxEnvironment.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L231">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_Dispose_" data-uid="Strade.Sandbox.SandboxEnvironment.Dispose*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_Dispose_System_Boolean_" data-uid="Strade.Sandbox.SandboxEnvironment.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_EmitEvent_System_String_System_Object_System_Nullable_Strade_GatewayIntents__Strade_Sandbox_EventBroadcastInformation_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.EmitEvent(System.String%2CSystem.Object%2CSystem.Nullable%7BStrade.GatewayIntents%7D%2CStrade.Sandbox.EventBroadcastInformation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L200">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_EmitEvent_" data-uid="Strade.Sandbox.SandboxEnvironment.EmitEvent*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_EmitEvent_System_String_System_Object_System_Nullable_Strade_GatewayIntents__Strade_Sandbox_EventBroadcastInformation_" data-uid="Strade.Sandbox.SandboxEnvironment.EmitEvent(System.String,System.Object,System.Nullable{Strade.GatewayIntents},Strade.Sandbox.EventBroadcastInformation)">EmitEvent(String, Object, Nullable&lt;GatewayIntents&gt;, EventBroadcastInformation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EmitEvent(string eventName, object payloadData, GatewayIntents? requiredIntents = default(GatewayIntents? ), EventBroadcastInformation broadcastInformation = default(EventBroadcastInformation))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">payloadData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.GatewayIntents.html">GatewayIntents</a>&gt;</td>
+        <td><span class="parametername">requiredIntents</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.EventBroadcastInformation.html">EventBroadcastInformation</a></td>
+        <td><span class="parametername">broadcastInformation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment_GetCurrentUserGuilds.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment.GetCurrentUserGuilds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.cs/#L228">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_SandboxEnvironment_GetCurrentUserGuilds_" data-uid="Strade.Sandbox.SandboxEnvironment.GetCurrentUserGuilds*"></a>
+  <h4 id="Strade_Sandbox_SandboxEnvironment_GetCurrentUserGuilds" data-uid="Strade.Sandbox.SandboxEnvironment.GetCurrentUserGuilds">GetCurrentUserGuilds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;SandboxGuild&gt; GetCurrentUserGuilds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Sandbox.Entities.SandboxGuild.html">SandboxGuild</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_SandboxEnvironment.md&amp;value=---%0Auid%3A%20Strade.Sandbox.SandboxEnvironment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/SandboxEnvironment.WebSocketProcessor.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

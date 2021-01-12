@@ -1,0 +1,1795 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IMessage
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IMessage
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.IMessage">
+  
+  
+  <h1 id="Strade_Entities_IMessage" data-uid="Strade.Entities.IMessage" class="text-break">Interface IMessage
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a message.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Strade.Entities.IDeletable.html#Strade_Entities_IDeletable_DeleteAsync_System_Threading_CancellationToken_">IDeletable.DeleteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Cache.IIdentifiable-1.html#Strade_Cache_IIdentifiable_1_Id">IIdentifiable&lt;Snowflake&gt;.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Entities.IModifiable-1.html#Strade_Entities_IModifiable_1_ModifyAsync__0_System_Threading_CancellationToken_">IModifiable&lt;MessageModifyProperties&gt;.ModifyAsync(MessageModifyProperties, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Entities.IModifiable-1.html#Strade_Entities_IModifiable_1_ModifyAsync_System_Action__0__System_Threading_CancellationToken_">IModifiable&lt;MessageModifyProperties&gt;.ModifyAsync(Action&lt;MessageModifyProperties&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Entities.IDiscordEntity.html#Strade_Entities_IDiscordEntity_Client">IDiscordEntity.Client</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Entities.IUpdateable-1.html#Strade_Entities_IUpdateable_1_Update__0_">IUpdateable&lt;MessageModel&gt;.Update(MessageModel)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_IMessage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMessage : IDeletable, ISnowflakeEntity, IIdentifiable&lt;Snowflake&gt;, IModifiable&lt;MessageModifyProperties&gt;, IDiscordEntity, IUpdateable&lt;MessageModel&gt;</code></pre>
+  </div>
+  <h5 id="Strade_Entities_IMessage_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#message-object-structure">https://discord.com/developers/docs/resources/channel#message-object-structure</a>
+[external, Discord Developer Documentation].</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Activity.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Activity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L24">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Activity_" data-uid="Strade.Entities.IMessage.Activity*"></a>
+  <h4 id="Strade_Entities_IMessage_Activity" data-uid="Strade.Entities.IMessage.Activity">Activity</h4>
+  <div class="markdown level1 summary"><p>Gets the activity (used for rich presence-related chat embeds).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MessageActivity? Activity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.MessageActivity.html">MessageActivity</a>&gt;</td>
+        <td><p>the activity (used for rich presence-related chat embeds).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Application.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Application%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L30">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Application_" data-uid="Strade.Entities.IMessage.Application*"></a>
+  <h4 id="Strade_Entities_IMessage_Application" data-uid="Strade.Entities.IMessage.Application">Application</h4>
+  <div class="markdown level1 summary"><p>Gets information about the rich presence-application that send the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MessageApplication Application { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageApplication.html">MessageApplication</a></td>
+        <td><p>information about the rich presence-application that send the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Attachments.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Attachments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L36">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Attachments_" data-uid="Strade.Entities.IMessage.Attachments*"></a>
+  <h4 id="Strade_Entities_IMessage_Attachments" data-uid="Strade.Entities.IMessage.Attachments">Attachments</h4>
+  <div class="markdown level1 summary"><p>Gets the attached files within the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;MessageAttachment&gt; Attachments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.MessageAttachment.html">MessageAttachment</a>&gt;</td>
+        <td><p>the attached files within the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Author.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Author%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L46">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Author_" data-uid="Strade.Entities.IMessage.Author*"></a>
+  <h4 id="Strade_Entities_IMessage_Author" data-uid="Strade.Entities.IMessage.Author">Author</h4>
+  <div class="markdown level1 summary"><p>Gets the message author. Note that the author may be a webhook or application user
+if the message was send by an application / webhook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">User Author { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.User.html">User</a></td>
+        <td><p>the message author. Note that the author may be a webhook or application user if the
+message was send by an application / webhook.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_CallInformation.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.CallInformation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L52">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_CallInformation_" data-uid="Strade.Entities.IMessage.CallInformation*"></a>
+  <h4 id="Strade_Entities_IMessage_CallInformation" data-uid="Strade.Entities.IMessage.CallInformation">CallInformation</h4>
+  <div class="markdown level1 summary"><p>Gets the call information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CallInformation CallInformation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.CallInformation.html">CallInformation</a></td>
+        <td><p>the call information; or <span class="xref">null</span> if not present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_ChannelId.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.ChannelId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L58">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_ChannelId_" data-uid="Strade.Entities.IMessage.ChannelId*"></a>
+  <h4 id="Strade_Entities_IMessage_ChannelId" data-uid="Strade.Entities.IMessage.ChannelId">ChannelId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the channel the message was sent in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Snowflake ChannelId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the snowflake identifier of the channel the message was sent in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Content.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Content%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L64">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Content_" data-uid="Strade.Entities.IMessage.Content*"></a>
+  <h4 id="Strade_Entities_IMessage_Content" data-uid="Strade.Entities.IMessage.Content">Content</h4>
+  <div class="markdown level1 summary"><p>Gets the raw message content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Content { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the raw message content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_CreatedAt.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.CreatedAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L70">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_CreatedAt_" data-uid="Strade.Entities.IMessage.CreatedAt*"></a>
+  <h4 id="Strade_Entities_IMessage_CreatedAt" data-uid="Strade.Entities.IMessage.CreatedAt">CreatedAt</h4>
+  <div class="markdown level1 summary"><p>Gets the UTC time offset when the message was sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTimeOffset CreatedAt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><p>the UTC time offset when the message was sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Embeds.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Embeds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L76">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Embeds_" data-uid="Strade.Entities.IMessage.Embeds*"></a>
+  <h4 id="Strade_Entities_IMessage_Embeds" data-uid="Strade.Entities.IMessage.Embeds">Embeds</h4>
+  <div class="markdown level1 summary"><p>Gets the embedded messages within the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;EmbedMessage&gt; Embeds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>&gt;</td>
+        <td><p>the embedded messages within the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Flags.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L82">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Flags_" data-uid="Strade.Entities.IMessage.Flags*"></a>
+  <h4 id="Strade_Entities_IMessage_Flags" data-uid="Strade.Entities.IMessage.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Gets the message flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MessageFlags Flags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageFlags.html">MessageFlags</a></td>
+        <td><p>the message flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_GuildId.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.GuildId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L91">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_GuildId_" data-uid="Strade.Entities.IMessage.GuildId*"></a>
+  <h4 id="Strade_Entities_IMessage_GuildId" data-uid="Strade.Entities.IMessage.GuildId">GuildId</h4>
+  <div class="markdown level1 summary"><p>Gets the option guild snowflake identifier of the guild the message was sent in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Snowflake? GuildId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the option guild snowflake identifier of the guild the message was sent in; or <span class="xref">null</span> if the message was not sent in a guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_IsEdited.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.IsEdited%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L97">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_IsEdited_" data-uid="Strade.Entities.IMessage.IsEdited*"></a>
+  <h4 id="Strade_Entities_IMessage_IsEdited" data-uid="Strade.Entities.IMessage.IsEdited">IsEdited</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the message was edited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsEdited { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the message was edited.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_IsMentioningEveryone.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.IsMentioningEveryone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L103">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_IsMentioningEveryone_" data-uid="Strade.Entities.IMessage.IsMentioningEveryone*"></a>
+  <h4 id="Strade_Entities_IMessage_IsMentioningEveryone" data-uid="Strade.Entities.IMessage.IsMentioningEveryone">IsMentioningEveryone</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the message mentions everyone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsMentioningEveryone { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the message mentions everyone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_IsPinned.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.IsPinned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L109">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_IsPinned_" data-uid="Strade.Entities.IMessage.IsPinned*"></a>
+  <h4 id="Strade_Entities_IMessage_IsPinned" data-uid="Strade.Entities.IMessage.IsPinned">IsPinned</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the message is pinned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPinned { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the message is pinned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_IsTextToSpeech.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.IsTextToSpeech%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L115">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_IsTextToSpeech_" data-uid="Strade.Entities.IMessage.IsTextToSpeech*"></a>
+  <h4 id="Strade_Entities_IMessage_IsTextToSpeech" data-uid="Strade.Entities.IMessage.IsTextToSpeech">IsTextToSpeech</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the message is a text-to-speech message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsTextToSpeech { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the message is a text-to-speech message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_LastEditedAt.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.LastEditedAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L124">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_LastEditedAt_" data-uid="Strade.Entities.IMessage.LastEditedAt*"></a>
+  <h4 id="Strade_Entities_IMessage_LastEditedAt" data-uid="Strade.Entities.IMessage.LastEditedAt">LastEditedAt</h4>
+  <div class="markdown level1 summary"><p>Gets the UTC time offset when the message was edited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTimeOffset? LastEditedAt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><p>the UTC time offset when the message was edited; or <span class="xref">null</span> if the
+message was not edited.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_MentionedChannels.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.MentionedChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L126">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_MentionedChannels_" data-uid="Strade.Entities.IMessage.MentionedChannels*"></a>
+  <h4 id="Strade_Entities_IMessage_MentionedChannels" data-uid="Strade.Entities.IMessage.MentionedChannels">MentionedChannels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;ChannelMention&gt; MentionedChannels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.ChannelMention.html">ChannelMention</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_MentionedRoles.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.MentionedRoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L128">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_MentionedRoles_" data-uid="Strade.Entities.IMessage.MentionedRoles*"></a>
+  <h4 id="Strade_Entities_IMessage_MentionedRoles" data-uid="Strade.Entities.IMessage.MentionedRoles">MentionedRoles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;Snowflake&gt; MentionedRoles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_MentionedUsers.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.MentionedUsers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L130">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_MentionedUsers_" data-uid="Strade.Entities.IMessage.MentionedUsers*"></a>
+  <h4 id="Strade_Entities_IMessage_MentionedUsers" data-uid="Strade.Entities.IMessage.MentionedUsers">MentionedUsers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;UserMention&gt; MentionedUsers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.UserMention.html">UserMention</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Nonce.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Nonce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L139">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Nonce_" data-uid="Strade.Entities.IMessage.Nonce*"></a>
+  <h4 id="Strade_Entities_IMessage_Nonce" data-uid="Strade.Entities.IMessage.Nonce">Nonce</h4>
+  <div class="markdown level1 summary"><p>Gets the message nonce used for validation whether a message was send.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Nonce { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the message nonce used for validation whether a message was send; or <span class="xref">null</span> if no nonce is provided.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Reactions.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Reactions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L145">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Reactions_" data-uid="Strade.Entities.IMessage.Reactions*"></a>
+  <h4 id="Strade_Entities_IMessage_Reactions" data-uid="Strade.Entities.IMessage.Reactions">Reactions</h4>
+  <div class="markdown level1 summary"><p>Gets a list of the reactions made to the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;MessageReaction&gt; Reactions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.MessageReaction.html">MessageReaction</a>&gt;</td>
+        <td><p>a list of the reactions made to the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Reference.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Reference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L156">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Reference_" data-uid="Strade.Entities.IMessage.Reference*"></a>
+  <h4 id="Strade_Entities_IMessage_Reference" data-uid="Strade.Entities.IMessage.Reference">Reference</h4>
+  <div class="markdown level1 summary"><p>Gets a reference to the origin message from which the actual message was
+cross-posted from. Available if the <a class="xref" href="Strade.Entities.MessageFlags.html#Strade_Entities_MessageFlags_IsCrosspost">IsCrosspost</a> is set in
+<a class="xref" href="Strade.Entities.IMessage.html#Strade_Entities_IMessage_Flags">Flags</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MessageReference Reference { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageReference.html">MessageReference</a></td>
+        <td><p>a reference to the origin message from which the actual message was cross-posted
+from. Available if the <a class="xref" href="Strade.Entities.MessageFlags.html#Strade_Entities_MessageFlags_IsCrosspost">IsCrosspost</a> is set in <a class="xref" href="Strade.Entities.IMessage.html#Strade_Entities_IMessage_Flags">Flags</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Stickers.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Stickers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L162">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Stickers_" data-uid="Strade.Entities.IMessage.Stickers*"></a>
+  <h4 id="Strade_Entities_IMessage_Stickers" data-uid="Strade.Entities.IMessage.Stickers">Stickers</h4>
+  <div class="markdown level1 summary"><p>Gets a read-only list containing the stickers attached with the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;Sticker&gt; Stickers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.Sticker.html">Sticker</a>&gt;</td>
+        <td><p>a read-only list containing the stickers attached with the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_Type.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L168">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_Type_" data-uid="Strade.Entities.IMessage.Type*"></a>
+  <h4 id="Strade_Entities_IMessage_Type" data-uid="Strade.Entities.IMessage.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MessageType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageType.html">MessageType</a></td>
+        <td><p>the type of the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_WebhookId.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.WebhookId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L178">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_WebhookId_" data-uid="Strade.Entities.IMessage.WebhookId*"></a>
+  <h4 id="Strade_Entities_IMessage_WebhookId" data-uid="Strade.Entities.IMessage.WebhookId">WebhookId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the webhook that send the message. If <span class="xref">null</span>, then the message was not send by a webhook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Snowflake? WebhookId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the webhook that send the message. If <span class="xref">null</span>, then the message was not send by a webhook.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_AddReactionAsync_Strade_Entities_IEmote_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.AddReactionAsync(Strade.Entities.IEmote%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L187">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_AddReactionAsync_" data-uid="Strade.Entities.IMessage.AddReactionAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_AddReactionAsync_Strade_Entities_IEmote_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.AddReactionAsync(Strade.Entities.IEmote,System.Threading.CancellationToken)">AddReactionAsync(IEmote, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified <code data-dev-comment-type="paramref" class="paramref">emote</code> as a reaction to the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddReactionAsync(IEmote emote, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IEmote.html">IEmote</a></td>
+        <td><span class="parametername">emote</span></td>
+        <td><p>the emote.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_AddReactionsAsync_System_Collections_Generic_IEnumerable_Strade_Entities_IEmote__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.AddReactionsAsync(System.Collections.Generic.IEnumerable%7BStrade.Entities.IEmote%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L196">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_AddReactionsAsync_" data-uid="Strade.Entities.IMessage.AddReactionsAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_AddReactionsAsync_System_Collections_Generic_IEnumerable_Strade_Entities_IEmote__System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.AddReactionsAsync(System.Collections.Generic.IEnumerable{Strade.Entities.IEmote},System.Threading.CancellationToken)">AddReactionsAsync(IEnumerable&lt;IEmote&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified <code data-dev-comment-type="paramref" class="paramref">emotes</code> as reactions to the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddReactionsAsync(IEnumerable&lt;IEmote&gt; emotes, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.IEmote.html">IEmote</a>&gt;</td>
+        <td><span class="parametername">emotes</span></td>
+        <td><p>the emotes to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_ClearReactionsAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.ClearReactionsAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L204">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_ClearReactionsAsync_" data-uid="Strade.Entities.IMessage.ClearReactionsAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_ClearReactionsAsync_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.ClearReactionsAsync(System.Threading.CancellationToken)">ClearReactionsAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Clears all reactions from message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ClearReactionsAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_CrosspostAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.CrosspostAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L216">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_CrosspostAsync_" data-uid="Strade.Entities.IMessage.CrosspostAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_CrosspostAsync_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.CrosspostAsync(System.Threading.CancellationToken)">CrosspostAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Crossposts / publishes the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CrosspostAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_IMessage_CrosspostAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note this operation is only valid on messages that were sent in an announcement /
+news channel.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_DeleteOwnReactionAsync_Strade_Entities_IEmote_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.DeleteOwnReactionAsync(Strade.Entities.IEmote%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L225">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_DeleteOwnReactionAsync_" data-uid="Strade.Entities.IMessage.DeleteOwnReactionAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_DeleteOwnReactionAsync_Strade_Entities_IEmote_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.DeleteOwnReactionAsync(Strade.Entities.IEmote,System.Threading.CancellationToken)">DeleteOwnReactionAsync(IEmote, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified <code data-dev-comment-type="paramref" class="paramref">emote</code> from the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteOwnReactionAsync(IEmote emote, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IEmote.html">IEmote</a></td>
+        <td><span class="parametername">emote</span></td>
+        <td><p>the emote.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_DeleteReactionAsync_Strade_Entities_User_Strade_Entities_IEmote_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.DeleteReactionAsync(Strade.Entities.User%2CStrade.Entities.IEmote%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L236">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_DeleteReactionAsync_" data-uid="Strade.Entities.IMessage.DeleteReactionAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_DeleteReactionAsync_Strade_Entities_User_Strade_Entities_IEmote_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.DeleteReactionAsync(Strade.Entities.User,Strade.Entities.IEmote,System.Threading.CancellationToken)">DeleteReactionAsync(User, IEmote, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified <code data-dev-comment-type="paramref" class="paramref">emote</code> made by the specified <code data-dev-comment-type="paramref" class="paramref">user</code> from the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteReactionAsync(User user, IEmote emote, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>the user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IEmote.html">IEmote</a></td>
+        <td><span class="parametername">emote</span></td>
+        <td><p>the emote.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_DeleteReactionsAsync_Strade_Entities_IEmote_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.DeleteReactionsAsync(Strade.Entities.IEmote%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L245">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_DeleteReactionsAsync_" data-uid="Strade.Entities.IMessage.DeleteReactionsAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_DeleteReactionsAsync_Strade_Entities_IEmote_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.DeleteReactionsAsync(Strade.Entities.IEmote,System.Threading.CancellationToken)">DeleteReactionsAsync(IEmote, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes all reactions with the specified <code data-dev-comment-type="paramref" class="paramref">emote</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteReactionsAsync(IEmote emote, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IEmote.html">IEmote</a></td>
+        <td><span class="parametername">emote</span></td>
+        <td><p>the emote type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_GetChannelAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.GetChannelAsync(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L259">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_GetChannelAsync_" data-uid="Strade.Entities.IMessage.GetChannelAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_GetChannelAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.GetChannelAsync(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetChannelAsync(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the channel the message ( <a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>) is from; or <span class="xref">null</span> if the channel is not present asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IMessageChannel&gt; GetChannelAsync(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IMessageChannel.html">IMessageChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the channel
+the message ( <a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>) is from; or <span class="xref">null</span> if the
+channel is not present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_GetGuildAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.GetGuildAsync(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L273">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_GetGuildAsync_" data-uid="Strade.Entities.IMessage.GetGuildAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_GetGuildAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.GetGuildAsync(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetGuildAsync(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the guild the message ( <a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>) is from; or <span class="xref">null</span> if the message was not sent in a guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IGuild&gt; GetGuildAsync(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IGuild.html">IGuild</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the guild the
+message ( <a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>) is from; or <span class="xref">null</span> if the message
+was not sent in a guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_GetMemberAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.GetMemberAsync(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L285">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_GetMemberAsync_" data-uid="Strade.Entities.IMessage.GetMemberAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_GetMemberAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.GetMemberAsync(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetMemberAsync(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the member the message was sent from asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;Member&gt; GetMemberAsync(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.Member.html">Member</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result the member the
+message was sent from; or <span class="xref">null</span> if the message was not sent in a guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_PinAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.PinAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L293">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_PinAsync_" data-uid="Strade.Entities.IMessage.PinAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_PinAsync_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.PinAsync(System.Threading.CancellationToken)">PinAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Pins the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task PinAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_ReplyAsync_Strade_Entities_EmbedMessage_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.ReplyAsync(Strade.Entities.EmbedMessage%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L333">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_ReplyAsync_" data-uid="Strade.Entities.IMessage.ReplyAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_ReplyAsync_Strade_Entities_EmbedMessage_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.ReplyAsync(Strade.Entities.EmbedMessage,System.Boolean,System.Threading.CancellationToken)">ReplyAsync(EmbedMessage, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a reply to the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IMessage&gt; ReplyAsync(EmbedMessage embed, bool textToSpeech = false, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a></td>
+        <td><span class="parametername">embed</span></td>
+        <td><p>the attached message embed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message send.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_ReplyAsync_Strade_Entities_MessageCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.ReplyAsync(Strade.Entities.MessageCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L304">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_ReplyAsync_" data-uid="Strade.Entities.IMessage.ReplyAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_ReplyAsync_Strade_Entities_MessageCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.ReplyAsync(Strade.Entities.MessageCreationProperties,System.Threading.CancellationToken)">ReplyAsync(MessageCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a reply to the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IMessage&gt; ReplyAsync(MessageCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.MessageCreationProperties.html">MessageCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the channel properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message send.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_ReplyAsync_System_String_Strade_Entities_EmbedMessage_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.ReplyAsync(System.String%2CStrade.Entities.EmbedMessage%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L319">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_ReplyAsync_" data-uid="Strade.Entities.IMessage.ReplyAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_ReplyAsync_System_String_Strade_Entities_EmbedMessage_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.ReplyAsync(System.String,Strade.Entities.EmbedMessage,System.Boolean,System.Threading.CancellationToken)">ReplyAsync(String, EmbedMessage, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a reply to the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IMessage&gt; ReplyAsync(string content, EmbedMessage embed = null, bool textToSpeech = false, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>the message content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a></td>
+        <td><span class="parametername">embed</span></td>
+        <td><p>the attached message embed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message send.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage_UnpinAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage.UnpinAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L341">View Source</a>
+  </span>
+  <a id="Strade_Entities_IMessage_UnpinAsync_" data-uid="Strade.Entities.IMessage.UnpinAsync*"></a>
+  <h4 id="Strade_Entities_IMessage_UnpinAsync_System_Threading_CancellationToken_" data-uid="Strade.Entities.IMessage.UnpinAsync(System.Threading.CancellationToken)">UnpinAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Unpins the message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UnpinAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IMessage.md&amp;value=---%0Auid%3A%20Strade.Entities.IMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/Abstractions/IMessage.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

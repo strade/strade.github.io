@@ -1,0 +1,975 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApplicationInformation
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApplicationInformation
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.ApplicationInformation">
+  
+  
+  <h1 id="Strade_Entities_ApplicationInformation" data-uid="Strade.Entities.ApplicationInformation" class="text-break">Class ApplicationInformation
+  </h1>
+  <div class="markdown level0 summary"><p>Holds information about an Oauth2 application.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ApplicationInformation</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Entities.ISnowflakeEntity.html">ISnowflakeEntity</a></div>
+    <div><a class="xref" href="Strade.Cache.IIdentifiable-1.html">IIdentifiable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</div>
+    <div><a class="xref" href="Strade.Entities.IDiscordEntity.html">IDiscordEntity</a></div>
+    <div><a class="xref" href="Strade.Entities.IHasIcon.html">IHasIcon</a></div>
+    <div><a class="xref" href="Strade.Entities.IHasDescription.html">IHasDescription</a></div>
+    <div><a class="xref" href="Strade.Entities.IOwnable-1.html">IOwnable</a>&lt;<a class="xref" href="Strade.Entities.User.html">User</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_ApplicationInformation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ApplicationInformation : ISnowflakeEntity, IIdentifiable&lt;Snowflake&gt;, IDiscordEntity, IHasIcon, IHasDescription, IOwnable&lt;User&gt;</code></pre>
+  </div>
+  <h5 id="Strade_Entities_ApplicationInformation_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/topics/oauth2#get-current-application-information-response-structure">https://discord.com/developers/docs/topics/oauth2#get-current-application-information-response-structure</a>
+[external, Discord Developer Documentation].</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation__ctor_Strade_IDiscordRestClient_Strade_Models_ApplicationInformationModel_.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.%23ctor(Strade.IDiscordRestClient%2CStrade.Models.ApplicationInformationModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L29">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation__ctor_" data-uid="Strade.Entities.ApplicationInformation.#ctor*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation__ctor_Strade_IDiscordRestClient_Strade_Models_ApplicationInformationModel_" data-uid="Strade.Entities.ApplicationInformation.#ctor(Strade.IDiscordRestClient,Strade.Models.ApplicationInformationModel)">ApplicationInformation(IDiscordRestClient, ApplicationInformationModel)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.ApplicationInformation.html">ApplicationInformation</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationInformation(IDiscordRestClient client, ApplicationInformationModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.IDiscordRestClient.html">IDiscordRestClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>the client that owns the entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Models.ApplicationInformationModel.html">ApplicationInformationModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>the model that contains the entity data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">client</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">model</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Client.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L68">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Client_" data-uid="Strade.Entities.ApplicationInformation.Client*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Client" data-uid="Strade.Entities.ApplicationInformation.Client">Client</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDiscordRestClient Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.IDiscordRestClient.html">IDiscordRestClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_CoverImageHash.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.CoverImageHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L75">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_CoverImageHash_" data-uid="Strade.Entities.ApplicationInformation.CoverImageHash*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_CoverImageHash" data-uid="Strade.Entities.ApplicationInformation.CoverImageHash">CoverImageHash</h4>
+  <div class="markdown level1 summary"><p>Gets the hash of the image on store embeds, or <span class="xref">null</span> if the
+application is not a game sold on discord.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CoverImageHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the hash of the image on store embeds; else <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Description.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L81">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Description_" data-uid="Strade.Entities.ApplicationInformation.Description*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Description" data-uid="Strade.Entities.ApplicationInformation.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets the description of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the description of the entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_HasIcon.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.HasIcon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L84">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_HasIcon_" data-uid="Strade.Entities.ApplicationInformation.HasIcon*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_HasIcon" data-uid="Strade.Entities.ApplicationInformation.HasIcon">HasIcon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasIcon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_IconHash.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.IconHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L92">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_IconHash_" data-uid="Strade.Entities.ApplicationInformation.IconHash*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_IconHash" data-uid="Strade.Entities.ApplicationInformation.IconHash">IconHash</h4>
+  <div class="markdown level1 summary"><p>Gets the hash of the icon (if <span class="xref">null</span>, the application has no icon).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IconHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the hash of the icon (if <span class="xref">null</span>, the application has no icon).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_IconUrl.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.IconUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L95">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_IconUrl_" data-uid="Strade.Entities.ApplicationInformation.IconUrl*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_IconUrl" data-uid="Strade.Entities.ApplicationInformation.IconUrl">IconUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri IconUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Id.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L101">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Id_" data-uid="Strade.Entities.ApplicationInformation.Id*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Id" data-uid="Strade.Entities.ApplicationInformation.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the application the information is for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the snowflake identifier of the application the information is for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_IsPublic.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.IsPublic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L111">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_IsPublic_" data-uid="Strade.Entities.ApplicationInformation.IsPublic*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_IsPublic" data-uid="Strade.Entities.ApplicationInformation.IsPublic">IsPublic</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the application is public.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPublic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the application is public.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_ApplicationInformation_IsPublic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If an application is private ( <span class="xref">false</span>) then the application can be
+only added by its owner.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_IsRequiringCodeGrant.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.IsRequiringCodeGrant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L121">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_IsRequiringCodeGrant_" data-uid="Strade.Entities.ApplicationInformation.IsRequiringCodeGrant*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_IsRequiringCodeGrant" data-uid="Strade.Entities.ApplicationInformation.IsRequiringCodeGrant">IsRequiringCodeGrant</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the application's bot will only join upon completion
+of the full oauth2 code grant flow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRequiringCodeGrant { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the application's bot will only join upon completion of
+the full oauth2 code grant flow.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_LinkedGuildId.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.LinkedGuildId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L130">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_LinkedGuildId_" data-uid="Strade.Entities.ApplicationInformation.LinkedGuildId*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_LinkedGuildId" data-uid="Strade.Entities.ApplicationInformation.LinkedGuildId">LinkedGuildId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the guild to which the game has been linked to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake? LinkedGuildId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the guild to which the game has been linked to; or <span class="xref">null</span> if the game is not sold on discord.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Name.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L136">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Name_" data-uid="Strade.Entities.ApplicationInformation.Name*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Name" data-uid="Strade.Entities.ApplicationInformation.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the associated name of the application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the associated name of the application.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Owner.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Owner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L210">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Owner_" data-uid="Strade.Entities.ApplicationInformation.Owner*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Owner" data-uid="Strade.Entities.ApplicationInformation.Owner">Owner</h4>
+  <div class="markdown level1 summary"><p>Gets the application owner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public User Owner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.User.html">User</a></td>
+        <td><p>the application owner.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_ApplicationInformation_Owner_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Strade.Entities.ApplicationInformation.html#Strade_Entities_ApplicationInformation_Possessor">Possessor</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Possessor.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Possessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L153">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Possessor_" data-uid="Strade.Entities.ApplicationInformation.Possessor*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Possessor" data-uid="Strade.Entities.ApplicationInformation.Possessor">Possessor</h4>
+  <div class="markdown level1 summary"><p>Gets the possessor / owner of the application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public User Possessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.User.html">User</a></td>
+        <td><p>the possessor / owner of the application.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_ApplicationInformation_Possessor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    This user may contain information about a non-existent user for example if the
+    application is owned by a team then the property will hold an user model filled
+    with place holders referencing the team as the application owner.
+</p>
+<p>
+    If you want to get the real user owner of the application then use <a class="xref" href="Strade.Entities.ApplicationInformation.html#Strade_Entities_ApplicationInformation_Owner">Owner</a> instead.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_PrimarySkuId.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.PrimarySkuId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L161">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_PrimarySkuId_" data-uid="Strade.Entities.ApplicationInformation.PrimarySkuId*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_PrimarySkuId" data-uid="Strade.Entities.ApplicationInformation.PrimarySkuId">PrimarySkuId</h4>
+  <div class="markdown level1 summary"><p>Gets the game's primary SKU ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PrimarySkuId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the game's primary SKU ID; or <span class="xref">null</span> if the game is not sold on discord.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_RpcOrigins.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.RpcOrigins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L167">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_RpcOrigins_" data-uid="Strade.Entities.ApplicationInformation.RpcOrigins*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_RpcOrigins" data-uid="Strade.Entities.ApplicationInformation.RpcOrigins">RpcOrigins</h4>
+  <div class="markdown level1 summary"><p>Gets a list of RPC origin URLs (if <span class="xref">null</span>, then RPC is disabled).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; RpcOrigins { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>a list of RPC origin URLs (if <span class="xref">null</span>, then RPC is disabled).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Slug.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Slug%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L176">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Slug_" data-uid="Strade.Entities.ApplicationInformation.Slug*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Slug" data-uid="Strade.Entities.ApplicationInformation.Slug">Slug</h4>
+  <div class="markdown level1 summary"><p>Gets the URL slug that links to the store page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Slug { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the URL slug that links to the store page; or <span class="xref">null</span> if the game is
+not sold on discord.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Summary.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Summary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L186">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Summary_" data-uid="Strade.Entities.ApplicationInformation.Summary*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Summary" data-uid="Strade.Entities.ApplicationInformation.Summary">Summary</h4>
+  <div class="markdown level1 summary"><p>Gets the summary being shown in the summary field of the store page (if the
+application is a game that is sold on Discord).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Summary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the summary being shown in the summary field of the store page (if the application
+is a game that is sold on Discord).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_Team.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.Team%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L196">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_Team_" data-uid="Strade.Entities.ApplicationInformation.Team*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_Team" data-uid="Strade.Entities.ApplicationInformation.Team">Team</h4>
+  <div class="markdown level1 summary"><p>Gets the team the application belongs to; or <span class="xref">null</span> if the
+application does not belong to a team.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITeam Team { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ITeam.html">ITeam</a></td>
+        <td><p>the team the application belongs to; or <span class="xref">null</span> if the application
+does not belong to a team.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_VerifyKey.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.VerifyKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L203">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_VerifyKey_" data-uid="Strade.Entities.ApplicationInformation.VerifyKey*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_VerifyKey" data-uid="Strade.Entities.ApplicationInformation.VerifyKey">VerifyKey</h4>
+  <div class="markdown level1 summary"><p>Gets the base64 encoded key for the GameSDK's GetTicket method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VerifyKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the base64 encoded key for the GameSDK's GetTicket method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_ApplicationInformation_VerifyKey_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a href="https://discord.com/developers/docs/game-sdk/applications#getticket">https://discord.com/developers/docs/game-sdk/applications#getticket</a>.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_BuildIconUrl_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.BuildIconUrl(Strade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L213">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_BuildIconUrl_" data-uid="Strade.Entities.ApplicationInformation.BuildIconUrl*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_BuildIconUrl_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Entities.ApplicationInformation.BuildIconUrl(Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildIconUrl(ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri BuildIconUrl(ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation_ToString.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L217">View Source</a>
+  </span>
+  <a id="Strade_Entities_ApplicationInformation_ToString_" data-uid="Strade.Entities.ApplicationInformation.ToString*"></a>
+  <h4 id="Strade_Entities_ApplicationInformation_ToString" data-uid="Strade.Entities.ApplicationInformation.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Entities.ISnowflakeEntity.html">ISnowflakeEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Cache.IIdentifiable-1.html">IIdentifiable&lt;TIdentifier&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Entities.IDiscordEntity.html">IDiscordEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Entities.IHasIcon.html">IHasIcon</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Entities.IHasDescription.html">IHasDescription</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Entities.IOwnable-1.html">IOwnable&lt;TOwner&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_ApplicationInformation.md&amp;value=---%0Auid%3A%20Strade.Entities.ApplicationInformation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/ApplicationInformation.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

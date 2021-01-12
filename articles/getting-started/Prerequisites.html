@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Prerequisites | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Prerequisites | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+                <h1 id="prerequisites">Prerequisites</h1>
+
+<h2 id="net-runtime">.NET Runtime</h2>
+<p>In order to run your bot you need to have a valid installation of a .NET Runtime installed on your target system.</p>
+<p><a href="https://dotnet.microsoft.com/download">Download .NET Runtime</a></p>
+<h2 id="bot-application">Bot Application</h2>
+<p>You will need to obtain a secret bot token in order to create your bot.</p>
+<h3 id="1-step-go-to-the-following-page-discord-applications"><strong>1. Step</strong> Go to the following page: <a href="https://discordapp.com/developers/applications/">Discord Applications</a></h3>
+<p><img src="../../images/new_application.png" alt="Create new Application"> <img src="../../images/create_application.png" alt="Create new Application"></p>
+<ol>
+<li><strong>Click on <em>&quot;New Application&quot;</em></strong></li>
+<li><strong>Enter the name of your bot</strong> (e.g. My First Bot, You can change it later)</li>
+<li><strong>Click on the <em>Create</em> button</strong></li>
+</ol>
+<h3 id="2-step-fill-out-your-bot-information"><strong>2. Step</strong> Fill out your bot information</h3>
+<p><img src="../../images/setup_application.png" alt="Create new Application"></p>
+<ol>
+<li><strong>Check your bot name</strong></li>
+<li><strong>Enter a bot description that describes your bot</strong></li>
+<li><strong>Choose a cool avatar for your bot. (optional)</strong></li>
+<li><strong>Click on the <em>Bot</em> page</strong></li>
+</ol>
+<h3 id="3-step-get-your-bot-token"><strong>3. Step</strong> Get your bot token</h3>
+<ol>
+<li><strong>On the bot page click on <em>&quot;Create new Bot&quot;</em></strong></li>
+<li><strong>Click on <em>&quot;Yes&quot;</em> if a dialog appears.</strong></li>
+<li><strong>Copy your bot token.</strong></li>
+</ol>
+<div class="IMPORTANT">
+  <h5>WARNING - <b>KEEP YOUR BOT TOKEN PRIVATE!</b></h5>
+  <p>
+    You should treat your bot token as a password. <b>Do NOT shared your bot token with anyone else!</b>
+    Anyone with your bot token can control your bot. Consider using an external source for your bot
+    token (e.g. environment header, file, etc.).
+  </p>
+</div>
+<p><img src="../../images/copy_bot_token.png" alt="Copy Bot Token"></p>
+<h3 id="4-step-add-your-bot-to-a-server"><strong>4. Step</strong> Add your bot to a server</h3>
+<ol>
+<li><strong>Go to the <em>OAuth2</em> page</strong></li>
+<li><strong>Select the <code>bot</code> scope</strong></li>
+<li><strong>Adjust bot permissions if wanted</strong></li>
+<li><strong>Copy the link and paste it in your browser</strong></li>
+<li><strong>Select a server you want the bot to join</strong></li>
+<li><strong>Click on <em>Authorize</em></strong></li>
+<li><strong>Verify the captcha (if needed)</strong></li>
+</ol>
+<p><img src="../../images/add_bot.png" alt="Add Bot to Server"></p>
+<p><img src="../../images/add_bot_to_server.png" alt="Add Bot to Server"></p>
+<h1 id="5-step-add-bot_token-environment-variable"><strong>5. Step</strong> Add BOT_TOKEN environment variable</h1>
+<p>You should treat your bot token like a password. Make sure nobody has access to it except yourself.</p>
+<p>We recommend using environment variables for storing your token:</p>
+<p><strong>Linux</strong></p>
+<p>Run the following in your favorite shell or command line; or if you want to store your bot token permanently, open your <code>~/.bashrc</code> file and add the above line to it.</p>
+<pre><code>export BOT_TOKEN=&lt;Insert your bot token here&gt;
+</code></pre>
+<p><strong>Windows</strong></p>
+<pre><code>setx BOT_TOKEN &lt;Insert your bot token here&gt;
+</code></pre>
+<div class="NOTE compressed">
+  <p>
+    Your bot token should be similar to the following:
+    NzU5MDgxOTg0NjIxODA1Njc4.X24UMA.tdSisrF3eor_i_mh9kakiG4ZpPA
+  </p>
+</div>
+<h3 id="further-steps">Further steps</h3>
+<h4 id="making-your-bot-private">Making your bot private</h4>
+<p>You may want to keep your bot private, then you can un-check the <strong>&quot;Public Bot&quot;</strong> checkbox. This will make your bot private and only the owner can add the bot to other servers.</p>
+<h4 id="revoke--regenerate-bot-token">Revoke / Regenerate bot token</h4>
+<p>In the worst case if your bot token gets to publicity you can revoke it when you click <strong>&quot;Regenerate&quot;</strong>. Your old bot token will not be valid anymore (so you have to update your bot token in your code, environment variable, etc.).</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/docs/articles/getting-started/Prerequisites.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

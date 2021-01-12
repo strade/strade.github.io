@@ -1,0 +1,1358 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IChannelParent
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IChannelParent
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.IChannelParent">
+  
+  
+  <h1 id="Strade_Entities_IChannelParent" data-uid="Strade.Entities.IChannelParent" class="text-break">Interface IChannelParent
+  </h1>
+  <div class="markdown level0 summary"><p>An interface for an entity which has underlying channels.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_IChannelParent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IChannelParent</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateChannelAsync_Strade_Entities_NestedChannelCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateChannelAsync(Strade.Entities.NestedChannelCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L23">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateChannelAsync_Strade_Entities_NestedChannelCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateChannelAsync(Strade.Entities.NestedChannelCreationProperties,System.Threading.CancellationToken)">CreateChannelAsync(NestedChannelCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;INestedChannel&gt; CreateChannelAsync(NestedChannelCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.NestedChannelCreationProperties.html">NestedChannelCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the channel creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.INestedChannel.html">INestedChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateNewsChannelAsync_Strade_Entities_NewsChannelCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateNewsChannelAsync(Strade.Entities.NewsChannelCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L45">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateNewsChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateNewsChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateNewsChannelAsync_Strade_Entities_NewsChannelCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateNewsChannelAsync(Strade.Entities.NewsChannelCreationProperties,System.Threading.CancellationToken)">CreateNewsChannelAsync(NewsChannelCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new news channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;INewsChannel&gt; CreateNewsChannelAsync(NewsChannelCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.NewsChannelCreationProperties.html">NewsChannelCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the channel creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.INewsChannel.html">INewsChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateNewsChannelAsync_System_Action_Strade_Entities_NewsChannelCreationProperties__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateNewsChannelAsync(System.Action%7BStrade.Entities.NewsChannelCreationProperties%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L34">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateNewsChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateNewsChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateNewsChannelAsync_System_Action_Strade_Entities_NewsChannelCreationProperties__System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateNewsChannelAsync(System.Action{Strade.Entities.NewsChannelCreationProperties},System.Threading.CancellationToken)">CreateNewsChannelAsync(Action&lt;NewsChannelCreationProperties&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new news channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;INewsChannel&gt; CreateNewsChannelAsync(Action&lt;NewsChannelCreationProperties&gt; action, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.Entities.NewsChannelCreationProperties.html">NewsChannelCreationProperties</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>the action to construct the properties for the channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.INewsChannel.html">INewsChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateStoreChannelAsync_Strade_Entities_StoreChannelCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateStoreChannelAsync(Strade.Entities.StoreChannelCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L67">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateStoreChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateStoreChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateStoreChannelAsync_Strade_Entities_StoreChannelCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateStoreChannelAsync(Strade.Entities.StoreChannelCreationProperties,System.Threading.CancellationToken)">CreateStoreChannelAsync(StoreChannelCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new store channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IStoreChannel&gt; CreateStoreChannelAsync(StoreChannelCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.StoreChannelCreationProperties.html">StoreChannelCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the channel creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IStoreChannel.html">IStoreChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateStoreChannelAsync_System_Action_Strade_Entities_StoreChannelCreationProperties__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateStoreChannelAsync(System.Action%7BStrade.Entities.StoreChannelCreationProperties%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L56">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateStoreChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateStoreChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateStoreChannelAsync_System_Action_Strade_Entities_StoreChannelCreationProperties__System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateStoreChannelAsync(System.Action{Strade.Entities.StoreChannelCreationProperties},System.Threading.CancellationToken)">CreateStoreChannelAsync(Action&lt;StoreChannelCreationProperties&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new store channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IStoreChannel&gt; CreateStoreChannelAsync(Action&lt;StoreChannelCreationProperties&gt; action, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.Entities.StoreChannelCreationProperties.html">StoreChannelCreationProperties</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>the action to construct the properties for the channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IStoreChannel.html">IStoreChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateTextChannelAsync_Strade_Entities_TextChannelCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateTextChannelAsync(Strade.Entities.TextChannelCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L89">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateTextChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateTextChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateTextChannelAsync_Strade_Entities_TextChannelCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateTextChannelAsync(Strade.Entities.TextChannelCreationProperties,System.Threading.CancellationToken)">CreateTextChannelAsync(TextChannelCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new text channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ITextChannel&gt; CreateTextChannelAsync(TextChannelCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.TextChannelCreationProperties.html">TextChannelCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the channel creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.ITextChannel.html">ITextChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateTextChannelAsync_System_Action_Strade_Entities_TextChannelCreationProperties__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateTextChannelAsync(System.Action%7BStrade.Entities.TextChannelCreationProperties%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L78">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateTextChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateTextChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateTextChannelAsync_System_Action_Strade_Entities_TextChannelCreationProperties__System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateTextChannelAsync(System.Action{Strade.Entities.TextChannelCreationProperties},System.Threading.CancellationToken)">CreateTextChannelAsync(Action&lt;TextChannelCreationProperties&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new text channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ITextChannel&gt; CreateTextChannelAsync(Action&lt;TextChannelCreationProperties&gt; action, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.Entities.TextChannelCreationProperties.html">TextChannelCreationProperties</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>the action to construct the properties for the channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.ITextChannel.html">ITextChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateVoiceChannelAsync_Strade_Entities_VoiceChannelCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateVoiceChannelAsync(Strade.Entities.VoiceChannelCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L111">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateVoiceChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateVoiceChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateVoiceChannelAsync_Strade_Entities_VoiceChannelCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateVoiceChannelAsync(Strade.Entities.VoiceChannelCreationProperties,System.Threading.CancellationToken)">CreateVoiceChannelAsync(VoiceChannelCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new voice channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IVoiceChannel&gt; CreateVoiceChannelAsync(VoiceChannelCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.VoiceChannelCreationProperties.html">VoiceChannelCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the channel creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_CreateVoiceChannelAsync_System_Action_Strade_Entities_VoiceChannelCreationProperties__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.CreateVoiceChannelAsync(System.Action%7BStrade.Entities.VoiceChannelCreationProperties%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L100">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_CreateVoiceChannelAsync_" data-uid="Strade.Entities.IChannelParent.CreateVoiceChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_CreateVoiceChannelAsync_System_Action_Strade_Entities_VoiceChannelCreationProperties__System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.CreateVoiceChannelAsync(System.Action{Strade.Entities.VoiceChannelCreationProperties},System.Threading.CancellationToken)">CreateVoiceChannelAsync(Action&lt;VoiceChannelCreationProperties&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new voice channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IVoiceChannel&gt; CreateVoiceChannelAsync(Action&lt;VoiceChannelCreationProperties&gt; action, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.Entities.VoiceChannelCreationProperties.html">VoiceChannelCreationProperties</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>the action to construct the properties for the channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L137">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetChannelAsync_" data-uid="Strade.Entities.IChannelParent.GetChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the channel specified by <code data-dev-comment-type="paramref" class="paramref">id</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IGuildChannel&gt; GetChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the snowflake identifier of the target channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IGuildChannel.html">IGuildChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetChannelAsync__1_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetChannelAsync%60%601(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L124">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetChannelAsync_" data-uid="Strade.Entities.IChannelParent.GetChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetChannelAsync__1_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetChannelAsync``1(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetChannelAsync&lt;TChannel&gt;(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the voice channel specified by <code data-dev-comment-type="paramref" class="paramref">id</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;TChannel&gt; GetChannelAsync&lt;TChannel&gt;(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))
+
+    where TChannel : IGuildChannel</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the snowflake identifier of the target voice channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;TChannel&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the voice channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TChannel</span></td>
+        <td><p>the type of the channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetChannelsAsync(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L149">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetChannelsAsync_" data-uid="Strade.Entities.IChannelParent.GetChannelsAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetChannelsAsync(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetChannelsAsync(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the channels asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IEnumerable&lt;IGuildChannel&gt;&gt; GetChannelsAsync(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.IGuildChannel.html">IGuildChannel</a>&gt;&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is an enumerable
+that enumerates through the channels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetChannelsAsync__1_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetChannelsAsync%60%601(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L162">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetChannelsAsync_" data-uid="Strade.Entities.IChannelParent.GetChannelsAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetChannelsAsync__1_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetChannelsAsync``1(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetChannelsAsync&lt;TChannel&gt;(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets all channels of the specified <code data-dev-comment-type="typeparamref" class="typeparamref">TChannel</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IEnumerable&lt;TChannel&gt;&gt; GetChannelsAsync&lt;TChannel&gt;(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))
+
+    where TChannel : IGuildChannel</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TChannel&gt;&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is an enumerable
+that enumerates through the channels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TChannel</span></td>
+        <td><p>the type of the channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetNewsChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetNewsChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L176">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetNewsChannelAsync_" data-uid="Strade.Entities.IChannelParent.GetNewsChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetNewsChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetNewsChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetNewsChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the announcement channel specified by <code data-dev-comment-type="paramref" class="paramref">id</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;INewsChannel&gt; GetNewsChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the snowflake identifier of the target announcement channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.INewsChannel.html">INewsChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the
+announcement channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetNewsChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetNewsChannelsAsync(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L188">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetNewsChannelsAsync_" data-uid="Strade.Entities.IChannelParent.GetNewsChannelsAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetNewsChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetNewsChannelsAsync(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetNewsChannelsAsync(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets all announcement / news channels asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IEnumerable&lt;INewsChannel&gt;&gt; GetNewsChannelsAsync(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.INewsChannel.html">INewsChannel</a>&gt;&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is an enumerable
+that enumerates through the channels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetStoreChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetStoreChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L200">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetStoreChannelAsync_" data-uid="Strade.Entities.IChannelParent.GetStoreChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetStoreChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetStoreChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetStoreChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the store channel specified by <code data-dev-comment-type="paramref" class="paramref">id</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IStoreChannel&gt; GetStoreChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the snowflake identifier of the target store channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IStoreChannel.html">IStoreChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the store channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetStoreChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetStoreChannelsAsync(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L212">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetStoreChannelsAsync_" data-uid="Strade.Entities.IChannelParent.GetStoreChannelsAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetStoreChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetStoreChannelsAsync(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetStoreChannelsAsync(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets all store channels asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IEnumerable&lt;IStoreChannel&gt;&gt; GetStoreChannelsAsync(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.IStoreChannel.html">IStoreChannel</a>&gt;&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is an enumerable
+that enumerates through the channels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetTextChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetTextChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L224">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetTextChannelAsync_" data-uid="Strade.Entities.IChannelParent.GetTextChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetTextChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetTextChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetTextChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the text channel specified by <code data-dev-comment-type="paramref" class="paramref">id</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;ITextChannel&gt; GetTextChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the snowflake identifier of the target text channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.ITextChannel.html">ITextChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the text channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetTextChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetTextChannelsAsync(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L236">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetTextChannelsAsync_" data-uid="Strade.Entities.IChannelParent.GetTextChannelsAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetTextChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetTextChannelsAsync(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetTextChannelsAsync(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets all text channels asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IEnumerable&lt;ITextChannel&gt;&gt; GetTextChannelsAsync(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.ITextChannel.html">ITextChannel</a>&gt;&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is an enumerable
+that enumerates through the channels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetVoiceChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetVoiceChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L248">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetVoiceChannelAsync_" data-uid="Strade.Entities.IChannelParent.GetVoiceChannelAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetVoiceChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetVoiceChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetVoiceChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the voice channel specified by <code data-dev-comment-type="paramref" class="paramref">id</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IVoiceChannel&gt; GetVoiceChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the snowflake identifier of the target voice channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the voice channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent_GetVoiceChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent.GetVoiceChannelsAsync(Strade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L260">View Source</a>
+  </span>
+  <a id="Strade_Entities_IChannelParent_GetVoiceChannelsAsync_" data-uid="Strade.Entities.IChannelParent.GetVoiceChannelsAsync*"></a>
+  <h4 id="Strade_Entities_IChannelParent_GetVoiceChannelsAsync_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.Entities.IChannelParent.GetVoiceChannelsAsync(Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetVoiceChannelsAsync(CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets all voice channels asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IEnumerable&lt;IVoiceChannel&gt;&gt; GetVoiceChannelsAsync(CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is an enumerable
+that enumerates through the channels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IChannelParent.md&amp;value=---%0Auid%3A%20Strade.Entities.IChannelParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Channel/IChannelParent.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

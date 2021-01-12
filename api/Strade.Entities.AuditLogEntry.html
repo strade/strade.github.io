@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AuditLogEntry
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AuditLogEntry
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.AuditLogEntry">
+  
+  
+  <h1 id="Strade_Entities_AuditLogEntry" data-uid="Strade.Entities.AuditLogEntry" class="text-break">Class AuditLogEntry
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an entry in the audit log and records an administrative operation on the guild.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AuditLogEntry</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Entities.IDiscordEntity.html">IDiscordEntity</a></div>
+    <div><a class="xref" href="Strade.Cache.IIdentifiable-1.html">IIdentifiable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_AuditLogEntry_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AuditLogEntry : IDiscordEntity, IIdentifiable&lt;Snowflake&gt;</code></pre>
+  </div>
+  <h5 id="Strade_Entities_AuditLogEntry_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>See <a href="https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object">https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object</a> for
+more details.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry__ctor_Strade_Entities_IAuditLog_Strade_Models_AuditLogEntryModel_.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.%23ctor(Strade.Entities.IAuditLog%2CStrade.Models.AuditLogEntryModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L30">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry__ctor_" data-uid="Strade.Entities.AuditLogEntry.#ctor*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry__ctor_Strade_Entities_IAuditLog_Strade_Models_AuditLogEntryModel_" data-uid="Strade.Entities.AuditLogEntry.#ctor(Strade.Entities.IAuditLog,Strade.Models.AuditLogEntryModel)">AuditLogEntry(IAuditLog, AuditLogEntryModel)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.AuditLogEntry.html">AuditLogEntry</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuditLogEntry(IAuditLog auditLog, AuditLogEntryModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IAuditLog.html">IAuditLog</a></td>
+        <td><span class="parametername">auditLog</span></td>
+        <td><p>the parent audit log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Models.AuditLogEntryModel.html">AuditLogEntryModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>the model that contains the entity data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">auditLog</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">model</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_ActionType.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.ActionType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L51">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_ActionType_" data-uid="Strade.Entities.AuditLogEntry.ActionType*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_ActionType" data-uid="Strade.Entities.AuditLogEntry.ActionType">ActionType</h4>
+  <div class="markdown level1 summary"><p>Gets the action type of the entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuditLogActionType ActionType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.AuditLogActionType.html">AuditLogActionType</a></td>
+        <td><p>the action type of the entry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_AuditLog.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.AuditLog%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L57">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_AuditLog_" data-uid="Strade.Entities.AuditLogEntry.AuditLog*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_AuditLog" data-uid="Strade.Entities.AuditLogEntry.AuditLog">AuditLog</h4>
+  <div class="markdown level1 summary"><p>Gets the parent audit log ( <a class="xref" href="Strade.Entities.AuditLogEntry.html#Strade_Entities_AuditLogEntry_AuditLog">AuditLog</a>) that owns the entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAuditLog AuditLog { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IAuditLog.html">IAuditLog</a></td>
+        <td><p>the parent audit log ( <a class="xref" href="Strade.Entities.AuditLogEntry.html#Strade_Entities_AuditLogEntry_AuditLog">AuditLog</a>) that owns the entry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_Changes.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.Changes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L63">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_Changes_" data-uid="Strade.Entities.AuditLogEntry.Changes*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_Changes" data-uid="Strade.Entities.AuditLogEntry.Changes">Changes</h4>
+  <div class="markdown level1 summary"><p>Gets a read-only list of the changes that this entry represents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;AuditLogChange&gt; Changes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.AuditLogChange.html">AuditLogChange</a>&gt;</td>
+        <td><p>a read-only list of the changes that this entry represents.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_Client.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L155">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_Client_" data-uid="Strade.Entities.AuditLogEntry.Client*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_Client" data-uid="Strade.Entities.AuditLogEntry.Client">Client</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDiscordRestClient Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.IDiscordRestClient.html">IDiscordRestClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_CreatedAt.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.CreatedAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L69">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_CreatedAt_" data-uid="Strade.Entities.AuditLogEntry.CreatedAt*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_CreatedAt" data-uid="Strade.Entities.AuditLogEntry.CreatedAt">CreatedAt</h4>
+  <div class="markdown level1 summary"><p>Gets the UTC time when the entry was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset CreatedAt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><p>the UTC time when the entry was created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_Id.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L72">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_Id_" data-uid="Strade.Entities.AuditLogEntry.Id*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_Id" data-uid="Strade.Entities.AuditLogEntry.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_Options.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L127">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_Options_" data-uid="Strade.Entities.AuditLogEntry.Options*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_Options" data-uid="Strade.Entities.AuditLogEntry.Options">Options</h4>
+  <div class="markdown level1 summary"><p>Gets additional options included within the entry; or <span class="xref">null</span> if no
+additional options are included within the entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAuditLogOptions Options { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IAuditLogOptions.html">IAuditLogOptions</a></td>
+        <td><p>additional options included within the entry; or <span class="xref">null</span> if no
+additional options are included within the entry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_AuditLogEntry_Options_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The following action types include additional options:</p>
+<table><tbody><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_ChannelOverwriteCreate">ChannelOverwriteCreate</a></td><td><a class="xref" href="Strade.Entities.OverwriteAuditLogOptions.html">OverwriteAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_ChannelOverwriteUpdate">ChannelOverwriteUpdate</a></td><td><a class="xref" href="Strade.Entities.OverwriteAuditLogOptions.html">OverwriteAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_ChannelOverwriteDelete">ChannelOverwriteDelete</a></td><td><a class="xref" href="Strade.Entities.OverwriteAuditLogOptions.html">OverwriteAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_MemberPrune">MemberPrune</a></td><td><a class="xref" href="Strade.Entities.MemberPruneAuditLogOptions.html">MemberPruneAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_MemberMove">MemberMove</a></td><td><a class="xref" href="Strade.Entities.MemberMoveAuditLogOptions.html">MemberMoveAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_MemberDisconnect">MemberDisconnect</a></td><td><a class="xref" href="Strade.Entities.MemberDisconnectAuditLogOptions.html">MemberDisconnectAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_MessageDelete">MessageDelete</a></td><td><a class="xref" href="Strade.Entities.MessageDeleteAuditLogOptions.html">MessageDeleteAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_MessageBulkDelete">MessageBulkDelete</a></td><td><a class="xref" href="Strade.Entities.MessageBulkDeleteAuditLogOptions.html">MessageBulkDeleteAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_MessagePin">MessagePin</a></td><td><a class="xref" href="Strade.Entities.MessagePinAuditLogOptions.html">MessagePinAuditLogOptions</a></td></tr><tr><td><a class="xref" href="Strade.Entities.AuditLogActionType.html#Strade_Entities_AuditLogActionType_MessageUnpin">MessageUnpin</a></td><td><a class="xref" href="Strade.Entities.MessagePinAuditLogOptions.html">MessagePinAuditLogOptions</a></td></tr></tbody></table>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_Reason.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.Reason%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L140">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_Reason_" data-uid="Strade.Entities.AuditLogEntry.Reason*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_Reason" data-uid="Strade.Entities.AuditLogEntry.Reason">Reason</h4>
+  <div class="markdown level1 summary"><p>Gets the reason why the operation was made; or <span class="xref">null</span> if the
+initiator did not include an action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Reason { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the reason why the operation was made; or <span class="xref">null</span> if the initiator
+did not include an action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_AuditLogEntry_Reason_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can set the reason for client actions using the <a class="xref" href="Strade.Entities.AuditLog.html#Strade_Entities_AuditLog_Reason">Reason</a> property.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_TargetId.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.TargetId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L146">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_TargetId_" data-uid="Strade.Entities.AuditLogEntry.TargetId*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_TargetId" data-uid="Strade.Entities.AuditLogEntry.TargetId">TargetId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the entity that audit log entry refers to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake? TargetId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td><p>the snowflake identifier of the entity that audit log entry refers to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry_User.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry.User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L152">View Source</a>
+  </span>
+  <a id="Strade_Entities_AuditLogEntry_User_" data-uid="Strade.Entities.AuditLogEntry.User*"></a>
+  <h4 id="Strade_Entities_AuditLogEntry_User" data-uid="Strade.Entities.AuditLogEntry.User">User</h4>
+  <div class="markdown level1 summary"><p>Gets the user that made the action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public User User { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.User.html">User</a></td>
+        <td><p>the user that made the action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Entities.IDiscordEntity.html">IDiscordEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Cache.IIdentifiable-1.html">IIdentifiable&lt;TIdentifier&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogEntry.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogEntry.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

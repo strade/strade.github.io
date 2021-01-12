@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAuditLog
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAuditLog
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.IAuditLog">
+  
+  
+  <h1 id="Strade_Entities_IAuditLog" data-uid="Strade.Entities.IAuditLog" class="text-break">Interface IAuditLog
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an audit log of a guild. An audit log logs administrative operations for
+example when a channel is created, a user was banned, etc.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Strade.Entities.IDiscordEntity.html#Strade_Entities_IDiscordEntity_Client">IDiscordEntity.Client</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_IAuditLog_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAuditLog : IDiscordEntity</code></pre>
+  </div>
+  <h5 id="Strade_Entities_IAuditLog_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>See
+<a href="https://discord.com/developers/docs/resources/audit-log#audit-log-object-audit-log-structure">https://discord.com/developers/docs/resources/audit-log#audit-log-object-audit-log-structure</a>
+for more details.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_Entries.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.Entries%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L20">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_Entries_" data-uid="Strade.Entities.IAuditLog.Entries*"></a>
+  <h4 id="Strade_Entities_IAuditLog_Entries" data-uid="Strade.Entities.IAuditLog.Entries">Entries</h4>
+  <div class="markdown level1 summary"><p>Gets an enumerable that yields through the audit log entries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;AuditLogEntry&gt; Entries { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.AuditLogEntry.html">AuditLogEntry</a>&gt;</td>
+        <td><p>an enumerable that yields through the audit log entries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_GuildId.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.GuildId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L26">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_GuildId_" data-uid="Strade.Entities.IAuditLog.GuildId*"></a>
+  <h4 id="Strade_Entities_IAuditLog_GuildId" data-uid="Strade.Entities.IAuditLog.GuildId">GuildId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the guild the audit log is for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Snowflake GuildId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the snowflake identifier of the guild the audit log is for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_Integrations.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.Integrations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L35">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_Integrations_" data-uid="Strade.Entities.IAuditLog.Integrations*"></a>
+  <h4 id="Strade_Entities_IAuditLog_Integrations" data-uid="Strade.Entities.IAuditLog.Integrations">Integrations</h4>
+  <div class="markdown level1 summary"><p>Gets an enumerable that yields through the integrations that the audit log
+intersects with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;GuildIntegrationInformation&gt; Integrations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.GuildIntegrationInformation.html">GuildIntegrationInformation</a>&gt;</td>
+        <td><p>an enumerable that yields through the integrations that the audit log intersects with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_Users.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.Users%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L43">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_Users_" data-uid="Strade.Entities.IAuditLog.Users*"></a>
+  <h4 id="Strade_Entities_IAuditLog_Users" data-uid="Strade.Entities.IAuditLog.Users">Users</h4>
+  <div class="markdown level1 summary"><p>Gets an enumerable that yields through the users that the audit log intersects with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;User&gt; Users { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.User.html">User</a>&gt;</td>
+        <td><p>an enumerable that yields through the users that the audit log intersects with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_Webhooks.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.Webhooks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L51">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_Webhooks_" data-uid="Strade.Entities.IAuditLog.Webhooks*"></a>
+  <h4 id="Strade_Entities_IAuditLog_Webhooks" data-uid="Strade.Entities.IAuditLog.Webhooks">Webhooks</h4>
+  <div class="markdown level1 summary"><p>Gets an enumerable that yields through the webhooks that the audit log intersects with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Webhook&gt; Webhooks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.Webhook.html">Webhook</a>&gt;</td>
+        <td><p>an enumerable that yields through the webhooks that the audit log intersects with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_GetEntry_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.GetEntry(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L61">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_GetEntry_" data-uid="Strade.Entities.IAuditLog.GetEntry*"></a>
+  <h4 id="Strade_Entities_IAuditLog_GetEntry_Strade_Entities_Snowflake_" data-uid="Strade.Entities.IAuditLog.GetEntry(Strade.Entities.Snowflake)">GetEntry(Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Gets an entry by the specified <code data-dev-comment-type="paramref" class="paramref">entryId</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AuditLogEntry GetEntry(Snowflake entryId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">entryId</span></td>
+        <td><p>the snowflake identifier of the audit log entry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.AuditLogEntry.html">AuditLogEntry</a></td>
+        <td><p>the audit log entry; or <span class="xref">null</span> if no audit log entry was found by
+the specified <code data-dev-comment-type="paramref" class="paramref">entryId</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_GetIntegration_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.GetIntegration(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L71">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_GetIntegration_" data-uid="Strade.Entities.IAuditLog.GetIntegration*"></a>
+  <h4 id="Strade_Entities_IAuditLog_GetIntegration_Strade_Entities_Snowflake_" data-uid="Strade.Entities.IAuditLog.GetIntegration(Strade.Entities.Snowflake)">GetIntegration(Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Gets an integration by the specified <code data-dev-comment-type="paramref" class="paramref">integrationId</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GuildIntegrationInformation GetIntegration(Snowflake integrationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">integrationId</span></td>
+        <td><p>the snowflake identifier of the integration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.GuildIntegrationInformation.html">GuildIntegrationInformation</a></td>
+        <td><p>the integration; or <span class="xref">null</span> if no integration was found by the
+specified <code data-dev-comment-type="paramref" class="paramref">integrationId</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_GetUser_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.GetUser(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L80">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_GetUser_" data-uid="Strade.Entities.IAuditLog.GetUser*"></a>
+  <h4 id="Strade_Entities_IAuditLog_GetUser_Strade_Entities_Snowflake_" data-uid="Strade.Entities.IAuditLog.GetUser(Strade.Entities.Snowflake)">GetUser(Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Gets an user by the specified <code data-dev-comment-type="paramref" class="paramref">userId</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">User GetUser(Snowflake userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>the snowflake identifier of the user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.User.html">User</a></td>
+        <td><p>the user; or <span class="xref">null</span> if no user was found by the specified <code data-dev-comment-type="paramref" class="paramref">userId</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog_GetWebhook_Strade_Entities_Snowflake_.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog.GetWebhook(Strade.Entities.Snowflake)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L90">View Source</a>
+  </span>
+  <a id="Strade_Entities_IAuditLog_GetWebhook_" data-uid="Strade.Entities.IAuditLog.GetWebhook*"></a>
+  <h4 id="Strade_Entities_IAuditLog_GetWebhook_Strade_Entities_Snowflake_" data-uid="Strade.Entities.IAuditLog.GetWebhook(Strade.Entities.Snowflake)">GetWebhook(Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Gets a webhook by the specified <code data-dev-comment-type="paramref" class="paramref">webhookId</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Webhook GetWebhook(Snowflake webhookId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">webhookId</span></td>
+        <td><p>the snowflake identifier of the webhook.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Webhook.html">Webhook</a></td>
+        <td><p>the webhook; or <span class="xref">null</span> if no webhook was found by the specified
+<code data-dev-comment-type="paramref" class="paramref">webhookId</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_IAuditLog.md&amp;value=---%0Auid%3A%20Strade.Entities.IAuditLog%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/IAuditLog.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

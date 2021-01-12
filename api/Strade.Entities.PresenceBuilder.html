@@ -1,0 +1,699 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PresenceBuilder
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PresenceBuilder
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.PresenceBuilder">
+  
+  
+  <h1 id="Strade_Entities_PresenceBuilder" data-uid="Strade.Entities.PresenceBuilder" class="text-break">Class PresenceBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Builder for <a class="xref" href="Strade.Entities.Presence.html">Presence</a> objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">PresenceBuilder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Entities.IBuilder-1.html">IBuilder</a>&lt;<a class="xref" href="Strade.Entities.Presence.html">Presence</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_PresenceBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PresenceBuilder : IBuilder&lt;Presence&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder__ctor.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L21">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder__ctor_" data-uid="Strade.Entities.PresenceBuilder.#ctor*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder__ctor" data-uid="Strade.Entities.PresenceBuilder.#ctor">PresenceBuilder()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder__ctor_Strade_Entities_Presence_.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.%23ctor(Strade.Entities.Presence)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L36">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder__ctor_" data-uid="Strade.Entities.PresenceBuilder.#ctor*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder__ctor_Strade_Entities_Presence_" data-uid="Strade.Entities.PresenceBuilder.#ctor(Strade.Entities.Presence)">PresenceBuilder(Presence)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder(Presence prototype)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Presence.html">Presence</a></td>
+        <td><span class="parametername">prototype</span></td>
+        <td><p>the object to use as a prototype / template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_PresenceBuilder__ctor_Strade_Entities_Presence__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The passed <code data-dev-comment-type="paramref" class="paramref">prototype</code> is not affected when any changes are made
+using the builder instance. The builder will copy the data from the <code data-dev-comment-type="paramref" class="paramref">prototype</code>.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">prototype</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_Activities.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.Activities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L48">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_Activities_" data-uid="Strade.Entities.PresenceBuilder.Activities*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_Activities" data-uid="Strade.Entities.PresenceBuilder.Activities">Activities</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Activity&gt; Activities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Entities.Activity.html">Activity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_Status.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L64">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_Status_" data-uid="Strade.Entities.PresenceBuilder.Status*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_Status" data-uid="Strade.Entities.PresenceBuilder.Status">Status</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the presence status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.UserStatus.html">UserStatus</a></td>
+        <td><p>the presence status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_PresenceBuilder_Status_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note if idle is specified then the &quot;since&quot; time is set to the actual UTC time.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified value is not defined in the <a class="xref" href="Strade.Entities.UserStatus.html">UserStatus</a> enumeration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_AsDoNotDisturb.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.AsDoNotDisturb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L88">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_AsDoNotDisturb_" data-uid="Strade.Entities.PresenceBuilder.AsDoNotDisturb*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_AsDoNotDisturb" data-uid="Strade.Entities.PresenceBuilder.AsDoNotDisturb">AsDoNotDisturb()</h4>
+  <div class="markdown level1 summary"><p>Sets the user status to <a class="xref" href="Strade.Entities.UserStatus.html#Strade_Entities_UserStatus_DoNotDisturb">DoNotDisturb</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder AsDoNotDisturb()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a></td>
+        <td><p>the current <a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_AsIdle_System_Nullable_System_DateTimeOffset__.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.AsIdle(System.Nullable%7BSystem.DateTimeOffset%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L98">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_AsIdle_" data-uid="Strade.Entities.PresenceBuilder.AsIdle*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_AsIdle_System_Nullable_System_DateTimeOffset__" data-uid="Strade.Entities.PresenceBuilder.AsIdle(System.Nullable{System.DateTimeOffset})">AsIdle(Nullable&lt;DateTimeOffset&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the user status to <a class="xref" href="Strade.Entities.UserStatus.html#Strade_Entities_UserStatus_Idle">Idle</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder AsIdle(DateTimeOffset? since = default(DateTimeOffset? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>the date time offset (UTC) when the entity became idle; or <span class="xref">null</span> to
+use the current time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a></td>
+        <td><p>the current <a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_AsOffline.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.AsOffline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L110">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_AsOffline_" data-uid="Strade.Entities.PresenceBuilder.AsOffline*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_AsOffline" data-uid="Strade.Entities.PresenceBuilder.AsOffline">AsOffline()</h4>
+  <div class="markdown level1 summary"><p>Sets the user status to <a class="xref" href="Strade.Entities.UserStatus.html#Strade_Entities_UserStatus_Invisible">Invisible</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder AsOffline()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a></td>
+        <td><p>the current <a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_AsOnline.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.AsOnline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L116">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_AsOnline_" data-uid="Strade.Entities.PresenceBuilder.AsOnline*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_AsOnline" data-uid="Strade.Entities.PresenceBuilder.AsOnline">AsOnline()</h4>
+  <div class="markdown level1 summary"><p>Sets the user status to <a class="xref" href="Strade.Entities.UserStatus.html#Strade_Entities_UserStatus_Online">Online</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder AsOnline()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a></td>
+        <td><p>the current <a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_Build.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.Build%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L119">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_Build_" data-uid="Strade.Entities.PresenceBuilder.Build*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_Build" data-uid="Strade.Entities.PresenceBuilder.Build">Build()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Presence Build()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Presence.html">Presence</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_Reset.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L122">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_Reset_" data-uid="Strade.Entities.PresenceBuilder.Reset*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_Reset" data-uid="Strade.Entities.PresenceBuilder.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_WithActivity_Strade_Entities_Activity_.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.WithActivity(Strade.Entities.Activity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L130">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_WithActivity_" data-uid="Strade.Entities.PresenceBuilder.WithActivity*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_WithActivity_Strade_Entities_Activity_" data-uid="Strade.Entities.PresenceBuilder.WithActivity(Strade.Entities.Activity)">WithActivity(Activity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder WithActivity(Activity activity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Activity.html">Activity</a></td>
+        <td><span class="parametername">activity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_WithActivity_Strade_Entities_ActivityBuilder_.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.WithActivity(Strade.Entities.ActivityBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L155">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_WithActivity_" data-uid="Strade.Entities.PresenceBuilder.WithActivity*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_WithActivity_Strade_Entities_ActivityBuilder_" data-uid="Strade.Entities.PresenceBuilder.WithActivity(Strade.Entities.ActivityBuilder)">WithActivity(ActivityBuilder)</h4>
+  <div class="markdown level1 summary"><p>Adds an activity for the presence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder WithActivity(ActivityBuilder activityBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ActivityBuilder.html">ActivityBuilder</a></td>
+        <td><span class="parametername">activityBuilder</span></td>
+        <td><p>the builder to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a></td>
+        <td><p>the current <a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">activityBuilder</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder_WithActivity_System_Action_Strade_Entities_ActivityBuilder__.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder.WithActivity(System.Action%7BStrade.Entities.ActivityBuilder%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L173">View Source</a>
+  </span>
+  <a id="Strade_Entities_PresenceBuilder_WithActivity_" data-uid="Strade.Entities.PresenceBuilder.WithActivity*"></a>
+  <h4 id="Strade_Entities_PresenceBuilder_WithActivity_System_Action_Strade_Entities_ActivityBuilder__" data-uid="Strade.Entities.PresenceBuilder.WithActivity(System.Action{Strade.Entities.ActivityBuilder})">WithActivity(Action&lt;ActivityBuilder&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds an the activity for the presence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresenceBuilder WithActivity(Action&lt;ActivityBuilder&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Strade.Entities.ActivityBuilder.html">ActivityBuilder</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>the action used to configure the <a class="xref" href="Strade.Entities.ActivityBuilder.html">ActivityBuilder</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a></td>
+        <td><p>the current <a class="xref" href="Strade.Entities.PresenceBuilder.html">PresenceBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">action</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Entities.IBuilder-1.html">IBuilder&lt;TResult&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_PresenceBuilder.md&amp;value=---%0Auid%3A%20Strade.Entities.PresenceBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Presence/Builder/PresenceBuilder.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

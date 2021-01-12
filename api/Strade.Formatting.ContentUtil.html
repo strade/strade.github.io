@@ -1,0 +1,1323 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ContentUtil
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ContentUtil
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Formatting.ContentUtil">
+  
+  
+  <h1 id="Strade_Formatting_ContentUtil" data-uid="Strade.Formatting.ContentUtil" class="text-break">Class ContentUtil
+  </h1>
+  <div class="markdown level0 summary"><p>An utility class for building URIs to discord's Content Delivery Network (CDN).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ContentUtil</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Formatting.html">Strade.Formatting</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Formatting_ContentUtil_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ContentUtil</code></pre>
+  </div>
+  <h5 id="Strade_Formatting_ContentUtil_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/reference#image-formatting">https://discord.com/developers/docs/reference#image-formatting</a> [external, Discord
+Developer Documentation].</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_CdnEndpoint.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.CdnEndpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Strade_Formatting_ContentUtil_CdnEndpoint" data-uid="Strade.Formatting.ContentUtil.CdnEndpoint">CdnEndpoint</h4>
+  <div class="markdown level1 summary"><p>The base Content Delivery Network (CDN) endpoint used when making requests for
+avatars, icons, etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CdnEndpoint = &quot;https://cdn.discordapp.com/&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildApplicationAssetUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildApplicationAssetUri(System.UInt64%2CSystem.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L51">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildApplicationAssetUri_" data-uid="Strade.Formatting.ContentUtil.BuildApplicationAssetUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildApplicationAssetUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildApplicationAssetUri(System.UInt64,System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildApplicationAssetUri(UInt64, String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the application asset URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildApplicationAssetUri(ulong applicationId, string assetId, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">applicationId</span></td>
+        <td><p>the application snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">assetId</span></td>
+        <td><p>the asset identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the application asset URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not one of <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Png">Png</a>, <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Jpeg">Jpeg</a> and <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_WebP">WebP</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildApplicationIconUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildApplicationIconUri(System.UInt64%2CSystem.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L87">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildApplicationIconUri_" data-uid="Strade.Formatting.ContentUtil.BuildApplicationIconUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildApplicationIconUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildApplicationIconUri(System.UInt64,System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildApplicationIconUri(UInt64, String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the application icon URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildApplicationIconUri(ulong applicationId, string applicationIcon, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">applicationId</span></td>
+        <td><p>the application snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">applicationIcon</span></td>
+        <td><p>the application icon hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the application icon URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not one of <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Png">Png</a>, <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Jpeg">Jpeg</a> and <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_WebP">WebP</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildCustomEmojiUri_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildCustomEmojiUri(System.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L117">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildCustomEmojiUri_" data-uid="Strade.Formatting.ContentUtil.BuildCustomEmojiUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildCustomEmojiUri_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildCustomEmojiUri(System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildCustomEmojiUri(String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the custom emoji URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildCustomEmojiUri(string emojiId, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">emojiId</span></td>
+        <td><p>the emoji identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the custom emoji URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not one of <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Png">Png</a> and <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Gif">Gif</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildDefaultUserAvatarUri_System_UInt16_.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildDefaultUserAvatarUri(System.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L128">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildDefaultUserAvatarUri_" data-uid="Strade.Formatting.ContentUtil.BuildDefaultUserAvatarUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildDefaultUserAvatarUri_System_UInt16_" data-uid="Strade.Formatting.ContentUtil.BuildDefaultUserAvatarUri(System.UInt16)">BuildDefaultUserAvatarUri(UInt16)</h4>
+  <div class="markdown level1 summary"><p>Builds the default user avatar URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildDefaultUserAvatarUri(ushort userDiscriminator = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">userDiscriminator</span></td>
+        <td><p>the user's discriminator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the default user avatar URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildDiscoverySplashUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildDiscoverySplashUri(System.UInt64%2CSystem.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L156">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildDiscoverySplashUri_" data-uid="Strade.Formatting.ContentUtil.BuildDiscoverySplashUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildDiscoverySplashUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildDiscoverySplashUri(System.UInt64,System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildDiscoverySplashUri(UInt64, String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the guild discovery splash URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildDiscoverySplashUri(ulong guildId, string guildSplash, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>the guild snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">guildSplash</span></td>
+        <td><p>the guild discovery splash hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the guild discovery splash URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not one of <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Png">Png</a>, <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Jpeg">Jpeg</a> and <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_WebP">WebP</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildGuildBannerUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildGuildBannerUri(System.UInt64%2CSystem.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L187">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildGuildBannerUri_" data-uid="Strade.Formatting.ContentUtil.BuildGuildBannerUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildGuildBannerUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildGuildBannerUri(System.UInt64,System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildGuildBannerUri(UInt64, String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the guild banner URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildGuildBannerUri(ulong guildId, string guildBanner, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>the guild snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">guildBanner</span></td>
+        <td><p>the guild banner hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the guild banner URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not one of <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Png">Png</a>, <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Jpeg">Jpeg</a> and <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_WebP">WebP</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildGuildIconUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildGuildIconUri(System.UInt64%2CSystem.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L214">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildGuildIconUri_" data-uid="Strade.Formatting.ContentUtil.BuildGuildIconUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildGuildIconUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildGuildIconUri(System.UInt64,System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildGuildIconUri(UInt64, String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the guild icon URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildGuildIconUri(ulong guildId, string guildIcon, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>the guild snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">guildIcon</span></td>
+        <td><p>the guild icon hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the guild icon URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildGuildSplashUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildGuildSplashUri(System.UInt64%2CSystem.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L245">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildGuildSplashUri_" data-uid="Strade.Formatting.ContentUtil.BuildGuildSplashUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildGuildSplashUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildGuildSplashUri(System.UInt64,System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildGuildSplashUri(UInt64, String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the guild splash URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildGuildSplashUri(ulong guildId, string guildSplash, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>the guild snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">guildSplash</span></td>
+        <td><p>the guild splash hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the guild splash URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not one of <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Png">Png</a>, <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Jpeg">Jpeg</a> and <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_WebP">WebP</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildMessageAttachmentUri_Strade_Entities_Snowflake_System_String_System_String_.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildMessageAttachmentUri(Strade.Entities.Snowflake%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L57">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildMessageAttachmentUri_" data-uid="Strade.Formatting.ContentUtil.BuildMessageAttachmentUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildMessageAttachmentUri_Strade_Entities_Snowflake_System_String_System_String_" data-uid="Strade.Formatting.ContentUtil.BuildMessageAttachmentUri(Strade.Entities.Snowflake,System.String,System.String)">BuildMessageAttachmentUri(Snowflake, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildMessageAttachmentUri(Snowflake channelId, string attachmentId, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">channelId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildTeamIcon_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildTeamIcon(System.UInt64%2CSystem.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L276">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildTeamIcon_" data-uid="Strade.Formatting.ContentUtil.BuildTeamIcon*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildTeamIcon_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildTeamIcon(System.UInt64,System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildTeamIcon(UInt64, String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the team icon URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildTeamIcon(ulong teamId, string teamIcon, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">teamId</span></td>
+        <td><p>the team identifier snowflake.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamIcon</span></td>
+        <td><p>the team icon hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the team icon URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not one of <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Png">Png</a>, <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_Jpeg">Jpeg</a> and <a class="xref" href="Strade.Entities.ImageFormat.html#Strade_Entities_ImageFormat_WebP">WebP</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildUri_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildUri(System.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L302">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildUri_" data-uid="Strade.Formatting.ContentUtil.BuildUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildUri_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildUri(System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildUri(String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds an URI to discord's Content Delivery Network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildUri(string subPath, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">subPath</span></td>
+        <td><p>the sub-path of the endpoint.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the application icon URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil_BuildUserAvatarUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil.BuildUserAvatarUri(System.UInt64%2CSystem.String%2CStrade.Entities.ImageFormat%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L364">View Source</a>
+  </span>
+  <a id="Strade_Formatting_ContentUtil_BuildUserAvatarUri_" data-uid="Strade.Formatting.ContentUtil.BuildUserAvatarUri*"></a>
+  <h4 id="Strade_Formatting_ContentUtil_BuildUserAvatarUri_System_UInt64_System_String_Strade_Entities_ImageFormat_System_Nullable_System_Int32__" data-uid="Strade.Formatting.ContentUtil.BuildUserAvatarUri(System.UInt64,System.String,Strade.Entities.ImageFormat,System.Nullable{System.Int32})">BuildUserAvatarUri(UInt64, String, ImageFormat, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds the user avatar URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri BuildUserAvatarUri(ulong userId, string avatarHash, ImageFormat format = ImageFormat.Png, int? size = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>the user snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">avatarHash</span></td>
+        <td><p>the user avatar hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>the image format to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the image (16 - 2048, power of two).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the team icon URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">format</code> is not specified in the <a class="xref" href="Strade.Entities.ImageFormat.html">ImageFormat</a> enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is less than 16 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is greater than 2048 pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">size</code> is not a power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Formatting_ContentUtil.md&amp;value=---%0Auid%3A%20Strade.Formatting.ContentUtil%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Formatting/ContentUtil.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

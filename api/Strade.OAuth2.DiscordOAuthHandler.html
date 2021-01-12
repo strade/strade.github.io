@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DiscordOAuthHandler
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DiscordOAuthHandler
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.OAuth2.DiscordOAuthHandler">
+  
+  
+  <h1 id="Strade_OAuth2_DiscordOAuthHandler" data-uid="Strade.OAuth2.DiscordOAuthHandler" class="text-break">Class DiscordOAuthHandler
+  </h1>
+  <div class="markdown level0 summary"><p>The discord OAuth2 authentication handler.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1">AuthenticationHandler</a>&lt;<a class="xref" href="Strade.OAuth2.DiscordOAuthOptions.html">DiscordOAuthOptions</a>&gt;</div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.remoteauthenticationhandler-1">RemoteAuthenticationHandler</a>&lt;<a class="xref" href="Strade.OAuth2.DiscordOAuthOptions.html">DiscordOAuthOptions</a>&gt;</div>
+    <div class="level3"><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1">OAuthHandler</a>&lt;<a class="xref" href="Strade.OAuth2.DiscordOAuthOptions.html">DiscordOAuthOptions</a>&gt;</div>
+    <div class="level4"><span class="xref">DiscordOAuthHandler</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.iauthenticationrequesthandler">IAuthenticationRequestHandler</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.iauthenticationhandler">IAuthenticationHandler</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.createeventsasync#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_CreateEventsAsync">OAuthHandler&lt;DiscordOAuthOptions&gt;.CreateEventsAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.handleremoteauthenticateasync#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_HandleRemoteAuthenticateAsync">OAuthHandler&lt;DiscordOAuthOptions&gt;.HandleRemoteAuthenticateAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.exchangecodeasync#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_ExchangeCodeAsync_System_String_System_String_">OAuthHandler&lt;DiscordOAuthOptions&gt;.ExchangeCodeAsync(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.createticketasync#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_CreateTicketAsync_System_Security_Claims_ClaimsIdentity_Microsoft_AspNetCore_Authentication_AuthenticationProperties_Microsoft_AspNetCore_Authentication_OAuth_OAuthTokenResponse_">OAuthHandler&lt;DiscordOAuthOptions&gt;.CreateTicketAsync(ClaimsIdentity, AuthenticationProperties, OAuthTokenResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.handlechallengeasync#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_HandleChallengeAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_">OAuthHandler&lt;DiscordOAuthOptions&gt;.HandleChallengeAsync(AuthenticationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.buildchallengeurl#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_BuildChallengeUrl_Microsoft_AspNetCore_Authentication_AuthenticationProperties_System_String_">OAuthHandler&lt;DiscordOAuthOptions&gt;.BuildChallengeUrl(AuthenticationProperties, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.formatscope#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_FormatScope_System_Collections_Generic_IEnumerable_System_String__">OAuthHandler&lt;DiscordOAuthOptions&gt;.FormatScope(IEnumerable&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.formatscope#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_FormatScope">OAuthHandler&lt;DiscordOAuthOptions&gt;.FormatScope()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.backchannel#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_Backchannel">OAuthHandler&lt;DiscordOAuthOptions&gt;.Backchannel</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.oauth.oauthhandler-1.events#Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_Events">OAuthHandler&lt;DiscordOAuthOptions&gt;.Events</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.remoteauthenticationhandler-1.shouldhandlerequestasync#Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_ShouldHandleRequestAsync">RemoteAuthenticationHandler&lt;DiscordOAuthOptions&gt;.ShouldHandleRequestAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.remoteauthenticationhandler-1.handlerequestasync#Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_HandleRequestAsync">RemoteAuthenticationHandler&lt;DiscordOAuthOptions&gt;.HandleRequestAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.remoteauthenticationhandler-1.handleauthenticateasync#Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_HandleAuthenticateAsync">RemoteAuthenticationHandler&lt;DiscordOAuthOptions&gt;.HandleAuthenticateAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.remoteauthenticationhandler-1.handleforbiddenasync#Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_HandleForbiddenAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_">RemoteAuthenticationHandler&lt;DiscordOAuthOptions&gt;.HandleForbiddenAsync(AuthenticationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.remoteauthenticationhandler-1.generatecorrelationid#Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_GenerateCorrelationId_Microsoft_AspNetCore_Authentication_AuthenticationProperties_">RemoteAuthenticationHandler&lt;DiscordOAuthOptions&gt;.GenerateCorrelationId(AuthenticationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.remoteauthenticationhandler-1.validatecorrelationid#Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_ValidateCorrelationId_Microsoft_AspNetCore_Authentication_AuthenticationProperties_">RemoteAuthenticationHandler&lt;DiscordOAuthOptions&gt;.ValidateCorrelationId(AuthenticationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.remoteauthenticationhandler-1.signinscheme#Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_SignInScheme">RemoteAuthenticationHandler&lt;DiscordOAuthOptions&gt;.SignInScheme</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.initializeasync#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_InitializeAsync_Microsoft_AspNetCore_Authentication_AuthenticationScheme_Microsoft_AspNetCore_Http_HttpContext_">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.InitializeAsync(AuthenticationScheme, HttpContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.initializeeventsasync#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_InitializeEventsAsync">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.InitializeEventsAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.initializehandlerasync#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_InitializeHandlerAsync">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.InitializeHandlerAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.buildredirecturi#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_BuildRedirectUri_System_String_">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.BuildRedirectUri(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.resolvetarget#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_ResolveTarget_System_String_">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.ResolveTarget(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.authenticateasync#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_AuthenticateAsync">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.AuthenticateAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.handleauthenticateonceasync#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_HandleAuthenticateOnceAsync">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.HandleAuthenticateOnceAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.handleauthenticateoncesafeasync#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_HandleAuthenticateOnceSafeAsync">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.HandleAuthenticateOnceSafeAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.challengeasync#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_ChallengeAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.ChallengeAsync(AuthenticationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.forbidasync#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_ForbidAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.ForbidAsync(AuthenticationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.scheme#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Scheme">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.Scheme</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.options#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Options">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.context#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Context">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.request#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Request">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.response#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Response">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.Response</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.originalpath#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_OriginalPath">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.OriginalPath</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.originalpathbase#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_OriginalPathBase">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.OriginalPathBase</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.logger#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Logger">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.urlencoder#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_UrlEncoder">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.UrlEncoder</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.clock#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Clock">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.Clock</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.optionsmonitor#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_OptionsMonitor">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.OptionsMonitor</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.claimsissuer#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_ClaimsIssuer">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.ClaimsIssuer</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.currenturi#Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_CurrentUri">AuthenticationHandler&lt;DiscordOAuthOptions&gt;.CurrentUri</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.OAuth2.html">Strade.OAuth2</a></h6>
+  <h6><strong>Assembly</strong>: Strade.OAuth2.dll</h6>
+  <h5 id="Strade_OAuth2_DiscordOAuthHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DiscordOAuthHandler : OAuthHandler&lt;DiscordOAuthOptions&gt;, IAuthenticationRequestHandler, IAuthenticationHandler</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_OAuth2_DiscordOAuthHandler__ctor_Microsoft_Extensions_Options_IOptionsMonitor_Strade_OAuth2_DiscordOAuthOptions__Microsoft_Extensions_Logging_ILoggerFactory_System_Text_Encodings_Web_UrlEncoder_Microsoft_AspNetCore_Authentication_ISystemClock_.md&amp;value=---%0Auid%3A%20Strade.OAuth2.DiscordOAuthHandler.%23ctor(Microsoft.Extensions.Options.IOptionsMonitor%7BStrade.OAuth2.DiscordOAuthOptions%7D%2CMicrosoft.Extensions.Logging.ILoggerFactory%2CSystem.Text.Encodings.Web.UrlEncoder%2CMicrosoft.AspNetCore.Authentication.ISystemClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.OAuth2/DiscordOAuthHandler.cs/#L31">View Source</a>
+  </span>
+  <a id="Strade_OAuth2_DiscordOAuthHandler__ctor_" data-uid="Strade.OAuth2.DiscordOAuthHandler.#ctor*"></a>
+  <h4 id="Strade_OAuth2_DiscordOAuthHandler__ctor_Microsoft_Extensions_Options_IOptionsMonitor_Strade_OAuth2_DiscordOAuthOptions__Microsoft_Extensions_Logging_ILoggerFactory_System_Text_Encodings_Web_UrlEncoder_Microsoft_AspNetCore_Authentication_ISystemClock_" data-uid="Strade.OAuth2.DiscordOAuthHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Strade.OAuth2.DiscordOAuthOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)">DiscordOAuthHandler(IOptionsMonitor&lt;DiscordOAuthOptions&gt;, ILoggerFactory, UrlEncoder, ISystemClock)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.OAuth2.DiscordOAuthHandler.html">DiscordOAuthHandler</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordOAuthHandler(IOptionsMonitor&lt;DiscordOAuthOptions&gt; options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionsmonitor-1">IOptionsMonitor</a>&lt;<a class="xref" href="Strade.OAuth2.DiscordOAuthOptions.html">DiscordOAuthOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>the options monitor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory">ILoggerFactory</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>the logger factory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.encodings.web.urlencoder">UrlEncoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>the URL encoder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.isystemclock">ISystemClock</a></td>
+        <td><span class="parametername">clock</span></td>
+        <td><p>the system clock.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_OAuth2_DiscordOAuthHandler_AuthenticationScheme.md&amp;value=---%0Auid%3A%20Strade.OAuth2.DiscordOAuthHandler.AuthenticationScheme%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.OAuth2/DiscordOAuthHandler.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Strade_OAuth2_DiscordOAuthHandler_AuthenticationScheme" data-uid="Strade.OAuth2.DiscordOAuthHandler.AuthenticationScheme">AuthenticationScheme</h4>
+  <div class="markdown level1 summary"><p>The authentication scheme name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AuthenticationScheme = &quot;Discord&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_OAuth2_DiscordOAuthHandler_DisplayName.md&amp;value=---%0Auid%3A%20Strade.OAuth2.DiscordOAuthHandler.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.OAuth2/DiscordOAuthHandler.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Strade_OAuth2_DiscordOAuthHandler_DisplayName" data-uid="Strade.OAuth2.DiscordOAuthHandler.DisplayName">DisplayName</h4>
+  <div class="markdown level1 summary"><p>The authentication display name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DisplayName = &quot;Discord&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.iauthenticationrequesthandler">Microsoft.AspNetCore.Authentication.IAuthenticationRequestHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.iauthenticationhandler">Microsoft.AspNetCore.Authentication.IAuthenticationHandler</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_OAuth2_DiscordOAuthHandler.md&amp;value=---%0Auid%3A%20Strade.OAuth2.DiscordOAuthHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.OAuth2/DiscordOAuthHandler.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

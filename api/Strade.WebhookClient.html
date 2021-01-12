@@ -1,0 +1,1399 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WebhookClient
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WebhookClient
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.WebhookClient">
+  
+  
+  <h1 id="Strade_WebhookClient" data-uid="Strade.WebhookClient" class="text-break">Class WebhookClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">WebhookClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.html">Strade</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_WebhookClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WebhookClient : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient__ctor_Strade_DiscordRestApiClient_Strade_Entities_Snowflake_System_String_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.%23ctor(Strade.DiscordRestApiClient%2CStrade.Entities.Snowflake%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L19">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient__ctor_" data-uid="Strade.WebhookClient.#ctor*"></a>
+  <h4 id="Strade_WebhookClient__ctor_Strade_DiscordRestApiClient_Strade_Entities_Snowflake_System_String_" data-uid="Strade.WebhookClient.#ctor(Strade.DiscordRestApiClient,Strade.Entities.Snowflake,System.String)">WebhookClient(DiscordRestApiClient, Snowflake, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhookClient(DiscordRestApiClient client, Snowflake webhookId, string token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordRestApiClient.html">DiscordRestApiClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">webhookId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient__ctor_Strade_DiscordRestApiClient_Strade_Entities_Snowflake_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.%23ctor(Strade.DiscordRestApiClient%2CStrade.Entities.Snowflake%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L51">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient__ctor_" data-uid="Strade.WebhookClient.#ctor*"></a>
+  <h4 id="Strade_WebhookClient__ctor_Strade_DiscordRestApiClient_Strade_Entities_Snowflake_System_String_System_Boolean_" data-uid="Strade.WebhookClient.#ctor(Strade.DiscordRestApiClient,Strade.Entities.Snowflake,System.String,System.Boolean)">WebhookClient(DiscordRestApiClient, Snowflake, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WebhookClient(DiscordRestApiClient client, Snowflake webhookId, string token, bool isOwnClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordRestApiClient.html">DiscordRestApiClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">webhookId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isOwnClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient__ctor_Strade_DiscordRestApiClient_System_Uri_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.%23ctor(Strade.DiscordRestApiClient%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L29">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient__ctor_" data-uid="Strade.WebhookClient.#ctor*"></a>
+  <h4 id="Strade_WebhookClient__ctor_Strade_DiscordRestApiClient_System_Uri_" data-uid="Strade.WebhookClient.#ctor(Strade.DiscordRestApiClient,System.Uri)">WebhookClient(DiscordRestApiClient, Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhookClient(DiscordRestApiClient client, Uri webhookUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordRestApiClient.html">DiscordRestApiClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">webhookUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient__ctor_Strade_DiscordRestApiClient_System_Uri_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.%23ctor(Strade.DiscordRestApiClient%2CSystem.Uri%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L60">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient__ctor_" data-uid="Strade.WebhookClient.#ctor*"></a>
+  <h4 id="Strade_WebhookClient__ctor_Strade_DiscordRestApiClient_System_Uri_System_Boolean_" data-uid="Strade.WebhookClient.#ctor(Strade.DiscordRestApiClient,System.Uri,System.Boolean)">WebhookClient(DiscordRestApiClient, Uri, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WebhookClient(DiscordRestApiClient client, Uri webhookUri, bool isOwnClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordRestApiClient.html">DiscordRestApiClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">webhookUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isOwnClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient__ctor_Strade_Entities_Snowflake_System_String_Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.%23ctor(Strade.Entities.Snowflake%2CSystem.String%2CStrade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L45">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient__ctor_" data-uid="Strade.WebhookClient.#ctor*"></a>
+  <h4 id="Strade_WebhookClient__ctor_Strade_Entities_Snowflake_System_String_Strade_Logging_ILogger_" data-uid="Strade.WebhookClient.#ctor(Strade.Entities.Snowflake,System.String,Strade.Logging.ILogger)">WebhookClient(Snowflake, String, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhookClient(Snowflake webhookId, string token, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">webhookId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient__ctor_Strade_IDiscordRestClient_Strade_Entities_Snowflake_System_String_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.%23ctor(Strade.IDiscordRestClient%2CStrade.Entities.Snowflake%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L24">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient__ctor_" data-uid="Strade.WebhookClient.#ctor*"></a>
+  <h4 id="Strade_WebhookClient__ctor_Strade_IDiscordRestClient_Strade_Entities_Snowflake_System_String_" data-uid="Strade.WebhookClient.#ctor(Strade.IDiscordRestClient,Strade.Entities.Snowflake,System.String)">WebhookClient(IDiscordRestClient, Snowflake, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhookClient(IDiscordRestClient client, Snowflake webhookId, string token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.IDiscordRestClient.html">IDiscordRestClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">webhookId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient__ctor_Strade_IDiscordRestClient_System_Uri_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.%23ctor(Strade.IDiscordRestClient%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L34">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient__ctor_" data-uid="Strade.WebhookClient.#ctor*"></a>
+  <h4 id="Strade_WebhookClient__ctor_Strade_IDiscordRestClient_System_Uri_" data-uid="Strade.WebhookClient.#ctor(Strade.IDiscordRestClient,System.Uri)">WebhookClient(IDiscordRestClient, Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhookClient(IDiscordRestClient client, Uri webhookUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.IDiscordRestClient.html">IDiscordRestClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">webhookUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient__ctor_System_Uri_Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.%23ctor(System.Uri%2CStrade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L39">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient__ctor_" data-uid="Strade.WebhookClient.#ctor*"></a>
+  <h4 id="Strade_WebhookClient__ctor_System_Uri_Strade_Logging_ILogger_" data-uid="Strade.WebhookClient.#ctor(System.Uri,Strade.Logging.ILogger)">WebhookClient(Uri, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhookClient(Uri webhookUri, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">webhookUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_Token.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.Token%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L74">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_Token_" data-uid="Strade.WebhookClient.Token*"></a>
+  <h4 id="Strade_WebhookClient_Token" data-uid="Strade.WebhookClient.Token">Token</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Token { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_WebhookId.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.WebhookId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L76">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_WebhookId_" data-uid="Strade.WebhookClient.WebhookId*"></a>
+  <h4 id="Strade_WebhookClient_WebhookId" data-uid="Strade.WebhookClient.WebhookId">WebhookId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake WebhookId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_DeleteAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.DeleteAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L83">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_DeleteAsync_" data-uid="Strade.WebhookClient.DeleteAsync*"></a>
+  <h4 id="Strade_WebhookClient_DeleteAsync_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.DeleteAsync(System.Threading.CancellationToken)">DeleteAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the webhook asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_Dispose.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L87">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_Dispose_" data-uid="Strade.WebhookClient.Dispose*"></a>
+  <h4 id="Strade_WebhookClient_Dispose" data-uid="Strade.WebhookClient.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L358">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_Dispose_" data-uid="Strade.WebhookClient.Dispose*"></a>
+  <h4 id="Strade_WebhookClient_Dispose_System_Boolean_" data-uid="Strade.WebhookClient.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_ModifyAsync_Strade_Entities_WebhookModifyProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.ModifyAsync(Strade.Entities.WebhookModifyProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L99">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_ModifyAsync_" data-uid="Strade.WebhookClient.ModifyAsync*"></a>
+  <h4 id="Strade_WebhookClient_ModifyAsync_Strade_Entities_WebhookModifyProperties_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.ModifyAsync(Strade.Entities.WebhookModifyProperties,System.Threading.CancellationToken)">ModifyAsync(WebhookModifyProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Modifies the webhook asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModifyAsync(WebhookModifyProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.WebhookModifyProperties.html">WebhookModifyProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the properties used to modify the webhook.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_PushAsync_Strade_Entities_EmbedMessage_System_Boolean_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.PushAsync(Strade.Entities.EmbedMessage%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L136">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_PushAsync_" data-uid="Strade.WebhookClient.PushAsync*"></a>
+  <h4 id="Strade_WebhookClient_PushAsync_Strade_Entities_EmbedMessage_System_Boolean_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.PushAsync(Strade.Entities.EmbedMessage,System.Boolean,System.Boolean,System.Threading.CancellationToken)">PushAsync(EmbedMessage, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IWebhookMessage&gt; PushAsync(EmbedMessage embed, bool textToSpeech = false, bool pushOnly = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a></td>
+        <td><span class="parametername">embed</span></td>
+        <td><p>the attached message embed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pushOnly</span></td>
+        <td><p>a value indicating whether the server should await the creation of the webhook
+message ( <span class="xref">true</span>) or should only push the message ( <span class="xref">false</span>). If pushes then <span class="xref">null</span> if returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IWebhookMessage.html">IWebhookMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message
+send; or if <code data-dev-comment-type="paramref" class="paramref">pushOnly</code> is <span class="xref">true</span><span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_PushAsync_Strade_Entities_WebhookMessageCreationProperties_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.PushAsync(Strade.Entities.WebhookMessageCreationProperties%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L116">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_PushAsync_" data-uid="Strade.WebhookClient.PushAsync*"></a>
+  <h4 id="Strade_WebhookClient_PushAsync_Strade_Entities_WebhookMessageCreationProperties_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.PushAsync(Strade.Entities.WebhookMessageCreationProperties,System.Boolean,System.Threading.CancellationToken)">PushAsync(WebhookMessageCreationProperties, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Pushes a webhook message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IWebhookMessage&gt; PushAsync(WebhookMessageCreationProperties properties, bool pushOnly = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.WebhookMessageCreationProperties.html">WebhookMessageCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the message creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pushOnly</span></td>
+        <td><p>a value indicating whether the server should await the creation of the webhook
+message ( <span class="xref">true</span>) or should only push the message ( <span class="xref">false</span>). If pushes then <span class="xref">null</span> if returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IWebhookMessage.html">IWebhookMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message
+send; or if <code data-dev-comment-type="paramref" class="paramref">pushOnly</code> is <span class="xref">true</span><span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_PushAsync_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.PushAsync(System.Collections.Generic.IReadOnlyList%7BStrade.Entities.EmbedMessage%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L190">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_PushAsync_" data-uid="Strade.WebhookClient.PushAsync*"></a>
+  <h4 id="Strade_WebhookClient_PushAsync_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.PushAsync(System.Collections.Generic.IReadOnlyList{Strade.Entities.EmbedMessage},System.Boolean,System.Boolean,System.Threading.CancellationToken)">PushAsync(IReadOnlyList&lt;EmbedMessage&gt;, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IWebhookMessage&gt; PushAsync(IReadOnlyList&lt;EmbedMessage&gt; embeds, bool textToSpeech = false, bool pushOnly = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>the attached message embeds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pushOnly</span></td>
+        <td><p>a value indicating whether the server should await the creation of the webhook
+message ( <span class="xref">true</span>) or should only push the message ( <span class="xref">false</span>). If pushes then <span class="xref">null</span> if returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IWebhookMessage.html">IWebhookMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message
+send; or if <code data-dev-comment-type="paramref" class="paramref">pushOnly</code> is <span class="xref">true</span><span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_PushAsync_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.PushAsync(System.String%2CSystem.Collections.Generic.IReadOnlyList%7BStrade.Entities.EmbedMessage%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L160">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_PushAsync_" data-uid="Strade.WebhookClient.PushAsync*"></a>
+  <h4 id="Strade_WebhookClient_PushAsync_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.PushAsync(System.String,System.Collections.Generic.IReadOnlyList{Strade.Entities.EmbedMessage},System.Boolean,System.Boolean,System.Threading.CancellationToken)">PushAsync(String, IReadOnlyList&lt;EmbedMessage&gt;, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IWebhookMessage&gt; PushAsync(string content, IReadOnlyList&lt;EmbedMessage&gt; embeds = null, bool textToSpeech = false, bool pushOnly = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>the message content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>the attached message embeds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pushOnly</span></td>
+        <td><p>a value indicating whether the server should await the creation of the webhook
+message ( <span class="xref">true</span>) or should only push the message ( <span class="xref">false</span>). If pushes then <span class="xref">null</span> if returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IWebhookMessage.html">IWebhookMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message
+send; or if <code data-dev-comment-type="paramref" class="paramref">pushOnly</code> is <span class="xref">true</span><span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">content</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_PushFileAsync_System_ArraySegment_System_Byte__System_String_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.PushFileAsync(System.ArraySegment%7BSystem.Byte%7D%2CSystem.String%2CSystem.String%2CSystem.Collections.Generic.IReadOnlyList%7BStrade.Entities.EmbedMessage%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L280">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_PushFileAsync_" data-uid="Strade.WebhookClient.PushFileAsync*"></a>
+  <h4 id="Strade_WebhookClient_PushFileAsync_System_ArraySegment_System_Byte__System_String_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.PushFileAsync(System.ArraySegment{System.Byte},System.String,System.String,System.Collections.Generic.IReadOnlyList{Strade.Entities.EmbedMessage},System.Boolean,System.Boolean,System.Threading.CancellationToken)">PushFileAsync(ArraySegment&lt;Byte&gt;, String, String, IReadOnlyList&lt;EmbedMessage&gt;, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message with a file attachment asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IWebhookMessage&gt; PushFileAsync(ArraySegment&lt;byte&gt; data, string filename, string content = null, IReadOnlyList&lt;EmbedMessage&gt; embeds = null, bool textToSpeech = false, bool pushOnly = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the file data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>the filename for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>the message content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>the attached message embeds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pushOnly</span></td>
+        <td><p>a value indicating whether the server should await the creation of the webhook
+message ( <span class="xref">true</span>) or should only push the message ( <span class="xref">false</span>). If pushes then <span class="xref">null</span> if returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IWebhookMessage.html">IWebhookMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message
+send; or if <code data-dev-comment-type="paramref" class="paramref">pushOnly</code> is <span class="xref">true</span><span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_PushFileAsync_System_IO_FileInfo_System_String_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.PushFileAsync(System.IO.FileInfo%2CSystem.String%2CSystem.String%2CSystem.Collections.Generic.IReadOnlyList%7BStrade.Entities.EmbedMessage%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L246">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_PushFileAsync_" data-uid="Strade.WebhookClient.PushFileAsync*"></a>
+  <h4 id="Strade_WebhookClient_PushFileAsync_System_IO_FileInfo_System_String_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.PushFileAsync(System.IO.FileInfo,System.String,System.String,System.Collections.Generic.IReadOnlyList{Strade.Entities.EmbedMessage},System.Boolean,System.Boolean,System.Threading.CancellationToken)">PushFileAsync(FileInfo, String, String, IReadOnlyList&lt;EmbedMessage&gt;, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message with a file attachment asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IWebhookMessage&gt; PushFileAsync(FileInfo fileInfo, string filename = null, string content = null, IReadOnlyList&lt;EmbedMessage&gt; embeds = null, bool textToSpeech = false, bool pushOnly = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.fileinfo">FileInfo</a></td>
+        <td><span class="parametername">fileInfo</span></td>
+        <td><p>the file to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>the filename for the file, if <span class="xref">null</span> is specified then the file name
+of the specified <code data-dev-comment-type="paramref" class="paramref">fileInfo</code> is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>the message content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>the attached message embeds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pushOnly</span></td>
+        <td><p>a value indicating whether the server should await the creation of the webhook
+message ( <span class="xref">true</span>) or should only push the message ( <span class="xref">false</span>). If pushes then <span class="xref">null</span> if returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IWebhookMessage.html">IWebhookMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message
+send; or if <code data-dev-comment-type="paramref" class="paramref">pushOnly</code> is <span class="xref">true</span><span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">fileInfo</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_PushFileAsync_System_IO_Stream_System_String_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.PushFileAsync(System.IO.Stream%2CSystem.String%2CSystem.String%2CSystem.Collections.Generic.IReadOnlyList%7BStrade.Entities.EmbedMessage%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L319">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_PushFileAsync_" data-uid="Strade.WebhookClient.PushFileAsync*"></a>
+  <h4 id="Strade_WebhookClient_PushFileAsync_System_IO_Stream_System_String_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.PushFileAsync(System.IO.Stream,System.String,System.String,System.Collections.Generic.IReadOnlyList{Strade.Entities.EmbedMessage},System.Boolean,System.Boolean,System.Boolean,System.Threading.CancellationToken)">PushFileAsync(Stream, String, String, IReadOnlyList&lt;EmbedMessage&gt;, Boolean, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message with a file attachment asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IWebhookMessage&gt; PushFileAsync(Stream stream, string filename, string content = null, IReadOnlyList&lt;EmbedMessage&gt; embeds = null, bool textToSpeech = false, bool leaveOpen = false, bool pushOnly = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>the stream to read the file data from to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>the filename for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>the message content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>the attached message embeds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p>a value indicating whether the specified <code data-dev-comment-type="paramref" class="paramref">stream</code> should be left
+open after the file was send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pushOnly</span></td>
+        <td><p>a value indicating whether the server should await the creation of the webhook
+message ( <span class="xref">true</span>) or should only push the message ( <span class="xref">false</span>). If pushes then <span class="xref">null</span> if returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IWebhookMessage.html">IWebhookMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message
+send; or if <code data-dev-comment-type="paramref" class="paramref">pushOnly</code> is <span class="xref">true</span><span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">stream</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">filename</code> is <span class="xref">null</span> or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient_PushFileAsync_System_String_System_String_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.WebhookClient.PushFileAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.Collections.Generic.IReadOnlyList%7BStrade.Entities.EmbedMessage%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L216">View Source</a>
+  </span>
+  <a id="Strade_WebhookClient_PushFileAsync_" data-uid="Strade.WebhookClient.PushFileAsync*"></a>
+  <h4 id="Strade_WebhookClient_PushFileAsync_System_String_System_String_System_String_System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedMessage__System_Boolean_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.WebhookClient.PushFileAsync(System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList{Strade.Entities.EmbedMessage},System.Boolean,System.Boolean,System.Threading.CancellationToken)">PushFileAsync(String, String, String, IReadOnlyList&lt;EmbedMessage&gt;, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message with a file attachment asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IWebhookMessage&gt; PushFileAsync(string path, string filename = null, string content = null, IReadOnlyList&lt;EmbedMessage&gt; embeds = null, bool textToSpeech = false, bool pushOnly = true, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>the path to the file to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>the filename for the file, if <span class="xref">null</span> is specified then the file name
+of the specified <code data-dev-comment-type="paramref" class="paramref">path</code> is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>the message content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a>&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>the attached message embeds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">textToSpeech</span></td>
+        <td><p>a value indicating whether the message should be a TTS (Text-To-Speech) message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">pushOnly</span></td>
+        <td><p>a value indicating whether the server should await the creation of the webhook
+message ( <span class="xref">true</span>) or should only push the message ( <span class="xref">false</span>). If pushes then <span class="xref">null</span> if returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IWebhookMessage.html">IWebhookMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message
+send; or if <code data-dev-comment-type="paramref" class="paramref">pushOnly</code> is <span class="xref">true</span><span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_WebhookClient.md&amp;value=---%0Auid%3A%20Strade.WebhookClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Webhook/WebhookClient.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

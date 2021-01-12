@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum AuditLogChangeKey
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum AuditLogChangeKey
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.AuditLogChangeKey">
+  
+  
+  <h1 id="Strade_Entities_AuditLogChangeKey" data-uid="Strade.Entities.AuditLogChangeKey" class="text-break">Enum AuditLogChangeKey
+  </h1>
+  <div class="markdown level0 summary"><p>Audit log change key definitions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_AuditLogChangeKey_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(StringEnumConverter&lt;AuditLogChangeKey&gt;))]
+public enum AuditLogChangeKey : ushort</code></pre>
+  </div>
+  <h5 id="Strade_Entities_AuditLogChangeKey_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>See
+<a href="https://discord.com/developers/docs/resources/audit-log#audit-log-change-object-audit-log-change-key">https://discord.com/developers/docs/resources/audit-log#audit-log-change-object-audit-log-change-key</a>
+for more details.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_AfkChannel">AfkChannel</td>
+        <td><p>Denotes that the afk channel (id) of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_AfkTimeout">AfkTimeout</td>
+        <td><p>Denotes that the afk timeout of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ChannelApplicationId">ChannelApplicationId</td>
+        <td><p>Denotes that the application id of the added or removed webhook bot changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ChannelBitrate">ChannelBitrate</td>
+        <td><p>Denotes that the bitrate of a voice channel was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ChannelNsfw">ChannelNsfw</td>
+        <td><p>Denotes that the nsfw restriction of a text channel was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ChannelPermissionOverwrites">ChannelPermissionOverwrites</td>
+        <td><p>Denotes that the permissions of a channel were changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ChannelPosition">ChannelPosition</td>
+        <td><p>Denotes that the position of a channel was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ChannelRateLimitPerUser">ChannelRateLimitPerUser</td>
+        <td><p>Denotes that the message rate limit of a channel was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ChannelTopic">ChannelTopic</td>
+        <td><p>Denotes that the topic of a text channel was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_DefaultMessageNotificationLevel">DefaultMessageNotificationLevel</td>
+        <td><p>Denotes that the default message notification level of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_EnableEmoticons">EnableEmoticons</td>
+        <td><p>Denotes that emotes were enabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_EntityId">EntityId</td>
+        <td><p>Denotes that the id of an entity was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_EntityType">EntityType</td>
+        <td><p>Denotes that the type of an entity was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ExpireBehavior">ExpireBehavior</td>
+        <td><p>Denotes that the expire behavior of an integration was updated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ExpireGracePeriod">ExpireGracePeriod</td>
+        <td><p>Denotes that the expire grace behavior of an integration was updated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_ExplicitContentFilterLevel">ExplicitContentFilterLevel</td>
+        <td><p>Denotes that the explicit content filter level of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_Icon">Icon</td>
+        <td><p>Denotes that the icon (hash) of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_InviteChannel">InviteChannel</td>
+        <td><p>Denotes that the channel for a invite was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_InviteCode">InviteCode</td>
+        <td><p>Denotes that the invite code for an invitation was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_InviteMaxAge">InviteMaxAge</td>
+        <td><p>Denotes that the value how long an invitation code is valid was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_InviteMaxUses">InviteMaxUses</td>
+        <td><p>Denotes that the max number of maximum uses for an invitation code was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_Inviter">Inviter</td>
+        <td><p>Denotes that the creator (id) of an invitation code was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_InviteTemporary">InviteTemporary</td>
+        <td><p>Denotes that the value indicating whether an invitation code is temporary was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_InviteUses">InviteUses</td>
+        <td><p>Denotes that the number of uses for an invitation code was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_MultiFactorAuthenticationLevel">MultiFactorAuthenticationLevel</td>
+        <td><p>Denotes that the multi-factor authentication level of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_Name">Name</td>
+        <td><p>Denotes that the name of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_Owner">Owner</td>
+        <td><p>Denotes that the owner (id) of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_PermissionsAllowed">PermissionsAllowed</td>
+        <td><p>A permission for a text or voice channel was allowed for a role / member.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_PermissionsDenied">PermissionsDenied</td>
+        <td><p>A permission for a text or voice channel was denied for a role / member.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_PruneDeleteDays">PruneDeleteDays</td>
+        <td><p>Denotes that the days after which inactive and role-unassigned members are kicked
+was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_Region">Region</td>
+        <td><p>Denotes that the voice region of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_RoleAdd">RoleAdd</td>
+        <td><p>A role was added to the guild.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_RoleColor">RoleColor</td>
+        <td><p>Denotes that the color of a role was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_RoleHoist">RoleHoist</td>
+        <td><p>Denotes that the role separation was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_RoleMentionable">RoleMentionable</td>
+        <td><p>Mentioning was allowed / disallowed on the role.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_RolePermissions">RolePermissions</td>
+        <td><p>Denotes that the permissions of a role were changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_RoleRemove">RoleRemove</td>
+        <td><p>A role was removed from the guild.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_Splash">Splash</td>
+        <td><p>Denotes that the splash (hash) of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_Unknown">Unknown</td>
+        <td><p>Denotes that the change key is not supported. Please upgrade to a future version of
+the library.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_UserAvatar">UserAvatar</td>
+        <td><p>Denotes that the avatar (hash) of a user was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_UserDeaf">UserDeaf</td>
+        <td><p>Denotes that a user was server deafened/deafened.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_UserMute">UserMute</td>
+        <td><p>Denotes that a user was server muted/unmuted.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_UserNickname">UserNickname</td>
+        <td><p>Denotes that the nickname of a user was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_VanityUrlCode">VanityUrlCode</td>
+        <td><p>Denotes that the vanity url code of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_VerificationLevel">VerificationLevel</td>
+        <td><p>Denotes that the verification level of the guild was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_WidgetChannel">WidgetChannel</td>
+        <td><p>Denotes that the server widget channel (id) was changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Strade_Entities_AuditLogChangeKey_WidgetEnabled">WidgetEnabled</td>
+        <td><p>Denotes that the server widget was enabled or disabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Strade.Util.Enums.EnumExtensions.html#Strade_Util_Enums_EnumExtensions_GetName__1___0_">EnumExtensions.GetName&lt;AuditLogChangeKey&gt;()</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Util.Enums.EnumExtensions.html#Strade_Util_Enums_EnumExtensions_IsDefined_System_Enum_">EnumExtensions.IsDefined()</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_AuditLogChangeKey.md&amp;value=---%0Auid%3A%20Strade.Entities.AuditLogChangeKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/AuditLog/AuditLogChangeKey.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

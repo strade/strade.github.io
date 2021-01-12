@@ -1,0 +1,778 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InteractiveNavigation
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InteractiveNavigation
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation">
+  
+  
+  <h1 id="Strade_Interactivity_Navigation_InteractiveNavigation" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation" class="text-break">Class InteractiveNavigation
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">InteractiveNavigation</span></div>
+      <div class="level2"><a class="xref" href="Strade.Interactivity.Pagination.BasePagination.html">BasePagination</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Interactivity.Subscription.ISubscriber-1.html">ISubscriber</a>&lt;<a class="xref" href="Strade.Interactivity.UserReaction.html">UserReaction</a>&gt;</div>
+    <div><a class="xref" href="Strade.Interactivity.Navigation.INavigation.html">INavigation</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Interactivity.Navigation.html">Strade.Interactivity.Navigation</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Interactivity.dll</h6>
+  <h5 id="Strade_Interactivity_Navigation_InteractiveNavigation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InteractiveNavigation : ISubscriber&lt;UserReaction&gt;, INavigation, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation__ctor_Strade_Interactivity_Subscription_ISubscribable_Strade_Interactivity_UserReaction__Strade_Entities_IMessageChannel_Strade_Interactivity_Predicates_IPredicate_Strade_Interactivity_UserReaction__Strade_Interactivity_Navigation_NavigationOptions_.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.%23ctor(Strade.Interactivity.Subscription.ISubscribable%7BStrade.Interactivity.UserReaction%7D%2CStrade.Entities.IMessageChannel%2CStrade.Interactivity.Predicates.IPredicate%7BStrade.Interactivity.UserReaction%7D%2CStrade.Interactivity.Navigation.NavigationOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L37">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation__ctor_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.#ctor*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation__ctor_Strade_Interactivity_Subscription_ISubscribable_Strade_Interactivity_UserReaction__Strade_Entities_IMessageChannel_Strade_Interactivity_Predicates_IPredicate_Strade_Interactivity_UserReaction__Strade_Interactivity_Navigation_NavigationOptions_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.#ctor(Strade.Interactivity.Subscription.ISubscribable{Strade.Interactivity.UserReaction},Strade.Entities.IMessageChannel,Strade.Interactivity.Predicates.IPredicate{Strade.Interactivity.UserReaction},Strade.Interactivity.Navigation.NavigationOptions)">InteractiveNavigation(ISubscribable&lt;UserReaction&gt;, IMessageChannel, IPredicate&lt;UserReaction&gt;, NavigationOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractiveNavigation(ISubscribable&lt;UserReaction&gt; subscribable, IMessageChannel channel, IPredicate&lt;UserReaction&gt; predicate = null, NavigationOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.Subscription.ISubscribable-1.html">ISubscribable</a>&lt;<a class="xref" href="Strade.Interactivity.UserReaction.html">UserReaction</a>&gt;</td>
+        <td><span class="parametername">subscribable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IMessageChannel.html">IMessageChannel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.Predicates.IPredicate-1.html">IPredicate</a>&lt;<a class="xref" href="Strade.Interactivity.UserReaction.html">UserReaction</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.Navigation.NavigationOptions.html">NavigationOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_Channel.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.Channel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L81">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_Channel_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Channel*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_Channel" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Channel">Channel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMessageChannel Channel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IMessageChannel.html">IMessageChannel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_CloseBehavior.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.CloseBehavior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L83">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_CloseBehavior_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.CloseBehavior*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_CloseBehavior" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.CloseBehavior">CloseBehavior</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigationCloseBehavior CloseBehavior { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.Navigation.NavigationCloseBehavior.html">NavigationCloseBehavior</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_CurrentPage.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.CurrentPage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L100">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_CurrentPage_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.CurrentPage*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_CurrentPage" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.CurrentPage">CurrentPage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigationPage CurrentPage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.Navigation.NavigationPage.html">NavigationPage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_IsClosed.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.IsClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L102">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_IsClosed_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.IsClosed*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_IsClosed" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.IsClosed">IsClosed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClosed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_Message.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.Message%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L104">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_Message_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Message*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_Message" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Message">Message</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMessage Message { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IMessage.html">IMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_Mode.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.Mode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L106">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_Mode_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Mode*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_Mode" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Mode">Mode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigationMode Mode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.Navigation.NavigationMode.html">NavigationMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_CloseAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.CloseAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L123">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_CloseAsync_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.CloseAsync*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_CloseAsync_System_Threading_CancellationToken_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.CloseAsync(System.Threading.CancellationToken)">CloseAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CloseAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_Dispose.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L153">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_Dispose_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Dispose*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_Dispose" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L232">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_Dispose_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Dispose*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_Dispose_System_Boolean_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_HandleReactionAsync_Strade_Interactivity_UserReaction_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.HandleReactionAsync(Strade.Interactivity.UserReaction%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L243">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_HandleReactionAsync_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.HandleReactionAsync*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_HandleReactionAsync_Strade_Interactivity_UserReaction_System_Threading_CancellationToken_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.HandleReactionAsync(Strade.Interactivity.UserReaction,System.Threading.CancellationToken)">HandleReactionAsync(UserReaction, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ValueTask HandleReactionAsync(UserReaction reaction, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.UserReaction.html">UserReaction</a></td>
+        <td><span class="parametername">reaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_ShowAsync_Strade_Interactivity_Navigation_NavigationPage_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.ShowAsync(Strade.Interactivity.Navigation.NavigationPage%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L159">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_ShowAsync_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.ShowAsync*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_ShowAsync_Strade_Interactivity_Navigation_NavigationPage_System_Threading_CancellationToken_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.ShowAsync(Strade.Interactivity.Navigation.NavigationPage,System.Threading.CancellationToken)">ShowAsync(NavigationPage, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IMessage&gt; ShowAsync(NavigationPage page, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.Navigation.NavigationPage.html">NavigationPage</a></td>
+        <td><span class="parametername">page</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_UpdateActionsAsync_Strade_Entities_IMessage_System_Collections_Generic_IEnumerable_Strade_Interactivity_Navigation_NavigationAction__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.UpdateActionsAsync(Strade.Entities.IMessage%2CSystem.Collections.Generic.IEnumerable%7BStrade.Interactivity.Navigation.NavigationAction%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L278">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_UpdateActionsAsync_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.UpdateActionsAsync*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_UpdateActionsAsync_Strade_Entities_IMessage_System_Collections_Generic_IEnumerable_Strade_Interactivity_Navigation_NavigationAction__System_Threading_CancellationToken_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.UpdateActionsAsync(Strade.Entities.IMessage,System.Collections.Generic.IEnumerable{Strade.Interactivity.Navigation.NavigationAction},System.Threading.CancellationToken)">UpdateActionsAsync(IMessage, IEnumerable&lt;NavigationAction&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task UpdateActionsAsync(IMessage message, IEnumerable&lt;NavigationAction&gt; actions, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IMessage.html">IMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Interactivity.Navigation.NavigationAction.html">NavigationAction</a>&gt;</td>
+        <td><span class="parametername">actions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_UpdateReactionsAsync_Strade_Entities_IMessage_System_Collections_Generic_IReadOnlyList_Strade_Entities_IEmote__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.UpdateReactionsAsync(Strade.Entities.IMessage%2CSystem.Collections.Generic.IReadOnlyList%7BStrade.Entities.IEmote%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L295">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_UpdateReactionsAsync_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.UpdateReactionsAsync*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_UpdateReactionsAsync_Strade_Entities_IMessage_System_Collections_Generic_IReadOnlyList_Strade_Entities_IEmote__System_Threading_CancellationToken_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.UpdateReactionsAsync(Strade.Entities.IMessage,System.Collections.Generic.IReadOnlyList{Strade.Entities.IEmote},System.Threading.CancellationToken)">UpdateReactionsAsync(IMessage, IReadOnlyList&lt;IEmote&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task UpdateReactionsAsync(IMessage message, IReadOnlyList&lt;IEmote&gt; emotes, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.IMessage.html">IMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.IEmote.html">IEmote</a>&gt;</td>
+        <td><span class="parametername">emotes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation_Strade_Interactivity_Subscription_ISubscriber_Strade_Interactivity_UserReaction__PushAsync_Strade_Interactivity_UserReaction_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation.Strade%23Interactivity%23Subscription%23ISubscriber%7BStrade%23Interactivity%23UserReaction%7D%23PushAsync(Strade.Interactivity.UserReaction%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L213">View Source</a>
+  </span>
+  <a id="Strade_Interactivity_Navigation_InteractiveNavigation_Strade_Interactivity_Subscription_ISubscriber_Strade_Interactivity_UserReaction__PushAsync_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Strade#Interactivity#Subscription#ISubscriber{Strade#Interactivity#UserReaction}#PushAsync*"></a>
+  <h4 id="Strade_Interactivity_Navigation_InteractiveNavigation_Strade_Interactivity_Subscription_ISubscriber_Strade_Interactivity_UserReaction__PushAsync_Strade_Interactivity_UserReaction_System_Threading_CancellationToken_" data-uid="Strade.Interactivity.Navigation.InteractiveNavigation.Strade#Interactivity#Subscription#ISubscriber{Strade#Interactivity#UserReaction}#PushAsync(Strade.Interactivity.UserReaction,System.Threading.CancellationToken)">ISubscriber&lt;UserReaction&gt;.PushAsync(UserReaction, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask ISubscriber&lt;UserReaction&gt;.PushAsync(UserReaction value, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Interactivity.UserReaction.html">UserReaction</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Interactivity.Subscription.ISubscriber-1.html">ISubscriber&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Interactivity.Navigation.INavigation.html">INavigation</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Interactivity_Navigation_InteractiveNavigation.md&amp;value=---%0Auid%3A%20Strade.Interactivity.Navigation.InteractiveNavigation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Interactivity/Navigation/InteractiveNavigation.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

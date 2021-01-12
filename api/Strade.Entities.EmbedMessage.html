@@ -1,0 +1,1052 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EmbedMessage
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EmbedMessage
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Entities.EmbedMessage">
+  
+  
+  <h1 id="Strade_Entities_EmbedMessage" data-uid="Strade.Entities.EmbedMessage" class="text-break">Class EmbedMessage
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an embedded message object.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">EmbedMessage</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Entities.html">Strade.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_Entities_EmbedMessage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(EmbedMessageJsonConverter))]
+public sealed class EmbedMessage</code></pre>
+  </div>
+  <h5 id="Strade_Entities_EmbedMessage_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#message-object-message-types">https://discord.com/developers/docs/resources/channel#message-object-message-types</a>
+[external, Discord Developer Documentation].</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage__ctor_Strade_Models_EmbedMessageModel_.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.%23ctor(Strade.Models.EmbedMessageModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L111">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage__ctor_" data-uid="Strade.Entities.EmbedMessage.#ctor*"></a>
+  <h4 id="Strade_Entities_EmbedMessage__ctor_Strade_Models_EmbedMessageModel_" data-uid="Strade.Entities.EmbedMessage.#ctor(Strade.Models.EmbedMessageModel)">EmbedMessage(EmbedMessageModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedMessage(EmbedMessageModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Models.EmbedMessageModel.html">EmbedMessageModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage__ctor_System_String_System_String_System_Nullable_Strade_Entities_Color__System_Nullable_Strade_Entities_EmbedAuthor__System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedField__System_Uri_System_Nullable_Strade_Entities_EmbedFooter__System_Nullable_Strade_Entities_EmbedImage__System_Nullable_Strade_Entities_EmbedProvider__System_Nullable_Strade_Entities_EmbedImage__System_Nullable_System_DateTimeOffset__System_Nullable_Strade_Entities_EmbedVideo__.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.%23ctor(System.String%2CSystem.String%2CSystem.Nullable%7BStrade.Entities.Color%7D%2CSystem.Nullable%7BStrade.Entities.EmbedAuthor%7D%2CSystem.Collections.Generic.IReadOnlyList%7BStrade.Entities.EmbedField%7D%2CSystem.Uri%2CSystem.Nullable%7BStrade.Entities.EmbedFooter%7D%2CSystem.Nullable%7BStrade.Entities.EmbedImage%7D%2CSystem.Nullable%7BStrade.Entities.EmbedProvider%7D%2CSystem.Nullable%7BStrade.Entities.EmbedImage%7D%2CSystem.Nullable%7BSystem.DateTimeOffset%7D%2CSystem.Nullable%7BStrade.Entities.EmbedVideo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L159">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage__ctor_" data-uid="Strade.Entities.EmbedMessage.#ctor*"></a>
+  <h4 id="Strade_Entities_EmbedMessage__ctor_System_String_System_String_System_Nullable_Strade_Entities_Color__System_Nullable_Strade_Entities_EmbedAuthor__System_Collections_Generic_IReadOnlyList_Strade_Entities_EmbedField__System_Uri_System_Nullable_Strade_Entities_EmbedFooter__System_Nullable_Strade_Entities_EmbedImage__System_Nullable_Strade_Entities_EmbedProvider__System_Nullable_Strade_Entities_EmbedImage__System_Nullable_System_DateTimeOffset__System_Nullable_Strade_Entities_EmbedVideo__" data-uid="Strade.Entities.EmbedMessage.#ctor(System.String,System.String,System.Nullable{Strade.Entities.Color},System.Nullable{Strade.Entities.EmbedAuthor},System.Collections.Generic.IReadOnlyList{Strade.Entities.EmbedField},System.Uri,System.Nullable{Strade.Entities.EmbedFooter},System.Nullable{Strade.Entities.EmbedImage},System.Nullable{Strade.Entities.EmbedProvider},System.Nullable{Strade.Entities.EmbedImage},System.Nullable{System.DateTimeOffset},System.Nullable{Strade.Entities.EmbedVideo})">EmbedMessage(String, String, Nullable&lt;Color&gt;, Nullable&lt;EmbedAuthor&gt;, IReadOnlyList&lt;EmbedField&gt;, Uri, Nullable&lt;EmbedFooter&gt;, Nullable&lt;EmbedImage&gt;, Nullable&lt;EmbedProvider&gt;, Nullable&lt;EmbedImage&gt;, Nullable&lt;DateTimeOffset&gt;, Nullable&lt;EmbedVideo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Entities.EmbedMessage.html">EmbedMessage</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedMessage(string title = null, string description = null, Color? color = default(Color? ), EmbedAuthor? author = default(EmbedAuthor? ), IReadOnlyList&lt;EmbedField&gt; fields = null, Uri url = null, EmbedFooter? footer = default(EmbedFooter? ), EmbedImage? image = default(EmbedImage? ), EmbedProvider? provider = default(EmbedProvider? ), EmbedImage? thumbnail = default(EmbedImage? ), DateTimeOffset? timestamp = default(DateTimeOffset? ), EmbedVideo? video = default(EmbedVideo? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>the title of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>the description of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Color.html">Color</a>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td><p>the color of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedAuthor.html">EmbedAuthor</a>&gt;</td>
+        <td><span class="parametername">author</span></td>
+        <td><p>the author of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedField.html">EmbedField</a>&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>a list of the fields of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>the URI of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedFooter.html">EmbedFooter</a>&gt;</td>
+        <td><span class="parametername">footer</span></td>
+        <td><p>the footer of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedImage.html">EmbedImage</a>&gt;</td>
+        <td><span class="parametername">image</span></td>
+        <td><p>the image of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedProvider.html">EmbedProvider</a>&gt;</td>
+        <td><span class="parametername">provider</span></td>
+        <td><p>the provider of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedImage.html">EmbedImage</a>&gt;</td>
+        <td><span class="parametername">thumbnail</span></td>
+        <td><p>the thumbnail of the embed message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>the timestamp of the embed message; or <span class="xref">null</span> if the embed message
+has no timestamp.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedVideo.html">EmbedVideo</a>&gt;</td>
+        <td><span class="parametername">video</span></td>
+        <td><p>the video of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumAuthorNameLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumAuthorNameLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L29">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumAuthorNameLength" data-uid="Strade.Entities.EmbedMessage.MaximumAuthorNameLength">MaximumAuthorNameLength</h4>
+  <div class="markdown level1 summary"><p>The maximum number of characters an author name can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumAuthorNameLength = 256</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumAuthorNameLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumDescriptionLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumDescriptionLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L39">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumDescriptionLength" data-uid="Strade.Entities.EmbedMessage.MaximumDescriptionLength">MaximumDescriptionLength</h4>
+  <div class="markdown level1 summary"><p>The maximum number of characters a description can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumDescriptionLength = 2048</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumDescriptionLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumDisplayLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumDisplayLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L49">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumDisplayLength" data-uid="Strade.Entities.EmbedMessage.MaximumDisplayLength">MaximumDisplayLength</h4>
+  <div class="markdown level1 summary"><p>The maximum number of total displayed characters an embed message can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumDisplayLength = 6000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumDisplayLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumFieldCount.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumFieldCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumFieldCount" data-uid="Strade.Entities.EmbedMessage.MaximumFieldCount">MaximumFieldCount</h4>
+  <div class="markdown level1 summary"><p>The maximum number of fields an embed message can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumFieldCount = 25</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumFieldCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumFieldNameLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumFieldNameLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumFieldNameLength" data-uid="Strade.Entities.EmbedMessage.MaximumFieldNameLength">MaximumFieldNameLength</h4>
+  <div class="markdown level1 summary"><p>The maximum number of characters a field name can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumFieldNameLength = 256</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumFieldNameLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumFieldValueLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumFieldValueLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L79">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumFieldValueLength" data-uid="Strade.Entities.EmbedMessage.MaximumFieldValueLength">MaximumFieldValueLength</h4>
+  <div class="markdown level1 summary"><p>The maximum number of characters a field value can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumFieldValueLength = 1024</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumFieldValueLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumFooterTextLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumFooterTextLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L89">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumFooterTextLength" data-uid="Strade.Entities.EmbedMessage.MaximumFooterTextLength">MaximumFooterTextLength</h4>
+  <div class="markdown level1 summary"><p>The maximum number of characters a footer text can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumFooterTextLength = 2048</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumFooterTextLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumTitleLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumTitleLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L99">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumTitleLength" data-uid="Strade.Entities.EmbedMessage.MaximumTitleLength">MaximumTitleLength</h4>
+  <div class="markdown level1 summary"><p>The maximum number of characters a title can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumTitleLength = 256</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumTitleLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_MaximumTotalLength.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.MaximumTotalLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L109">View Source</a>
+  </span>
+  <h4 id="Strade_Entities_EmbedMessage_MaximumTotalLength" data-uid="Strade.Entities.EmbedMessage.MaximumTotalLength">MaximumTotalLength</h4>
+  <div class="markdown level1 summary"><p>The maximum number the complete embed can have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaximumTotalLength = 6000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_MaximumTotalLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/resources/channel#embed-limits-limits">https://discord.com/developers/docs/resources/channel#embed-limits-limits</a> [external,
+Discord Developer Documentation].</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Author.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Author%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L183">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Author_" data-uid="Strade.Entities.EmbedMessage.Author*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Author" data-uid="Strade.Entities.EmbedMessage.Author">Author</h4>
+  <div class="markdown level1 summary"><p>Gets the author of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedAuthor? Author { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedAuthor.html">EmbedAuthor</a>&gt;</td>
+        <td><p>the author of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Color.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L189">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Color_" data-uid="Strade.Entities.EmbedMessage.Color*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Color" data-uid="Strade.Entities.EmbedMessage.Color">Color</h4>
+  <div class="markdown level1 summary"><p>Gets the color of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color? Color { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.Color.html">Color</a>&gt;</td>
+        <td><p>the color of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Description.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L196">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Description_" data-uid="Strade.Entities.EmbedMessage.Description*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Description" data-uid="Strade.Entities.EmbedMessage.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets the description of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the description of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_Description_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Strade.Entities.EmbedMessage.html#Strade_Entities_EmbedMessage_MaximumDescriptionLength">MaximumDescriptionLength</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Fields.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Fields%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L203">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Fields_" data-uid="Strade.Entities.EmbedMessage.Fields*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Fields" data-uid="Strade.Entities.EmbedMessage.Fields">Fields</h4>
+  <div class="markdown level1 summary"><p>Gets a list of the fields of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;EmbedField&gt; Fields { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.EmbedField.html">EmbedField</a>&gt;</td>
+        <td><p>a list of the fields of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_Fields_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Strade.Entities.EmbedMessage.html#Strade_Entities_EmbedMessage_MaximumFieldCount">MaximumFieldCount</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Footer.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Footer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L209">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Footer_" data-uid="Strade.Entities.EmbedMessage.Footer*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Footer" data-uid="Strade.Entities.EmbedMessage.Footer">Footer</h4>
+  <div class="markdown level1 summary"><p>Gets the footer of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedFooter? Footer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedFooter.html">EmbedFooter</a>&gt;</td>
+        <td><p>the footer of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Image.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Image%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L215">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Image_" data-uid="Strade.Entities.EmbedMessage.Image*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Image" data-uid="Strade.Entities.EmbedMessage.Image">Image</h4>
+  <div class="markdown level1 summary"><p>Gets the image of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedImage? Image { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedImage.html">EmbedImage</a>&gt;</td>
+        <td><p>the image of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Provider.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Provider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L221">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Provider_" data-uid="Strade.Entities.EmbedMessage.Provider*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Provider" data-uid="Strade.Entities.EmbedMessage.Provider">Provider</h4>
+  <div class="markdown level1 summary"><p>Gets the provider of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedProvider? Provider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedProvider.html">EmbedProvider</a>&gt;</td>
+        <td><p>the provider of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Thumbnail.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Thumbnail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L227">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Thumbnail_" data-uid="Strade.Entities.EmbedMessage.Thumbnail*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Thumbnail" data-uid="Strade.Entities.EmbedMessage.Thumbnail">Thumbnail</h4>
+  <div class="markdown level1 summary"><p>Gets the thumbnail of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedImage? Thumbnail { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedImage.html">EmbedImage</a>&gt;</td>
+        <td><p>the thumbnail of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Timestamp.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L237">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Timestamp_" data-uid="Strade.Entities.EmbedMessage.Timestamp*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Timestamp" data-uid="Strade.Entities.EmbedMessage.Timestamp">Timestamp</h4>
+  <div class="markdown level1 summary"><p>Gets the timestamp of the embed message; or <span class="xref">null</span> if the embed
+message has no timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? Timestamp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><p>the timestamp of the embed message; or <span class="xref">null</span> if the embed message
+has no timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Title.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L244">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Title_" data-uid="Strade.Entities.EmbedMessage.Title*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Title" data-uid="Strade.Entities.EmbedMessage.Title">Title</h4>
+  <div class="markdown level1 summary"><p>Gets the title of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Title { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the title of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Entities_EmbedMessage_Title_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Strade.Entities.EmbedMessage.html#Strade_Entities_EmbedMessage_MaximumTitleLength">MaximumTitleLength</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Url.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Url%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L250">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Url_" data-uid="Strade.Entities.EmbedMessage.Url*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Url" data-uid="Strade.Entities.EmbedMessage.Url">Url</h4>
+  <div class="markdown level1 summary"><p>Gets the URI of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Url { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><p>the URI of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_Video.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.Video%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L256">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_Video_" data-uid="Strade.Entities.EmbedMessage.Video*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_Video" data-uid="Strade.Entities.EmbedMessage.Video">Video</h4>
+  <div class="markdown level1 summary"><p>Gets the video of the embed message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbedVideo? Video { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Strade.Entities.EmbedVideo.html">EmbedVideo</a>&gt;</td>
+        <td><p>the video of the embed message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage_ToString.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L259">View Source</a>
+  </span>
+  <a id="Strade_Entities_EmbedMessage_ToString_" data-uid="Strade.Entities.EmbedMessage.ToString*"></a>
+  <h4 id="Strade_Entities_EmbedMessage_ToString" data-uid="Strade.Entities.EmbedMessage.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Entities_EmbedMessage.md&amp;value=---%0Auid%3A%20Strade.Entities.EmbedMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/Entities/Message/EmbedMessage.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1843 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CommandBuilder
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CommandBuilder
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Commands.Builders.CommandBuilder">
+  
+  
+  <h1 id="Strade_Commands_Builders_CommandBuilder" data-uid="Strade.Commands.Builders.CommandBuilder" class="text-break">Class CommandBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>A class used to build a command.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CommandBuilder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Commands.Builders.html">Strade.Commands.Builders</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Commands.dll</h6>
+  <h5 id="Strade_Commands_Builders_CommandBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CommandBuilder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder__ctor.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L28">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder__ctor_" data-uid="Strade.Commands.Builders.CommandBuilder.#ctor*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder__ctor" data-uid="Strade.Commands.Builders.CommandBuilder.#ctor">CommandBuilder()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder__ctor_System_String_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L36">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder__ctor_" data-uid="Strade.Commands.Builders.CommandBuilder.#ctor*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder__ctor_System_String_" data-uid="Strade.Commands.Builders.CommandBuilder.#ctor(System.String)">CommandBuilder(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>the name of the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Aliases.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Aliases%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L41">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Aliases_" data-uid="Strade.Commands.Builders.CommandBuilder.Aliases*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Aliases" data-uid="Strade.Commands.Builders.CommandBuilder.Aliases">Aliases</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the aliases of the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; Aliases { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_CustomAttributes.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.CustomAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L79">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_CustomAttributes_" data-uid="Strade.Commands.Builders.CommandBuilder.CustomAttributes*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_CustomAttributes" data-uid="Strade.Commands.Builders.CommandBuilder.CustomAttributes">CustomAttributes</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the custom attributes of the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;Attribute&gt; CustomAttributes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Description.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L118">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Description_" data-uid="Strade.Commands.Builders.CommandBuilder.Description*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Description" data-uid="Strade.Commands.Builders.CommandBuilder.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the description of the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizableString Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Localization.LocalizableString.html">LocalizableString</a></td>
+        <td><p>the description of the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Group.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Group%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L125">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Group_" data-uid="Strade.Commands.Builders.CommandBuilder.Group*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Group" data-uid="Strade.Commands.Builders.CommandBuilder.Group">Group</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the sub-group name of the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Group { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the sub-group name of the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_IsAsync.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.IsAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L135">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_IsAsync_" data-uid="Strade.Commands.Builders.CommandBuilder.IsAsync*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_IsAsync" data-uid="Strade.Commands.Builders.CommandBuilder.IsAsync">IsAsync</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether gets a value indicating the command should
+be executed asynchronously from the gateway / event queue thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAsync { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating the command should be executed asynchronously from the gateway /
+event queue thread.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_IsHidden.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.IsHidden%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L141">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_IsHidden_" data-uid="Strade.Commands.Builders.CommandBuilder.IsHidden*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_IsHidden" data-uid="Strade.Commands.Builders.CommandBuilder.IsHidden">IsHidden</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the command should be hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHidden { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the command should be hidden.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Name.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L147">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Name_" data-uid="Strade.Commands.Builders.CommandBuilder.Name*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Name" data-uid="Strade.Commands.Builders.CommandBuilder.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the name of the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Parameters.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Parameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L152">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Parameters_" data-uid="Strade.Commands.Builders.CommandBuilder.Parameters*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Parameters" data-uid="Strade.Commands.Builders.CommandBuilder.Parameters">Parameters</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the parameters of the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ICommandParameter&gt; Parameters { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Commands.ICommandParameter.html">ICommandParameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Preconditions.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Preconditions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L190">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Preconditions_" data-uid="Strade.Commands.Builders.CommandBuilder.Preconditions*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Preconditions" data-uid="Strade.Commands.Builders.CommandBuilder.Preconditions">Preconditions</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the preconditions of the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IPrecondition&gt; Preconditions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Commands.Preconditions.IPrecondition.html">IPrecondition</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_ResponseType.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.ResponseType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L229">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_ResponseType_" data-uid="Strade.Commands.Builders.CommandBuilder.ResponseType*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_ResponseType" data-uid="Strade.Commands.Builders.CommandBuilder.ResponseType">ResponseType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the response type for the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandResponseType ResponseType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandResponseType.html">CommandResponseType</a></td>
+        <td><p>the response type for the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Tags.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Tags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L234">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Tags_" data-uid="Strade.Commands.Builders.CommandBuilder.Tags*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Tags" data-uid="Strade.Commands.Builders.CommandBuilder.Tags">Tags</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the tags of the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_AsAsync_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.AsAsync(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L269">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_AsAsync_" data-uid="Strade.Commands.Builders.CommandBuilder.AsAsync*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_AsAsync_System_Boolean_" data-uid="Strade.Commands.Builders.CommandBuilder.AsAsync(System.Boolean)">AsAsync(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder AsAsync(bool async = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">async</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Build_Strade_Commands_IInstanceProvider_System_Reflection_MethodInfo_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Build(Strade.Commands.IInstanceProvider%2CSystem.Reflection.MethodInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L306">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Build_" data-uid="Strade.Commands.Builders.CommandBuilder.Build*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Build_Strade_Commands_IInstanceProvider_System_Reflection_MethodInfo_" data-uid="Strade.Commands.Builders.CommandBuilder.Build(Strade.Commands.IInstanceProvider,System.Reflection.MethodInfo)">Build(IInstanceProvider, MethodInfo)</h4>
+  <div class="markdown level1 summary"><p>Builds the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommand Build(IInstanceProvider instanceProvider, MethodInfo invocationMethod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.IInstanceProvider.html">IInstanceProvider</a></td>
+        <td><span class="parametername">instanceProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></td>
+        <td><span class="parametername">invocationMethod</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.ICommand.html">ICommand</a></td>
+        <td><p>the instance built.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Build_System_Delegate_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Build(System.Delegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L279">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Build_" data-uid="Strade.Commands.Builders.CommandBuilder.Build*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Build_System_Delegate_" data-uid="Strade.Commands.Builders.CommandBuilder.Build(System.Delegate)">Build(Delegate)</h4>
+  <div class="markdown level1 summary"><p>Builds the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommand Build(Delegate delegate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.delegate">Delegate</a></td>
+        <td><span class="parametername">delegate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.ICommand.html">ICommand</a></td>
+        <td><p>the instance built.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_ClearAliases.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.ClearAliases%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L331">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_ClearAliases_" data-uid="Strade.Commands.Builders.CommandBuilder.ClearAliases*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_ClearAliases" data-uid="Strade.Commands.Builders.CommandBuilder.ClearAliases">ClearAliases()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder ClearAliases()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_ClearCustomAttributes.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.ClearCustomAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L337">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_ClearCustomAttributes_" data-uid="Strade.Commands.Builders.CommandBuilder.ClearCustomAttributes*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_ClearCustomAttributes" data-uid="Strade.Commands.Builders.CommandBuilder.ClearCustomAttributes">ClearCustomAttributes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder ClearCustomAttributes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_ClearParameters.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.ClearParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L343">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_ClearParameters_" data-uid="Strade.Commands.Builders.CommandBuilder.ClearParameters*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_ClearParameters" data-uid="Strade.Commands.Builders.CommandBuilder.ClearParameters">ClearParameters()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder ClearParameters()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_ClearPreconditions.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.ClearPreconditions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L349">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_ClearPreconditions_" data-uid="Strade.Commands.Builders.CommandBuilder.ClearPreconditions*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_ClearPreconditions" data-uid="Strade.Commands.Builders.CommandBuilder.ClearPreconditions">ClearPreconditions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder ClearPreconditions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_ClearTags.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.ClearTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L355">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_ClearTags_" data-uid="Strade.Commands.Builders.CommandBuilder.ClearTags*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_ClearTags" data-uid="Strade.Commands.Builders.CommandBuilder.ClearTags">ClearTags()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder ClearTags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Hidden_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Hidden(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L361">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Hidden_" data-uid="Strade.Commands.Builders.CommandBuilder.Hidden*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Hidden_System_Boolean_" data-uid="Strade.Commands.Builders.CommandBuilder.Hidden(System.Boolean)">Hidden(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder Hidden(bool hidden = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">hidden</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_Validate.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L374">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_Validate_" data-uid="Strade.Commands.Builders.CommandBuilder.Validate*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_Validate" data-uid="Strade.Commands.Builders.CommandBuilder.Validate">Validate()</h4>
+  <div class="markdown level1 summary"><p>Validates the builder options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithAlias_System_String_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithAlias(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L387">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithAlias_" data-uid="Strade.Commands.Builders.CommandBuilder.WithAlias*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithAlias_System_String_" data-uid="Strade.Commands.Builders.CommandBuilder.WithAlias(System.String)">WithAlias(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithAlias(string alias)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">alias</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithAliases_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithAliases(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L400">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithAliases_" data-uid="Strade.Commands.Builders.CommandBuilder.WithAliases*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithAliases_System_Collections_Generic_IEnumerable_System_String__" data-uid="Strade.Commands.Builders.CommandBuilder.WithAliases(System.Collections.Generic.IEnumerable{System.String})">WithAliases(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithAliases(IEnumerable&lt;string&gt; aliases)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">aliases</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithAliases_System_String___.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithAliases(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L413">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithAliases_" data-uid="Strade.Commands.Builders.CommandBuilder.WithAliases*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithAliases_System_String___" data-uid="Strade.Commands.Builders.CommandBuilder.WithAliases(System.String[])">WithAliases(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithAliases(params string[] aliases)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">aliases</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithCustomAttribute_System_Attribute_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithCustomAttribute(System.Attribute)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L416">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithCustomAttribute_" data-uid="Strade.Commands.Builders.CommandBuilder.WithCustomAttribute*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithCustomAttribute_System_Attribute_" data-uid="Strade.Commands.Builders.CommandBuilder.WithCustomAttribute(System.Attribute)">WithCustomAttribute(Attribute)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithCustomAttribute(Attribute customAttribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a></td>
+        <td><span class="parametername">customAttribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithCustomAttributes_System_Attribute___.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithCustomAttributes(System.Attribute%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L442">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithCustomAttributes_" data-uid="Strade.Commands.Builders.CommandBuilder.WithCustomAttributes*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithCustomAttributes_System_Attribute___" data-uid="Strade.Commands.Builders.CommandBuilder.WithCustomAttributes(System.Attribute[])">WithCustomAttributes(Attribute[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithCustomAttributes(params Attribute[] customAttributes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a>[]</td>
+        <td><span class="parametername">customAttributes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithCustomAttributes_System_Collections_Generic_IEnumerable_System_Attribute__.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithCustomAttributes(System.Collections.Generic.IEnumerable%7BSystem.Attribute%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L429">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithCustomAttributes_" data-uid="Strade.Commands.Builders.CommandBuilder.WithCustomAttributes*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithCustomAttributes_System_Collections_Generic_IEnumerable_System_Attribute__" data-uid="Strade.Commands.Builders.CommandBuilder.WithCustomAttributes(System.Collections.Generic.IEnumerable{System.Attribute})">WithCustomAttributes(IEnumerable&lt;Attribute&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithCustomAttributes(IEnumerable&lt;Attribute&gt; customAttributes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a>&gt;</td>
+        <td><span class="parametername">customAttributes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithDescription_Strade_Commands_Localization_LocalizableString_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithDescription(Strade.Commands.Localization.LocalizableString)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L450">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithDescription_" data-uid="Strade.Commands.Builders.CommandBuilder.WithDescription*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithDescription_Strade_Commands_Localization_LocalizableString_" data-uid="Strade.Commands.Builders.CommandBuilder.WithDescription(Strade.Commands.Localization.LocalizableString)">WithDescription(LocalizableString)</h4>
+  <div class="markdown level1 summary"><p>Sets the command description to the specified <code data-dev-comment-type="paramref" class="paramref">description</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithDescription(LocalizableString description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Localization.LocalizableString.html">LocalizableString</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>the command description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithGroup_System_String_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithGroup(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L461">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithGroup_" data-uid="Strade.Commands.Builders.CommandBuilder.WithGroup*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithGroup_System_String_" data-uid="Strade.Commands.Builders.CommandBuilder.WithGroup(System.String)">WithGroup(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the command group ( <a class="xref" href="Strade.Commands.Builders.CommandBuilder.html#Strade_Commands_Builders_CommandBuilder_Group">Group</a>) to the specified <code data-dev-comment-type="paramref" class="paramref">group</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithGroup(string group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>the command group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithName_System_String_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L472">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithName_" data-uid="Strade.Commands.Builders.CommandBuilder.WithName*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithName_System_String_" data-uid="Strade.Commands.Builders.CommandBuilder.WithName(System.String)">WithName(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the command name to the specified <code data-dev-comment-type="paramref" class="paramref">name</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>the command description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td><p>the <a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithParameter_Strade_Commands_ICommandParameter_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithParameter(Strade.Commands.ICommandParameter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L478">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithParameter_" data-uid="Strade.Commands.Builders.CommandBuilder.WithParameter*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithParameter_Strade_Commands_ICommandParameter_" data-uid="Strade.Commands.Builders.CommandBuilder.WithParameter(Strade.Commands.ICommandParameter)">WithParameter(ICommandParameter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithParameter(ICommandParameter parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.ICommandParameter.html">ICommandParameter</a></td>
+        <td><span class="parametername">parameter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithParameters_Strade_Commands_ICommandParameter___.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithParameters(Strade.Commands.ICommandParameter%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L504">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithParameters_" data-uid="Strade.Commands.Builders.CommandBuilder.WithParameters*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithParameters_Strade_Commands_ICommandParameter___" data-uid="Strade.Commands.Builders.CommandBuilder.WithParameters(Strade.Commands.ICommandParameter[])">WithParameters(ICommandParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithParameters(params ICommandParameter[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.ICommandParameter.html">ICommandParameter</a>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithParameters_System_Collections_Generic_IEnumerable_Strade_Commands_ICommandParameter__.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithParameters(System.Collections.Generic.IEnumerable%7BStrade.Commands.ICommandParameter%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L491">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithParameters_" data-uid="Strade.Commands.Builders.CommandBuilder.WithParameters*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithParameters_System_Collections_Generic_IEnumerable_Strade_Commands_ICommandParameter__" data-uid="Strade.Commands.Builders.CommandBuilder.WithParameters(System.Collections.Generic.IEnumerable{Strade.Commands.ICommandParameter})">WithParameters(IEnumerable&lt;ICommandParameter&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithParameters(IEnumerable&lt;ICommandParameter&gt; parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Commands.ICommandParameter.html">ICommandParameter</a>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithPrecondition_Strade_Commands_Preconditions_IPrecondition_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithPrecondition(Strade.Commands.Preconditions.IPrecondition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L507">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithPrecondition_" data-uid="Strade.Commands.Builders.CommandBuilder.WithPrecondition*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithPrecondition_Strade_Commands_Preconditions_IPrecondition_" data-uid="Strade.Commands.Builders.CommandBuilder.WithPrecondition(Strade.Commands.Preconditions.IPrecondition)">WithPrecondition(IPrecondition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithPrecondition(IPrecondition precondition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Preconditions.IPrecondition.html">IPrecondition</a></td>
+        <td><span class="parametername">precondition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithPreconditions_Strade_Commands_Preconditions_IPrecondition___.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithPreconditions(Strade.Commands.Preconditions.IPrecondition%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L533">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithPreconditions_" data-uid="Strade.Commands.Builders.CommandBuilder.WithPreconditions*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithPreconditions_Strade_Commands_Preconditions_IPrecondition___" data-uid="Strade.Commands.Builders.CommandBuilder.WithPreconditions(Strade.Commands.Preconditions.IPrecondition[])">WithPreconditions(IPrecondition[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithPreconditions(params IPrecondition[] preconditions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Preconditions.IPrecondition.html">IPrecondition</a>[]</td>
+        <td><span class="parametername">preconditions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithPreconditions_System_Collections_Generic_IEnumerable_Strade_Commands_Preconditions_IPrecondition__.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithPreconditions(System.Collections.Generic.IEnumerable%7BStrade.Commands.Preconditions.IPrecondition%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L520">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithPreconditions_" data-uid="Strade.Commands.Builders.CommandBuilder.WithPreconditions*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithPreconditions_System_Collections_Generic_IEnumerable_Strade_Commands_Preconditions_IPrecondition__" data-uid="Strade.Commands.Builders.CommandBuilder.WithPreconditions(System.Collections.Generic.IEnumerable{Strade.Commands.Preconditions.IPrecondition})">WithPreconditions(IEnumerable&lt;IPrecondition&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithPreconditions(IEnumerable&lt;IPrecondition&gt; preconditions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Commands.Preconditions.IPrecondition.html">IPrecondition</a>&gt;</td>
+        <td><span class="parametername">preconditions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithResponseType_Strade_Commands_CommandResponseType_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithResponseType(Strade.Commands.CommandResponseType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L536">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithResponseType_" data-uid="Strade.Commands.Builders.CommandBuilder.WithResponseType*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithResponseType_Strade_Commands_CommandResponseType_" data-uid="Strade.Commands.Builders.CommandBuilder.WithResponseType(Strade.Commands.CommandResponseType)">WithResponseType(CommandResponseType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithResponseType(CommandResponseType responseType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.CommandResponseType.html">CommandResponseType</a></td>
+        <td><span class="parametername">responseType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithTag_System_String_.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithTag(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L542">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithTag_" data-uid="Strade.Commands.Builders.CommandBuilder.WithTag*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithTag_System_String_" data-uid="Strade.Commands.Builders.CommandBuilder.WithTag(System.String)">WithTag(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithTag(string tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithTags_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithTags(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L555">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithTags_" data-uid="Strade.Commands.Builders.CommandBuilder.WithTags*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithTags_System_Collections_Generic_IEnumerable_System_String__" data-uid="Strade.Commands.Builders.CommandBuilder.WithTags(System.Collections.Generic.IEnumerable{System.String})">WithTags(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithTags(IEnumerable&lt;string&gt; tags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">tags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder_WithTags_System_String___.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder.WithTags(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L568">View Source</a>
+  </span>
+  <a id="Strade_Commands_Builders_CommandBuilder_WithTags_" data-uid="Strade.Commands.Builders.CommandBuilder.WithTags*"></a>
+  <h4 id="Strade_Commands_Builders_CommandBuilder_WithTags_System_String___" data-uid="Strade.Commands.Builders.CommandBuilder.WithTags(System.String[])">WithTags(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandBuilder WithTags(params string[] tags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">tags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Commands.Builders.CommandBuilder.html">CommandBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Strade.Commands.Builders.CommandBuilderExtensions.html#Strade_Commands_Builders_CommandBuilderExtensions_RequireNsfw_Strade_Commands_Builders_CommandBuilder_">CommandBuilderExtensions.RequireNsfw(CommandBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Commands.Builders.CommandBuilderExtensions.html#Strade_Commands_Builders_CommandBuilderExtensions_RequireOwner_Strade_Commands_Builders_CommandBuilder_">CommandBuilderExtensions.RequireOwner(CommandBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Commands.Builders.CommandBuilderExtensions.html#Strade_Commands_Builders_CommandBuilderExtensions_RequireUser_Strade_Commands_Builders_CommandBuilder_">CommandBuilderExtensions.RequireUser(CommandBuilder)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Commands_Builders_CommandBuilder.md&amp;value=---%0Auid%3A%20Strade.Commands.Builders.CommandBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Commands/Builders/CommandBuilder.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

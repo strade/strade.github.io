@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class YouTubeAudioTrackProvider
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class YouTubeAudioTrackProvider
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider">
+  
+  
+  <h1 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider" class="text-break">Class YouTubeAudioTrackProvider
+  </h1>
+  <div class="markdown level0 summary"><p>An <a class="xref" href="Strade.Voice.Tracks.IAudioTrackProvider.html">IAudioTrackProvider</a> used to load and search YouTube tracks or playlists.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Strade.Voice.Providers.BaseAudioTrackProvider.html">BaseAudioTrackProvider</a></div>
+    <div class="level2"><a class="xref" href="Strade.Voice.Providers.BaseHttpAudioTrackProvider.html">BaseHttpAudioTrackProvider</a></div>
+    <div class="level3"><span class="xref">YouTubeAudioTrackProvider</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Voice.Tracks.IAudioTrackProvider.html">IAudioTrackProvider</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Strade.Voice.Providers.BaseHttpAudioTrackProvider.html#Strade_Voice_Providers_BaseHttpAudioTrackProvider_HttpClient">BaseHttpAudioTrackProvider.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Providers.BaseHttpAudioTrackProvider.html#Strade_Voice_Providers_BaseHttpAudioTrackProvider_Dispose_System_Boolean_">BaseHttpAudioTrackProvider.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Voice.Providers.BaseAudioTrackProvider.html#Strade_Voice_Providers_BaseAudioTrackProvider_Dispose">BaseAudioTrackProvider.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Voice.Providers.YouTube.html">Strade.Voice.Providers.YouTube</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Voice.dll</h6>
+  <h5 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class YouTubeAudioTrackProvider : BaseHttpAudioTrackProvider, IAudioTrackProvider, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider__ctor.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L30">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider__ctor_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.#ctor*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider__ctor" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.#ctor">YouTubeAudioTrackProvider()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.html">YouTubeAudioTrackProvider</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public YouTubeAudioTrackProvider()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider__ctor_System_Collections_Generic_IEnumerable_Strade_Voice_Providers_YouTube_Metadata_IYouTubeMetadataProvider__.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.%23ctor(System.Collections.Generic.IEnumerable%7BStrade.Voice.Providers.YouTube.Metadata.IYouTubeMetadataProvider%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L38">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider__ctor_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.#ctor*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider__ctor_System_Collections_Generic_IEnumerable_Strade_Voice_Providers_YouTube_Metadata_IYouTubeMetadataProvider__" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.#ctor(System.Collections.Generic.IEnumerable{Strade.Voice.Providers.YouTube.Metadata.IYouTubeMetadataProvider})">YouTubeAudioTrackProvider(IEnumerable&lt;IYouTubeMetadataProvider&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.html">YouTubeAudioTrackProvider</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public YouTubeAudioTrackProvider(IEnumerable&lt;IYouTubeMetadataProvider&gt; metadataProviders)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Voice.Providers.YouTube.Metadata.IYouTubeMetadataProvider.html">IYouTubeMetadataProvider</a>&gt;</td>
+        <td><span class="parametername">metadataProviders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_BaseAddress.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.BaseAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L25">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_BaseAddress" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.BaseAddress">BaseAddress</h4>
+  <div class="markdown level1 summary"><p>Gets the base address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Uri BaseAddress</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_MetadataProviders.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.MetadataProviders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L44">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_MetadataProviders_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.MetadataProviders*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_MetadataProviders" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.MetadataProviders">MetadataProviders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IYouTubeMetadataProvider&gt; MetadataProviders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Voice.Providers.YouTube.Metadata.IYouTubeMetadataProvider.html">IYouTubeMetadataProvider</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_Name.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L47">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_Name_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.Name*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_Name" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Providers.BaseAudioTrackProvider.html#Strade_Voice_Providers_BaseAudioTrackProvider_Name">BaseAudioTrackProvider.Name</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_GetStreams_System_Text_Json_JsonDocument_.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.GetStreams(System.Text.Json.JsonDocument)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L176">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_GetStreams_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.GetStreams*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_GetStreams_System_Text_Json_JsonDocument_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.GetStreams(System.Text.Json.JsonDocument)">GetStreams(JsonDocument)</h4>
+  <div class="markdown level1 summary"><p>Gets all streams for the specified <code data-dev-comment-type="paramref" class="paramref">playerResponse</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static IEnumerable&lt;YouTubeStreamInformation&gt; GetStreams(JsonDocument playerResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.json.jsondocument">JsonDocument</a></td>
+        <td><span class="parametername">playerResponse</span></td>
+        <td><p>the player response information from the metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Voice.Providers.YouTube.YouTubeStreamInformation.html">YouTubeStreamInformation</a>&gt;</td>
+        <td><p>an enumerable that yields through all streams fetched.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">playerResponse</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_LoadAsync_System_String_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.LoadAsync(System.String%2CStrade.Voice.Tracks.AudioTrackProviderOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L50">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_LoadAsync_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.LoadAsync*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_LoadAsync_System_String_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.LoadAsync(System.String,Strade.Voice.Tracks.AudioTrackProviderOptions,System.Threading.CancellationToken)">LoadAsync(String, AudioTrackProviderOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IAudioTrack&gt; LoadAsync(string query, AudioTrackProviderOptions options = default(AudioTrackProviderOptions), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Tracks.AudioTrackProviderOptions.html">AudioTrackProviderOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Voice.Tracks.IAudioTrack.html">IAudioTrack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Providers.BaseAudioTrackProvider.html#Strade_Voice_Providers_BaseAudioTrackProvider_LoadAsync_System_String_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_">BaseAudioTrackProvider.LoadAsync(String, AudioTrackProviderOptions, CancellationToken)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_LoadPlaylistAsync_System_String_System_Int32_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.LoadPlaylistAsync(System.String%2CSystem.Int32%2CStrade.Voice.Tracks.AudioTrackProviderOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L95">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_LoadPlaylistAsync_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.LoadPlaylistAsync*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_LoadPlaylistAsync_System_String_System_Int32_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.LoadPlaylistAsync(System.String,System.Int32,Strade.Voice.Tracks.AudioTrackProviderOptions,System.Threading.CancellationToken)">LoadPlaylistAsync(String, Int32, AudioTrackProviderOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Playlist&gt; LoadPlaylistAsync(string query, int count, AudioTrackProviderOptions options = default(AudioTrackProviderOptions), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Tracks.AudioTrackProviderOptions.html">AudioTrackProviderOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Voice.Tracks.Playlists.Playlist.html">Playlist</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Providers.BaseAudioTrackProvider.html#Strade_Voice_Providers_BaseAudioTrackProvider_LoadPlaylistAsync_System_String_System_Int32_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_">BaseAudioTrackProvider.LoadPlaylistAsync(String, Int32, AudioTrackProviderOptions, CancellationToken)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_ResolveMetadataAsync_System_String_System_Boolean_System_Boolean_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.ResolveMetadataAsync(System.String%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L212">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_ResolveMetadataAsync_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.ResolveMetadataAsync*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_ResolveMetadataAsync_System_String_System_Boolean_System_Boolean_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.ResolveMetadataAsync(System.String,System.Boolean,System.Boolean,System.Boolean,System.Threading.CancellationToken)">ResolveMetadataAsync(String, Boolean, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;YouTubeMetadataContext&gt; ResolveMetadataAsync(string videoIdentifier, bool resolveAssetUri = false, bool resolvePlayerResponse = false, bool allowPartial = false, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">videoIdentifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">resolveAssetUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">resolvePlayerResponse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allowPartial</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Voice.Providers.YouTube.Metadata.YouTubeMetadataContext.html">YouTubeMetadataContext</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_SearchAsync_System_String_System_Int32_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.SearchAsync(System.String%2CSystem.Int32%2CStrade.Voice.Tracks.AudioTrackProviderOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L123">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_SearchAsync_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.SearchAsync*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_SearchAsync_System_String_System_Int32_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.SearchAsync(System.String,System.Int32,Strade.Voice.Tracks.AudioTrackProviderOptions,System.Threading.CancellationToken)">SearchAsync(String, Int32, AudioTrackProviderOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IEnumerable&lt;IAudioTrack&gt;&gt; SearchAsync(string query, int count, AudioTrackProviderOptions options = default(AudioTrackProviderOptions), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Tracks.AudioTrackProviderOptions.html">AudioTrackProviderOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Voice.Tracks.IAudioTrack.html">IAudioTrack</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Strade.Voice.Providers.BaseAudioTrackProvider.html#Strade_Voice_Providers_BaseAudioTrackProvider_SearchAsync_System_String_System_Int32_Strade_Voice_Tracks_AudioTrackProviderOptions_System_Threading_CancellationToken_">BaseAudioTrackProvider.SearchAsync(String, Int32, AudioTrackProviderOptions, CancellationToken)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_SelectBestStream_System_Collections_Generic_IEnumerable_Strade_Voice_Providers_YouTube_YouTubeStreamInformation__.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.SelectBestStream(System.Collections.Generic.IEnumerable%7BStrade.Voice.Providers.YouTube.YouTubeStreamInformation%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L281">View Source</a>
+  </span>
+  <a id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_SelectBestStream_" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.SelectBestStream*"></a>
+  <h4 id="Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider_SelectBestStream_System_Collections_Generic_IEnumerable_Strade_Voice_Providers_YouTube_YouTubeStreamInformation__" data-uid="Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider.SelectBestStream(System.Collections.Generic.IEnumerable{Strade.Voice.Providers.YouTube.YouTubeStreamInformation})">SelectBestStream(IEnumerable&lt;YouTubeStreamInformation&gt;)</h4>
+  <div class="markdown level1 summary"><p>Selects the best stream from the specified <code data-dev-comment-type="paramref" class="paramref">streams</code> enumerable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual YouTubeStreamInformation SelectBestStream(IEnumerable&lt;YouTubeStreamInformation&gt; streams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Voice.Providers.YouTube.YouTubeStreamInformation.html">YouTubeStreamInformation</a>&gt;</td>
+        <td><span class="parametername">streams</span></td>
+        <td><p>the streams to select the best from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Providers.YouTube.YouTubeStreamInformation.html">YouTubeStreamInformation</a></td>
+        <td><p>the best stream from the specified <code data-dev-comment-type="paramref" class="paramref">streams</code> enumerable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">streams</code> enumerable is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Voice.Tracks.IAudioTrackProvider.html">IAudioTrackProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Providers_YouTube_YouTubeAudioTrackProvider.md&amp;value=---%0Auid%3A%20Strade.Voice.Providers.YouTube.YouTubeAudioTrackProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice/Providers/YouTube/YouTubeAudioTrackProvider.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

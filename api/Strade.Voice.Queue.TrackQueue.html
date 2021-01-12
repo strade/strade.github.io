@@ -1,0 +1,1890 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TrackQueue
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TrackQueue
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Voice.Queue.TrackQueue">
+  
+  
+  <h1 id="Strade_Voice_Queue_TrackQueue" data-uid="Strade.Voice.Queue.TrackQueue" class="text-break">Class TrackQueue
+  </h1>
+  <div class="markdown level0 summary"><p>A thread-safe implementation of a track queue with high-level features like shuffling or distinct.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">TrackQueue</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Voice.Queue.ITrackQueue.html">ITrackQueue</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="Strade.Util.ICloneable-1.html">ICloneable</a>&lt;<a class="xref" href="Strade.Voice.Queue.TrackQueue.html">TrackQueue</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Voice.Queue.html">Strade.Voice.Queue</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Voice.Abstractions.dll</h6>
+  <h5 id="Strade_Voice_Queue_TrackQueue_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TrackQueue : ITrackQueue, IList&lt;ITrackQueueItem&gt;, ICollection&lt;ITrackQueueItem&gt;, IReadOnlyList&lt;ITrackQueueItem&gt;, IReadOnlyCollection&lt;ITrackQueueItem&gt;, IEnumerable&lt;ITrackQueueItem&gt;, IEnumerable, ICloneable&lt;TrackQueue&gt;, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue__ctor_Strade_Voice_Queue_TrackQueue_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.%23ctor(Strade.Voice.Queue.TrackQueue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L29">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue__ctor_" data-uid="Strade.Voice.Queue.TrackQueue.#ctor*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue__ctor_Strade_Voice_Queue_TrackQueue_" data-uid="Strade.Voice.Queue.TrackQueue.#ctor(Strade.Voice.Queue.TrackQueue)">TrackQueue(TrackQueue)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Voice.Queue.TrackQueue.html">TrackQueue</a> class with copying the
+queue and history contents from the specified <code data-dev-comment-type="paramref" class="paramref">queue</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackQueue(TrackQueue queue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.TrackQueue.html">TrackQueue</a></td>
+        <td><span class="parametername">queue</span></td>
+        <td><p>the queue to copy the history and queue contents from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">queue</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue__ctor_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.%23ctor(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L65">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue__ctor_" data-uid="Strade.Voice.Queue.TrackQueue.#ctor*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue__ctor_System_Int32_System_Int32_" data-uid="Strade.Voice.Queue.TrackQueue.#ctor(System.Int32,System.Int32)">TrackQueue(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Voice.Queue.TrackQueue.html">TrackQueue</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackQueue(int initialCapacity = 5, int historyCapacity = 8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">initialCapacity</span></td>
+        <td><p>the initial capacity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">historyCapacity</span></td>
+        <td><p>the capacity of the history; or <code>0</code> to disable the queue history.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified initial capacity ( <code data-dev-comment-type="paramref" class="paramref">initialCapacity</code>) is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified history capacity ( <code data-dev-comment-type="paramref" class="paramref">historyCapacity</code>) is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Count.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L90">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Count_" data-uid="Strade.Voice.Queue.TrackQueue.Count*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Count" data-uid="Strade.Voice.Queue.TrackQueue.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_HasHistory.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.HasHistory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L105">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_HasHistory_" data-uid="Strade.Voice.Queue.TrackQueue.HasHistory*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_HasHistory" data-uid="Strade.Voice.Queue.TrackQueue.HasHistory">HasHistory</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the track queue remembers past tracks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasHistory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the track queue remembers past tracks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_History.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.History%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L113">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_History_" data-uid="Strade.Voice.Queue.TrackQueue.History*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_History" data-uid="Strade.Voice.Queue.TrackQueue.History">History</h4>
+  <div class="markdown level1 summary"><p>Gets a read-only list containing the tracks dequeued in the past.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ITrackQueueItem&gt; History { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</td>
+        <td><p>a read-only list containing the tracks dequeued in the past.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Queue_TrackQueue_History_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the queue does not remember any past tracks an empty array is returned.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_HistoryCapacity.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.HistoryCapacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L133">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_HistoryCapacity_" data-uid="Strade.Voice.Queue.TrackQueue.HistoryCapacity*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_HistoryCapacity" data-uid="Strade.Voice.Queue.TrackQueue.HistoryCapacity">HistoryCapacity</h4>
+  <div class="markdown level1 summary"><p>Gets the capacity if the history.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HistoryCapacity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the capacity if the history.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_HistorySize.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.HistorySize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L140">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_HistorySize_" data-uid="Strade.Voice.Queue.TrackQueue.HistorySize*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_HistorySize" data-uid="Strade.Voice.Queue.TrackQueue.HistorySize">HistorySize</h4>
+  <div class="markdown level1 summary"><p>Gets the number of elements stored in the track history.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HistorySize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of elements stored in the track history.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Queue_TrackQueue_HistorySize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the queue does not remember any past tracks zero ( <code>0</code>) is returned.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_IsEmpty.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L160">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_IsEmpty_" data-uid="Strade.Voice.Queue.TrackQueue.IsEmpty*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_IsEmpty" data-uid="Strade.Voice.Queue.TrackQueue.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the track queue is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the track queue is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Item_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L175">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Item_" data-uid="Strade.Voice.Queue.TrackQueue.Item*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Item_System_Int32_" data-uid="Strade.Voice.Queue.TrackQueue.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITrackQueueItem this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Clear.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L203">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Clear_" data-uid="Strade.Voice.Queue.TrackQueue.Clear*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Clear" data-uid="Strade.Voice.Queue.TrackQueue.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears the track queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Clear()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of tracks cleared.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_ClearHistory.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.ClearHistory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L217">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_ClearHistory_" data-uid="Strade.Voice.Queue.TrackQueue.ClearHistory*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_ClearHistory" data-uid="Strade.Voice.Queue.TrackQueue.ClearHistory">ClearHistory()</h4>
+  <div class="markdown level1 summary"><p>Clears the track history.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ClearHistory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of tracks cleared from the history.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Clone.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L234">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Clone_" data-uid="Strade.Voice.Queue.TrackQueue.Clone*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Clone" data-uid="Strade.Voice.Queue.TrackQueue.Clone">Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackQueue Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.TrackQueue.html">TrackQueue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Contains_Strade_Voice_Queue_ITrackQueueItem_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Contains(Strade.Voice.Queue.ITrackQueueItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L237">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Contains_" data-uid="Strade.Voice.Queue.TrackQueue.Contains*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Contains_Strade_Voice_Queue_ITrackQueueItem_" data-uid="Strade.Voice.Queue.TrackQueue.Contains(Strade.Voice.Queue.ITrackQueueItem)">Contains(ITrackQueueItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(ITrackQueueItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_CopyTo_Strade_Voice_Queue_ITrackQueueItem___.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.CopyTo(Strade.Voice.Queue.ITrackQueueItem%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L261">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_CopyTo_" data-uid="Strade.Voice.Queue.TrackQueue.CopyTo*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_CopyTo_Strade_Voice_Queue_ITrackQueueItem___" data-uid="Strade.Voice.Queue.TrackQueue.CopyTo(Strade.Voice.Queue.ITrackQueueItem[])">CopyTo(ITrackQueueItem[])</h4>
+  <div class="markdown level1 summary"><p>Copies the elements in the track queue to the specified <code data-dev-comment-type="paramref" class="paramref">array</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(ITrackQueueItem[] array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>the array to copy to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">array</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">array</code> has not enough space to the store
+the queue items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_CopyTo_Strade_Voice_Queue_ITrackQueueItem___System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.CopyTo(Strade.Voice.Queue.ITrackQueueItem%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L264">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_CopyTo_" data-uid="Strade.Voice.Queue.TrackQueue.CopyTo*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_CopyTo_Strade_Voice_Queue_ITrackQueueItem___System_Int32_" data-uid="Strade.Voice.Queue.TrackQueue.CopyTo(Strade.Voice.Queue.ITrackQueueItem[],System.Int32)">CopyTo(ITrackQueueItem[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(ITrackQueueItem[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Dequeue.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Dequeue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L281">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Dequeue_" data-uid="Strade.Voice.Queue.TrackQueue.Dequeue*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Dequeue" data-uid="Strade.Voice.Queue.TrackQueue.Dequeue">Dequeue()</h4>
+  <div class="markdown level1 summary"><p>Dequeues a track item from the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITrackQueueItem Dequeue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><p>the track item dequeued from the queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Dequeue_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Dequeue(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L292">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Dequeue_" data-uid="Strade.Voice.Queue.TrackQueue.Dequeue*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Dequeue_System_Boolean_" data-uid="Strade.Voice.Queue.TrackQueue.Dequeue(System.Boolean)">Dequeue(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Dequeues a track item from the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITrackQueueItem Dequeue(bool shuffle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">shuffle</span></td>
+        <td><p>a value indicating whether to shuffle tracks, if <span class="xref">true</span> a a random
+track is dequeued from the queue, if <span class="xref">false</span> the first track in the
+queue is dequeued.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><p>the track item dequeued from the queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Distinct.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Distinct%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L326">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Distinct_" data-uid="Strade.Voice.Queue.TrackQueue.Distinct*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Distinct" data-uid="Strade.Voice.Queue.TrackQueue.Distinct">Distinct()</h4>
+  <div class="markdown level1 summary"><p>Purges all duplicate elements in the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Distinct()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Enqueue_Strade_Voice_Queue_ITrackQueueItem_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Enqueue(Strade.Voice.Queue.ITrackQueueItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L361">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Enqueue_" data-uid="Strade.Voice.Queue.TrackQueue.Enqueue*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Enqueue_Strade_Voice_Queue_ITrackQueueItem_" data-uid="Strade.Voice.Queue.TrackQueue.Enqueue(Strade.Voice.Queue.ITrackQueueItem)">Enqueue(ITrackQueueItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Enqueue(ITrackQueueItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_EnqueueRange_Strade_Voice_Queue_ITrackQueueItem___.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.EnqueueRange(Strade.Voice.Queue.ITrackQueueItem%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L386">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_EnqueueRange_" data-uid="Strade.Voice.Queue.TrackQueue.EnqueueRange*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_EnqueueRange_Strade_Voice_Queue_ITrackQueueItem___" data-uid="Strade.Voice.Queue.TrackQueue.EnqueueRange(Strade.Voice.Queue.ITrackQueueItem[])">EnqueueRange(ITrackQueueItem[])</h4>
+  <div class="markdown level1 summary"><p>Adds the items of the specified array ( <code data-dev-comment-type="paramref" class="paramref">items</code>) to the track queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnqueueRange(params ITrackQueueItem[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>an enumerable that yields through the items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified array ( <code data-dev-comment-type="paramref" class="paramref">items</code>) is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if an item in the specified array ( <code data-dev-comment-type="paramref" class="paramref">items</code>) is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_EnqueueRange_System_Collections_Generic_IEnumerable_Strade_Voice_Queue_ITrackQueueItem__.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.EnqueueRange(System.Collections.Generic.IEnumerable%7BStrade.Voice.Queue.ITrackQueueItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L406">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_EnqueueRange_" data-uid="Strade.Voice.Queue.TrackQueue.EnqueueRange*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_EnqueueRange_System_Collections_Generic_IEnumerable_Strade_Voice_Queue_ITrackQueueItem__" data-uid="Strade.Voice.Queue.TrackQueue.EnqueueRange(System.Collections.Generic.IEnumerable{Strade.Voice.Queue.ITrackQueueItem})">EnqueueRange(IEnumerable&lt;ITrackQueueItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the enumerable of the specified array ( <code data-dev-comment-type="paramref" class="paramref">items</code>) to the track queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnqueueRange(IEnumerable&lt;ITrackQueueItem&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>an enumerable that yields through the items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified array ( <code data-dev-comment-type="paramref" class="paramref">items</code>) is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if an item in the specified enumerable ( <code data-dev-comment-type="paramref" class="paramref">items</code>) is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_GetEnumerator.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L425">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_GetEnumerator_" data-uid="Strade.Voice.Queue.TrackQueue.GetEnumerator*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_GetEnumerator" data-uid="Strade.Voice.Queue.TrackQueue.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;ITrackQueueItem&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_IndexOf_Strade_Voice_Queue_ITrackQueueItem_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.IndexOf(Strade.Voice.Queue.ITrackQueueItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L434">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_IndexOf_" data-uid="Strade.Voice.Queue.TrackQueue.IndexOf*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_IndexOf_Strade_Voice_Queue_ITrackQueueItem_" data-uid="Strade.Voice.Queue.TrackQueue.IndexOf(Strade.Voice.Queue.ITrackQueueItem)">IndexOf(ITrackQueueItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(ITrackQueueItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Insert_System_Int32_Strade_Voice_Queue_ITrackQueueItem_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Insert(System.Int32%2CStrade.Voice.Queue.ITrackQueueItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L448">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Insert_" data-uid="Strade.Voice.Queue.TrackQueue.Insert*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Insert_System_Int32_Strade_Voice_Queue_ITrackQueueItem_" data-uid="Strade.Voice.Queue.TrackQueue.Insert(System.Int32,Strade.Voice.Queue.ITrackQueueItem)">Insert(Int32, ITrackQueueItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, ITrackQueueItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_InsertRange_System_Int32_Strade_Voice_Queue_ITrackQueueItem___.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.InsertRange(System.Int32%2CStrade.Voice.Queue.ITrackQueueItem%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L479">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_InsertRange_" data-uid="Strade.Voice.Queue.TrackQueue.InsertRange*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_InsertRange_System_Int32_Strade_Voice_Queue_ITrackQueueItem___" data-uid="Strade.Voice.Queue.TrackQueue.InsertRange(System.Int32,Strade.Voice.Queue.ITrackQueueItem[])">InsertRange(Int32, ITrackQueueItem[])</h4>
+  <div class="markdown level1 summary"><p>Inserts the items of the specified array ( <code data-dev-comment-type="paramref" class="paramref">items</code>) into the track
+queue at the specified <code data-dev-comment-type="paramref" class="paramref">index</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertRange(int index, params ITrackQueueItem[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>the zero-based index at which the new items should be inserted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>an enumerable that yields through the items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> is less than <code>0</code> (zero).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> is greater than <a class="xref" href="Strade.Voice.Queue.TrackQueue.html#Strade_Voice_Queue_TrackQueue_Count">Count</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified array ( <code data-dev-comment-type="paramref" class="paramref">items</code>) is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if an item in the specified array ( <code data-dev-comment-type="paramref" class="paramref">items</code>) is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_InsertRange_System_Int32_System_Collections_Generic_IEnumerable_Strade_Voice_Queue_ITrackQueueItem__.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.InsertRange(System.Int32%2CSystem.Collections.Generic.IEnumerable%7BStrade.Voice.Queue.ITrackQueueItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L507">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_InsertRange_" data-uid="Strade.Voice.Queue.TrackQueue.InsertRange*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_InsertRange_System_Int32_System_Collections_Generic_IEnumerable_Strade_Voice_Queue_ITrackQueueItem__" data-uid="Strade.Voice.Queue.TrackQueue.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{Strade.Voice.Queue.ITrackQueueItem})">InsertRange(Int32, IEnumerable&lt;ITrackQueueItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Inserts the items of the specified enumerable ( <code data-dev-comment-type="paramref" class="paramref">items</code>) into the
+track queue at the specified <code data-dev-comment-type="paramref" class="paramref">index</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertRange(int index, IEnumerable&lt;ITrackQueueItem&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>the zero-based index at which the new items should be inserted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>an enumerable that yields through the items to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> is less than <code>0</code> (zero).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> is greater than <a class="xref" href="Strade.Voice.Queue.TrackQueue.html#Strade_Voice_Queue_TrackQueue_Count">Count</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified enumerable ( <code data-dev-comment-type="paramref" class="paramref">items</code>) is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>thrown if an item in the specified enumerable ( <code data-dev-comment-type="paramref" class="paramref">items</code>) is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Remove_Strade_Voice_Queue_ITrackQueueItem_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Remove(Strade.Voice.Queue.ITrackQueueItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L526">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Remove_" data-uid="Strade.Voice.Queue.TrackQueue.Remove*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Remove_Strade_Voice_Queue_ITrackQueueItem_" data-uid="Strade.Voice.Queue.TrackQueue.Remove(Strade.Voice.Queue.ITrackQueueItem)">Remove(ITrackQueueItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(ITrackQueueItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_RemoveAll_System_Predicate_Strade_Voice_Queue_ITrackQueueItem__.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.RemoveAll(System.Predicate%7BStrade.Voice.Queue.ITrackQueueItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L547">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_RemoveAll_" data-uid="Strade.Voice.Queue.TrackQueue.RemoveAll*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_RemoveAll_System_Predicate_Strade_Voice_Queue_ITrackQueueItem__" data-uid="Strade.Voice.Queue.TrackQueue.RemoveAll(System.Predicate{Strade.Voice.Queue.ITrackQueueItem})">RemoveAll(Predicate&lt;ITrackQueueItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes all elements in the queue that match the specified <code data-dev-comment-type="paramref" class="paramref">predicate</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveAll(Predicate&lt;ITrackQueueItem&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>the predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the number of total items removed from the queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">predicate</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L561">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_RemoveAt_" data-uid="Strade.Voice.Queue.TrackQueue.RemoveAt*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_RemoveAt_System_Int32_" data-uid="Strade.Voice.Queue.TrackQueue.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_RemoveRange_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.RemoveRange(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L584">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_RemoveRange_" data-uid="Strade.Voice.Queue.TrackQueue.RemoveRange*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_RemoveRange_System_Int32_System_Int32_" data-uid="Strade.Voice.Queue.TrackQueue.RemoveRange(System.Int32,System.Int32)">RemoveRange(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes a range of items from the track queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveRange(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>the zero-based starting index of the range of items to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>the number of items to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> is less than <code>0</code> (zero).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">count</code> is less than <code>0</code> (zero).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> and the specified <code data-dev-comment-type="paramref" class="paramref">count</code> do not denote a valid range of items in the queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Shuffle.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Shuffle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L595">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Shuffle_" data-uid="Strade.Voice.Queue.TrackQueue.Shuffle*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Shuffle" data-uid="Strade.Voice.Queue.TrackQueue.Shuffle">Shuffle()</h4>
+  <div class="markdown level1 summary"><p>Shuffles the whole queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shuffle()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Shuffle_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Shuffle(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L616">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Shuffle_" data-uid="Strade.Voice.Queue.TrackQueue.Shuffle*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Shuffle_System_Int32_System_Int32_" data-uid="Strade.Voice.Queue.TrackQueue.Shuffle(System.Int32,System.Int32)">Shuffle(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Shuffles the queue the specified range in the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shuffle(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>the index to start shuffling items at.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>the number of items to shuffle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> and <code data-dev-comment-type="paramref" class="paramref">count</code> is out
+of bounds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> is less than <code>0</code> (zero).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">count</code> is less than <code>0</code> (zero).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">index</code> and the specified <code data-dev-comment-type="paramref" class="paramref">count</code> do not denote a valid range of items in the queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_TryDequeue_Strade_Voice_Queue_ITrackQueueItem__.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.TryDequeue(Strade.Voice.Queue.ITrackQueueItem%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L693">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_TryDequeue_" data-uid="Strade.Voice.Queue.TrackQueue.TryDequeue*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_TryDequeue_Strade_Voice_Queue_ITrackQueueItem__" data-uid="Strade.Voice.Queue.TrackQueue.TryDequeue(Strade.Voice.Queue.ITrackQueueItem@)">TryDequeue(out ITrackQueueItem)</h4>
+  <div class="markdown level1 summary"><p>Tries to dequeue a track from the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryDequeue(out ITrackQueueItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>( <code>out</code>) the item dequeued.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether a track was dequeued.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_TryDequeue_System_Boolean_Strade_Voice_Queue_ITrackQueueItem__.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.TryDequeue(System.Boolean%2CStrade.Voice.Queue.ITrackQueueItem%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L656">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_TryDequeue_" data-uid="Strade.Voice.Queue.TrackQueue.TryDequeue*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_TryDequeue_System_Boolean_Strade_Voice_Queue_ITrackQueueItem__" data-uid="Strade.Voice.Queue.TrackQueue.TryDequeue(System.Boolean,Strade.Voice.Queue.ITrackQueueItem@)">TryDequeue(Boolean, out ITrackQueueItem)</h4>
+  <div class="markdown level1 summary"><p>Tries to dequeue a track from the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryDequeue(bool shuffle, out ITrackQueueItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">shuffle</span></td>
+        <td><p>a value indicating whether to shuffle tracks, if <span class="xref">true</span> a a random
+track is dequeued from the queue, if <span class="xref">false</span> the first track in the
+queue is dequeued.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>( <code>out</code>) the item dequeued.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether a track was dequeued.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_Strade_Voice_Queue_ITrackQueue_Clear.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.Strade%23Voice%23Queue%23ITrackQueue%23Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L720">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_Strade_Voice_Queue_ITrackQueue_Clear_" data-uid="Strade.Voice.Queue.TrackQueue.Strade#Voice#Queue#ITrackQueue#Clear*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_Strade_Voice_Queue_ITrackQueue_Clear" data-uid="Strade.Voice.Queue.TrackQueue.Strade#Voice#Queue#ITrackQueue#Clear">ITrackQueue.Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ITrackQueue.Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__Add_Strade_Voice_Queue_ITrackQueueItem_.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.System%23Collections%23Generic%23ICollection%7BStrade%23Voice%23Queue%23ITrackQueueItem%7D%23Add(Strade.Voice.Queue.ITrackQueueItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L697">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__Add_" data-uid="Strade.Voice.Queue.TrackQueue.System#Collections#Generic#ICollection{Strade#Voice#Queue#ITrackQueueItem}#Add*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__Add_Strade_Voice_Queue_ITrackQueueItem_" data-uid="Strade.Voice.Queue.TrackQueue.System#Collections#Generic#ICollection{Strade#Voice#Queue#ITrackQueueItem}#Add(Strade.Voice.Queue.ITrackQueueItem)">ICollection&lt;ITrackQueueItem&gt;.Add(ITrackQueueItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection&lt;ITrackQueueItem&gt;.Add(ITrackQueueItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Queue.ITrackQueueItem.html">ITrackQueueItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__Clear.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.System%23Collections%23Generic%23ICollection%7BStrade%23Voice%23Queue%23ITrackQueueItem%7D%23Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L711">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__Clear_" data-uid="Strade.Voice.Queue.TrackQueue.System#Collections#Generic#ICollection{Strade#Voice#Queue#ITrackQueueItem}#Clear*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__Clear" data-uid="Strade.Voice.Queue.TrackQueue.System#Collections#Generic#ICollection{Strade#Voice#Queue#ITrackQueueItem}#Clear">ICollection&lt;ITrackQueueItem&gt;.Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection&lt;ITrackQueueItem&gt;.Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__IsReadOnly.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.System%23Collections%23Generic%23ICollection%7BStrade%23Voice%23Queue%23ITrackQueueItem%7D%23IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L172">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__IsReadOnly_" data-uid="Strade.Voice.Queue.TrackQueue.System#Collections#Generic#ICollection{Strade#Voice#Queue#ITrackQueueItem}#IsReadOnly*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_System_Collections_Generic_ICollection_Strade_Voice_Queue_ITrackQueueItem__IsReadOnly" data-uid="Strade.Voice.Queue.TrackQueue.System#Collections#Generic#ICollection{Strade#Voice#Queue#ITrackQueueItem}#IsReadOnly">ICollection&lt;ITrackQueueItem&gt;.IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection&lt;ITrackQueueItem&gt;.IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L732">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_System_Collections_IEnumerable_GetEnumerator_" data-uid="Strade.Voice.Queue.TrackQueue.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_System_Collections_IEnumerable_GetEnumerator" data-uid="Strade.Voice.Queue.TrackQueue.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L729">View Source</a>
+  </span>
+  <a id="Strade_Voice_Queue_TrackQueue_System_ICloneable_Clone_" data-uid="Strade.Voice.Queue.TrackQueue.System#ICloneable#Clone*"></a>
+  <h4 id="Strade_Voice_Queue_TrackQueue_System_ICloneable_Clone" data-uid="Strade.Voice.Queue.TrackQueue.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Voice.Queue.ITrackQueue.html">ITrackQueue</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">System.Collections.Generic.IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">System.Collections.Generic.ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">System.Collections.Generic.IReadOnlyList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="Strade.Util.ICloneable-1.html">ICloneable&lt;TSelf&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Queue_TrackQueue.md&amp;value=---%0Auid%3A%20Strade.Voice.Queue.TrackQueue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Abstractions/Queue/TrackQueue.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

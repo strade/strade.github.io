@@ -1,0 +1,2354 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AudioConnection
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AudioConnection
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Voice.Connection.AudioConnection">
+  
+  
+  <h1 id="Strade_Voice_Connection_AudioConnection" data-uid="Strade.Voice.Connection.AudioConnection" class="text-break">Class AudioConnection
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AudioConnection</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Voice.Connection.html">Strade.Voice.Connection</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Voice.Connection.dll</h6>
+  <h5 id="Strade_Voice_Connection_AudioConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AudioConnection : IAsyncDisposable, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection__ctor_Strade_Voice_Connection_AudioOptions_Strade_Entities_Snowflake_Strade_WebSockets_WebSocketFactory_Strade_Voice_Encryption_IEncryptionManager_System_UInt64_System_String_Strade_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.%23ctor(Strade.Voice.Connection.AudioOptions%2CStrade.Entities.Snowflake%2CStrade.WebSockets.WebSocketFactory%2CStrade.Voice.Encryption.IEncryptionManager%2CSystem.UInt64%2CSystem.String%2CStrade.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L100">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection__ctor_" data-uid="Strade.Voice.Connection.AudioConnection.#ctor*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection__ctor_Strade_Voice_Connection_AudioOptions_Strade_Entities_Snowflake_Strade_WebSockets_WebSocketFactory_Strade_Voice_Encryption_IEncryptionManager_System_UInt64_System_String_Strade_Logging_ILogger_" data-uid="Strade.Voice.Connection.AudioConnection.#ctor(Strade.Voice.Connection.AudioOptions,Strade.Entities.Snowflake,Strade.WebSockets.WebSocketFactory,Strade.Voice.Encryption.IEncryptionManager,System.UInt64,System.String,Strade.Logging.ILogger)">AudioConnection(AudioOptions, Snowflake, WebSocketFactory, IEncryptionManager, UInt64, String, ILogger)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html">AudioConnection</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioConnection(AudioOptions options, Snowflake guildId, WebSocketFactory webSocketFactory, IEncryptionManager encryptionManager, ulong currentUserId, string label = null, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Connection.AudioOptions.html">AudioOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>the options for the audio connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>the snowflake identifier of the guild the connection is for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.WebSockets.WebSocketFactory.html">WebSocketFactory</a></td>
+        <td><span class="parametername">webSocketFactory</span></td>
+        <td><p>the WebSocket factory used to create WebSockets for the audio connection to the
+voice server.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Encryption.IEncryptionManager.html">IEncryptionManager</a></td>
+        <td><span class="parametername">encryptionManager</span></td>
+        <td><p>the encryption manager used to find encryption providers for securing the audio
+connection to the voice server.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">currentUserId</span></td>
+        <td><p>the snowflake identifier of the current user that owns the discord client.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>the optional logger used for debug logging; or <span class="xref">null</span> to disable logging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Connection_AudioConnection__ctor_Strade_Voice_Connection_AudioOptions_Strade_Entities_Snowflake_Strade_WebSockets_WebSocketFactory_Strade_Voice_Encryption_IEncryptionManager_System_UInt64_System_String_Strade_Logging_ILogger__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>After passing the specified <code data-dev-comment-type="paramref" class="paramref">options</code> to the audio connection, the
+options are made read-only to avoid modifications.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">webSocketFactory</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">options</code> parameter is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">encryptionManager</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_VoiceVersion.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.VoiceVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L40">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_Connection_AudioConnection_VoiceVersion" data-uid="Strade.Voice.Connection.AudioConnection.VoiceVersion">VoiceVersion</h4>
+  <div class="markdown level1 summary"><p>Gets the voice version used for the voice gateway.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int VoiceVersion = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Connection_AudioConnection_VoiceVersion_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More details can be found on
+<a href="https://discord.com/developers/docs/topics/voice-connections#voice-gateway-versioning-gateway-versions">https://discord.com/developers/docs/topics/voice-connections#voice-gateway-versioning-gateway-versions</a>
+[external, Discord Developer Documentation].</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_ConnectionStatus.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.ConnectionStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L156">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_ConnectionStatus_" data-uid="Strade.Voice.Connection.AudioConnection.ConnectionStatus*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_ConnectionStatus" data-uid="Strade.Voice.Connection.AudioConnection.ConnectionStatus">ConnectionStatus</h4>
+  <div class="markdown level1 summary"><p>Gets the current connection status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioConnectionStatus ConnectionStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Connection.AudioConnectionStatus.html">AudioConnectionStatus</a></td>
+        <td><p>the current connection status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_EncryptionProvider.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.EncryptionProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L165">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_EncryptionProvider_" data-uid="Strade.Voice.Connection.AudioConnection.EncryptionProvider*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_EncryptionProvider" data-uid="Strade.Voice.Connection.AudioConnection.EncryptionProvider">EncryptionProvider</h4>
+  <div class="markdown level1 summary"><p>Gets the encryption provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEncryptionProvider EncryptionProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Encryption.IEncryptionProvider.html">IEncryptionProvider</a></td>
+        <td><p>the encryption provider; or <span class="xref">null</span> if not selected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html">AudioConnection</a> is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Endpoint.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L167">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Endpoint_" data-uid="Strade.Voice.Connection.AudioConnection.Endpoint*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Endpoint" data-uid="Strade.Voice.Connection.AudioConnection.Endpoint">Endpoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Endpoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_GuildId.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.GuildId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L173">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_GuildId_" data-uid="Strade.Voice.Connection.AudioConnection.GuildId*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_GuildId" data-uid="Strade.Voice.Connection.AudioConnection.GuildId">GuildId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the guild the audio connection is for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake GuildId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the snowflake identifier of the guild the audio connection is for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_IsOpen.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.IsOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L179">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_IsOpen_" data-uid="Strade.Voice.Connection.AudioConnection.IsOpen*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_IsOpen" data-uid="Strade.Voice.Connection.AudioConnection.IsOpen">IsOpen</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the connection is open.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the connection is open.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_IsReady.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.IsReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L185">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_IsReady_" data-uid="Strade.Voice.Connection.AudioConnection.IsReady*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_IsReady" data-uid="Strade.Voice.Connection.AudioConnection.IsReady">IsReady</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the connection is ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the connection is ready.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Label.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L187">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Label_" data-uid="Strade.Voice.Connection.AudioConnection.Label*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Label" data-uid="Strade.Voice.Connection.AudioConnection.Label">Label</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Label { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Latency.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Latency%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L193">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Latency_" data-uid="Strade.Voice.Connection.AudioConnection.Latency*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Latency" data-uid="Strade.Voice.Connection.AudioConnection.Latency">Latency</h4>
+  <div class="markdown level1 summary"><p>Gets the connection latency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan? Latency { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
+        <td><p>the connection latency; or <span class="xref">null</span> if unknown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_LocalEndPoint.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.LocalEndPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L207">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_LocalEndPoint_" data-uid="Strade.Voice.Connection.AudioConnection.LocalEndPoint*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_LocalEndPoint" data-uid="Strade.Voice.Connection.AudioConnection.LocalEndPoint">LocalEndPoint</h4>
+  <div class="markdown level1 summary"><p>Gets the local end point of the current machine discovered using the voice server's
+IP discovery feature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPEndPoint LocalEndPoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></td>
+        <td><p>the local end point of the current machine discovered using the voice server's IP
+discovery feature; or <span class="xref">null</span> if not yet discovered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Strade_Voice_Connection_AudioConnection_LocalEndPoint_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a href="https://discord.com/developers/docs/topics/voice-connections#ip-discovery">https://discord.com/developers/docs/topics/voice-connections#ip-discovery</a> or UDP
+hole-punching for reference about discovering the local end point.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Logger.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L215">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Logger_" data-uid="Strade.Voice.Connection.AudioConnection.Logger*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Logger" data-uid="Strade.Voice.Connection.AudioConnection.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>Gets the logger used for debug logging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Logging.ILogger.html">ILogger</a></td>
+        <td><p>the logger used for debug logging; or <span class="xref">null</span> if logging is disabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Options.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L221">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Options_" data-uid="Strade.Voice.Connection.AudioConnection.Options*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Options" data-uid="Strade.Voice.Connection.AudioConnection.Options">Options</h4>
+  <div class="markdown level1 summary"><p>Gets the options for the audio connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioOptions Options { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Connection.AudioOptions.html">AudioOptions</a></td>
+        <td><p>the options for the audio connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_RemoteEndPoint.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.RemoteEndPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L230">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_RemoteEndPoint_" data-uid="Strade.Voice.Connection.AudioConnection.RemoteEndPoint*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_RemoteEndPoint" data-uid="Strade.Voice.Connection.AudioConnection.RemoteEndPoint">RemoteEndPoint</h4>
+  <div class="markdown level1 summary"><p>Gets the remote end point of the voice server connected to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPEndPoint RemoteEndPoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></td>
+        <td><p>the remote end point of the voice server connected to; or <span class="xref">null</span> if
+not connected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_SecretKey.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.SecretKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L239">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_SecretKey_" data-uid="Strade.Voice.Connection.AudioConnection.SecretKey*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_SecretKey" data-uid="Strade.Voice.Connection.AudioConnection.SecretKey">SecretKey</h4>
+  <div class="markdown level1 summary"><p>Gets the (last) secret key used for encryption for securing the audio connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] SecretKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><p>the (last) secret key used for encryption for securing the audio connection; or <span class="xref">null</span> if the connection was never ready.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Sender.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Sender%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L251">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Sender_" data-uid="Strade.Voice.Connection.AudioConnection.Sender*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Sender" data-uid="Strade.Voice.Connection.AudioConnection.Sender">Sender</h4>
+  <div class="markdown level1 summary"><p>Gets the sender used for sending audio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSender Sender { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Connection.AudioSender.html">AudioSender</a></td>
+        <td><p>the sender used for sending audio; or <span class="xref">null</span> if the connection is
+not open.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html">AudioConnection</a> is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_SSRC.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.SSRC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L270">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_SSRC_" data-uid="Strade.Voice.Connection.AudioConnection.SSRC*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_SSRC" data-uid="Strade.Voice.Connection.AudioConnection.SSRC">SSRC</h4>
+  <div class="markdown level1 summary"><p>Gets the client's SSRC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint? SSRC { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>&gt;</td>
+        <td><p>the client's SSRC; or <span class="xref">null</span> if unknown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Token.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Token%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L272">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Token_" data-uid="Strade.Voice.Connection.AudioConnection.Token*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Token" data-uid="Strade.Voice.Connection.AudioConnection.Token">Token</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Token { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_UdpClient.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.UdpClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L283">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_UdpClient_" data-uid="Strade.Voice.Connection.AudioConnection.UdpClient*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_UdpClient" data-uid="Strade.Voice.Connection.AudioConnection.UdpClient">UdpClient</h4>
+  <div class="markdown level1 summary"><p>Gets the UDP client used for sending or receiving data to / from the voice server
+using UDP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UdpClient UdpClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.sockets.udpclient">UdpClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_WebSocket.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.WebSocket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L277">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_WebSocket_" data-uid="Strade.Voice.Connection.AudioConnection.WebSocket*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_WebSocket" data-uid="Strade.Voice.Connection.AudioConnection.WebSocket">WebSocket</h4>
+  <div class="markdown level1 summary"><p>Gets the WebSocket used for communication with the voice WebSocket server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWebSocket WebSocket { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.WebSockets.IWebSocket.html">IWebSocket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_ConnectAsync_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.ConnectAsync(System.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L293">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_ConnectAsync_" data-uid="Strade.Voice.Connection.AudioConnection.ConnectAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_ConnectAsync_System_Boolean_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.ConnectAsync(System.Boolean,System.Threading.CancellationToken)">ConnectAsync(Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Connects to a voice server asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ConnectAsync(bool mayResume = false, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">mayResume</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html">AudioConnection</a> is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_DisconnectAsync_System_UInt16_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.DisconnectAsync(System.UInt16%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L395">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_DisconnectAsync_" data-uid="Strade.Voice.Connection.AudioConnection.DisconnectAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_DisconnectAsync_System_UInt16_System_String_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.DisconnectAsync(System.UInt16,System.String,System.Threading.CancellationToken)">DisconnectAsync(UInt16, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Disconnects from the audio connection asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DisconnectAsync(ushort closeCode, string closeDescription = &quot;Disconnected.&quot;, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td><p>the close code indicating why the connection was closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">closeDescription</span></td>
+        <td><p>the close status description indicating why the connection was closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html">AudioConnection</a> is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Dispose.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L405">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Dispose_" data-uid="Strade.Voice.Connection.AudioConnection.Dispose*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Dispose" data-uid="Strade.Voice.Connection.AudioConnection.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L517">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_Dispose_" data-uid="Strade.Voice.Connection.AudioConnection.Dispose*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Dispose_System_Boolean_" data-uid="Strade.Voice.Connection.AudioConnection.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_DisposeAsync.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.DisposeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L412">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_DisposeAsync_" data-uid="Strade.Voice.Connection.AudioConnection.DisposeAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_DisposeAsync" data-uid="Strade.Voice.Connection.AudioConnection.DisposeAsync">DisposeAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_DisposeAsyncCore.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.DisposeAsyncCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L531">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_DisposeAsyncCore_" data-uid="Strade.Voice.Connection.AudioConnection.DisposeAsyncCore*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_DisposeAsyncCore" data-uid="Strade.Voice.Connection.AudioConnection.DisposeAsyncCore">DisposeAsyncCore()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ValueTask DisposeAsyncCore()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_GetReconnectMode_Strade_Voice_Protocol_VoiceCloseCode_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.GetReconnectMode(Strade.Voice.Protocol.VoiceCloseCode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L549">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_GetReconnectMode_" data-uid="Strade.Voice.Connection.AudioConnection.GetReconnectMode*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_GetReconnectMode_Strade_Voice_Protocol_VoiceCloseCode_" data-uid="Strade.Voice.Connection.AudioConnection.GetReconnectMode(Strade.Voice.Protocol.VoiceCloseCode)">GetReconnectMode(VoiceCloseCode)</h4>
+  <div class="markdown level1 summary"><p>Gets the reconnect mode used for the specified <code data-dev-comment-type="paramref" class="paramref">closeCode</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AudioConnectionReconnectMode GetReconnectMode(VoiceCloseCode closeCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Protocol.VoiceCloseCode.html">VoiceCloseCode</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td><p>the close code indicating why the connection was closed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Connection.AudioConnectionReconnectMode.html">AudioConnectionReconnectMode</a></td>
+        <td><p>the reconnect mode used for the specified <code data-dev-comment-type="paramref" class="paramref">closeCode</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html">AudioConnection</a> is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_HandleClientDisconnectAsync_Strade_Voice_Payloads_ClientDisconnectPayload_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.HandleClientDisconnectAsync(Strade.Voice.Payloads.ClientDisconnectPayload%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L564">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_HandleClientDisconnectAsync_" data-uid="Strade.Voice.Connection.AudioConnection.HandleClientDisconnectAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_HandleClientDisconnectAsync_Strade_Voice_Payloads_ClientDisconnectPayload_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.HandleClientDisconnectAsync(Strade.Voice.Payloads.ClientDisconnectPayload,System.Threading.CancellationToken)">HandleClientDisconnectAsync(ClientDisconnectPayload, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleClientDisconnectAsync(ClientDisconnectPayload payload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Payloads.ClientDisconnectPayload.html">ClientDisconnectPayload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_HandleConnectionCloseAsync_Strade_WebSockets_WebSocketCloseCode_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.HandleConnectionCloseAsync(Strade.WebSockets.WebSocketCloseCode%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L588">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_HandleConnectionCloseAsync_" data-uid="Strade.Voice.Connection.AudioConnection.HandleConnectionCloseAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_HandleConnectionCloseAsync_Strade_WebSockets_WebSocketCloseCode_System_String_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.HandleConnectionCloseAsync(Strade.WebSockets.WebSocketCloseCode,System.String,System.Threading.CancellationToken)">HandleConnectionCloseAsync(WebSocketCloseCode, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleConnectionCloseAsync(WebSocketCloseCode closeCode, string statusDescription, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.WebSockets.WebSocketCloseCode.html">WebSocketCloseCode</a></td>
+        <td><span class="parametername">closeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">statusDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_HandleHeartbeatAckAsync_System_Int64_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.HandleHeartbeatAckAsync(System.Int64%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L622">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_HandleHeartbeatAckAsync_" data-uid="Strade.Voice.Connection.AudioConnection.HandleHeartbeatAckAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_HandleHeartbeatAckAsync_System_Int64_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.HandleHeartbeatAckAsync(System.Int64,System.Threading.CancellationToken)">HandleHeartbeatAckAsync(Int64, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleHeartbeatAckAsync(long nonce, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">nonce</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_HandleHelloAsync_Strade_Voice_Payloads_HelloPayload_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.HandleHelloAsync(Strade.Voice.Payloads.HelloPayload%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L637">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_HandleHelloAsync_" data-uid="Strade.Voice.Connection.AudioConnection.HandleHelloAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_HandleHelloAsync_Strade_Voice_Payloads_HelloPayload_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.HandleHelloAsync(Strade.Voice.Payloads.HelloPayload,System.Threading.CancellationToken)">HandleHelloAsync(HelloPayload, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleHelloAsync(HelloPayload payload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Payloads.HelloPayload.html">HelloPayload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_HandleReadyAsync_Strade_Voice_Payloads_ReadyPayload_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.HandleReadyAsync(Strade.Voice.Payloads.ReadyPayload%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L659">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_HandleReadyAsync_" data-uid="Strade.Voice.Connection.AudioConnection.HandleReadyAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_HandleReadyAsync_Strade_Voice_Payloads_ReadyPayload_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.HandleReadyAsync(Strade.Voice.Payloads.ReadyPayload,System.Threading.CancellationToken)">HandleReadyAsync(ReadyPayload, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleReadyAsync(ReadyPayload payload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Payloads.ReadyPayload.html">ReadyPayload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_HandleResumedAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.HandleResumedAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L721">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_HandleResumedAsync_" data-uid="Strade.Voice.Connection.AudioConnection.HandleResumedAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_HandleResumedAsync_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.HandleResumedAsync(System.Threading.CancellationToken)">HandleResumedAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleResumedAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_HandleSessionDescriptionAsync_Strade_Voice_Payloads_SessionDescriptionPayload_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.HandleSessionDescriptionAsync(Strade.Voice.Payloads.SessionDescriptionPayload%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L737">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_HandleSessionDescriptionAsync_" data-uid="Strade.Voice.Connection.AudioConnection.HandleSessionDescriptionAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_HandleSessionDescriptionAsync_Strade_Voice_Payloads_SessionDescriptionPayload_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.HandleSessionDescriptionAsync(Strade.Voice.Payloads.SessionDescriptionPayload,System.Threading.CancellationToken)">HandleSessionDescriptionAsync(SessionDescriptionPayload, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleSessionDescriptionAsync(SessionDescriptionPayload payload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Payloads.SessionDescriptionPayload.html">SessionDescriptionPayload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_HandleSpeakingAsync_Strade_Voice_Payloads_SpeakingPayload_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.HandleSpeakingAsync(Strade.Voice.Payloads.SpeakingPayload%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L760">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_HandleSpeakingAsync_" data-uid="Strade.Voice.Connection.AudioConnection.HandleSpeakingAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_HandleSpeakingAsync_Strade_Voice_Payloads_SpeakingPayload_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.HandleSpeakingAsync(Strade.Voice.Payloads.SpeakingPayload,System.Threading.CancellationToken)">HandleSpeakingAsync(SpeakingPayload, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleSpeakingAsync(SpeakingPayload payload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Payloads.SpeakingPayload.html">SpeakingPayload</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_OnClientDisconnectedAsync_Strade_Voice_Events_ClientDisconnectedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.OnClientDisconnectedAsync(Strade.Voice.Events.ClientDisconnectedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L786">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_OnClientDisconnectedAsync_" data-uid="Strade.Voice.Connection.AudioConnection.OnClientDisconnectedAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_OnClientDisconnectedAsync_Strade_Voice_Events_ClientDisconnectedEventArgs_" data-uid="Strade.Voice.Connection.AudioConnection.OnClientDisconnectedAsync(Strade.Voice.Events.ClientDisconnectedEventArgs)">OnClientDisconnectedAsync(ClientDisconnectedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html#Strade_Voice_Connection_AudioConnection_ClientDisconnected">ClientDisconnected</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnClientDisconnectedAsync(ClientDisconnectedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.ClientDisconnectedEventArgs.html">ClientDisconnectedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_OnConnectionClosedAsync_Strade_Voice_Events_ConnectionClosedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.OnConnectionClosedAsync(Strade.Voice.Events.ConnectionClosedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L794">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_OnConnectionClosedAsync_" data-uid="Strade.Voice.Connection.AudioConnection.OnConnectionClosedAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_OnConnectionClosedAsync_Strade_Voice_Events_ConnectionClosedEventArgs_" data-uid="Strade.Voice.Connection.AudioConnection.OnConnectionClosedAsync(Strade.Voice.Events.ConnectionClosedEventArgs)">OnConnectionClosedAsync(ConnectionClosedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html#Strade_Voice_Connection_AudioConnection_ConnectionClosed">ConnectionClosed</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnConnectionClosedAsync(ConnectionClosedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.ConnectionClosedEventArgs.html">ConnectionClosedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_OnConnectionStatusChangedAsync_Strade_Voice_Events_ConnectionStatusChangedEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.OnConnectionStatusChangedAsync(Strade.Voice.Events.ConnectionStatusChangedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L802">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_OnConnectionStatusChangedAsync_" data-uid="Strade.Voice.Connection.AudioConnection.OnConnectionStatusChangedAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_OnConnectionStatusChangedAsync_Strade_Voice_Events_ConnectionStatusChangedEventArgs_" data-uid="Strade.Voice.Connection.AudioConnection.OnConnectionStatusChangedAsync(Strade.Voice.Events.ConnectionStatusChangedEventArgs)">OnConnectionStatusChangedAsync(ConnectionStatusChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html#Strade_Voice_Connection_AudioConnection_ConnectionStatusChanged">ConnectionStatusChanged</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnConnectionStatusChangedAsync(ConnectionStatusChangedEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.ConnectionStatusChangedEventArgs.html">ConnectionStatusChangedEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_OnSpeakingAsync_Strade_Voice_Events_SpeakingEventArgs_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.OnSpeakingAsync(Strade.Voice.Events.SpeakingEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L810">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_OnSpeakingAsync_" data-uid="Strade.Voice.Connection.AudioConnection.OnSpeakingAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_OnSpeakingAsync_Strade_Voice_Events_SpeakingEventArgs_" data-uid="Strade.Voice.Connection.AudioConnection.OnSpeakingAsync(Strade.Voice.Events.SpeakingEventArgs)">OnSpeakingAsync(SpeakingEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Dispatches the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html#Strade_Voice_Connection_AudioConnection_Speaking">Speaking</a> event asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnSpeakingAsync(SpeakingEventArgs eventArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Events.SpeakingEventArgs.html">SpeakingEventArgs</a></td>
+        <td><span class="parametername">eventArgs</span></td>
+        <td><p>the event arguments passed with the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_ProcessDataAsync_System_ArraySegment_System_Byte__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.ProcessDataAsync(System.ArraySegment%7BSystem.Byte%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L813">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_ProcessDataAsync_" data-uid="Strade.Voice.Connection.AudioConnection.ProcessDataAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_ProcessDataAsync_System_ArraySegment_System_Byte__System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.ProcessDataAsync(System.ArraySegment{System.Byte},System.Threading.CancellationToken)">ProcessDataAsync(ArraySegment&lt;Byte&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task ProcessDataAsync(ArraySegment&lt;byte&gt; data, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_SendAsync_Strade_Voice_Payloads_VoiceOpCode_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.SendAsync(Strade.Voice.Payloads.VoiceOpCode%2CSystem.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L877">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_SendAsync_" data-uid="Strade.Voice.Connection.AudioConnection.SendAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_SendAsync_Strade_Voice_Payloads_VoiceOpCode_System_Object_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.SendAsync(Strade.Voice.Payloads.VoiceOpCode,System.Object,System.Threading.CancellationToken)">SendAsync(VoiceOpCode, Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a payload with the specified <code data-dev-comment-type="paramref" class="paramref">opCode</code> and <code data-dev-comment-type="paramref" class="paramref">data</code> asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SendAsync(VoiceOpCode opCode, object data, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Payloads.VoiceOpCode.html">VoiceOpCode</a></td>
+        <td><span class="parametername">opCode</span></td>
+        <td><p>the payload operation code that indicates for what the payload is for and how it
+should be processed and parsed by the gateway.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>the payload data content to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_SendHeartbeatAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.SendHeartbeatAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L912">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_SendHeartbeatAsync_" data-uid="Strade.Voice.Connection.AudioConnection.SendHeartbeatAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_SendHeartbeatAsync_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.SendHeartbeatAsync(System.Threading.CancellationToken)">SendHeartbeatAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SendHeartbeatAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_SetSpeakingAsync_Strade_Voice_Protocol_SpeakingFlags_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.SetSpeakingAsync(Strade.Voice.Protocol.SpeakingFlags%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L430">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_SetSpeakingAsync_" data-uid="Strade.Voice.Connection.AudioConnection.SetSpeakingAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_SetSpeakingAsync_Strade_Voice_Protocol_SpeakingFlags_System_Int32_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.SetSpeakingAsync(Strade.Voice.Protocol.SpeakingFlags,System.Int32,System.Threading.CancellationToken)">SetSpeakingAsync(SpeakingFlags, Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sets whether the current is speaking asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetSpeakingAsync(SpeakingFlags flags, int delay = 0, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Voice.Protocol.SpeakingFlags.html">SpeakingFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>the flags for the payload.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>the delay in milliseconds when the speaking is active.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html">AudioConnection</a> is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_TryGetUser_System_UInt32_Strade_Entities_Snowflake__.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.TryGetUser(System.UInt32%2CStrade.Entities.Snowflake%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L458">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_TryGetUser_" data-uid="Strade.Voice.Connection.AudioConnection.TryGetUser*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_TryGetUser_System_UInt32_Strade_Entities_Snowflake__" data-uid="Strade.Voice.Connection.AudioConnection.TryGetUser(System.UInt32,Strade.Entities.Snowflake@)">TryGetUser(UInt32, out Snowflake)</h4>
+  <div class="markdown level1 summary"><p>Tries to get the snowflake identifier of a user by using the associated SSRC
+(Synchronization source identifier).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetUser(uint ssrc, out Snowflake userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">ssrc</span></td>
+        <td><p>the SSRC of the user to find (Synchronization source identifier).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p><code>(out)</code> the snowflake identifier of the user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>a value indicating whether the user could be found by the associated SSRC
+(Synchronization source identifier).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>thrown if the <a class="xref" href="Strade.Voice.Connection.AudioConnection.html">AudioConnection</a> is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_UpdateVoiceServerAsync_Strade_Entities_VoiceServer_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.UpdateVoiceServerAsync(Strade.Entities.VoiceServer%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L468">View Source</a>
+  </span>
+  <a id="Strade_Voice_Connection_AudioConnection_UpdateVoiceServerAsync_" data-uid="Strade.Voice.Connection.AudioConnection.UpdateVoiceServerAsync*"></a>
+  <h4 id="Strade_Voice_Connection_AudioConnection_UpdateVoiceServerAsync_Strade_Entities_VoiceServer_System_String_System_Threading_CancellationToken_" data-uid="Strade.Voice.Connection.AudioConnection.UpdateVoiceServerAsync(Strade.Entities.VoiceServer,System.String,System.Threading.CancellationToken)">UpdateVoiceServerAsync(VoiceServer, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask UpdateVoiceServerAsync(VoiceServer voiceServer, string sessionId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.VoiceServer.html">VoiceServer</a></td>
+        <td><span class="parametername">voiceServer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_ClientDisconnected.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.ClientDisconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L135">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_Connection_AudioConnection_ClientDisconnected" data-uid="Strade.Voice.Connection.AudioConnection.ClientDisconnected">ClientDisconnected</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a user disconnected from the voice channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ClientDisconnectedEventArgs&gt; ClientDisconnected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.ClientDisconnectedEventArgs.html">ClientDisconnectedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_ConnectionClosed.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.ConnectionClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L140">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_Connection_AudioConnection_ConnectionClosed" data-uid="Strade.Voice.Connection.AudioConnection.ConnectionClosed">ConnectionClosed</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when the connection was closed to the voice server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ConnectionClosedEventArgs&gt; ConnectionClosed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.ConnectionClosedEventArgs.html">ConnectionClosedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_ConnectionStatusChanged.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.ConnectionStatusChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L145">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_Connection_AudioConnection_ConnectionStatusChanged" data-uid="Strade.Voice.Connection.AudioConnection.ConnectionStatusChanged">ConnectionStatusChanged</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when the connection status was changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;ConnectionStatusChangedEventArgs&gt; ConnectionStatusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.ConnectionStatusChangedEventArgs.html">ConnectionStatusChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection_Speaking.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection.Speaking%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L150">View Source</a>
+  </span>
+  <h4 id="Strade_Voice_Connection_AudioConnection_Speaking" data-uid="Strade.Voice.Connection.AudioConnection.Speaking">Speaking</h4>
+  <div class="markdown level1 summary"><p>Asynchronous event which is dispatched when a user started / stopped speaking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;SpeakingEventArgs&gt; Speaking</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Events.AsyncEventHandler-1.html">AsyncEventHandler</a>&lt;<a class="xref" href="Strade.Voice.Events.SpeakingEventArgs.html">SpeakingEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">System.IAsyncDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Voice_Connection_AudioConnection.md&amp;value=---%0Auid%3A%20Strade.Voice.Connection.AudioConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Voice.Connection/Connection/AudioConnection.cs/#L30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SandboxGuildChannel
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SandboxGuildChannel
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel">
+  
+  
+  <h1 id="Strade_Sandbox_Entities_SandboxGuildChannel" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel" class="text-break">Class SandboxGuildChannel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html">SandboxEntity</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>, <a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html">SandboxChannel</a></div>
+    <div class="level3"><span class="xref">SandboxGuildChannel</span></div>
+      <div class="level4"><a class="xref" href="Strade.Sandbox.Entities.SandboxCategory.html">SandboxCategory</a></div>
+      <div class="level4"><a class="xref" href="Strade.Sandbox.Entities.SandboxNestedChannel.html">SandboxNestedChannel</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Strade.Entities.IUpdateable-1.html">IUpdateable</a>&lt;<a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html#Strade_Sandbox_Entities_SandboxChannel_FollowedChannels">SandboxChannel.FollowedChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html#Strade_Sandbox_Entities_SandboxChannel_Messages">SandboxChannel.Messages</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html#Strade_Sandbox_Entities_SandboxChannel_Type">SandboxChannel.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html#Strade_Sandbox_Entities_SandboxChannel_Create_Strade_Sandbox_SandboxEnvironment_Strade_Models_ChannelModel_">SandboxChannel.Create(SandboxEnvironment, ChannelModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html#Strade_Sandbox_Entities_SandboxChannel_SendMessage_Strade_Sandbox_Entities_SandboxUser_Strade_Entities_MessageCreationProperties_">SandboxChannel.SendMessage(SandboxUser, MessageCreationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html#Strade_Sandbox_Entities_SandboxChannel_SendMessage_Strade_Models_UserModel_Strade_Entities_MessageCreationProperties_">SandboxChannel.SendMessage(UserModel, MessageCreationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxChannel.html#Strade_Sandbox_Entities_SandboxChannel_TryDelete">SandboxChannel.TryDelete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Exists">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Model">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Sandbox">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Sandbox</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Id">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Delete">SandboxEntity&lt;Snowflake, ChannelModel&gt;.Delete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_Strade_Entities_IUpdateable_TModel__Update__1_">SandboxEntity&lt;Snowflake, ChannelModel&gt;.IUpdateable&lt;ChannelModel&gt;.Update(ChannelModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_EmitUpdate">SandboxEntity&lt;Snowflake, ChannelModel&gt;.EmitUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Strade.Sandbox.Entities.SandboxEntity-2.html#Strade_Sandbox_Entities_SandboxEntity_2_TryDelete">SandboxEntity&lt;Snowflake, ChannelModel&gt;.TryDelete()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.Sandbox.Entities.html">Strade.Sandbox.Entities</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Sandbox.dll</h6>
+  <h5 id="Strade_Sandbox_Entities_SandboxGuildChannel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SandboxGuildChannel : SandboxChannel, IUpdateable&lt;ChannelModel&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel__ctor_Strade_Sandbox_SandboxEnvironment_Strade_Models_ChannelModel_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.%23ctor(Strade.Sandbox.SandboxEnvironment%2CStrade.Models.ChannelModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L12">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel__ctor_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.#ctor*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel__ctor_Strade_Sandbox_SandboxEnvironment_Strade_Models_ChannelModel_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.#ctor(Strade.Sandbox.SandboxEnvironment,Strade.Models.ChannelModel)">SandboxGuildChannel(SandboxEnvironment, ChannelModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SandboxGuildChannel(SandboxEnvironment sandbox, ChannelModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.SandboxEnvironment.html">SandboxEnvironment</a></td>
+        <td><span class="parametername">sandbox</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Models.ChannelModel.html">ChannelModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_Guild.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.Guild%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L17">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_Guild_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.Guild*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_Guild" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.Guild">Guild</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SandboxGuild Guild { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxGuild.html">SandboxGuild</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_GuildId.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.GuildId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L23">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_GuildId_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.GuildId*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_GuildId" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.GuildId">GuildId</h4>
+  <div class="markdown level1 summary"><p>Gets the snowflake identifier of the associated guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Snowflake GuildId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><p>the snowflake identifier of the associated guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_Name.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L29">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_Name_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.Name*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_Name" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the channel name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>the channel name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_Overwrites.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.Overwrites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L35">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_Overwrites_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.Overwrites*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_Overwrites" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.Overwrites">Overwrites</h4>
+  <div class="markdown level1 summary"><p>Gets the explicit channel permission overwrites.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;PermissionOverwrite&gt; Overwrites { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.PermissionOverwrite.html">PermissionOverwrite</a>&gt;</td>
+        <td><p>the explicit channel permission overwrites.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_Position.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L41">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_Position_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.Position*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_Position" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.Position">Position</h4>
+  <div class="markdown level1 summary"><p>Gets the channel position / order (ascending).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Position { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the channel position / order (ascending).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_DeleteChannelOverwrite_Strade_Sandbox_OperationContext_Strade_Sandbox_Entities_SandboxMember_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.DeleteChannelOverwrite(Strade.Sandbox.OperationContext%2CStrade.Sandbox.Entities.SandboxMember)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L51">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_DeleteChannelOverwrite_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.DeleteChannelOverwrite*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_DeleteChannelOverwrite_Strade_Sandbox_OperationContext_Strade_Sandbox_Entities_SandboxMember_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.DeleteChannelOverwrite(Strade.Sandbox.OperationContext,Strade.Sandbox.Entities.SandboxMember)">DeleteChannelOverwrite(OperationContext, SandboxMember)</h4>
+  <div class="markdown level1 summary"><p>Deletes the channel overwrite for the specified <code data-dev-comment-type="paramref" class="paramref">member</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteChannelOverwrite(OperationContext context, SandboxMember member)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.OperationContext.html">OperationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>a context representing the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxMember.html">SandboxMember</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>the member to remove the permission overwrite for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">member</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_DeleteChannelOverwrite_Strade_Sandbox_OperationContext_Strade_Sandbox_Entities_SandboxRole_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.DeleteChannelOverwrite(Strade.Sandbox.OperationContext%2CStrade.Sandbox.Entities.SandboxRole)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L69">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_DeleteChannelOverwrite_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.DeleteChannelOverwrite*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_DeleteChannelOverwrite_Strade_Sandbox_OperationContext_Strade_Sandbox_Entities_SandboxRole_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.DeleteChannelOverwrite(Strade.Sandbox.OperationContext,Strade.Sandbox.Entities.SandboxRole)">DeleteChannelOverwrite(OperationContext, SandboxRole)</h4>
+  <div class="markdown level1 summary"><p>Deletes the channel overwrite for the specified <code data-dev-comment-type="paramref" class="paramref">role</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteChannelOverwrite(OperationContext context, SandboxRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.OperationContext.html">OperationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>a context representing the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxRole.html">SandboxRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>the role to remove the permission overwrite for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">role</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_EditPermissions_Strade_Sandbox_OperationContext_Strade_Sandbox_Entities_SandboxMember_Strade_Entities_PermissionSet_Strade_Entities_PermissionSet_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.EditPermissions(Strade.Sandbox.OperationContext%2CStrade.Sandbox.Entities.SandboxMember%2CStrade.Entities.PermissionSet%2CStrade.Entities.PermissionSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L93">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_EditPermissions_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.EditPermissions*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_EditPermissions_Strade_Sandbox_OperationContext_Strade_Sandbox_Entities_SandboxMember_Strade_Entities_PermissionSet_Strade_Entities_PermissionSet_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.EditPermissions(Strade.Sandbox.OperationContext,Strade.Sandbox.Entities.SandboxMember,Strade.Entities.PermissionSet,Strade.Entities.PermissionSet)">EditPermissions(OperationContext, SandboxMember, PermissionSet, PermissionSet)</h4>
+  <div class="markdown level1 summary"><p>Edits the permissions (overwrite) for the specified <code data-dev-comment-type="paramref" class="paramref">member</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EditPermissions(OperationContext context, SandboxMember member, PermissionSet allowedPermissions, PermissionSet deniedPermissions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.OperationContext.html">OperationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>a context representing the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxMember.html">SandboxMember</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>the member to update the permissions for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PermissionSet.html">PermissionSet</a></td>
+        <td><span class="parametername">allowedPermissions</span></td>
+        <td><p>a set of permissions allowed for the specified <code data-dev-comment-type="paramref" class="paramref">member</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PermissionSet.html">PermissionSet</a></td>
+        <td><span class="parametername">deniedPermissions</span></td>
+        <td><p>a set of permissions denied for the specified <code data-dev-comment-type="paramref" class="paramref">member</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">member</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_EditPermissions_Strade_Sandbox_OperationContext_Strade_Sandbox_Entities_SandboxRole_Strade_Entities_PermissionSet_Strade_Entities_PermissionSet_.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.EditPermissions(Strade.Sandbox.OperationContext%2CStrade.Sandbox.Entities.SandboxRole%2CStrade.Entities.PermissionSet%2CStrade.Entities.PermissionSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L117">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_EditPermissions_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.EditPermissions*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_EditPermissions_Strade_Sandbox_OperationContext_Strade_Sandbox_Entities_SandboxRole_Strade_Entities_PermissionSet_Strade_Entities_PermissionSet_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.EditPermissions(Strade.Sandbox.OperationContext,Strade.Sandbox.Entities.SandboxRole,Strade.Entities.PermissionSet,Strade.Entities.PermissionSet)">EditPermissions(OperationContext, SandboxRole, PermissionSet, PermissionSet)</h4>
+  <div class="markdown level1 summary"><p>Edits the permissions (overwrite) for the specified <code data-dev-comment-type="paramref" class="paramref">role</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EditPermissions(OperationContext context, SandboxRole role, PermissionSet allowedPermissions, PermissionSet deniedPermissions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.OperationContext.html">OperationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>a context representing the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Sandbox.Entities.SandboxRole.html">SandboxRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>the role to update the permissions for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PermissionSet.html">PermissionSet</a></td>
+        <td><span class="parametername">allowedPermissions</span></td>
+        <td><p>a set of permissions allowed for the specified <code data-dev-comment-type="paramref" class="paramref">role</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PermissionSet.html">PermissionSet</a></td>
+        <td><span class="parametername">deniedPermissions</span></td>
+        <td><p>a set of permissions denied for the specified <code data-dev-comment-type="paramref" class="paramref">role</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>thrown if the specified <code data-dev-comment-type="paramref" class="paramref">role</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel_EmitUpdate.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel.EmitUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L128">View Source</a>
+  </span>
+  <a id="Strade_Sandbox_Entities_SandboxGuildChannel_EmitUpdate_" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.EmitUpdate*"></a>
+  <h4 id="Strade_Sandbox_Entities_SandboxGuildChannel_EmitUpdate" data-uid="Strade.Sandbox.Entities.SandboxGuildChannel.EmitUpdate">EmitUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void EmitUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Strade.Sandbox.Entities.SandboxEntity&lt;Strade.Entities.Snowflake, Strade.Models.ChannelModel&gt;.EmitUpdate()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Strade.Entities.IUpdateable-1.html">IUpdateable&lt;TModel&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_Sandbox_Entities_SandboxGuildChannel.md&amp;value=---%0Auid%3A%20Strade.Sandbox.Entities.SandboxGuildChannel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/experiments/Strade.Sandbox/Entities/Channels/SandboxGuildChannel.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

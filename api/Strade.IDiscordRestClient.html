@@ -1,0 +1,1595 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDiscordRestClient
+   | Strade Developer Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDiscordRestClient
+   | Strade Developer Documentation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Strade.IDiscordRestClient">
+  
+  
+  <h1 id="Strade_IDiscordRestClient" data-uid="Strade.IDiscordRestClient" class="text-break">Interface IDiscordRestClient
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for basic discord clients.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Strade.html">Strade</a></h6>
+  <h6><strong>Assembly</strong>: Strade.Rest.dll</h6>
+  <h5 id="Strade_IDiscordRestClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDiscordRestClient : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_ApiClient.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.ApiClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L19">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_ApiClient_" data-uid="Strade.IDiscordRestClient.ApiClient*"></a>
+  <h4 id="Strade_IDiscordRestClient_ApiClient" data-uid="Strade.IDiscordRestClient.ApiClient">ApiClient</h4>
+  <div class="markdown level1 summary"><p>Gets the underlying API client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DiscordRestApiClient ApiClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.DiscordRestApiClient.html">DiscordRestApiClient</a></td>
+        <td><p>the underlying API client.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_CreateGuildAsync_Strade_Entities_GuildCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.CreateGuildAsync(Strade.Entities.GuildCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L30">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_CreateGuildAsync_" data-uid="Strade.IDiscordRestClient.CreateGuildAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_CreateGuildAsync_Strade_Entities_GuildCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.CreateGuildAsync(Strade.Entities.GuildCreationProperties,System.Threading.CancellationToken)">CreateGuildAsync(GuildCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a new guild asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IGuild&gt; CreateGuildAsync(GuildCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.GuildCreationProperties.html">GuildCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.IGuild.html">IGuild</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetApplicationIdAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetApplicationIdAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L47">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetApplicationIdAsync_" data-uid="Strade.IDiscordRestClient.GetApplicationIdAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetApplicationIdAsync_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetApplicationIdAsync(System.Threading.CancellationToken)">GetApplicationIdAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;Snowflake&gt; GetApplicationIdAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetCategoryAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetCategoryAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L59">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetCategoryAsync_" data-uid="Strade.IDiscordRestClient.GetCategoryAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetCategoryAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetCategoryAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetCategoryAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a category (channel) asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;ICategory&gt; GetCategoryAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.ICategory.html">ICategory</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the category (channel).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L71">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetChannelAsync_" data-uid="Strade.IDiscordRestClient.GetChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IChannel&gt; GetChannelAsync(Snowflake channelId, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">channelId</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IChannel.html">IChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetChannelAsync__1_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetChannelAsync%60%601(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L84">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetChannelAsync_" data-uid="Strade.IDiscordRestClient.GetChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetChannelAsync__1_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetChannelAsync``1(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetChannelAsync&lt;TChannel&gt;(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;TChannel&gt; GetChannelAsync&lt;TChannel&gt;(Snowflake channelId, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))
+
+    where TChannel : IChannel</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">channelId</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;TChannel&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TChannel</span></td>
+        <td><p>the type of the channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetCurrentApplicationAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetCurrentApplicationAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L96">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetCurrentApplicationAsync_" data-uid="Strade.IDiscordRestClient.GetCurrentApplicationAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetCurrentApplicationAsync_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetCurrentApplicationAsync(System.Threading.CancellationToken)">GetCurrentApplicationAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the current application information asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApplicationInformation&gt; GetCurrentApplicationAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.ApplicationInformation.html">ApplicationInformation</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the current
+user information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetCurrentUserAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetCurrentUserAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L107">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetCurrentUserAsync_" data-uid="Strade.IDiscordRestClient.GetCurrentUserAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetCurrentUserAsync_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetCurrentUserAsync(System.Threading.CancellationToken)">GetCurrentUserAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the current user asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;CurrentUser&gt; GetCurrentUserAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.CurrentUser.html">CurrentUser</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the current
+user information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetGroupChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetGroupChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L119">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetGroupChannelAsync_" data-uid="Strade.IDiscordRestClient.GetGroupChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetGroupChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetGroupChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetGroupChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a group channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IGroupChannel&gt; GetGroupChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IGroupChannel.html">IGroupChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the group channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetGuildAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetGuildAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L133">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetGuildAsync_" data-uid="Strade.IDiscordRestClient.GetGuildAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetGuildAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetGuildAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetGuildAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a guild asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IGuild&gt; GetGuildAsync(Snowflake guildId, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>the guild snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IGuild.html">IGuild</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetInviteAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetInviteAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L144">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetInviteAsync_" data-uid="Strade.IDiscordRestClient.GetInviteAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetInviteAsync_System_String_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetInviteAsync(System.String,System.Threading.CancellationToken)">GetInviteAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets an invite asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Invite&gt; GetInviteAsync(string code, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>the invite code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.Invite.html">Invite</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the invite.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetMessageAsync_Strade_Entities_Snowflake_Strade_Entities_Snowflake_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetMessageAsync(Strade.Entities.Snowflake%2CStrade.Entities.Snowflake%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L156">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetMessageAsync_" data-uid="Strade.IDiscordRestClient.GetMessageAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetMessageAsync_Strade_Entities_Snowflake_Strade_Entities_Snowflake_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetMessageAsync(Strade.Entities.Snowflake,Strade.Entities.Snowflake,System.Threading.CancellationToken)">GetMessageAsync(Snowflake, Snowflake, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IMessage&gt; GetMessageAsync(Snowflake channelId, Snowflake messageId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">channelId</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">messageId</span></td>
+        <td><p>the message snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IMessage.html">IMessage</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetNewsChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetNewsChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L43">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetNewsChannelAsync_" data-uid="Strade.IDiscordRestClient.GetNewsChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetNewsChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetNewsChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetNewsChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets an announcement channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;INewsChannel&gt; GetNewsChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.INewsChannel.html">INewsChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the
+announcement channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetOptimalVoiceRegionAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetOptimalVoiceRegionAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L167">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetOptimalVoiceRegionAsync_" data-uid="Strade.IDiscordRestClient.GetOptimalVoiceRegionAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetOptimalVoiceRegionAsync_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetOptimalVoiceRegionAsync(System.Threading.CancellationToken)">GetOptimalVoiceRegionAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the best voice region for the client asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;VoiceRegion&gt; GetOptimalVoiceRegionAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.VoiceRegion.html">VoiceRegion</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the best voice
+region for the current client.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetPrivateChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetPrivateChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L179">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetPrivateChannelAsync_" data-uid="Strade.IDiscordRestClient.GetPrivateChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetPrivateChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetPrivateChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetPrivateChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a private channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IPrivateChannel&gt; GetPrivateChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IPrivateChannel.html">IPrivateChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the private channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetStoreChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetStoreChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L191">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetStoreChannelAsync_" data-uid="Strade.IDiscordRestClient.GetStoreChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetStoreChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetStoreChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetStoreChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a store channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IStoreChannel&gt; GetStoreChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IStoreChannel.html">IStoreChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the store channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetTextChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetTextChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L203">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetTextChannelAsync_" data-uid="Strade.IDiscordRestClient.GetTextChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetTextChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetTextChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetTextChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a text channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;ITextChannel&gt; GetTextChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.ITextChannel.html">ITextChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the text channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetUserAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetUserAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L215">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetUserAsync_" data-uid="Strade.IDiscordRestClient.GetUserAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetUserAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetUserAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetUserAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets an user asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;User&gt; GetUserAsync(Snowflake userId, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>the user snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.User.html">User</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetUserConnectionsAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetUserConnectionsAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L226">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetUserConnectionsAsync_" data-uid="Strade.IDiscordRestClient.GetUserConnectionsAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetUserConnectionsAsync_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetUserConnectionsAsync(System.Threading.CancellationToken)">GetUserConnectionsAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of the connections of the current user asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyList&lt;UserConnection&gt;&gt; GetUserConnectionsAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.UserConnection.html">UserConnection</a>&gt;&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is a list of the
+connections of the current user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetUserGuildsAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetUserGuildsAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L238">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetUserGuildsAsync_" data-uid="Strade.IDiscordRestClient.GetUserGuildsAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetUserGuildsAsync_System_Int32_" data-uid="Strade.IDiscordRestClient.GetUserGuildsAsync(System.Int32)">GetUserGuildsAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets an async enumerable ( <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable&lt;T&gt;</a>) that enumerates
+through the user guilds asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;UserGuildInformation&gt; GetUserGuildsAsync(int limit = 100)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>the maximum number of guilds to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="Strade.Entities.UserGuildInformation.html">UserGuildInformation</a>&gt;</td>
+        <td><p>an async enumerable ( <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable&lt;T&gt;</a>) that enumerates through the
+user guilds asynchronously.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetVoiceChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetVoiceChannelAsync(Strade.Entities.Snowflake%2CStrade.Cache.CacheBehavior%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L250">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetVoiceChannelAsync_" data-uid="Strade.IDiscordRestClient.GetVoiceChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetVoiceChannelAsync_Strade_Entities_Snowflake_Strade_Cache_CacheBehavior_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetVoiceChannelAsync(Strade.Entities.Snowflake,Strade.Cache.CacheBehavior,System.Threading.CancellationToken)">GetVoiceChannelAsync(Snowflake, CacheBehavior, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a voice channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IVoiceChannel&gt; GetVoiceChannelAsync(Snowflake id, CacheBehavior cacheBehavior = CacheBehavior.AllowDownload, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>the channel snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Strade.Cache.CacheBehavior.html">CacheBehavior</a></td>
+        <td><span class="parametername">cacheBehavior</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the voice channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetVoiceRegionsAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetVoiceRegionsAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L263">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetVoiceRegionsAsync_" data-uid="Strade.IDiscordRestClient.GetVoiceRegionsAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetVoiceRegionsAsync_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetVoiceRegionsAsync(System.Threading.CancellationToken)">GetVoiceRegionsAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets all available voice regions asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyList&lt;VoiceRegion&gt;&gt; GetVoiceRegionsAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Strade.Entities.VoiceRegion.html">VoiceRegion</a>&gt;&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is a list of all
+available voice regions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_GetWebhookAsync_Strade_Entities_Snowflake_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.GetWebhookAsync(Strade.Entities.Snowflake%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L274">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_GetWebhookAsync_" data-uid="Strade.IDiscordRestClient.GetWebhookAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_GetWebhookAsync_Strade_Entities_Snowflake_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.GetWebhookAsync(Strade.Entities.Snowflake,System.Threading.CancellationToken)">GetWebhookAsync(Snowflake, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a webhook asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Webhook&gt; GetWebhookAsync(Snowflake webhookId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">webhookId</span></td>
+        <td><p>the webhook snowflake identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Strade.Entities.Webhook.html">Webhook</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the webhook.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_OpenChannelAsync_Strade_Entities_GroupChannelCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.OpenChannelAsync(Strade.Entities.GroupChannelCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L296">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_OpenChannelAsync_" data-uid="Strade.IDiscordRestClient.OpenChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_OpenChannelAsync_Strade_Entities_GroupChannelCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.OpenChannelAsync(Strade.Entities.GroupChannelCreationProperties,System.Threading.CancellationToken)">OpenChannelAsync(GroupChannelCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Opens a new direct group message channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IGroupChannel&gt; OpenChannelAsync(GroupChannelCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.GroupChannelCreationProperties.html">GroupChannelCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IGroupChannel.html">IGroupChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_OpenChannelAsync_Strade_Entities_PrivateChannelCreationProperties_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.OpenChannelAsync(Strade.Entities.PrivateChannelCreationProperties%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L285">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_OpenChannelAsync_" data-uid="Strade.IDiscordRestClient.OpenChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_OpenChannelAsync_Strade_Entities_PrivateChannelCreationProperties_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.OpenChannelAsync(Strade.Entities.PrivateChannelCreationProperties,System.Threading.CancellationToken)">OpenChannelAsync(PrivateChannelCreationProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Opens a new direct message channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IPrivateChannel&gt; OpenChannelAsync(PrivateChannelCreationProperties properties, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.PrivateChannelCreationProperties.html">PrivateChannelCreationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>the creation properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IPrivateChannel.html">IPrivateChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient_OpenChannelAsync_Strade_Entities_Snowflake_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient.OpenChannelAsync(Strade.Entities.Snowflake%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L307">View Source</a>
+  </span>
+  <a id="Strade_IDiscordRestClient_OpenChannelAsync_" data-uid="Strade.IDiscordRestClient.OpenChannelAsync*"></a>
+  <h4 id="Strade_IDiscordRestClient_OpenChannelAsync_Strade_Entities_Snowflake_System_Threading_CancellationToken_" data-uid="Strade.IDiscordRestClient.OpenChannelAsync(Strade.Entities.Snowflake,System.Threading.CancellationToken)">OpenChannelAsync(Snowflake, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Opens a new direct message channel asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask&lt;IPrivateChannel&gt; OpenChannelAsync(Snowflake recipientId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Strade.Entities.Snowflake.html">Snowflake</a></td>
+        <td><span class="parametername">recipientId</span></td>
+        <td><p>the snowflake identifier of the recipient user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="Strade.Entities.IPrivateChannel.html">IPrivateChannel</a>&gt;</td>
+        <td><p>a task that represents the asynchronous operation. The task result is the created entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/strade/Strade/new/main/apiSpec/new?filename=Strade_IDiscordRestClient.md&amp;value=---%0Auid%3A%20Strade.IDiscordRestClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strade/Strade/blob/main/src/Strade.Rest/IDiscordRestClient.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
